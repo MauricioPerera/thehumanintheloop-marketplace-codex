@@ -32,7 +32,7 @@ function render() {
   const visible = catalog.filter(p => (category === 'all' || p.category === category) && `${p.name} ${p.displayName || ''} ${p.description} ${p.capabilities.join(' ')}`.toLowerCase().includes(query));
   count.textContent = visible.length;
   empty.hidden = visible.length !== 0;
-  grid.innerHTML = visible.map(p => `<article class="plugin-card ${p.category === 'Design System Analysis' ? 'analysis-card' : ''}"><div class="card-top"><div class="plugin-icon" aria-hidden="true">${p.icon}</div><span class="badge">${p.category}</span></div><h3>${p.displayName || p.name}</h3><p>${p.description}</p>${p.preview ? `<div class="install-cta design-cta"><button class="install-link" type="button" data-open-codex="${p.name}" data-open-type="design" data-codex-url="${p.codexUrl}" data-design-md="${p.designMdUrl}" data-contract="${p.contractUrl}" data-source="${p.source}">Abrir diseño en Codex</button><span class="install-status" role="status" aria-live="polite"></span></div><div class="card-footer"><span class="version">v${p.version} · ${p.capabilities.join(' · ')}</span><button class="card-link preview-link" type="button" data-preview="${p.preview}" data-title="${p.displayName || p.name}">Ver preview ↗</button></div>` : `<div class="platform-install-links"><button class="install-link claude-link" type="button" data-open-claude="${p.name}" data-claude-marketplace="${p.claudeMarketplace}">Copiar para Claude Code</button><button class="install-link" type="button" data-open-codex="${p.name}" data-codex-url="${p.codexUrl}">Abrir en Codex</button><span class="install-status" role="status" aria-live="polite"></span></div><div class="card-footer"><span class="version">v${p.version} · ${p.capabilities.join(' · ')}</span><a class="card-link" href="${p.url}" target="_blank" rel="noreferrer">GitHub ↗</a></div>`}</article>`).join('');
+  grid.innerHTML = visible.map(p => `<article class="plugin-card ${p.category === 'Design System Analysis' ? 'analysis-card' : ''}"><div class="card-top"><div class="plugin-icon" aria-hidden="true">${p.icon}</div><span class="badge">${p.category}</span></div><h3>${p.displayName || p.name}</h3><p>${p.description}</p>${p.preview ? `<div class="install-cta design-cta"><div class="design-platform-buttons"><button class="install-link" type="button" data-open-codex="${p.name}" data-open-type="design" data-codex-url="${p.codexUrl}" data-design-md="${p.designMdUrl}" data-contract="${p.contractUrl}" data-source="${p.source}">Abrir diseño en Codex</button><button class="install-link claude-link" type="button" data-open-claude-design="${p.name}" data-design-md="${p.designMdUrl}" data-contract="${p.contractUrl}" data-source="${p.source}">Abrir diseño en Claude</button></div><span class="install-status" role="status" aria-live="polite"></span></div><div class="card-footer"><span class="version">v${p.version} · ${p.capabilities.join(' · ')}</span><button class="card-link preview-link" type="button" data-preview="${p.preview}" data-title="${p.displayName || p.name}">Ver preview ↗</button></div>` : `<div class="platform-install-links"><button class="install-link claude-link" type="button" data-open-claude="${p.name}" data-claude-marketplace="${p.claudeMarketplace}">Copiar para Claude Code</button><button class="install-link" type="button" data-open-codex="${p.name}" data-codex-url="${p.codexUrl}">Abrir en Codex</button><span class="install-status" role="status" aria-live="polite"></span></div><div class="card-footer"><span class="version">v${p.version} · ${p.capabilities.join(' · ')}</span><a class="card-link" href="${p.url}" target="_blank" rel="noreferrer">GitHub ↗</a></div>`}</article>`).join('');
   document.querySelectorAll('[data-preview]').forEach(button => button.addEventListener('click', () => openPreview(button.dataset.preview, button.dataset.title)));
   document.querySelectorAll('[data-open-codex]').forEach(button => button.addEventListener('click', () => {
     const prompt = button.dataset.openType === 'design' ? buildDesignPrompt(button) : buildInstallPrompt(button.dataset.openCodex);
@@ -64,6 +64,18 @@ function render() {
       status.textContent = 'Copia manualmente los comandos de la sección de instalación.';
     }
   }));
+  document.querySelectorAll('[data-open-claude-design]').forEach(button => button.addEventListener('click', async () => {
+    const prompt = buildDesignPrompt(button);
+    const status = button.parentElement.parentElement.querySelector('.install-status');
+    const claudeWindow = window.open('https://claude.ai/new', '_blank', 'noopener,noreferrer');
+    try {
+      await navigator.clipboard.writeText(prompt);
+      button.textContent = 'Instrucción copiada';
+      status.textContent = `${claudeWindow ? 'Claude está abierto. ' : ''}Pega la instrucción para importar el diseño.`;
+    } catch {
+      status.textContent = 'No se pudo copiar automáticamente. Abre Claude y copia la instrucción manualmente.';
+    }
+  }));
 }
 
 function buildInstallPrompt(pluginName) {
@@ -75,7 +87,8 @@ function buildClaudeInstallPrompt(pluginName, marketplaceName) {
 }
 
 function buildDesignPrompt(button) {
-  return `Quiero importar el Design System Analysis "${button.dataset.openCodex}" en mi proyecto actual.\n\nUsa DESIGN.md como contrato principal y design-system.json como contrato estructurado:\n- DESIGN.md: ${button.dataset.designMd}\n- design-system.json: ${button.dataset.contract}\n\nEl sitio analizado originalmente es: ${button.dataset.source}\n\nPrimero inspecciona el proyecto actual y explica dónde integrarás los tokens, componentes, estados, layout y responsive behavior. Después aplica el sistema de diseño respetando sus validadores y señala cualquier conflicto antes de modificar archivos. No copies contenido ni activos propietarios del sitio de referencia.`;
+  const designName = button.dataset.openCodex || button.dataset.openClaudeDesign;
+  return `Quiero importar el Design System Analysis "${designName}" en mi proyecto actual.\n\nUsa DESIGN.md como contrato principal y design-system.json como contrato estructurado:\n- DESIGN.md: ${button.dataset.designMd}\n- design-system.json: ${button.dataset.contract}\n\nEl sitio analizado originalmente es: ${button.dataset.source}\n\nPrimero inspecciona el proyecto actual y explica dónde integrarás los tokens, componentes, estados, layout y responsive behavior. Después aplica el sistema de diseño respetando sus validadores y señala cualquier conflicto antes de modificar archivos. No copies contenido ni activos propietarios del sitio de referencia.`;
 }
 
 const previewDialog = document.querySelector('#preview-dialog');
