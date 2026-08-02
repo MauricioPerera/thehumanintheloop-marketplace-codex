@@ -25,16 +25,24 @@ def main():
             try: manifests.append(load(path))
             except ValueError as exc: errors.append(str(exc))
     names = []
+    category_maps = []
     for manifest in manifests:
         entries = manifest.get("plugins", [])
         names.append({entry.get("name") for entry in entries})
+        category_maps.append({entry.get("name"): entry.get("category") for entry in entries})
         for entry in entries:
             name = entry.get("name")
             source = entry.get("source")
             relative = source if isinstance(source, str) else (source or {}).get("path")
             if not name or not relative: errors.append("Every plugin entry needs name and source/path")
             elif not (root / relative).is_dir(): errors.append(f"Plugin path does not exist: {relative}")
+            else:
+                plugin_root = root / relative
+                if not (plugin_root / ".claude-plugin" / "plugin.json").exists(): errors.append(f"Missing Claude plugin manifest: {relative}")
+                if not (plugin_root / ".codex-plugin" / "plugin.json").exists(): errors.append(f"Missing Codex plugin manifest: {relative}")
+                if not list((plugin_root / "skills").glob("*/SKILL.md")): errors.append(f"Plugin has no discoverable skills: {relative}")
     if len(names) == 2 and names[0] != names[1]: errors.append(f"Marketplace plugin mismatch: Claude={sorted(names[0])}, Codex={sorted(names[1])}")
+    if len(category_maps) == 2 and category_maps[0] != category_maps[1]: errors.append(f"Marketplace category mismatch: Claude={category_maps[0]}, Codex={category_maps[1]}")
     if errors:
         print(json.dumps({"status": "FAILED", "errors": errors}, indent=2, ensure_ascii=False)); return 1
     print(json.dumps({"status": "PASSED", "plugins": sorted(names[0]) if names else []}, indent=2, ensure_ascii=False)); return 0
