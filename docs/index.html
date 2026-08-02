@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catálogo público de plugins Codex de TheHumanInTheLoop.">
+  <title>TheHumanInTheLoop Marketplace Codex</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav wrap" aria-label="Navegación principal">
+      <a class="brand" href="./" aria-label="Inicio">THL<span>·</span>Codex</a>
+      <div class="nav-links">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#instalar">Instalar</a>
+        <a class="nav-button" href="https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </nav>
+    <div class="hero-content wrap">
+      <p class="eyebrow">MARKETPLACE PÚBLICO · CODEX</p>
+      <h1>Plugins que mantienen<br><em>al humano en el loop.</em></h1>
+      <p class="hero-copy">Una colección curada de workflows, validadores y herramientas para ampliar Codex con intención, claridad y control.</p>
+      <a class="primary-button" href="#catalogo">Explorar plugins <span>↓</span></a>
+    </div>
+    <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+  </header>
+
+  <main>
+    <section id="catalogo" class="catalog wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow">COLECCIÓN ACTUAL</p><h2>Explora el catálogo</h2></div>
+        <p class="section-note"><strong id="result-count">1</strong> plugin disponible<br>y creciendo.</p>
+      </div>
+      <div class="toolbar">
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar por nombre o capacidad…" aria-label="Buscar plugins"></label>
+        <div class="filters" role="group" aria-label="Filtrar por categoría"><button class="filter active" data-category="all">Todos</button><button class="filter" data-category="Productivity">Productividad</button></div>
+      </div>
+      <div id="plugin-grid" class="plugin-grid"></div>
+      <p id="empty-state" class="empty" hidden>No hay plugins que coincidan con tu búsqueda.</p>
+    </section>
+
+    <section id="instalar" class="install-section">
+      <div class="install wrap">
+        <div><p class="eyebrow">EMPEZAR</p><h2>Instala el marketplace<br>en tu entorno.</h2><p class="install-copy">Clona el repositorio y apunta Codex al catálogo local. Cada plugin conserva su manifiesto, skills y validadores.</p></div>
+        <div class="code-card"><div class="code-label">PowerShell</div><pre><code>git clone https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex
+codex plugin marketplace add .agents/plugins
+codex plugin install linter-seo-geo-2026</code></pre><button id="copy-command" class="copy-button">Copiar comando</button><span id="copy-status" class="copy-status" role="status"></span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap"><span>© 2026 Mauricio Perera</span><span>TheHumanInTheLoop Marketplace Codex</span><a href="https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex" target="_blank" rel="noreferrer">Código fuente ↗</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
