@@ -33,6 +33,21 @@ This marketplace publishes reusable Claude Code and Codex plugins, shared skills
 - Description: Detects verifiable claims and requires named sources, dates, links, and attributions.
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/content-fact-checker
 
+### Repo Quality Gate (`repo-quality-gate`)
+
+- Description: Reviews repositories before commits, pull requests, releases, or deployments.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/repo-quality-gate
+
+### Technical Docs Linter (`technical-docs-linter`)
+
+- Description: Checks README files, API documentation, examples, commands, and links.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/technical-docs-linter
+
+### Accessibility Auditor (`accessibility-auditor`)
+
+- Description: Audits HTML, ARIA, accessible names, forms, contrast, and keyboard behavior.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/accessibility-auditor
+
 ## Installation
 
 In Claude Code, add `MauricioPerera/thehumanintheloop-marketplace-codex` and install `linter-seo-geo-2026@thehumanintheloop-marketplace-claude`. In Codex, register the `.agents/plugins` marketplace and install `linter-seo-geo-2026`. Both platforms consume the same plugin directory and shared skills.

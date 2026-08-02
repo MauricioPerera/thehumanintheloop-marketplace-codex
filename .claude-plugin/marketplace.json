@@ -29,6 +29,9 @@
       "displayName": "Content Fact Checker",
       "source": "./plugins/content-fact-checker",
       "category": "productivity"
-    }
+    },
+    {"name":"repo-quality-gate","displayName":"Repo Quality Gate","source":"./plugins/repo-quality-gate","category":"productivity"},
+    {"name":"technical-docs-linter","displayName":"Technical Docs Linter","source":"./plugins/technical-docs-linter","category":"productivity"},
+    {"name":"accessibility-auditor","displayName":"Accessibility Auditor","source":"./plugins/accessibility-auditor","category":"accessibility"}
   ]
 }

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Accessibility Auditor"
+  short_description: "Audita accesibilidad web y HTML."
+  default_prompt: "Audita la accesibilidad de este sitio."

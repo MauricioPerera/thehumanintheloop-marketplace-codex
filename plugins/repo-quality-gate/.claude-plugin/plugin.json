@@ -1,0 +1,1 @@
+{"name":"repo-quality-gate","displayName":"Repo Quality Gate","version":"0.1.0","description":"Valida repositorios antes de publicar cambios.","author":{"name":"Mauricio Perera","url":"https://github.com/MauricioPerera"},"repository":"https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex","license":"MIT","keywords":["quality","ci","release"]}

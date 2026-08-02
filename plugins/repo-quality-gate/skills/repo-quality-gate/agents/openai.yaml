@@ -1,0 +1,4 @@
+interface:
+  display_name: "Repo Quality Gate"
+  short_description: "Valida repositorios antes de publicar."
+  default_prompt: "Ejecuta el quality gate de este repositorio."

@@ -1,0 +1,18 @@
+{
+  "name": "repo-quality-gate",
+  "version": "0.1.0",
+  "description": "Valida repositorios antes de publicar cambios.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Repo Quality Gate",
+    "shortDescription": "Use Repo Quality Gate in Codex.",
+    "longDescription": "Repo Quality Gate adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Repo Quality Gate."
+  }
+}

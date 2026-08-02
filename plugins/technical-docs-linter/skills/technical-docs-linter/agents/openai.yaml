@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technical Docs Linter"
+  short_description: "Valida documentacion tecnica y ejemplos."
+  default_prompt: "Audita la documentacion tecnica de este repositorio."

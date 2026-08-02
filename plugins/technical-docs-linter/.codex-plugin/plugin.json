@@ -1,0 +1,18 @@
+{
+  "name": "technical-docs-linter",
+  "version": "0.1.0",
+  "description": "Valida documentación técnica, ejemplos y enlaces de un repositorio.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Technical Docs Linter",
+    "shortDescription": "Use Technical Docs Linter in Codex.",
+    "longDescription": "Technical Docs Linter adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Technical Docs Linter."
+  }
+}
