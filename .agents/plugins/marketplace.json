@@ -1,0 +1,20 @@
+{
+  "name": "thehumanintheloop-marketplace-codex",
+  "interface": {
+    "displayName": "TheHumanInTheLoop Marketplace Codex"
+  },
+  "plugins": [
+    {
+      "name": "linter-seo-geo-2026",
+      "source": {
+        "source": "local",
+        "path": "./plugins/linter-seo-geo-2026"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "linter-seo-geo-2026",
+  "version": "0.1.0",
+  "description": "Analizador estático de artículos para SEO híbrido y GEO con validadores de prepublicación.",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Linter SEO/GEO 2026",
+    "shortDescription": "Audita artículos con validadores SEO y GEO.",
+    "longDescription": "Revisa profundidad, cápsulas de respuesta, hechos, FAQ, enlaces, metadatos y atributos multimedia antes de publicar.",
+    "developerName": "Mauricio Perera",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Audita este artículo con el linter SEO/GEO 2026 y genera el reporte técnico completo."
+  }
+}
