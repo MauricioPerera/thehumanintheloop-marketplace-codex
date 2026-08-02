@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Design System Analysis preview for KDD — Knowledge-Driven Development.">
+  <meta name="theme-color" content="#1B2430">
+  <title>KDD · Design System Analysis Preview</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark">DSA</span><span>KDD <small>Design System Analysis</small></span></a>
+    <nav class="topnav" aria-label="Preview navigation">
+      <a href="#tokens">Tokens</a><a href="#components">Components</a><a href="#responsive">Responsive</a><a href="#validation">Validation</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle theme" data-theme-toggle>Dark</button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Design System Analysis · Preview</p>
+        <h1>The visual contract behind KDD.</h1>
+        <p class="lede">A navigable analysis of the published KDD site: tokens, intent, components, responsive behavior and deterministic validation in one inspectable artifact.</p>
+        <div class="hero-actions"><a class="button primary" href="DESIGN.md">Read DESIGN.md</a><a class="button ghost" href="design-system.json">Open tokens JSON</a></div>
+        <p class="source">Source <a href="https://mauricioperera.github.io/KDD/">mauricioperera.github.io/KDD/</a> · observed 2026-08-02</p>
+      </div>
+      <div class="hero-proof" aria-label="Analysis result">
+        <div class="proof-bar"><i></i><i></i><i></i><span>analysis-report</span></div>
+        <pre><code><b>STATUS</b>   <em>PASSED</em>
+TOKENS   112
+SECTIONS  8 exhibits
+THEMES    light + dark
+BREAKS    8 responsive rules
+SOURCE    verified public URL</code></pre>
+        <div class="stamp">Observed<br><strong>not invented</strong></div>
+      </div>
+    </section>
+
+    <div class="layout">
+      <aside class="rail" aria-label="Analysis sections">
+        <p class="rail-label">Exhibits</p>
+        <a href="#identity"><span>A</span>Identity</a><a href="#tokens"><span>B</span>Tokens</a><a href="#type"><span>C</span>Typography</a><a href="#components"><span>D</span>Components</a><a href="#responsive"><span>E</span>Responsive</a><a href="#validation"><span>F</span>Validation</a>
+      </aside>
+
+      <div class="content">
+        <section class="section" id="identity"><p class="eyebrow">Exhibit A</p><h2>Identity visual</h2><p class="section-lede">KDD communicates technical rigor through an editorial system: paper-like surfaces, a dark proof-oriented hero, gold as a seal of authority and monospace as the voice of evidence.</p><div class="identity-grid"><article class="identity-card"><span class="identity-icon">01</span><h3>Editorial thesis</h3><p>Serif headlines carry the argument. Body copy stays quiet so the method and evidence remain legible.</p></article><article class="identity-card"><span class="identity-icon">✓</span><h3>Deterministic states</h3><p>Green and red are semantic markers for verified and flagged conditions, not decoration.</p></article><article class="identity-card"><span class="identity-icon">&gt;_</span><h3>Proof surface</h3><p>The terminal panel is the visual anchor: it turns a claim into a visible artifact.</p></article></div></section>
+
+        <section class="section" id="tokens"><p class="eyebrow">Exhibit B</p><h2>Color tokens</h2><p class="section-lede">The palette is organized by surface, text, line and semantic role. Every swatch below is extracted from the published CSS.</p><div class="swatches"><div class="swatch dark" style="--sw:#1B2430"><b>#1B2430</b><span>ink</span></div><div class="swatch dark" style="--sw:#232E3D"><b>#232E3D</b><span>inkPanel</span></div><div class="swatch light" style="--sw:#EDEFE7"><b>#EDEFE7</b><span>paper</span></div><div class="swatch light" style="--sw:#E3E6DA"><b>#E3E6DA</b><span>paperPanel</span></div><div class="swatch gold" style="--sw:#B58D3F"><b>#B58D3F</b><span>seal</span></div><div class="swatch green" style="--sw:#3F7A5C"><b>#3F7A5C</b><span>verified</span></div><div class="swatch red" style="--sw:#A23B3B"><b>#A23B3B</b><span>flagged</span></div><div class="swatch dark" style="--sw:#141B24"><b>#141B24</b><span>terminal</span></div></div></section>
+
+        <section class="section" id="type"><p class="eyebrow">Exhibit C</p><h2>Typography scale</h2><p class="section-lede">Three voices create hierarchy without introducing a font dependency: serif for thought, sans for reading and monospace for machine-verifiable detail.</p><div class="type-board"><div class="type-row"><span class="type-meta">display · 3rem · 400 · 1.15</span><strong class="type-display">A contract before code.</strong></div><div class="type-row"><span class="type-meta">body · 16.5px · 400 · 1.6</span><p class="type-body">The method makes evidence visible and keeps the interface calm enough to inspect.</p></div><div class="type-row"><span class="type-meta">mono label · .72rem · .16em · uppercase</span><code class="type-mono">STATUS / VERIFIED / 112 TOKENS</code></div></div></section>
+
+        <section class="section" id="components"><p class="eyebrow">Exhibit D</p><h2>Component inventory</h2><p class="section-lede">These are implementation-ready patterns, not a screenshot inventory. Each one has a role, token references and a visible state contract.</p><div class="component-grid"><article class="component-card"><div class="component-head"><span>01</span><b>Buttons</b></div><div class="demo-actions"><a class="button primary" href="#validation">Primary action</a><a class="button ghost" href="#tokens">Ghost action</a></div><p>3px radius · .75em 1.3em padding · hover shadow on primary.</p></article><article class="component-card"><div class="component-head"><span>02</span><b>Flow step</b></div><div class="flow-demo"><i>1</i><hr><i class="active">2</i><hr><i>3</i></div><p>44px circular targets · connector disappears below 820px.</p></article><article class="component-card terminal-card"><div class="component-head"><span>03</span><b>Evidence panel</b></div><div class="mini-terminal"><span>$ ccdd gate --verify</span><strong>✓ 0 errors · contract sealed</strong></div><p>Dark surface · monospace · restrained elevation.</p></article><article class="component-card"><div class="component-head"><span>04</span><b>Domain tab</b></div><div class="domain-demo"><b>Payment compliance</b><small>Per-country limits, beneficiary checks</small></div><p>3px seal border · 2px radius · flat panel.</p></article></div></section>
+
+        <section class="section" id="responsive"><p class="eyebrow">Exhibit E</p><h2>Responsive behavior</h2><p class="section-lede">Responsive changes are structural: the rail collapses, the hero stacks, metrics reduce columns and the contract flow changes orientation.</p><div class="breakpoint-grid"><div><strong>1440px</strong><span>240px rail · 2-column hero · 5 stats</span></div><div><strong>900px</strong><span>2-column stats and domains</span></div><div><strong>820px</strong><span>Vertical flow · no connector line</span></div><div><strong>520px</strong><span>Single-column domain list</span></div></div></section>
+
+        <section class="section validation" id="validation"><p class="eyebrow">Exhibit F</p><h2>Validation contract</h2><p class="section-lede">The preview makes the analysis auditable. Green checks are evidence-backed checks; amber items identify runtime work that cannot be proven from static CSS alone.</p><div class="checks"><div class="check pass"><span>✓</span><div><b>PASSED · Token integrity</b><p>112 tokens parsed; colors and component references are valid.</p></div></div><div class="check pass"><span>✓</span><div><b>PASSED · Structure</b><p>8 exhibits, indexed navigation and documented source provenance.</p></div></div><div class="check pass"><span>✓</span><div><b>PASSED · Responsive contract</b><p>8 breakpoints recorded with layout transformations.</p></div></div><div class="check warn"><span>!</span><div><b>WARNING · Runtime contrast</b><p>Full theme/state contrast still requires browser sampling.</p></div></div><div class="check warn"><span>!</span><div><b>WARNING · Interaction matrix</b><p>Hover and focus are documented; exhaustive runtime testing remains open.</p></div></div></div><div class="final-status"><strong>PASSED</strong><span>Static analysis complete · artifacts ready for an implementing agent</span></div></section>
+
+        <footer class="footer"><span>KDD Design System Analysis Preview</span><span><a href="DESIGN.md">Contract</a> · <a href="design-system.json">Tokens</a> · <a href="https://mauricioperera.github.io/KDD/">Original site</a></span></footer>
+      </div>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

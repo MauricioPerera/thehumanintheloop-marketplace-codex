@@ -3,36 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Catálogo público de plugins Codex creados por Mauricio Perera: workflows, validadores y herramientas para ampliar Codex con control humano.">
+    <meta name="description" content="Catálogo público de plugins Codex y Design System Analyses creados por Mauricio Perera: workflows, validadores y contratos visuales.">
   <meta name="author" content="Mauricio Perera">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
   <meta name="theme-color" content="#17211d">
-  <meta name="keywords" content="Codex plugins, marketplace Codex, skills Codex, plugins IA, SEO GEO, TheHumanInTheLoop">
+    <meta name="keywords" content="Codex plugins, marketplace Codex, design system analysis, DESIGN.md, skills Codex, SEO GEO, TheHumanInTheLoop">
   <link rel="canonical" href="https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/">
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TheHumanInTheLoop Marketplace Codex">
   <meta property="og:title" content="TheHumanInTheLoop Marketplace Codex">
-  <meta property="og:description" content="Descubre plugins Codex para workflows, validación de contenido y herramientas con humano en el loop.">
+    <meta property="og:description" content="Descubre plugins Codex y Design System Analyses con contratos, validadores y previews navegables.">
   <meta property="og:url" content="https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/">
   <meta property="og:locale" content="es_MX">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="TheHumanInTheLoop Marketplace Codex">
-  <meta name="twitter:description" content="Catálogo público de plugins Codex creados por Mauricio Perera.">
+  <meta name="twitter:description" content="Catálogo público de plugins Codex y Design System Analyses creados por Mauricio Perera.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "TheHumanInTheLoop Marketplace Codex",
-    "description": "Catálogo público de plugins Codex creados por Mauricio Perera.",
+        "description": "Catálogo público de plugins Codex y Design System Analyses creados por Mauricio Perera.",
     "url": "https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/",
     "inLanguage": "es-MX",
     "author": {"@type": "Person", "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera", "sameAs": ["https://www.youtube.com/@Rckflr"]},
     "isPartOf": {"@type": "WebSite", "name": "TheHumanInTheLoop Marketplace Codex", "url": "https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/"},
     "mainEntity": {
       "@type": "ItemList",
-      "numberOfItems": 1,
+        "numberOfItems": 1,
       "itemListElement": [{
         "@type": "ListItem", "position": 1,
         "item": {
@@ -47,10 +47,29 @@
           "keywords": "SEO, GEO, content validation, Codex plugin"
         }
       }]
-    }
+    },
+    "hasPart": [{
+      "@type": "CreativeWork",
+      "name": "KDD — Knowledge-Driven Development Design System Analysis",
+      "url": "https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/kdd/",
+      "encodingFormat": "text/markdown",
+      "about": "https://mauricioperera.github.io/KDD/"
+    }, {
+      "@type": "CreativeWork",
+      "name": "Mercado Libre México Homepage Design System Analysis",
+      "url": "https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/mercadolibre/",
+      "encodingFormat": "text/markdown",
+      "about": "https://www.mercadolibre.com.mx/"
+    }, {
+      "@type": "CreativeWork",
+      "name": "TheHumanInTheLoop Marketplace Codex Design System Analysis",
+      "url": "https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/marketplace/",
+      "about": "https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/"
+    }]
   }
   </script>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="preview-modal.css">
 </head>
 <body>
   <header class="hero">
@@ -76,11 +95,11 @@
     <section id="catalogo" class="catalog wrap">
       <div class="section-heading">
         <div><p class="eyebrow">COLECCIÓN ACTUAL</p><h2>Explora el catálogo</h2></div>
-        <p class="section-note"><strong id="result-count">1</strong> plugin disponible<br>y creciendo.</p>
+        <p class="section-note"><strong id="result-count">4</strong> recursos disponibles<br>y creciendo.</p>
       </div>
       <div class="toolbar">
         <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar por nombre o capacidad…" aria-label="Buscar plugins"></label>
-        <div class="filters" role="group" aria-label="Filtrar por categoría"><button class="filter active" data-category="all">Todos</button><button class="filter" data-category="Productivity">Productividad</button></div>
+        <div class="filters" role="group" aria-label="Filtrar por categoría"><button class="filter active" data-category="all">Todos</button><button class="filter" data-category="Productivity">Productividad</button><button class="filter" data-category="Design System Analysis">Design Systems</button></div>
       </div>
       <div id="plugin-grid" class="plugin-grid"></div>
       <p id="empty-state" class="empty" hidden>No hay plugins que coincidan con tu búsqueda.</p>
@@ -88,14 +107,18 @@
 
     <section id="instalar" class="install-section">
       <div class="install wrap">
-        <div><p class="eyebrow">EMPEZAR</p><h2>Instala el marketplace<br>en tu entorno.</h2><p class="install-copy">Clona el repositorio y apunta Codex al catálogo local. Cada plugin conserva su manifiesto, skills y validadores.</p></div>
-        <div class="code-card"><div class="code-label">PowerShell</div><pre><code>git clone https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex
-codex plugin marketplace add .agents/plugins
-codex plugin install linter-seo-geo-2026</code></pre><button id="copy-command" class="copy-button">Copiar comando</button><span id="copy-status" class="copy-status" role="status"></span></div>
+        <div><p class="eyebrow">EMPEZAR SIN TECNICISMOS</p><h2>Pídeselo a Codex<br>por chat.</h2><p class="install-copy">Cada recurso tiene una acción clara. En los plugins, Codex prepara la instalación; en los Design System Analyses, prepara la importación de DESIGN.md, tokens, componentes y validadores en tu proyecto.</p><div class="install-steps"><div><b>1</b><span>Elige el recurso que quieres usar.</span></div><div><b>2</b><span>Pulsa “Abrir en Codex”: copia la solicitud y abre Codex.</span></div><div><b>3</b><span>Pega, envía y aprueba los cambios antes de aplicarlos.</span></div></div></div>
+        <div class="code-card"><div class="code-label">Solicitud para Codex</div><pre><code>Quiero instalar el plugin "linter-seo-geo-2026" desde este marketplace:
+https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex
+
+Instala únicamente ese plugin. Confirma el nombre exacto,
+indícame si necesitas autorización y dime cuándo esté listo
+para usarlo en un chat nuevo.</code></pre><button id="copy-command" class="copy-button">Copiar solicitud</button><span id="copy-status" class="copy-status" role="status"></span><p class="code-note">“Abrir en Codex” prepara la solicitud y la copia; por seguridad, tú debes pegarla, enviarla y aprobar cualquier instalación. También puedes abrir Codex → Plugins → buscar el marketplace → elegir el plugin → Instalar.</p></div>
       </div>
     </section>
   </main>
 
+  <dialog id="preview-dialog" class="preview-dialog" aria-labelledby="preview-title"><div class="preview-shell"><div class="preview-toolbar"><div><span class="eyebrow">PREVIEW EMBEBIDO</span><h2 id="preview-title">Design System Analysis</h2></div><button id="close-preview" class="preview-close" type="button" aria-label="Cerrar preview">×</button></div><iframe id="preview-frame" title="Design System Analysis preview" src="about:blank"></iframe></div></dialog>
   <footer class="footer wrap"><span>© 2026 Mauricio Perera</span><span>TheHumanInTheLoop Marketplace Codex</span><span class="footer-links"><a href="https://www.youtube.com/@Rckflr" target="_blank" rel="me noopener noreferrer">Canal de YouTube ↗</a><a href="https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex" target="_blank" rel="noreferrer">Código fuente ↗</a></span></footer>
   <script src="app.js"></script>
 </body>

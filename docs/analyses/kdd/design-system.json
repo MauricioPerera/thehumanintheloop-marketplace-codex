@@ -1,0 +1,47 @@
+{
+  "name": "KDD — Knowledge-Driven Development",
+  "description": "Sistema visual extraído del sitio público de presentación de KDD.",
+  "source": "https://mauricioperera.github.io/KDD/",
+  "observedAt": "2026-08-02",
+  "colors": {
+    "ink": "#1B2430",
+    "inkPanel": "#232E3D",
+    "inkLine": "#3A4557",
+    "inkText": "#E8E6DC",
+    "inkTextDim": "#ABB4C2",
+    "paper": "#EDEFE7",
+    "paperPanel": "#E3E6DA",
+    "paperLine": "#C4C8B8",
+    "paperText": "#1E2A2A",
+    "paperTextDim": "#57624F",
+    "seal": "#B58D3F",
+    "sealStrong": "#8F6E2E",
+    "verified": "#3F7A5C",
+    "flagged": "#A23B3B",
+    "terminal": "#141B24",
+    "terminalBar": "#1A2230",
+    "terminalLine": "#303D4F",
+    "familyAccentLight": "#6E520E",
+    "familyAccentDark": "#C79A3A"
+  },
+  "typography": {
+    "display": {"fontFamily": "Iowan Old Style, Palatino Linotype, Palatino, Book Antiqua, Georgia, serif", "fontSize": "3rem", "fontWeight": 400, "lineHeight": 1.15},
+    "heading": {"fontFamily": "Iowan Old Style, Palatino Linotype, Palatino, Book Antiqua, Georgia, serif", "fontSize": "2rem", "fontWeight": 400, "lineHeight": 1.15},
+    "body": {"fontFamily": "-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif", "fontSize": "16.5px", "fontWeight": 400, "lineHeight": 1.6},
+    "monoLabel": {"fontFamily": "SF Mono, Cascadia Code, JetBrains Mono, Consolas, Liberation Mono, monospace", "fontSize": "0.72rem", "fontWeight": 400, "lineHeight": 1.4, "letterSpacing": "0.16em", "textTransform": "uppercase"},
+    "stat": {"fontFamily": "SF Mono, Cascadia Code, JetBrains Mono, Consolas, Liberation Mono, monospace", "fontSize": "2.1rem", "fontWeight": 700, "lineHeight": 1.2}
+  },
+  "rounded": {"tab": "3px", "card": "4px", "terminal": "6px", "familyNode": "7px", "familyCore": "9px", "circle": "50%", "seal": "999px"},
+  "spacing": {"base": "1rem", "sectionVertical": "4.5rem", "heroVerticalTop": "5.5rem", "heroVerticalBottom": "4.5rem", "contentMeasure": "66ch", "contentWide": "1100px", "rail": "240px", "cardPadding": "1.6rem", "gridGap": "1.5rem", "microGap": ".6rem"},
+  "breakpoints": {"wideLayout": "960px", "heroStack": "980px", "twoColumnStack": "900px", "flowStack": "820px", "boundaryStack": "760px", "pillarStack": "700px", "domainSingleColumn": "520px"},
+  "components": {
+    "primary-button": {"backgroundColor": "{colors.seal}", "textColor": "{colors.ink}", "rounded": "{rounded.tab}", "padding": ".75em 1.3em", "typography": "{typography.body}", "states": ["default", "hover", "focus-visible"]},
+    "ghost-button": {"backgroundColor": "transparent", "textColor": "{colors.inkText}", "borderColor": "{colors.inkLine}", "rounded": "{rounded.tab}", "padding": ".75em 1.3em", "states": ["default", "hover", "focus-visible"]},
+    "pillar-card": {"backgroundColor": "{colors.paperPanel}", "textColor": "{colors.paperText}", "borderColor": "{colors.paperLine}", "rounded": "{rounded.card}", "padding": "{spacing.cardPadding}"},
+    "terminal-panel": {"backgroundColor": "{colors.terminal}", "textColor": "{colors.inkText}", "borderColor": "{colors.terminalLine}", "rounded": "{rounded.terminal}", "padding": "1.1em 1.2em 1.3em"},
+    "flow-step": {"backgroundColor": "{colors.paperPanel}", "borderColor": "{colors.paperLine}", "rounded": "{rounded.circle}", "size": "44px", "states": ["default", "active", "verified"]},
+    "stat-block": {"textColor": "{colors.paperText}", "valueTypography": "{typography.stat}", "descriptionTypography": "0.82rem body"},
+    "domain-tab": {"backgroundColor": "{colors.paperPanel}", "textColor": "{colors.paperText}", "borderColor": "{colors.paperLine}", "accentBorderTop": "3px solid {colors.seal}", "rounded": "2px", "padding": "1rem 1.1rem"},
+    "family-node": {"backgroundColor": "{colors.paperPanel}", "textColor": "{colors.paperText}", "borderColor": "{colors.paperLine}", "accentBorderLeft": "3px solid {colors.paperLine}", "rounded": "{rounded.familyNode}", "padding": ".9rem 1rem", "states": ["default", "hover", "self", "cousin"]}
+  }
+}

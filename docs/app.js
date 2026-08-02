@@ -2,7 +2,23 @@ const plugins = [{
   name: 'linter-seo-geo-2026', category: 'Productivity', icon: '⌁', version: '0.1.0',
   description: 'Analizador estático de artículos para SEO híbrido y GEO con validadores de prepublicación.',
   capabilities: ['SEO', 'GEO', 'Contenido'],
-  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/linter-seo-geo-2026'
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/linter-seo-geo-2026', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new'
+}];
+const analyses = [{
+  name: 'KDD — Knowledge-Driven Development', category: 'Design System Analysis', icon: 'DS', version: '1.0.0',
+  description: 'Análisis visual publicado con contrato duro/blando, tokens, componentes, responsive behavior y validadores.',
+  capabilities: ['Tokens', 'Components', 'Validation'],
+  url: './analyses/kdd/index.html', preview: './analyses/kdd/index.html', source: 'https://mauricioperera.github.io/KDD/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/kdd/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/kdd/design-system.json'
+}, {
+  name: 'Mercado Libre México — Homepage', category: 'Design System Analysis', icon: 'ML', version: '1.0.0',
+  description: 'Análisis externo del homepage público con tokens, búsqueda, cards, estados, responsive behavior y procedencia.',
+  capabilities: ['Commerce UI', 'Responsive', 'Validation'],
+  url: './analyses/mercadolibre/index.html', preview: './analyses/mercadolibre/index.html', source: 'https://www.mercadolibre.com.mx/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/mercadolibre/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/mercadolibre/design-system.json'
+}, {
+  name: 'TheHumanInTheLoop Marketplace Codex', category: 'Design System Analysis', icon: 'THL', version: '1.0.0',
+  description: 'Análisis del propio marketplace: identidad editorial, tokens, catálogo, instalación, previews y contrato de validación.',
+  capabilities: ['Marketplace UI', 'Codex Flow', 'Validation'],
+  url: './analyses/marketplace/index.html', preview: './analyses/marketplace/index.html', source: 'https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/marketplace/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/marketplace/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');
@@ -12,11 +28,51 @@ let category = 'all';
 
 function render() {
   const query = search.value.trim().toLowerCase();
-  const visible = plugins.filter(p => (category === 'all' || p.category === category) && `${p.name} ${p.description} ${p.capabilities.join(' ')}`.toLowerCase().includes(query));
+  const catalog = [...plugins, ...analyses];
+  const visible = catalog.filter(p => (category === 'all' || p.category === category) && `${p.name} ${p.description} ${p.capabilities.join(' ')}`.toLowerCase().includes(query));
   count.textContent = visible.length;
   empty.hidden = visible.length !== 0;
-  grid.innerHTML = visible.map(p => `<article class="plugin-card"><div class="card-top"><div class="plugin-icon" aria-hidden="true">${p.icon}</div><span class="badge">${p.category}</span></div><h3>${p.name}</h3><p>${p.description}</p><div class="card-footer"><span class="version">v${p.version} · ${p.capabilities.join(' · ')}</span><a class="card-link" href="${p.url}" target="_blank" rel="noreferrer">Ver plugin ↗</a></div></article>`).join('');
+  grid.innerHTML = visible.map(p => `<article class="plugin-card ${p.category === 'Design System Analysis' ? 'analysis-card' : ''}"><div class="card-top"><div class="plugin-icon" aria-hidden="true">${p.icon}</div><span class="badge">${p.category}</span></div><h3>${p.name}</h3><p>${p.description}</p>${p.preview ? `<div class="install-cta design-cta"><button class="install-link" type="button" data-open-codex="${p.name}" data-open-type="design" data-codex-url="${p.codexUrl}" data-design-md="${p.designMdUrl}" data-contract="${p.contractUrl}" data-source="${p.source}">Abrir diseño en Codex</button><span class="install-status" role="status" aria-live="polite"></span></div><div class="card-footer"><span class="version">v${p.version} · ${p.capabilities.join(' · ')}</span><button class="card-link preview-link" type="button" data-preview="${p.preview}" data-title="${p.name}">Ver preview ↗</button></div>` : `<div class="install-cta"><button class="install-link" type="button" data-open-codex="${p.name}" data-codex-url="${p.codexUrl}">Abrir en Codex</button><span class="install-status" role="status" aria-live="polite"></span></div><div class="card-footer"><span class="version">v${p.version} · ${p.capabilities.join(' · ')}</span><a class="card-link" href="${p.url}" target="_blank" rel="noreferrer">GitHub ↗</a></div>`}</article>`).join('');
+  document.querySelectorAll('[data-preview]').forEach(button => button.addEventListener('click', () => openPreview(button.dataset.preview, button.dataset.title)));
+  document.querySelectorAll('[data-open-codex]').forEach(button => button.addEventListener('click', () => {
+    const prompt = button.dataset.openType === 'design' ? buildDesignPrompt(button) : buildInstallPrompt(button.dataset.openCodex);
+    const status = button.parentElement.querySelector('.install-status');
+    const codexUrl = `${button.dataset.codexUrl}?prompt=${encodeURIComponent(prompt)}`;
+    const codexWindow = window.open(codexUrl, '_blank', 'noopener,noreferrer');
+    const copyPromise = navigator.clipboard?.writeText(prompt);
+    if (!copyPromise) {
+      button.textContent = 'Abrir Codex';
+      status.textContent = 'No se pudo copiar automáticamente. Puedes copiar la solicitud desde el chat o intentarlo de nuevo.';
+      return;
+    }
+    copyPromise.then(() => {
+      button.textContent = 'Solicitud copiada';
+      status.innerHTML = `${codexWindow ? 'Sesión preparada. ' : 'Codex fue bloqueado. '}Si la app no se abre, <a href="https://chatgpt.com/codex" target="_blank" rel="noreferrer">abre Codex web</a> y pega la solicitud.`;
+    }).catch(() => {
+      button.textContent = 'Abrir Codex';
+      status.textContent = 'No se pudo copiar automáticamente. Puedes copiar la solicitud desde el chat o intentarlo de nuevo.';
+    });
+  }));
 }
+
+function buildInstallPrompt(pluginName) {
+  return `Quiero instalar el plugin "${pluginName}" desde este marketplace:\nhttps://github.com/MauricioPerera/thehumanintheloop-marketplace-codex\n\nInstala únicamente ese plugin. Confirma el nombre exacto, indícame si necesitas autorización y dime cuándo esté listo para usarlo en un chat nuevo.`;
+}
+
+function buildDesignPrompt(button) {
+  return `Quiero importar el Design System Analysis "${button.dataset.openCodex}" en mi proyecto actual.\n\nUsa DESIGN.md como contrato principal y design-system.json como contrato estructurado:\n- DESIGN.md: ${button.dataset.designMd}\n- design-system.json: ${button.dataset.contract}\n\nEl sitio analizado originalmente es: ${button.dataset.source}\n\nPrimero inspecciona el proyecto actual y explica dónde integrarás los tokens, componentes, estados, layout y responsive behavior. Después aplica el sistema de diseño respetando sus validadores y señala cualquier conflicto antes de modificar archivos. No copies contenido ni activos propietarios del sitio de referencia.`;
+}
+
+const previewDialog = document.querySelector('#preview-dialog');
+const previewFrame = document.querySelector('#preview-frame');
+const previewTitle = document.querySelector('#preview-title');
+function openPreview(url, title) {
+  previewTitle.textContent = title;
+  previewFrame.src = url;
+  previewDialog.showModal();
+}
+document.querySelector('#close-preview').addEventListener('click', () => { previewFrame.src = 'about:blank'; previewDialog.close(); });
+previewDialog.addEventListener('click', event => { if (event.target === previewDialog) { previewFrame.src = 'about:blank'; previewDialog.close(); } });
 search.addEventListener('input', render);
 document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => { document.querySelector('.filter.active').classList.remove('active'); button.classList.add('active'); category = button.dataset.category; render(); }));
 document.querySelector('#copy-command').addEventListener('click', async () => { const text = document.querySelector('.code-card code').textContent; try { await navigator.clipboard.writeText(text); document.querySelector('#copy-status').textContent = 'Copiado'; } catch { document.querySelector('#copy-status').textContent = 'Selecciona y copia el comando'; } });

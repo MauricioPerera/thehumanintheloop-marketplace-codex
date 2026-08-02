@@ -1,0 +1,10 @@
+.preview-link{background:none;border:0;color:inherit;cursor:pointer;font:inherit;font-weight:800;padding:0;text-decoration:underline;text-underline-offset:3px}
+.preview-dialog{border:0;padding:0;width:min(1180px,94vw);height:min(850px,92vh);background:transparent;overflow:visible}
+.preview-dialog::backdrop{background:rgba(23,33,29,.72);backdrop-filter:blur(3px)}
+.preview-shell{height:100%;display:flex;flex-direction:column;background:#f5f5ef;border-radius:18px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.3)}
+.preview-toolbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:14px 20px;background:#17211d;color:#fff;border-bottom:1px solid rgba(255,255,255,.14)}
+.preview-toolbar .eyebrow{margin:0;color:#d7f36a;font-size:10px}.preview-toolbar h2{margin:3px 0 0;font:600 18px/1.2 Inter,ui-sans-serif,system-ui,sans-serif}
+.preview-close{width:36px;height:36px;border:1px solid rgba(255,255,255,.25);border-radius:50%;background:transparent;color:#fff;font-size:24px;line-height:1;cursor:pointer}.preview-close:hover{background:rgba(255,255,255,.12)}
+.preview-shell iframe{width:100%;height:100%;border:0;background:#fff}
+.install-steps{display:grid;gap:10px;margin-top:24px;max-width:430px}.install-steps div{display:flex;align-items:center;gap:12px;color:#56621c;font-size:.9rem}.install-steps b{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#17211d;color:#d7f36a;font-size:.75rem}.code-note{color:#b7c4bd;font-size:.72rem;line-height:1.45;margin:14px 0 0}
+.install-cta{margin-top:18px}.install-link{display:block;width:100%;background:#ff704e;border:0;border-radius:999px;cursor:pointer;font:inherit;font-weight:800;padding:13px 16px;color:#fff;text-align:center;transition:transform .2s,background .2s}.install-link:hover{background:#17211d;transform:translateY(-2px)}.install-status{display:block;min-height:1.2em;margin-top:8px;color:#56621c;font-size:.72rem;text-align:center}.install-status a{color:inherit;font-weight:800;text-underline-offset:2px}
