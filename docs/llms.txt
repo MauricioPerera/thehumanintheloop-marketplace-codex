@@ -6,6 +6,8 @@
 
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
+Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
+
 ## Plugin catalog
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)

@@ -10,34 +10,34 @@
       "name": "linter-seo-geo-2026",
       "displayName": "Auditor SEO/GEO 2026",
       "source": "./plugins/linter-seo-geo-2026",
-      "category": "productivity"
+      "category": "Content & Editorial"
     },
     {
       "name": "marketplace-validator",
       "displayName": "Marketplace Validator",
       "source": "./plugins/marketplace-validator",
-      "category": "productivity"
+      "category": "Marketplace & Quality"
     },
     {
       "name": "design-system-auditor",
       "displayName": "Design System Auditor",
       "source": "./plugins/design-system-auditor",
-      "category": "design"
+      "category": "Design Systems"
     },
     {
       "name": "content-fact-checker",
       "displayName": "Content Fact Checker",
       "source": "./plugins/content-fact-checker",
-      "category": "productivity"
+      "category": "Content & Editorial"
     },
-    {"name":"repo-quality-gate","displayName":"Repo Quality Gate","source":"./plugins/repo-quality-gate","category":"productivity"},
-    {"name":"technical-docs-linter","displayName":"Technical Docs Linter","source":"./plugins/technical-docs-linter","category":"productivity"},
-    {"name":"accessibility-auditor","displayName":"Accessibility Auditor","source":"./plugins/accessibility-auditor","category":"accessibility"}
-    ,{"name":"privacy-risk-auditor","displayName":"Privacy Risk Auditor","source":"./plugins/privacy-risk-auditor","category":"security"}
-    ,{"name":"release-readiness","displayName":"Release Readiness","source":"./plugins/release-readiness","category":"productivity"}
-    ,{"name":"prompt-contract-linter","displayName":"Prompt Contract Linter","source":"./plugins/prompt-contract-linter","category":"productivity"}
-    ,{"name":"research-evidence-builder","displayName":"Research Evidence Builder","source":"./plugins/research-evidence-builder","category":"research"}
-    ,{"name":"brand-voice-validator","displayName":"Brand Voice Validator","source":"./plugins/brand-voice-validator","category":"content"}
-    ,{"name":"api-contract-linter","displayName":"API Contract Linter","source":"./plugins/api-contract-linter","category":"development"}
+    {"name":"repo-quality-gate","displayName":"Repo Quality Gate","source":"./plugins/repo-quality-gate","category":"Marketplace & Quality"},
+    {"name":"technical-docs-linter","displayName":"Technical Docs Linter","source":"./plugins/technical-docs-linter","category":"Developer Tools"},
+    {"name":"accessibility-auditor","displayName":"Accessibility Auditor","source":"./plugins/accessibility-auditor","category":"Accessibility & UX"},
+    {"name":"privacy-risk-auditor","displayName":"Privacy Risk Auditor","source":"./plugins/privacy-risk-auditor","category":"Security & Privacy"},
+    {"name":"release-readiness","displayName":"Release Readiness","source":"./plugins/release-readiness","category":"Marketplace & Quality"},
+    {"name":"prompt-contract-linter","displayName":"Prompt Contract Linter","source":"./plugins/prompt-contract-linter","category":"AI & Prompt Engineering"},
+    {"name":"research-evidence-builder","displayName":"Research Evidence Builder","source":"./plugins/research-evidence-builder","category":"Research & Evidence"},
+    {"name":"brand-voice-validator","displayName":"Brand Voice Validator","source":"./plugins/brand-voice-validator","category":"Content & Editorial"},
+    {"name":"api-contract-linter","displayName":"API Contract Linter","source":"./plugins/api-contract-linter","category":"Developer Tools"}
   ]
 }

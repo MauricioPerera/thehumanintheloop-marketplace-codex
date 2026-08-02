@@ -18,6 +18,19 @@ Marketplace público de plugins, skills y Design System Analyses para Claude Cod
 - `Brand Voice Validator` (`brand-voice-validator`): valida tono y consistencia editorial.
 - `API Contract Linter` (`api-contract-linter`): audita contratos OpenAPI y ejemplos.
 
+## Categorías
+
+El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
+
+- Content & Editorial
+- Design Systems
+- Marketplace & Quality
+- Developer Tools
+- Accessibility & UX
+- Security & Privacy
+- Research & Evidence
+- AI & Prompt Engineering
+
 ## Estructura
 
 - `.claude-plugin/marketplace.json`: catálogo compatible con Claude Code.
