@@ -45,4 +45,4 @@ En Claude Desktop, usa `+ → Plugins → Add plugin`; los comandos `/plugin` so
 
 En Codex, registra el marketplace desde Plugins y busca `linter-seo-geo-2026`, o usa el botón de instalación de la [GitHub Page](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/).
 
-Este repositorio no incluye todavía una licencia. Añade una licencia explícita antes de autorizar la reutilización comercial o redistribución por terceros.
+Este repositorio se distribuye bajo la [licencia MIT](LICENSE). Los análisis de terceros y las marcas o activos de sus respectivos sitios conservan sus derechos y condiciones de uso.
