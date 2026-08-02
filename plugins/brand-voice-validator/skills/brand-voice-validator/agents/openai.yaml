@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brand Voice Validator"
+  short_description: "Valida tono, vocabulario y claims editoriales."
+  default_prompt: "Audita este texto contra la voz de marca."

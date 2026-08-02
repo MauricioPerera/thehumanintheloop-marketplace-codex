@@ -36,5 +36,8 @@
     ,{"name":"privacy-risk-auditor","displayName":"Privacy Risk Auditor","source":"./plugins/privacy-risk-auditor","category":"security"}
     ,{"name":"release-readiness","displayName":"Release Readiness","source":"./plugins/release-readiness","category":"productivity"}
     ,{"name":"prompt-contract-linter","displayName":"Prompt Contract Linter","source":"./plugins/prompt-contract-linter","category":"productivity"}
+    ,{"name":"research-evidence-builder","displayName":"Research Evidence Builder","source":"./plugins/research-evidence-builder","category":"research"}
+    ,{"name":"brand-voice-validator","displayName":"Brand Voice Validator","source":"./plugins/brand-voice-validator","category":"content"}
+    ,{"name":"api-contract-linter","displayName":"API Contract Linter","source":"./plugins/api-contract-linter","category":"development"}
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "name": "brand-voice-validator",
+  "version": "0.1.0",
+  "description": "Valida tono, vocabulario, claims y consistencia editorial.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Brand Voice Validator",
+    "shortDescription": "Use Brand Voice Validator in Codex.",
+    "longDescription": "Brand Voice Validator adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Brand Voice Validator."
+  }
+}

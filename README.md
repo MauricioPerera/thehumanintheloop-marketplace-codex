@@ -14,6 +14,9 @@ Marketplace público de plugins, skills y Design System Analyses para Claude Cod
 - `Privacy Risk Auditor` (`privacy-risk-auditor`): detecta PII, secretos y credenciales.
 - `Release Readiness` (`release-readiness`): valida si el repositorio está listo para publicar.
 - `Prompt Contract Linter` (`prompt-contract-linter`): valida prompts como contratos ejecutables.
+- `Research Evidence Builder` (`research-evidence-builder`): construye matrices de evidencia.
+- `Brand Voice Validator` (`brand-voice-validator`): valida tono y consistencia editorial.
+- `API Contract Linter` (`api-contract-linter`): audita contratos OpenAPI y ejemplos.
 
 ## Estructura
 

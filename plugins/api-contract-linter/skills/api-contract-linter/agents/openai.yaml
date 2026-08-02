@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Contract Linter"
+  short_description: "Valida contratos OpenAPI y ejemplos."
+  default_prompt: "Audita este contrato API y sus ejemplos."

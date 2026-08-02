@@ -63,6 +63,21 @@ This marketplace publishes reusable Claude Code and Codex plugins, shared skills
 - Description: Validates prompt objectives, inputs, outputs, constraints, and acceptance criteria.
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/prompt-contract-linter
 
+### Research Evidence Builder (`research-evidence-builder`)
+
+- Description: Builds research reports and evidence matrices with sources, dates, and attribution.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/research-evidence-builder
+
+### Brand Voice Validator (`brand-voice-validator`)
+
+- Description: Validates tone, vocabulary, claims, clarity, and editorial consistency.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/brand-voice-validator
+
+### API Contract Linter (`api-contract-linter`)
+
+- Description: Audits OpenAPI contracts, paths, operations, responses, and examples.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/api-contract-linter
+
 ## Installation
 
 In Claude Code, add `MauricioPerera/thehumanintheloop-marketplace-codex` and install `linter-seo-geo-2026@thehumanintheloop-marketplace-claude`. In Codex, register the `.agents/plugins` marketplace and install `linter-seo-geo-2026`. Both platforms consume the same plugin directory and shared skills.

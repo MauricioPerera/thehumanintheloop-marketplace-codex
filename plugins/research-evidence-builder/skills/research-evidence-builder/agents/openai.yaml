@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Evidence Builder"
+  short_description: "Construye informes con fuentes y evidencia."
+  default_prompt: "Construye una matriz de evidencia para esta investigacion."
