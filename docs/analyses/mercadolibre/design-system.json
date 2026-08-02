@@ -1,0 +1,46 @@
+{
+  "name": "Mercado Libre México — Homepage Analysis",
+  "version": "1.0.0",
+  "description": "Análisis visual y técnico del homepage público de Mercado Libre México; no es un sistema oficial.",
+  "source": "https://www.mercadolibre.com.mx/",
+  "observedAt": "2026-08-02",
+  "colors": {
+    "primary": "#FFE600",
+    "surface": "#FFFFFF",
+    "pageBackground": "#EBEBEB",
+    "text": "#333333",
+    "textStrong": "#000000",
+    "textMuted": "#666666",
+    "line": "#E6E6E6",
+    "blue": "#3483FA",
+    "blueFocus": "#2968C8",
+    "blueText": "#1259C3",
+    "green": "#00A650",
+    "red": "#F23D4F",
+    "orange": "#FF7733",
+    "softGray": "#F5F5F5",
+    "softBlue": "#E5F0FF",
+    "softYellow": "#FFF1CB",
+    "blackOverlay": "rgba(0,0,0,.1)"
+  },
+  "typography": {
+    "body": {"fontFamily": "Proxima Nova, -apple-system, Roboto, Arial, sans-serif", "fontSize": "16px", "fontWeight": 400, "lineHeight": 1.4},
+    "label": {"fontFamily": "Proxima Nova, -apple-system, Roboto, Arial, sans-serif", "fontSize": "14px", "fontWeight": 400, "lineHeight": 1.25},
+    "labelStrong": {"fontFamily": "Proxima Nova, -apple-system, Roboto, Arial, sans-serif", "fontSize": "14px", "fontWeight": 600, "lineHeight": 1.25},
+    "cardTitle": {"fontFamily": "Proxima Nova, -apple-system, Roboto, Arial, sans-serif", "fontSize": "16px", "fontWeight": 600, "lineHeight": "22px"},
+    "price": {"fontFamily": "Proxima Nova, -apple-system, Roboto, Arial, sans-serif", "fontSize": "24px", "fontWeight": 400, "lineHeight": 1.1},
+    "small": {"fontFamily": "Proxima Nova, -apple-system, Roboto, Arial, sans-serif", "fontSize": "12px", "fontWeight": 400, "lineHeight": "15px"}
+  },
+  "rounded": {"input": "2px", "message": "3px", "card": "4px", "control": "6px", "tag": "8px", "circle": "999px"},
+  "spacing": {"xxs": "2px", "xs": "4px", "sm": "8px", "md": "12px", "lg": "16px", "xl": "20px", "section": "24px", "carouselGap": "20px", "navHorizontal": "10px", "contentMax": "1200px"},
+  "breakpoints": {"mobile": "768px", "navHideItem": "1095px", "navHideItem2": "1200px", "desktopContent": "1200px"},
+  "components": {
+    "site-header": {"backgroundColor": "{colors.primary}", "height": "100px", "padding": "8px 10px", "width": "100%"},
+    "search-input": {"backgroundColor": "{colors.surface}", "textColor": "{colors.textStrong}", "borderColor": "{colors.blue}", "rounded": "{rounded.input}", "height": "40px", "padding": "10px 60px 10px 15px", "typography": "{typography.body}", "states": ["default", "focus", "loading"]},
+    "primary-button": {"backgroundColor": "{colors.blue}", "textColor": "{colors.surface}", "rounded": "{rounded.control}", "padding": "10px 16px", "typography": "{typography.labelStrong}", "states": ["default", "hover", "active", "focus", "disabled"]},
+    "product-card": {"backgroundColor": "{colors.surface}", "textColor": "{colors.text}", "borderColor": "{colors.line}", "rounded": "{rounded.card}", "padding": "16px", "shadow": "0 1px 1px 0 rgba(0,0,0,.1)", "states": ["default", "hover", "focus"]},
+    "benefit-card": {"backgroundColor": "{colors.surface}", "textColor": "{colors.textStrong}", "rounded": "{rounded.card}", "padding": "16px", "states": ["default", "hover"]},
+    "status-tag": {"backgroundColor": "{colors.green}", "textColor": "{colors.surface}", "rounded": "{rounded.tag}", "padding": "2px 4px", "typography": "{typography.small}"},
+    "carousel": {"backgroundColor": "{colors.surface}", "gap": "{spacing.carouselGap}", "states": ["default", "previous", "next", "scroll"]}
+  }
+}

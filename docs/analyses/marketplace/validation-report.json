@@ -1,0 +1,15 @@
+{
+  "status": "PASSED",
+  "errors": 0,
+  "warnings": 3,
+  "source": "DESIGN.md",
+  "checks": [
+    {"id": "frontmatter", "status": "PASSED", "detail": "Required metadata and three contract layers are present."},
+    {"id": "tokens", "status": "PASSED", "detail": "10 colors, 7 typography roles, 5 radii and 8 spacing tokens are represented."},
+    {"id": "references", "status": "PASSED", "detail": "All component token references resolve to defined namespaces."},
+    {"id": "responsive", "status": "PASSED", "detail": "Desktop and mobile behavior with a 700px breakpoint is documented."},
+    {"id": "focus-runtime", "status": "WARNING", "detail": "Full keyboard focus matrix requires a runtime browser pass."},
+    {"id": "codex-protocol", "status": "WARNING", "detail": "codex://new depends on Codex Desktop registration."},
+    {"id": "dynamic-catalog", "status": "WARNING", "detail": "Catalog contents can change as new resources are published."}
+  ]
+}

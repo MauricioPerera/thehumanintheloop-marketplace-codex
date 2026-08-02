@@ -1,0 +1,23 @@
+{
+  "source": "https://mauricioperera.github.io/KDD/",
+  "observedAt": "2026-08-02",
+  "artifacts": ["DESIGN.md", "design-system.json"],
+  "checks": {
+    "sourceUrl": "passed",
+    "htmlCssInspection": "passed",
+    "visualInspection": "passed",
+    "tokenExtraction": "passed",
+    "provenance": "passed",
+    "contrast": "warning_runtime_sampling_required",
+    "interactionStates": "warning_runtime_matrix_required"
+  },
+  "observedFacts": {
+    "exhibitSections": 8,
+    "navigationItems": 8,
+    "statBlocks": 5,
+    "heroColumns": 2,
+    "wideRailPx": 240,
+    "contentWidePx": 1100,
+    "responsiveBreakpointsPx": [980, 960, 900, 860, 820, 760, 700, 520]
+  }
+}

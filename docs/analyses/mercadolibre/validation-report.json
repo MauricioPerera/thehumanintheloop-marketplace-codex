@@ -1,0 +1,9 @@
+{
+  "source": "https://www.mercadolibre.com.mx/",
+  "observedAt": "2026-08-02",
+  "status": "PASSED_WITH_WARNINGS",
+  "validator": {"status": "PASSED", "errors": 0, "tokenCount": 105},
+  "googleDesignMdLint": {"errors": 0, "warnings": 0},
+  "observedFacts": {"headerHeightPx": 100, "searchHeightPx": 40, "navMaxWidthPx": 1220, "desktopCategoryCardWidthPx": 270, "carouselGapPx": 20, "homeModules": 11, "altAttributesObserved": 73},
+  "warnings": ["Runtime contrast/state matrix still required", "Dynamic campaigns and mobile module order are not stable", "Review license/trademark before redistributing proprietary assets"]
+}
