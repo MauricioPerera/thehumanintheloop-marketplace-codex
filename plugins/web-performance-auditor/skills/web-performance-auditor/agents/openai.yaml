@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Performance Auditor"
+  short_description: "Audita metricas y riesgos de rendimiento web."
+  default_prompt: "Audita el rendimiento de este sitio."

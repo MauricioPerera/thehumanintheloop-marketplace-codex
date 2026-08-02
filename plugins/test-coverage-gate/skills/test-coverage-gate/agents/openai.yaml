@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Coverage Gate"
+  short_description: "Valida evidencia de pruebas y cobertura."
+  default_prompt: "Evalua la evidencia de tests de este proyecto."

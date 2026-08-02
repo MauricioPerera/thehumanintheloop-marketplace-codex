@@ -1,0 +1,18 @@
+{
+  "name": "test-coverage-gate",
+  "version": "0.1.0",
+  "description": "Valida evidencia de pruebas, cobertura y criterios de calidad antes de publicar.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Test Coverage Gate",
+    "shortDescription": "Use Test Coverage Gate in Codex.",
+    "longDescription": "Test Coverage Gate adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Test Coverage Gate."
+  }
+}

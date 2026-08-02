@@ -1,0 +1,18 @@
+{
+  "name": "dependency-risk-auditor",
+  "version": "0.1.0",
+  "description": "Detecta dependencias obsoletas, vulnerables o sin procedencia clara.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dependency Risk Auditor",
+    "shortDescription": "Use Dependency Risk Auditor in Codex.",
+    "longDescription": "Dependency Risk Auditor adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Dependency Risk Auditor."
+  }
+}

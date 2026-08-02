@@ -17,6 +17,9 @@ Marketplace público de plugins, skills y Design System Analyses para Claude Cod
 - `Research Evidence Builder` (`research-evidence-builder`): construye matrices de evidencia.
 - `Brand Voice Validator` (`brand-voice-validator`): valida tono y consistencia editorial.
 - `API Contract Linter` (`api-contract-linter`): audita contratos OpenAPI y ejemplos.
+- `Web Performance Auditor` (`web-performance-auditor`): audita carga y Core Web Vitals.
+- `Dependency Risk Auditor` (`dependency-risk-auditor`): revisa dependencias y lockfiles.
+- `Test Coverage Gate` (`test-coverage-gate`): valida evidencia de tests y cobertura.
 
 ## Categorías
 

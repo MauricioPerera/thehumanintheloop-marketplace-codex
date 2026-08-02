@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dependency Risk Auditor"
+  short_description: "Detecta riesgos en dependencias."
+  default_prompt: "Audita las dependencias de este proyecto."

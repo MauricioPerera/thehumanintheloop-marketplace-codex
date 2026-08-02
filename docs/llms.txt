@@ -80,6 +80,21 @@ Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality
 - Description: Audits OpenAPI contracts, paths, operations, responses, and examples.
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/api-contract-linter
 
+### Web Performance Auditor (`web-performance-auditor`)
+
+- Description: Audits loading resources and Core Web Vitals with evidence-based findings.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/web-performance-auditor
+
+### Dependency Risk Auditor (`dependency-risk-auditor`)
+
+- Description: Reviews dependencies, lockfiles, vulnerabilities, and supply-chain risks.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/dependency-risk-auditor
+
+### Test Coverage Gate (`test-coverage-gate`)
+
+- Description: Validates test evidence, reports, coverage, and quality thresholds before publishing.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/test-coverage-gate
+
 ## Installation
 
 In Claude Code, add `MauricioPerera/thehumanintheloop-marketplace-codex` and install `linter-seo-geo-2026@thehumanintheloop-marketplace-claude`. In Codex, register the `.agents/plugins` marketplace and install `linter-seo-geo-2026`. Both platforms consume the same plugin directory and shared skills.

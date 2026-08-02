@@ -38,6 +38,9 @@
     {"name":"prompt-contract-linter","displayName":"Prompt Contract Linter","source":"./plugins/prompt-contract-linter","category":"AI & Prompt Engineering"},
     {"name":"research-evidence-builder","displayName":"Research Evidence Builder","source":"./plugins/research-evidence-builder","category":"Research & Evidence"},
     {"name":"brand-voice-validator","displayName":"Brand Voice Validator","source":"./plugins/brand-voice-validator","category":"Content & Editorial"},
-    {"name":"api-contract-linter","displayName":"API Contract Linter","source":"./plugins/api-contract-linter","category":"Developer Tools"}
+    {"name":"api-contract-linter","displayName":"API Contract Linter","source":"./plugins/api-contract-linter","category":"Developer Tools"},
+    {"name":"web-performance-auditor","displayName":"Web Performance Auditor","source":"./plugins/web-performance-auditor","category":"Developer Tools"},
+    {"name":"dependency-risk-auditor","displayName":"Dependency Risk Auditor","source":"./plugins/dependency-risk-auditor","category":"Security & Privacy"},
+    {"name":"test-coverage-gate","displayName":"Test Coverage Gate","source":"./plugins/test-coverage-gate","category":"Marketplace & Quality"}
   ]
 }

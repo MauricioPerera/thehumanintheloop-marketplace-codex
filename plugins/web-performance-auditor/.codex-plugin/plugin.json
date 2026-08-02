@@ -1,0 +1,18 @@
+{
+  "name": "web-performance-auditor",
+  "version": "0.1.0",
+  "description": "Audita metricas, recursos bloqueantes y riesgos de rendimiento web.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Web Performance Auditor",
+    "shortDescription": "Use Web Performance Auditor in Codex.",
+    "longDescription": "Web Performance Auditor adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Web Performance Auditor."
+  }
+}
