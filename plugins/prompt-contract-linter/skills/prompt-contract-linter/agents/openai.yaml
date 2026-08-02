@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prompt Contract Linter"
+  short_description: "Valida contratos y criterios de aceptacion de prompts."
+  default_prompt: "Audita este prompt como un contrato ejecutable."

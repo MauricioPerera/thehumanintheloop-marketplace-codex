@@ -1,0 +1,18 @@
+{
+  "name": "prompt-contract-linter",
+  "version": "0.1.0",
+  "description": "Valida contratos, entradas, salidas y criterios de aceptación de prompts.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Prompt Contract Linter",
+    "shortDescription": "Use Prompt Contract Linter in Codex.",
+    "longDescription": "Prompt Contract Linter adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Prompt Contract Linter."
+  }
+}

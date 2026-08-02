@@ -11,6 +11,9 @@ Marketplace público de plugins, skills y Design System Analyses para Claude Cod
 - `Repo Quality Gate` (`repo-quality-gate`): revisa repositorios antes de commit, PR o release.
 - `Technical Docs Linter` (`technical-docs-linter`): valida documentación, ejemplos, comandos y enlaces.
 - `Accessibility Auditor` (`accessibility-auditor`): audita HTML, ARIA, formularios y teclado.
+- `Privacy Risk Auditor` (`privacy-risk-auditor`): detecta PII, secretos y credenciales.
+- `Release Readiness` (`release-readiness`): valida si el repositorio está listo para publicar.
+- `Prompt Contract Linter` (`prompt-contract-linter`): valida prompts como contratos ejecutables.
 
 ## Estructura
 

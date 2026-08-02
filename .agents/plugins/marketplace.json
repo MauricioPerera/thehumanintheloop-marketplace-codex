@@ -87,6 +87,42 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "privacy-risk-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/privacy-risk-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "release-readiness",
+      "source": {
+        "source": "local",
+        "path": "./plugins/release-readiness"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "prompt-contract-linter",
+      "source": {
+        "source": "local",
+        "path": "./plugins/prompt-contract-linter"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }

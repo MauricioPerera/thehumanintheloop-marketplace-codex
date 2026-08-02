@@ -48,6 +48,21 @@ This marketplace publishes reusable Claude Code and Codex plugins, shared skills
 - Description: Audits HTML, ARIA, accessible names, forms, contrast, and keyboard behavior.
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/accessibility-auditor
 
+### Privacy Risk Auditor (`privacy-risk-auditor`)
+
+- Description: Detects PII, secrets, credentials, and privacy risks before sharing or deploying a repository.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/privacy-risk-auditor
+
+### Release Readiness (`release-readiness`)
+
+- Description: Checks versioning, changelog, license, README, tests, and CI evidence before a release.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/release-readiness
+
+### Prompt Contract Linter (`prompt-contract-linter`)
+
+- Description: Validates prompt objectives, inputs, outputs, constraints, and acceptance criteria.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/prompt-contract-linter
+
 ## Installation
 
 In Claude Code, add `MauricioPerera/thehumanintheloop-marketplace-codex` and install `linter-seo-geo-2026@thehumanintheloop-marketplace-claude`. In Codex, register the `.agents/plugins` marketplace and install `linter-seo-geo-2026`. Both platforms consume the same plugin directory and shared skills.

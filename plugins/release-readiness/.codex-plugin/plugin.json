@@ -1,0 +1,18 @@
+{
+  "name": "release-readiness",
+  "version": "0.1.0",
+  "description": "Valida si un proyecto está listo para un release o publicación.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Release Readiness",
+    "shortDescription": "Use Release Readiness in Codex.",
+    "longDescription": "Release Readiness adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Release Readiness."
+  }
+}

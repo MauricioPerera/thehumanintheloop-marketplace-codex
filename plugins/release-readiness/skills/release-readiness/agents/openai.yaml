@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Readiness"
+  short_description: "Valida si un proyecto esta listo para publicar."
+  default_prompt: "Evalua si este proyecto esta listo para un release."

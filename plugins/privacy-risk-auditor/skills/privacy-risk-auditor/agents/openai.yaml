@@ -1,0 +1,4 @@
+interface:
+  display_name: "Privacy Risk Auditor"
+  short_description: "Detecta PII, secretos y riesgos de privacidad."
+  default_prompt: "Audita este repositorio en busca de riesgos de privacidad."

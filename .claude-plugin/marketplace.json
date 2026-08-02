@@ -33,5 +33,8 @@
     {"name":"repo-quality-gate","displayName":"Repo Quality Gate","source":"./plugins/repo-quality-gate","category":"productivity"},
     {"name":"technical-docs-linter","displayName":"Technical Docs Linter","source":"./plugins/technical-docs-linter","category":"productivity"},
     {"name":"accessibility-auditor","displayName":"Accessibility Auditor","source":"./plugins/accessibility-auditor","category":"accessibility"}
+    ,{"name":"privacy-risk-auditor","displayName":"Privacy Risk Auditor","source":"./plugins/privacy-risk-auditor","category":"security"}
+    ,{"name":"release-readiness","displayName":"Release Readiness","source":"./plugins/release-readiness","category":"productivity"}
+    ,{"name":"prompt-contract-linter","displayName":"Prompt Contract Linter","source":"./plugins/prompt-contract-linter","category":"productivity"}
   ]
 }
