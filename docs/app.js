@@ -3,6 +3,18 @@ const plugins = [{
   description: 'Validador de contenido para buscadores y motores generativos con controles de prepublicación.',
   capabilities: ['SEO', 'GEO', 'Contenido'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/linter-seo-geo-2026', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'marketplace-validator', displayName: 'Marketplace Validator', category: 'Productivity', icon: 'MV', version: '0.1.0',
+  description: 'Valida manifests, rutas, sincronización y estructura dual Claude Code/Codex antes de publicar.',
+  capabilities: ['Marketplace', 'Validation', 'Claude + Codex'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/marketplace-validator', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'design-system-auditor', displayName: 'Design System Auditor', category: 'Design System Analysis', icon: 'DS', version: '0.1.0',
+  description: 'Genera DESIGN.md, tokens, componentes y validadores a partir de un sitio o proyecto.',
+  capabilities: ['DESIGN.md', 'Tokens', 'Validation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/design-system-auditor', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'content-fact-checker', displayName: 'Content Fact Checker', category: 'Productivity', icon: 'FC', version: '0.1.0',
+  description: 'Detecta afirmaciones verificables y exige fuentes, fechas y atribuciones antes de publicar.',
+  capabilities: ['Facts', 'Sources', 'Evidence'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/content-fact-checker', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design System Analysis', icon: 'DS', version: '1.0.0',

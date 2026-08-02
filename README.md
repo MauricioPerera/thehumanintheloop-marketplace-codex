@@ -5,6 +5,9 @@ Marketplace público de plugins, skills y Design System Analyses para Claude Cod
 ## Plugins disponibles
 
 - `Auditor SEO/GEO 2026` (`linter-seo-geo-2026`): validador de contenido para buscadores y motores generativos.
+- `Marketplace Validator` (`marketplace-validator`): valida manifests y sincronización Claude Code/Codex.
+- `Design System Auditor` (`design-system-auditor`): genera contratos `DESIGN.md`, tokens y validadores.
+- `Content Fact Checker` (`content-fact-checker`): exige fuentes, fechas y evidencia para afirmaciones.
 
 ## Estructura
 

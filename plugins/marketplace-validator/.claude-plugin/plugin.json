@@ -1,0 +1,10 @@
+{
+  "name": "marketplace-validator",
+  "displayName": "Marketplace Validator",
+  "version": "0.1.0",
+  "description": "Valida marketplaces y plugins para Claude Code y Codex antes de publicar.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["marketplace", "validation", "claude-code", "codex"]
+}

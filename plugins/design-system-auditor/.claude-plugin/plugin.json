@@ -1,0 +1,10 @@
+{
+  "name": "design-system-auditor",
+  "displayName": "Design System Auditor",
+  "version": "0.1.0",
+  "description": "Genera y valida análisis de sistemas de diseño con DESIGN.md, tokens y contratos verificables.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["design-system", "design-md", "tokens", "validation"]
+}

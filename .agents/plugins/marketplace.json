@@ -15,6 +15,42 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "marketplace-validator",
+      "source": {
+        "source": "local",
+        "path": "./plugins/marketplace-validator"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "design-system-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/design-system-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design System"
+    },
+    {
+      "name": "content-fact-checker",
+      "source": {
+        "source": "local",
+        "path": "./plugins/content-fact-checker"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }

@@ -18,6 +18,21 @@ This marketplace publishes reusable Claude Code and Codex plugins, shared skills
 - Claude marketplace manifest: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/blob/main/.claude-plugin/marketplace.json
 - Codex marketplace manifest: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/blob/main/.agents/plugins/marketplace.json
 
+### Marketplace Validator (`marketplace-validator`)
+
+- Description: Validates Claude Code and Codex marketplace manifests, plugin paths, and catalog synchronization.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/marketplace-validator
+
+### Design System Auditor (`design-system-auditor`)
+
+- Description: Generates and validates DESIGN.md, design-system.json, tokens, components, and hard contracts.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/design-system-auditor
+
+### Content Fact Checker (`content-fact-checker`)
+
+- Description: Detects verifiable claims and requires named sources, dates, links, and attributions.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/content-fact-checker
+
 ## Installation
 
 In Claude Code, add `MauricioPerera/thehumanintheloop-marketplace-codex` and install `linter-seo-geo-2026@thehumanintheloop-marketplace-claude`. In Codex, register the `.agents/plugins` marketplace and install `linter-seo-geo-2026`. Both platforms consume the same plugin directory and shared skills.

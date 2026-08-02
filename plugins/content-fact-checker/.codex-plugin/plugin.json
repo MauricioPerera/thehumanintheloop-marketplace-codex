@@ -1,0 +1,19 @@
+{
+  "name": "content-fact-checker",
+  "version": "0.1.0",
+  "description": "Detecta afirmaciones verificables y valida fuentes, fechas y atribuciones en contenido.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Content Fact Checker",
+    "shortDescription": "Use Content Fact Checker in Codex.",
+    "longDescription": "Content Fact Checker adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Content Fact Checker."
+  }
+}

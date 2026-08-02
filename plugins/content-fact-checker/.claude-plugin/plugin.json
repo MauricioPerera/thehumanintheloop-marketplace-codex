@@ -1,0 +1,10 @@
+{
+  "name": "content-fact-checker",
+  "displayName": "Content Fact Checker",
+  "version": "0.1.0",
+  "description": "Detecta afirmaciones verificables y valida fuentes, fechas y atribuciones en contenido.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["facts", "evidence", "sources", "content"]
+}

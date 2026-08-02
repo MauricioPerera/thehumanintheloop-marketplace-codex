@@ -11,6 +11,24 @@
       "displayName": "Auditor SEO/GEO 2026",
       "source": "./plugins/linter-seo-geo-2026",
       "category": "productivity"
+    },
+    {
+      "name": "marketplace-validator",
+      "displayName": "Marketplace Validator",
+      "source": "./plugins/marketplace-validator",
+      "category": "productivity"
+    },
+    {
+      "name": "design-system-auditor",
+      "displayName": "Design System Auditor",
+      "source": "./plugins/design-system-auditor",
+      "category": "design"
+    },
+    {
+      "name": "content-fact-checker",
+      "displayName": "Content Fact Checker",
+      "source": "./plugins/content-fact-checker",
+      "category": "productivity"
     }
   ]
 }

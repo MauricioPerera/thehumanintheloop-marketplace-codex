@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design System Auditor"
+  short_description: "Genera y valida analisis de sistemas de diseno."
+  default_prompt: "Analiza este sitio y genera un DESIGN.md validado."

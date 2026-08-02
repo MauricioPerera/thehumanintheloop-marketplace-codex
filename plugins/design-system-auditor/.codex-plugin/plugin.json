@@ -1,0 +1,19 @@
+{
+  "name": "design-system-auditor",
+  "version": "0.1.0",
+  "description": "Genera y valida análisis de sistemas de diseño con DESIGN.md, tokens y contratos verificables.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Design System Auditor",
+    "shortDescription": "Use Design System Auditor in Codex.",
+    "longDescription": "Design System Auditor adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Design System Auditor."
+  }
+}

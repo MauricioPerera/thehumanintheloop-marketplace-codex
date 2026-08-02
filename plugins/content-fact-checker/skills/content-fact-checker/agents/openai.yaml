@@ -1,0 +1,4 @@
+interface:
+  display_name: "Content Fact Checker"
+  short_description: "Valida hechos, fuentes y fechas en contenido."
+  default_prompt: "Audita este contenido y exige evidencia verificable."

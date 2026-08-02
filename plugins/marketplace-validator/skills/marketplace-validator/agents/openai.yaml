@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marketplace Validator"
+  short_description: "Valida marketplaces Claude Code y Codex."
+  default_prompt: "Valida este marketplace y reporta errores antes de publicar."

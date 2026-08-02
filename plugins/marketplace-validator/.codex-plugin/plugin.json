@@ -1,0 +1,19 @@
+{
+  "name": "marketplace-validator",
+  "version": "0.1.0",
+  "description": "Valida marketplaces y plugins para Claude Code y Codex antes de publicar.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Marketplace Validator",
+    "shortDescription": "Use Marketplace Validator in Codex.",
+    "longDescription": "Marketplace Validator adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Marketplace Validator."
+  }
+}
