@@ -7,8 +7,8 @@
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "Linter SEO/GEO 2026",
-    "shortDescription": "Audita artículos con validadores SEO y GEO.",
+    "displayName": "Auditor SEO/GEO 2026",
+    "shortDescription": "Valida contenido para buscadores y motores generativos.",
     "longDescription": "Revisa profundidad, cápsulas de respuesta, hechos, FAQ, enlaces, metadatos y atributos multimedia antes de publicar.",
     "developerName": "Mauricio Perera",
     "category": "Productivity",

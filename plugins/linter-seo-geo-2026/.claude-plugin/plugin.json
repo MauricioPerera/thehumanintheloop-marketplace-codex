@@ -1,0 +1,13 @@
+{
+  "name": "linter-seo-geo-2026",
+  "displayName": "Auditor SEO/GEO 2026",
+  "version": "0.1.0",
+  "description": "Valida contenido para buscadores y motores generativos con controles de prepublicación.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["seo", "geo", "content", "validation"]
+}

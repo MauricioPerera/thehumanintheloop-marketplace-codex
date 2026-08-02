@@ -1,8 +1,8 @@
 const plugins = [{
-  name: 'linter-seo-geo-2026', category: 'Productivity', icon: '⌁', version: '0.1.0',
-  description: 'Analizador estático de artículos para SEO híbrido y GEO con validadores de prepublicación.',
+  name: 'linter-seo-geo-2026', displayName: 'Auditor SEO/GEO 2026', category: 'Productivity', icon: '⌁', version: '0.1.0',
+  description: 'Validador de contenido para buscadores y motores generativos con controles de prepublicación.',
   capabilities: ['SEO', 'GEO', 'Contenido'],
-  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/linter-seo-geo-2026', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new'
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/linter-seo-geo-2026', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design System Analysis', icon: 'DS', version: '1.0.0',
@@ -29,10 +29,10 @@ let category = 'all';
 function render() {
   const query = search.value.trim().toLowerCase();
   const catalog = [...plugins, ...analyses];
-  const visible = catalog.filter(p => (category === 'all' || p.category === category) && `${p.name} ${p.description} ${p.capabilities.join(' ')}`.toLowerCase().includes(query));
+  const visible = catalog.filter(p => (category === 'all' || p.category === category) && `${p.name} ${p.displayName || ''} ${p.description} ${p.capabilities.join(' ')}`.toLowerCase().includes(query));
   count.textContent = visible.length;
   empty.hidden = visible.length !== 0;
-  grid.innerHTML = visible.map(p => `<article class="plugin-card ${p.category === 'Design System Analysis' ? 'analysis-card' : ''}"><div class="card-top"><div class="plugin-icon" aria-hidden="true">${p.icon}</div><span class="badge">${p.category}</span></div><h3>${p.name}</h3><p>${p.description}</p>${p.preview ? `<div class="install-cta design-cta"><button class="install-link" type="button" data-open-codex="${p.name}" data-open-type="design" data-codex-url="${p.codexUrl}" data-design-md="${p.designMdUrl}" data-contract="${p.contractUrl}" data-source="${p.source}">Abrir diseño en Codex</button><span class="install-status" role="status" aria-live="polite"></span></div><div class="card-footer"><span class="version">v${p.version} · ${p.capabilities.join(' · ')}</span><button class="card-link preview-link" type="button" data-preview="${p.preview}" data-title="${p.name}">Ver preview ↗</button></div>` : `<div class="install-cta"><button class="install-link" type="button" data-open-codex="${p.name}" data-codex-url="${p.codexUrl}">Abrir en Codex</button><span class="install-status" role="status" aria-live="polite"></span></div><div class="card-footer"><span class="version">v${p.version} · ${p.capabilities.join(' · ')}</span><a class="card-link" href="${p.url}" target="_blank" rel="noreferrer">GitHub ↗</a></div>`}</article>`).join('');
+  grid.innerHTML = visible.map(p => `<article class="plugin-card ${p.category === 'Design System Analysis' ? 'analysis-card' : ''}"><div class="card-top"><div class="plugin-icon" aria-hidden="true">${p.icon}</div><span class="badge">${p.category}</span></div><h3>${p.displayName || p.name}</h3><p>${p.description}</p>${p.preview ? `<div class="install-cta design-cta"><button class="install-link" type="button" data-open-codex="${p.name}" data-open-type="design" data-codex-url="${p.codexUrl}" data-design-md="${p.designMdUrl}" data-contract="${p.contractUrl}" data-source="${p.source}">Abrir diseño en Codex</button><span class="install-status" role="status" aria-live="polite"></span></div><div class="card-footer"><span class="version">v${p.version} · ${p.capabilities.join(' · ')}</span><button class="card-link preview-link" type="button" data-preview="${p.preview}" data-title="${p.displayName || p.name}">Ver preview ↗</button></div>` : `<div class="platform-install-links"><button class="install-link claude-link" type="button" data-open-claude="${p.name}" data-claude-marketplace="${p.claudeMarketplace}">Copiar para Claude Code</button><button class="install-link" type="button" data-open-codex="${p.name}" data-codex-url="${p.codexUrl}">Abrir en Codex</button><span class="install-status" role="status" aria-live="polite"></span></div><div class="card-footer"><span class="version">v${p.version} · ${p.capabilities.join(' · ')}</span><a class="card-link" href="${p.url}" target="_blank" rel="noreferrer">GitHub ↗</a></div>`}</article>`).join('');
   document.querySelectorAll('[data-preview]').forEach(button => button.addEventListener('click', () => openPreview(button.dataset.preview, button.dataset.title)));
   document.querySelectorAll('[data-open-codex]').forEach(button => button.addEventListener('click', () => {
     const prompt = button.dataset.openType === 'design' ? buildDesignPrompt(button) : buildInstallPrompt(button.dataset.openCodex);
@@ -53,10 +53,25 @@ function render() {
       status.textContent = 'No se pudo copiar automáticamente. Puedes copiar la solicitud desde el chat o intentarlo de nuevo.';
     });
   }));
+  document.querySelectorAll('[data-open-claude]').forEach(button => button.addEventListener('click', async () => {
+    const prompt = buildClaudeInstallPrompt(button.dataset.openClaude, button.dataset.claudeMarketplace);
+    const status = button.parentElement.querySelector('.install-status');
+    try {
+      await navigator.clipboard.writeText(prompt);
+      button.textContent = 'Comandos copiados';
+      status.textContent = 'Pégalos en Claude Code y confirma la instalación.';
+    } catch {
+      status.textContent = 'Copia manualmente los comandos de la sección de instalación.';
+    }
+  }));
 }
 
 function buildInstallPrompt(pluginName) {
   return `Quiero instalar el plugin "${pluginName}" desde este marketplace:\nhttps://github.com/MauricioPerera/thehumanintheloop-marketplace-codex\n\nInstala únicamente ese plugin. Confirma el nombre exacto, indícame si necesitas autorización y dime cuándo esté listo para usarlo en un chat nuevo.`;
+}
+
+function buildClaudeInstallPrompt(pluginName, marketplaceName) {
+  return `/plugin marketplace add MauricioPerera/thehumanintheloop-marketplace-codex\n/plugin install ${pluginName}@${marketplaceName}\n/reload-plugins`;
 }
 
 function buildDesignPrompt(button) {
@@ -75,5 +90,12 @@ document.querySelector('#close-preview').addEventListener('click', () => { previ
 previewDialog.addEventListener('click', event => { if (event.target === previewDialog) { previewFrame.src = 'about:blank'; previewDialog.close(); } });
 search.addEventListener('input', render);
 document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => { document.querySelector('.filter.active').classList.remove('active'); button.classList.add('active'); category = button.dataset.category; render(); }));
-document.querySelector('#copy-command').addEventListener('click', async () => { const text = document.querySelector('.code-card code').textContent; try { await navigator.clipboard.writeText(text); document.querySelector('#copy-status').textContent = 'Copiado'; } catch { document.querySelector('#copy-status').textContent = 'Selecciona y copia el comando'; } });
+document.querySelectorAll('[data-platform-command]').forEach(button => button.addEventListener('click', () => {
+  document.querySelectorAll('[data-platform-command]').forEach(item => item.classList.remove('active'));
+  button.classList.add('active');
+  document.querySelector('#install-command').textContent = button.dataset.platformCommand === 'claude'
+    ? `/plugin marketplace add MauricioPerera/thehumanintheloop-marketplace-codex\n/plugin install linter-seo-geo-2026@thehumanintheloop-marketplace-claude\n/reload-plugins`
+    : `codex plugin marketplace add MauricioPerera/thehumanintheloop-marketplace-codex\ncodex plugin install linter-seo-geo-2026`;
+}));
+document.querySelector('#copy-command').addEventListener('click', async () => { const text = document.querySelector('#install-command').textContent; try { await navigator.clipboard.writeText(text); document.querySelector('#copy-status').textContent = 'Copiado'; } catch { document.querySelector('#copy-status').textContent = 'Selecciona y copia el comando'; } });
 render();

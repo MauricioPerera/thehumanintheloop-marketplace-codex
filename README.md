@@ -1,16 +1,17 @@
-# TheHumanInTheLoop Marketplace Codex
+# TheHumanInTheLoop Marketplace
 
-Marketplace público de plugins, skills y Design System Analyses para Codex creados por Mauricio Perera.
+Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
 ## Plugins disponibles
 
-- `linter-seo-geo-2026`: auditor estático de artículos para SEO híbrido y GEO.
+- `Auditor SEO/GEO 2026` (`linter-seo-geo-2026`): validador de contenido para buscadores y motores generativos.
 
 ## Estructura
 
-- `.agents/plugins/marketplace.json`: catálogo del marketplace.
+- `.claude-plugin/marketplace.json`: catálogo compatible con Claude Code.
+- `.agents/plugins/marketplace.json`: catálogo compatible con Codex.
 - `plugins/`: un directorio por plugin.
-- Cada plugin contiene `.codex-plugin/plugin.json` y sus skills bajo `skills/`.
+- Cada plugin puede contener `.claude-plugin/plugin.json` y `.codex-plugin/plugin.json`; ambos reutilizan las mismas skills bajo `skills/`.
 - `docs/analyses/`: resultados publicados de análisis visuales; cada entrada contiene `DESIGN.md`, `design-system.json`, `validation-report.json` y un preview navegable.
 
 ## Design System Analyses
@@ -27,8 +28,20 @@ Los análisis de terceros se presentan como análisis externos, no como sistemas
 ## Añadir un plugin
 
 1. Crear un directorio dentro de `plugins/`.
-2. Añadir su manifiesto `.codex-plugin/plugin.json`.
-3. Añadir una entrada en `.agents/plugins/marketplace.json`.
-4. Validar el plugin antes de publicar cambios.
+2. Añadir los manifiestos `.claude-plugin/plugin.json` y `.codex-plugin/plugin.json` cuando el plugin deba funcionar en ambas plataformas.
+3. Añadir una entrada en `.claude-plugin/marketplace.json` y `.agents/plugins/marketplace.json`.
+4. Mantener las skills compartidas en `skills/` y validar ambos formatos antes de publicar cambios.
+
+## Instalación
+
+En Claude Code:
+
+```text
+/plugin marketplace add MauricioPerera/thehumanintheloop-marketplace-codex
+/plugin install linter-seo-geo-2026@thehumanintheloop-marketplace-claude
+/reload-plugins
+```
+
+En Codex, registra el marketplace desde Plugins y busca `linter-seo-geo-2026`, o usa el botón de instalación de la [GitHub Page](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/).
 
 Este repositorio no incluye todavía una licencia. Añade una licencia explícita antes de autorizar la reutilización comercial o redistribución por terceros.
