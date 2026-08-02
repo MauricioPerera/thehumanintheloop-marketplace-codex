@@ -1,0 +1,27 @@
+# TheHumanInTheLoop Marketplace Codex
+
+> Public catalog of Codex plugins created by Mauricio Perera.
+
+## Purpose
+
+This marketplace publishes reusable Codex plugins, skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
+
+## Plugin catalog
+
+### linter-seo-geo-2026
+
+- Description: Static analyzer for articles using hybrid SEO and Generative Engine Optimization (GEO) pre-publication checks.
+- Version: 0.1.0
+- Category: Productivity
+- Author: Mauricio Perera
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/linter-seo-geo-2026
+- Marketplace manifest: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/blob/main/.agents/plugins/marketplace.json
+
+## Installation
+
+Clone the repository and register the `.agents/plugins` marketplace directory in Codex. Install a plugin by its marketplace name after registration.
+
+## Source and updates
+
+- Repository: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex
+- Catalog: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/
