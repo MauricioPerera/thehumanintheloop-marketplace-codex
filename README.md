@@ -37,10 +37,11 @@ Los análisis de terceros se presentan como análisis externos, no como sistemas
 En Claude Code:
 
 ```text
-/plugin marketplace add MauricioPerera/thehumanintheloop-marketplace-codex
-/plugin install linter-seo-geo-2026@thehumanintheloop-marketplace-claude
-/reload-plugins
+claude plugin marketplace add MauricioPerera/thehumanintheloop-marketplace-codex
+claude plugin install linter-seo-geo-2026@thehumanintheloop-marketplace-claude
 ```
+
+En Claude Desktop, usa `+ → Plugins → Add plugin`; los comandos `/plugin` solo funcionan dentro de la interfaz interactiva de Claude Code.
 
 En Codex, registra el marketplace desde Plugins y busca `linter-seo-geo-2026`, o usa el botón de instalación de la [GitHub Page](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/).
 

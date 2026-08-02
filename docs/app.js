@@ -71,7 +71,7 @@ function buildInstallPrompt(pluginName) {
 }
 
 function buildClaudeInstallPrompt(pluginName, marketplaceName) {
-  return `/plugin marketplace add MauricioPerera/thehumanintheloop-marketplace-codex\n/plugin install ${pluginName}@${marketplaceName}\n/reload-plugins`;
+  return `claude plugin marketplace add MauricioPerera/thehumanintheloop-marketplace-codex\nclaude plugin install ${pluginName}@${marketplaceName}`;
 }
 
 function buildDesignPrompt(button) {
@@ -94,7 +94,7 @@ document.querySelectorAll('[data-platform-command]').forEach(button => button.ad
   document.querySelectorAll('[data-platform-command]').forEach(item => item.classList.remove('active'));
   button.classList.add('active');
   document.querySelector('#install-command').textContent = button.dataset.platformCommand === 'claude'
-    ? `/plugin marketplace add MauricioPerera/thehumanintheloop-marketplace-codex\n/plugin install linter-seo-geo-2026@thehumanintheloop-marketplace-claude\n/reload-plugins`
+    ? `claude plugin marketplace add MauricioPerera/thehumanintheloop-marketplace-codex\nclaude plugin install linter-seo-geo-2026@thehumanintheloop-marketplace-claude`
     : `codex plugin marketplace add MauricioPerera/thehumanintheloop-marketplace-codex\ncodex plugin install linter-seo-geo-2026`;
 }));
 document.querySelector('#copy-command').addEventListener('click', async () => { const text = document.querySelector('#install-command').textContent; try { await navigator.clipboard.writeText(text); document.querySelector('#copy-status').textContent = 'Copiado'; } catch { document.querySelector('#copy-status').textContent = 'Selecciona y copia el comando'; } });
