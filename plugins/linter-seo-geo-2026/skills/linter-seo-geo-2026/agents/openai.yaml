@@ -1,4 +1,4 @@
 interface:
-  display_name: "Linter SEO/GEO 2026"
-  short_description: "Audita artículos con validadores SEO híbrido y GEO"
+  display_name: "Auditor SEO/GEO 2026"
+  short_description: "Valida contenido para buscadores y motores generativos"
   default_prompt: "Audita este artículo con el linter SEO/GEO 2026 y genera el reporte técnico completo."

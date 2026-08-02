@@ -1,0 +1,16 @@
+{
+  "name": "thehumanintheloop-marketplace-claude",
+  "owner": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "description": "Plugins de TheHumanInTheLoop para Claude Code.",
+  "plugins": [
+    {
+      "name": "linter-seo-geo-2026",
+      "displayName": "Auditor SEO/GEO 2026",
+      "source": "./plugins/linter-seo-geo-2026",
+      "category": "productivity"
+    }
+  ]
+}
