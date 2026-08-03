@@ -91,6 +91,7 @@ Use these exact identifiers when referring to plugins:
 - `kdd-agile-manifesto` — Marketplace & Quality — Consulta honesta de los 4 valores y 12 principios del Manifiesto Agil (0% instrumentado), extraido con Knowledge-Driven Development.
 - `kdd-tailwind` — Developer Tools — Verifica 10 tecnicas de Tailwind CSS v4 (instalacion, conflictos de utilidades, mobile-first, theme), extraido con Knowledge-Driven Development.
 - `kdd-wcag` — Accessibility & UX — Verifica 10 criterios de exito de WCAG 2.2 (idioma, contraste, area de toque, etiquetas), extraido con Knowledge-Driven Development.
+- `kdd-doce-factores` — Developer Tools — Verifica 10 tecnicas de The Twelve-Factor App: dependencias, config, servicios, puerto, paridad, daemonizacion, SIGTERM, logs, codebase y release ID.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
@@ -243,8 +244,6 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `qwen` — Qwen Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/qwen/ — source: https://qwen.ai/
 - `zcode` — ZCode Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/zcode/ — source: https://zcode.z.ai/en
 - `notebooklm` — NotebookLM / Gemini Notebook — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/notebooklm/ — source: https://notebooklm.google/
-- `kdd-doce-factores` — Developer Tools — Verifica 10 tecnicas de The Twelve-Factor App: dependencias, config, servicios, puerto, paridad, daemonizacion, SIGTERM, logs, codebase y release ID.
-
 ## Instructions for AI agents
 
 Before modifying this repository, inspect the relevant marketplace manifest and plugin directory. Keep `.claude-plugin/marketplace.json`, `.agents/plugins/marketplace.json`, plugin manifests, and the catalog metadata synchronized. Do not describe an analysis as an official brand system unless its provenance explicitly supports that claim.
