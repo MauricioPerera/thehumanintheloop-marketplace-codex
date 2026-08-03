@@ -2,7 +2,7 @@
 
 Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
-Catálogo actual: **68 plugins**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
+Catálogo actual: **68 plugins y 16 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
 
 ## Plugins disponibles
 
@@ -88,6 +88,8 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Research & Evidence — 1 plugin
 - AI & Prompt Engineering — 1 plugin
 
+Además, la categoría Design Systems contiene **16 análisis publicados**; se listan y enlazan en la sección [Design System Analyses publicados](#design-system-analyses-publicados).
+
 La GitHub Page permite filtrar por categoría, buscar por nombre o capacidad, copiar instrucciones de instalación y abrir el código fuente de cada plugin.
 
 ## Estructura
@@ -165,5 +167,26 @@ Para instalar otro plugin, reemplaza `linter-seo-geo-2026` por cualquiera de los
 ## Design System Analyses publicados
 
 Los análisis visuales se publican como resultados reutilizables, no como plugins generadores. Cada análisis incluye el contrato `DESIGN.md`, tokens estructurados, reporte de validación y un preview HTML integrado en el catálogo. Actualmente están disponibles desde la sección de diseños de la [GitHub Page](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/).
+
+Análisis publicados:
+
+- [KDD](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/kdd/) — Knowledge-Driven Development.
+- [Mercado Libre México](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/mercadolibre/).
+- [TheHumanInTheLoop Marketplace](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/marketplace/).
+- [GitHub](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/github/).
+- [Google](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/google/).
+- [LinkedIn](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/linkedin/).
+- [Crunchyroll](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/crunchyroll/).
+- [Prime Video](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/primevideo/).
+- [Netflix](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/netflix/).
+- [OpenAI](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/openai/).
+- [Google Antigravity](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/antigravity/).
+- [Anthropic](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/anthropic/).
+- [Claude](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/claude/).
+- [Ollama](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/ollama/).
+- [Qwen](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/qwen/).
+- [ZCode](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/zcode/).
+
+Cada preview enlaza su `DESIGN.md`, `design-system.json`, reporte de validación y fuente original. Las advertencias de procedencia, contenido dinámico o extracción limitada se mantienen en cada análisis.
 
 Este repositorio se distribuye bajo la [licencia MIT](LICENSE). Los análisis de terceros y las marcas o activos de sus respectivos sitios conservan sus derechos y condiciones de uso.
