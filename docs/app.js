@@ -328,6 +328,11 @@ const analyses = [{
   description: 'Análisis externo de zcode.z.ai con agentic coding, workspace, task board, pricing, capabilities y downloads.',
   capabilities: ['Agentic UI', 'Developer UX', 'Validation'],
   url: './analyses/zcode/index.html', preview: './analyses/zcode/index.html', source: 'https://zcode.z.ai/en', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/zcode/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/zcode/design-system.json'
+}, {
+  name: 'NotebookLM Homepage', category: 'Design Systems', icon: 'NL', version: '1.0.0',
+  description: 'Análisis externo de NotebookLM/Gemini Notebook con fuentes, citas, outputs multimodales y notebooks públicos.',
+  capabilities: ['Research UI', 'Source Grounding', 'Validation'],
+  url: './analyses/notebooklm/index.html', preview: './analyses/notebooklm/index.html', source: 'https://notebooklm.google/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/notebooklm/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/notebooklm/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');

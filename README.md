@@ -2,7 +2,7 @@
 
 Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
-Catálogo actual: **68 plugins y 16 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
+Catálogo actual: **68 plugins y 17 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
 
 ## Plugins disponibles
 
@@ -88,7 +88,7 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Research & Evidence — 1 plugin
 - AI & Prompt Engineering — 1 plugin
 
-Además, la categoría Design Systems contiene **16 análisis publicados**; se listan y enlazan en la sección [Design System Analyses publicados](#design-system-analyses-publicados).
+Además, la categoría Design Systems contiene **17 análisis publicados**; se listan y enlazan en la sección [Design System Analyses publicados](#design-system-analyses-publicados).
 
 La GitHub Page permite filtrar por categoría, buscar por nombre o capacidad, copiar instrucciones de instalación y abrir el código fuente de cada plugin.
 
@@ -186,6 +186,7 @@ Análisis publicados:
 - [Ollama](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/ollama/).
 - [Qwen](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/qwen/).
 - [ZCode](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/zcode/).
+- [NotebookLM / Gemini Notebook](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/notebooklm/).
 
 Cada preview enlaza su `DESIGN.md`, `design-system.json`, reporte de validación y fuente original. Las advertencias de procedencia, contenido dinámico o extracción limitada se mantienen en cada análisis.
 

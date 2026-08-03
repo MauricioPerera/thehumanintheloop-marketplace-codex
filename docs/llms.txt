@@ -189,6 +189,7 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `ollama` — Ollama Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/ollama/ — source: https://ollama.com/
 - `qwen` — Qwen Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/qwen/ — source: https://qwen.ai/
 - `zcode` — ZCode Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/zcode/ — source: https://zcode.z.ai/en
+- `notebooklm` — NotebookLM / Gemini Notebook — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/notebooklm/ — source: https://notebooklm.google/
 
 ## Instructions for AI agents
 
