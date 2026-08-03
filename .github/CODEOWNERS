@@ -1,0 +1,7 @@
+# Revisión por defecto del mantenedor del marketplace.
+* @MauricioPerera
+
+# Los cambios de CI y seguridad requieren atención explícita.
+/.github/workflows/ @MauricioPerera
+/.github/ISSUE_TEMPLATE/ @MauricioPerera
+SECURITY.md @MauricioPerera

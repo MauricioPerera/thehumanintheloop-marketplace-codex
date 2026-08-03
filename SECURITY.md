@@ -24,3 +24,4 @@ Incluye, cuando sea posible:
 - Los plugins no deben exfiltrar datos, leer secretos sin autorización ni ejecutar acciones externas no documentadas.
 - Las fuentes y activos de terceros deben conservar su atribución y condiciones de uso.
 - Los cambios que afecten workflows, permisos, scripts o integraciones requieren revisión explícita.
+- Las actualizaciones de GitHub Actions propuestas por Dependabot deben revisarse antes de incorporarse a `main`.
