@@ -68,6 +68,9 @@
     {"name":"github-webhook-manager","displayName":"GitHub Webhook Manager","source":"./plugins/github-webhook-manager","category":"Security & Privacy"},
     {"name":"github-environment-manager","displayName":"GitHub Environment Manager","source":"./plugins/github-environment-manager","category":"Security & Privacy"},
     {"name":"github-variable-manager","displayName":"GitHub Variable Manager","source":"./plugins/github-variable-manager","category":"Security & Privacy"},
-    {"name":"github-package-manager","displayName":"GitHub Package Manager","source":"./plugins/github-package-manager","category":"Developer Tools"}
+    {"name":"github-package-manager","displayName":"GitHub Package Manager","source":"./plugins/github-package-manager","category":"Developer Tools"},
+    {"name":"github-secret-manager","displayName":"GitHub Secret Manager","source":"./plugins/github-secret-manager","category":"Security & Privacy"},
+    {"name":"github-ruleset-manager","displayName":"GitHub Ruleset Manager","source":"./plugins/github-ruleset-manager","category":"Security & Privacy"},
+    {"name":"github-checks-manager","displayName":"GitHub Checks Manager","source":"./plugins/github-checks-manager","category":"Developer Tools"}
   ]
 }

@@ -31,6 +31,9 @@
 - `github-environment-manager`: auditoría y planes de environments y gates de despliegue.
 - `github-variable-manager`: auditoría de variables sin lectura de valores secretos.
 - `github-package-manager`: revisión de paquetes, versiones y planes de retención.
+- `github-secret-manager`: auditoría de secretos con valores redactados y planes de rotación.
+- `github-ruleset-manager`: auditoría y diseño de reglasets con bypass, checks y rollback.
+- `github-checks-manager`: análisis de checks, annotations y resultados de CI con evidencia.
 
 ## 2026-08-02
 

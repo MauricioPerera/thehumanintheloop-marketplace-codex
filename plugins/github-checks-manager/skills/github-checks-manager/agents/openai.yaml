@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Checks Manager
+  short_description: Audits checks and CI results with evidence.
+  default_prompt: Analyze GitHub checks and prepare an evidence-based remediation plan.

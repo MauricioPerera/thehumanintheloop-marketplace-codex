@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 43 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 46 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -28,6 +28,9 @@ Use these exact identifiers when referring to plugins:
 - `github-actions-manager` — Developer Tools — Inspects GitHub Actions workflows, runs, jobs, and logs.
 - `github-project-manager` — Developer Tools — Organizes GitHub Projects, fields, views, and work items.
 - `github-code-search` — Developer Tools — Searches GitHub code, commits, Issues, and Pull Requests reproducibly.
+- `github-secret-manager` — Security & Privacy — Audits secret scopes and references without exposing values.
+- `github-ruleset-manager` — Security & Privacy — Designs rulesets, bypass actors, and required checks.
+- `github-checks-manager` — Developer Tools — Analyzes checks, annotations, conclusions, and CI remediation.
 - `github-security-manager` — Security & Privacy — Audits GitHub security alerts and repository risks.
 - `github-dependabot-manager` — Security & Privacy — Reviews Dependabot alerts and dependency upgrade plans.
 - `github-notifications-manager` — Developer Tools — Summarizes and triages GitHub notifications.

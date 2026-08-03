@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Secret Manager
+  short_description: Audits secret scopes without exposing values.
+  default_prompt: Audit GitHub secrets safely and prepare a rotation plan.

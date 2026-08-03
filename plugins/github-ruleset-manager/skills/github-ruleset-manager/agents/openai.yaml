@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Ruleset Manager
+  short_description: Designs reproducible repository protection rules.
+  default_prompt: Audit GitHub rulesets and prepare a safe protection plan.
