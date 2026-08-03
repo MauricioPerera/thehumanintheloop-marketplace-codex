@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD Agile Manifesto Reference"
+  short_description: "Consulta los 4 valores y 12 principios del Manifiesto Agil"
+  default_prompt: "Explicame que dice el Manifiesto Agil sobre este caso, citando kdd-agile-manifesto."

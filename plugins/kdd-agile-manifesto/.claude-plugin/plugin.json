@@ -1,0 +1,13 @@
+{
+  "name": "kdd-agile-manifesto",
+  "displayName": "KDD Agile Manifesto Reference",
+  "version": "0.1.0",
+  "description": "Consulta honesta de los 4 valores y 12 principios del Manifiesto Agil: sin instrumento, porque son juicio de proceso de equipo sin propiedad binaria que verificar. Extraido con Knowledge-Driven Development.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["agile", "manifesto", "process", "kdd", "knowledge"]
+}
