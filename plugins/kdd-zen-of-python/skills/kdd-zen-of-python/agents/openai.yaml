@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD Zen of Python Reference"
+  short_description: "Consulta los 19 aforismos del Zen de Python con su categoria honesta"
+  default_prompt: "Explicame que dice el Zen de Python sobre este caso, citando kdd-zen-of-python."

@@ -1,0 +1,13 @@
+{
+  "name": "kdd-zen-of-python",
+  "displayName": "KDD Zen of Python Reference",
+  "version": "0.1.0",
+  "description": "Consulta honesta de los 19 aforismos del Zen de Python (PEP 20): sin instrumento, porque son juicio estetico de diseno sin propiedad binaria que verificar. Extraido con Knowledge-Driven Development.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["python", "zen-of-python", "pep20", "kdd", "knowledge"]
+}
