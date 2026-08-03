@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 68 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 69 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -83,6 +83,7 @@ Use these exact identifiers when referring to plugins:
 - `web-performance-auditor` — Developer Tools — Loading resources and Core Web Vitals.
 - `dependency-risk-auditor` — Security & Privacy — Dependencies, lockfiles, vulnerabilities, and supply-chain risks.
 - `test-coverage-gate` — Marketplace & Quality — Test evidence, reports, coverage, and quality thresholds.
+- `kdd-semver` — Developer Tools — Verifies Semantic Versioning 2.0.0 compliance with a deterministic instrument extracted via Knowledge-Driven Development.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
@@ -168,6 +169,11 @@ Use these exact identifiers when referring to plugins:
 
 - Description: Validates test evidence, reports, coverage, and quality thresholds before publishing.
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/test-coverage-gate
+
+### KDD SemVer Checker (`kdd-semver`)
+
+- Description: Verifies Semantic Versioning 2.0.0 compliance (format, pre-release, build metadata) with a deterministic instrument extracted and verified from the original spec using Knowledge-Driven Development.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-semver
 
 ## Design System Analyses
 

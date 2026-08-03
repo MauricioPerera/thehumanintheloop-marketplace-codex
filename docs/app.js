@@ -247,6 +247,10 @@ const plugins = [{
   name: 'dependency-risk-auditor', displayName: 'Dependency Risk Auditor', category: 'Security & Privacy', icon: 'DR', version: '0.1.0', description: 'Revisa dependencias, lockfiles y riesgos de supply chain.', capabilities: ['Dependencies', 'Security', 'Supply Chain'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/dependency-risk-auditor', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }, {
   name: 'test-coverage-gate', displayName: 'Test Coverage Gate', category: 'Marketplace & Quality', icon: 'TC', version: '0.1.0', description: 'Valida evidencia de tests, reportes y cobertura antes de publicar.', capabilities: ['Tests', 'Coverage', 'Quality'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/test-coverage-gate', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'kdd-semver', displayName: 'KDD SemVer Checker', category: 'Developer Tools', icon: 'SV', version: '0.1.0',
+  description: 'Verifica cumplimiento de Semantic Versioning 2.0.0 con un instrumento determinista extraido con Knowledge-Driven Development.',
+  capabilities: ['SemVer', 'Versioning', 'KDD'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-semver', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

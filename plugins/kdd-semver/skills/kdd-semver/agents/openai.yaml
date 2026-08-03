@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD SemVer Checker"
+  short_description: "Verifica cumplimiento de Semantic Versioning 2.0.0"
+  default_prompt: "Verifica que este proyecto cumple Semantic Versioning 2.0.0 usando kdd-semver."
