@@ -1,0 +1,13 @@
+{
+  "name": "kdd-scrum-xp",
+  "displayName": "KDD Scrum y XP Checker",
+  "version": "0.1.0",
+  "description": "Verifica 12 tecnicas de Scrum y eXtreme Programming con instrumento real (cadencia de entregas, TDD, repo unico, y 8 heuristicas de Clean Code) y documenta 22 tecnicas mas que kdd-book clasifico como pila A pero requieren tablero, calendario o CI reales, extraidas y verificadas con Knowledge-Driven Development.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["scrum", "extreme-programming", "tdd", "agile", "kdd", "validation"]
+}

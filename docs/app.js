@@ -295,6 +295,10 @@ const plugins = [{
   name: 'kdd-pep8', displayName: 'KDD PEP 8 Checker', category: 'Developer Tools', icon: 'P8', version: '0.1.0',
   description: 'Verifica 28 reglas de PEP 8: indentacion, longitud de linea, imports, comillas, comentarios, docstrings y convenciones de nombres, extraidas con Knowledge-Driven Development.',
   capabilities: ['pep8', 'python', 'style-guide', 'linting', 'kdd', 'validation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-pep8', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'kdd-scrum-xp', displayName: 'KDD Scrum y XP Checker', category: 'Marketplace & Quality', icon: 'SX', version: '0.1.0',
+  description: 'Verifica 12 tecnicas de Scrum y eXtreme Programming con instrumento real (cadencia, TDD, repo unico, Clean Code) y documenta 22 tecnicas mas que requieren tablero, calendario o CI reales, extraidas con Knowledge-Driven Development.',
+  capabilities: ['scrum', 'extreme-programming', 'tdd', 'agile', 'kdd', 'validation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-scrum-xp', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

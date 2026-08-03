@@ -1,0 +1,18 @@
+{
+  "name": "kdd-scrum-xp",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para 12 tecnicas de Scrum y eXtreme Programming, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD Scrum y XP Checker",
+    "shortDescription": "Verifica cadencia, TDD, repo unico y heuristicas de Clean Code",
+    "longDescription": "Corre 12 chequeos deterministas que kdd-book extrajo de 'Scrum y eXtreme Programming para Programadores': cadencia/TDD/repo unico (git_checks.py), pruebas rapidas/aisladas (repo_checks.py) y 5 heuristicas de Clean Code (checks.py). De 39 secciones en pila A, 22 mas quedan documentadas sin script: requieren tablero Kanban, calendario de ceremonias o CI reales, evidencia externa al codigo que este instrumento no puede leer.",
+    "developerName": "Mauricio Perera",
+    "category": "Marketplace & Quality",
+    "capabilities": [],
+    "defaultPrompt": "Audita las practicas de Scrum/XP de este proyecto con kdd-scrum-xp."
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD Scrum y XP Checker"
+  short_description: "Verifica cadencia, TDD, repo unico y heuristicas de Clean Code"
+  default_prompt: "Audita las practicas de Scrum/XP de este proyecto con kdd-scrum-xp."
