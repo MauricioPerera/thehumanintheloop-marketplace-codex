@@ -1,0 +1,18 @@
+{
+  "name": "kdd-tailwind",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para 10 tecnicas de Tailwind CSS v4, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD Tailwind CSS Checker",
+    "shortDescription": "Verifica 10 tecnicas de Tailwind CSS v4 (instalacion, conflictos, mobile-first, tema)",
+    "longDescription": "Corre 10 chequeos deterministas que kdd-book extrajo de una seleccion curada de 13 paginas de tailwindcss.com/docs (Getting started + Core concepts) sobre un sitio de ~210 donde el resto es referencia de clases CSS. Lee HTML/JSX con clases de Tailwind y CSS con @theme via expresiones regulares, sin parser real.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Audita este proyecto de Tailwind CSS con kdd-tailwind."
+  }
+}

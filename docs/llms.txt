@@ -89,6 +89,7 @@ Use these exact identifiers when referring to plugins:
 - `kdd-effective-go` — Developer Tools — Verifica indentacion con tabs, parentesis en control y llaves de Effective Go, extraido con Knowledge-Driven Development.
 - `kdd-zen-of-python` — Developer Tools — Consulta honesta de los 19 aforismos del Zen de Python (0% instrumentado), extraido con Knowledge-Driven Development.
 - `kdd-agile-manifesto` — Marketplace & Quality — Consulta honesta de los 4 valores y 12 principios del Manifiesto Agil (0% instrumentado), extraido con Knowledge-Driven Development.
+- `kdd-tailwind` — Developer Tools — Verifica 10 tecnicas de Tailwind CSS v4 (instalacion, conflictos de utilidades, mobile-first, theme), extraido con Knowledge-Driven Development.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
@@ -204,6 +205,11 @@ Use these exact identifiers when referring to plugins:
 
 - Description: Consulta honesta de los 4 valores y 12 principios del Manifiesto Agil (0% instrumentado), extraido con Knowledge-Driven Development.
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-agile-manifesto
+
+### kdd-tailwind (`kdd-tailwind`)
+
+- Description: Verifica 10 tecnicas de Tailwind CSS v4 (instalacion, conflictos de utilidades, mobile-first, theme), extraido con Knowledge-Driven Development.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-tailwind
 
 ## Design System Analyses
 

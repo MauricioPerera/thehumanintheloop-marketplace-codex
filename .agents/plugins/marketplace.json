@@ -891,6 +891,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Marketplace & Quality"
+    },
+    {
+      "name": "kdd-tailwind",
+      "source": {
+        "source": "local",
+        "path": "./plugins/kdd-tailwind"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }

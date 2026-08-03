@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD Tailwind CSS Checker"
+  short_description: "Verifica 10 tecnicas de Tailwind CSS v4"
+  default_prompt: "Audita este proyecto de Tailwind CSS con kdd-tailwind."
