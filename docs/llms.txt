@@ -185,6 +185,7 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `openai` — OpenAI Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/openai/ — source: https://openai.com/
 - `antigravity` — Google Antigravity — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/antigravity/ — source: https://antigravity.google/
 - `anthropic` — Anthropic Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/anthropic/ — source: https://www.anthropic.com/
+- `claude` — Claude Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/claude/ — source: https://claude.com/
 
 ## Instructions for AI agents
 
