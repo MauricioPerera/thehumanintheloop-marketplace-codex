@@ -52,6 +52,9 @@
 - `github-pages-manager`: auditoría de fuentes, dominios y despliegues de GitHub Pages.
 - `github-funding-manager`: revisión de FUNDING.yml, sponsors y enlaces públicos.
 - `github-workflow-dispatch-manager`: preparación segura de ejecuciones manuales con inputs.
+- `github-oidc-manager`: auditoría de subjects, audiences y trust de proveedores cloud.
+- `github-action-permissions-manager`: revisión de scopes y mínimo privilegio de GITHUB_TOKEN.
+- `github-merge-conflict-manager`: diagnóstico de conflictos y planes de resolución revisables.
 
 ## 2026-08-02
 

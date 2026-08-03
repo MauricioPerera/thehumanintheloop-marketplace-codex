@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub OIDC Manager
+  short_description: Audits Actions OIDC trust.
+  default_prompt: Audit GitHub Actions OIDC and prepare a safe plan.

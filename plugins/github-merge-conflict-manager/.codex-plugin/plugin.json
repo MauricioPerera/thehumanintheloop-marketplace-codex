@@ -1,0 +1,18 @@
+{
+  "name": "github-merge-conflict-manager",
+  "version": "0.1.0",
+  "description": "Diagnostica conflictos de Pull Requests y prepara planes de resolución.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub Merge Conflict Manager",
+    "shortDescription": "Diagnostica conflictos de Pull Requests.",
+    "longDescription": "Analiza base, head, archivos en conflicto, checks y owners; prepara resolución revisable sin sobrescribir ramas automáticamente.",
+    "developerName": "Local developer",
+    "category": "Developer Tools",
+    "capabilities": ["Conflicts", "Pull Requests", "Resolution"],
+    "defaultPrompt": "Diagnostica conflictos de un Pull Request y prepara un plan de resolución."
+  }
+}

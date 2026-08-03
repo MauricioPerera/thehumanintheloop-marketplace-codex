@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Merge Conflict Manager
+  short_description: Diagnoses Pull Request conflicts.
+  default_prompt: Diagnose a Pull Request conflict and prepare a resolution plan.

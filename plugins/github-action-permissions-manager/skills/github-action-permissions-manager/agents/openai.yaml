@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Action Permissions Manager
+  short_description: Audits workflow and GITHUB_TOKEN permissions.
+  default_prompt: Audit Actions permissions and prepare a least-privilege plan.

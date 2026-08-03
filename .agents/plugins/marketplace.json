@@ -771,6 +771,42 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "github-oidc-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-oidc-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-action-permissions-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-action-permissions-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-merge-conflict-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-merge-conflict-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }
