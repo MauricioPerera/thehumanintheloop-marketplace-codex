@@ -48,6 +48,8 @@ git diff --check
 
 La CI debe pasar antes de publicar. Revisa `git diff` y `git status`; este workspace puede contener artefactos locales de demos que no deben entrar en el marketplace.
 
+Los workflows usan `actions/checkout@v6` y `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true`; conserva ambos controles al modificar CI.
+
 ## Seguridad y autorización
 
 No leas, publiques ni introduzcas secretos. No elimines plugins, skills, análisis o activos sin confirmación explícita. Para vulnerabilidades, sigue [`SECURITY.md`](SECURITY.md); para contribuciones, sigue [`CONTRIBUTING.md`](CONTRIBUTING.md).

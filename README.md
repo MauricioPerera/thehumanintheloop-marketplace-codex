@@ -93,6 +93,8 @@ git diff --check
 
 No publiques un plugin si la validación devuelve `[FAILED]` o si la ficha de catálogo no coincide con los manifests.
 
+Los workflows usan `actions/checkout@v6` y optan por Node.js 24. Si utilizas runners autoalojados, mantenlos en una versión compatible con ese runtime.
+
 ## Instalación
 
 En Claude Code:
