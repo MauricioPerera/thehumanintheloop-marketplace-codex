@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD Twelve-Factor App Checker"
+  short_description: "Verifica dependencias, config, servicios, puerto, paridad, SIGTERM y mas"
+  default_prompt: "Audita este proyecto contra The Twelve-Factor App con kdd-doce-factores."

@@ -91,6 +91,7 @@ Use these exact identifiers when referring to plugins:
 - `kdd-agile-manifesto` — Marketplace & Quality — Consulta honesta de los 4 valores y 12 principios del Manifiesto Agil (0% instrumentado), extraido con Knowledge-Driven Development.
 - `kdd-tailwind` — Developer Tools — Verifica 10 tecnicas de Tailwind CSS v4 (instalacion, conflictos de utilidades, mobile-first, theme), extraido con Knowledge-Driven Development.
 - `kdd-wcag` — Accessibility & UX — Verifica 10 criterios de exito de WCAG 2.2 (idioma, contraste, area de toque, etiquetas), extraido con Knowledge-Driven Development.
+- `kdd-doce-factores` — Developer Tools — Verifica 10 tecnicas de The Twelve-Factor App: dependencias, config, servicios, puerto, paridad, daemonizacion, SIGTERM, logs, codebase y release ID.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
@@ -216,6 +217,11 @@ Use these exact identifiers when referring to plugins:
 
 - Description: Verifica 10 criterios de exito de WCAG 2.2 (idioma, contraste, area de toque, etiquetas), extraido con Knowledge-Driven Development.
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-wcag
+
+### kdd-doce-factores (`kdd-doce-factores`)
+
+- Description: Verifica 10 tecnicas de The Twelve-Factor App: dependencias, config, servicios, puerto, paridad, daemonizacion, SIGTERM, logs, codebase y release ID.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-doce-factores
 
 ## Design System Analyses
 
