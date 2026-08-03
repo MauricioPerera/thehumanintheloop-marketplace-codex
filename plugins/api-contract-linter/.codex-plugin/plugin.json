@@ -7,7 +7,7 @@
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "Api Contract Linter",
+    "displayName": "API Contract Linter",
     "shortDescription": "Use Api Contract Linter in Codex.",
     "longDescription": "Api Contract Linter adds a local Codex plugin scaffold.",
     "developerName": "Local developer",

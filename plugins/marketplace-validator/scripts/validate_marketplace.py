@@ -29,6 +29,24 @@ def validate_skill(skill_path, errors):
     if not description_match or not description_match.group(1).strip():
         errors.append(f"Skill frontmatter missing description: {skill_path}")
 
+def validate_plugin_manifests(plugin_root, relative, errors):
+    paths = (plugin_root / ".claude-plugin" / "plugin.json", plugin_root / ".codex-plugin" / "plugin.json")
+    try:
+        claude, codex = (load(path) for path in paths)
+    except ValueError as exc:
+        errors.append(str(exc))
+        return
+    for platform, manifest in (("Claude", claude), ("Codex", codex)):
+        if not manifest.get("name") or not manifest.get("version") or not manifest.get("description"):
+            errors.append(f"Incomplete {platform} plugin manifest: {relative}")
+    if claude.get("name") != codex.get("name"):
+        errors.append(f"Plugin manifest names differ: {relative}")
+    if claude.get("version") != codex.get("version"):
+        errors.append(f"Plugin manifest versions differ: {relative}")
+    codex_display = codex.get("interface", {}).get("displayName")
+    if claude.get("displayName") != codex_display:
+        errors.append(f"Plugin display names differ: {relative}")
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("root", nargs="?", default=".")
@@ -63,6 +81,8 @@ def main():
                 skills = list((plugin_root / "skills").glob("*/SKILL.md"))
                 if not skills: errors.append(f"Plugin has no discoverable skills: {relative}")
                 for skill in skills: validate_skill(skill, errors)
+                if (plugin_root / ".claude-plugin" / "plugin.json").exists() and (plugin_root / ".codex-plugin" / "plugin.json").exists():
+                    validate_plugin_manifests(plugin_root, relative, errors)
     if len(names) == 2 and names[0] != names[1]: errors.append(f"Marketplace plugin mismatch: Claude={sorted(names[0])}, Codex={sorted(names[1])}")
     if len(category_maps) == 2 and category_maps[0] != category_maps[1]: errors.append(f"Marketplace category mismatch: Claude={category_maps[0]}, Codex={category_maps[1]}")
     if errors:
