@@ -38,3 +38,5 @@ El workflow de GitHub Actions debe pasar antes de hacer merge o publicar. No inc
 ## Pull requests
 
 Describe qué se añadió, qué fuentes se utilizaron y qué validaciones ejecutaste. Los cambios de autoría, licencia, eliminación de plugins o publicación de activos de terceros requieren revisión explícita.
+
+Para reportar un problema o proponer una mejora, utiliza las plantillas de **Issues** del repositorio. Para cambios de código, usa la plantilla de pull request y conserva la salida de los validadores en la descripción cuando sea relevante.

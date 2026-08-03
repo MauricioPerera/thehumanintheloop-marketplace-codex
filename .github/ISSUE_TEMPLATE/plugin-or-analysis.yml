@@ -1,0 +1,61 @@
+name: Plugin or analysis issue
+description: Report a problem with a plugin, validator, catalog entry, or Design System Analysis.
+title: "[Issue] "
+labels: [triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the reproducible problem and include the exact plugin or analysis identifier.
+  - type: input
+    id: resource
+    attributes:
+      label: Plugin or analysis
+      placeholder: linter-seo-geo-2026 or mercadolibre
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Include logs, screenshots, URLs, input samples, or validation output. Remove secrets first.
+    validations:
+      required: true
+*** Add File: D:\Repo\Demo\.github\ISSUE_TEMPLATE/feature_request.yml
+name: Feature request
+description: Suggest a plugin, validator, category, or catalog improvement.
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Explain who needs this and what is currently difficult.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation approach
+      description: Describe the hard rules, evidence, or deterministic checks the proposal should include.
+    validations:
+      required: true

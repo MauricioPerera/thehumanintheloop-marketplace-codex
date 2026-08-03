@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest a plugin, validator, category, or catalog improvement.
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Explain who needs this and what is currently difficult.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation approach
+      description: Describe the hard rules, evidence, or deterministic checks the proposal should include.
+    validations:
+      required: true
