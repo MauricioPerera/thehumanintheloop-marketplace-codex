@@ -591,6 +591,42 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "github-team-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-team-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-merge-queue-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-merge-queue-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-fork-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-fork-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }

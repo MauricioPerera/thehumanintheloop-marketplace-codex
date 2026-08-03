@@ -1,0 +1,8 @@
+{
+  "name": "github-team-manager",
+  "displayName": "GitHub Team Manager",
+  "version": "0.1.0",
+  "description": "Audita equipos, membresías y permisos de repositorios.",
+  "author": {"name": "Mauricio Perera"},
+  "skills": "./skills/"
+}

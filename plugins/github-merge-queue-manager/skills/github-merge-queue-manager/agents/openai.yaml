@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Merge Queue Manager
+  short_description: Analyzes merge queues and integration conditions.
+  default_prompt: Analyze the merge queue and prepare a safe integration plan.

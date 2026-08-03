@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Fork Manager
+  short_description: Audits forks and code network policies.
+  default_prompt: Audit the fork network and prepare a governance plan.

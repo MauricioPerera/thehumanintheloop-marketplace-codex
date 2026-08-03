@@ -1,0 +1,18 @@
+{
+  "name": "github-merge-queue-manager",
+  "version": "0.1.0",
+  "description": "Analiza merge queues, reglas de integración y condiciones de entrada.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub Merge Queue Manager",
+    "shortDescription": "Analiza merge queues y condiciones de integración.",
+    "longDescription": "Inspecciona pull requests en cola, checks requeridos, grupos de merge, tiempos de espera y políticas de integración antes de cambiar configuración.",
+    "developerName": "Local developer",
+    "category": "Developer Tools",
+    "capabilities": ["Merge Queue", "Pull Requests", "Integration"],
+    "defaultPrompt": "Analiza la merge queue y prepara un plan de integración con evidencia."
+  }
+}

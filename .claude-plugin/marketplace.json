@@ -74,6 +74,9 @@
     {"name":"github-checks-manager","displayName":"GitHub Checks Manager","source":"./plugins/github-checks-manager","category":"Developer Tools"},
     {"name":"github-audit-log-manager","displayName":"GitHub Audit Log Manager","source":"./plugins/github-audit-log-manager","category":"Security & Privacy"},
     {"name":"github-runner-manager","displayName":"GitHub Runner Manager","source":"./plugins/github-runner-manager","category":"Security & Privacy"},
-    {"name":"github-deployment-manager","displayName":"GitHub Deployment Manager","source":"./plugins/github-deployment-manager","category":"Developer Tools"}
+    {"name":"github-deployment-manager","displayName":"GitHub Deployment Manager","source":"./plugins/github-deployment-manager","category":"Developer Tools"},
+    {"name":"github-team-manager","displayName":"GitHub Team Manager","source":"./plugins/github-team-manager","category":"Security & Privacy"},
+    {"name":"github-merge-queue-manager","displayName":"GitHub Merge Queue Manager","source":"./plugins/github-merge-queue-manager","category":"Developer Tools"},
+    {"name":"github-fork-manager","displayName":"GitHub Fork Manager","source":"./plugins/github-fork-manager","category":"Developer Tools"}
   ]
 }

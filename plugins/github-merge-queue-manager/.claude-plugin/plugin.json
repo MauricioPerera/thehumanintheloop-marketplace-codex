@@ -1,0 +1,8 @@
+{
+  "name": "github-merge-queue-manager",
+  "displayName": "GitHub Merge Queue Manager",
+  "version": "0.1.0",
+  "description": "Analiza merge queues y condiciones de integración.",
+  "author": {"name": "Mauricio Perera"},
+  "skills": "./skills/"
+}

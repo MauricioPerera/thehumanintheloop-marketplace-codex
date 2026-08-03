@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Team Manager
+  short_description: Audits teams and repository permissions.
+  default_prompt: Audit GitHub teams and prepare a safe access plan.

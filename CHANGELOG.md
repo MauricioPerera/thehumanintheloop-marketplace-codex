@@ -37,6 +37,9 @@
 - `github-audit-log-manager`: análisis de actividad administrativa con filtros y datos redactados.
 - `github-runner-manager`: auditoría de runners, labels, alcance y aislamiento.
 - `github-deployment-manager`: análisis operativo de despliegues y planes de rollback.
+- `github-team-manager`: auditoría de equipos, membresías y permisos efectivos.
+- `github-merge-queue-manager`: diagnóstico de merge queues, checks y cuellos de botella.
+- `github-fork-manager`: auditoría de forks, sincronización y políticas de visibilidad.
 
 ## 2026-08-02
 
