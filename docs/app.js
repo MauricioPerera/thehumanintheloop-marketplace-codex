@@ -323,6 +323,11 @@ const analyses = [{
   description: 'Análisis externo del homepage público con Qwen Studio, API Platform, Download, modelos y features multimodales.',
   capabilities: ['AI Product UI', 'Model Cards', 'Validation'],
   url: './analyses/qwen/index.html', preview: './analyses/qwen/index.html', source: 'https://qwen.ai/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/qwen/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/qwen/design-system.json'
+}, {
+  name: 'ZCode Homepage', category: 'Design Systems', icon: 'ZC', version: '1.0.0',
+  description: 'Análisis externo de zcode.z.ai con agentic coding, workspace, task board, pricing, capabilities y downloads.',
+  capabilities: ['Agentic UI', 'Developer UX', 'Validation'],
+  url: './analyses/zcode/index.html', preview: './analyses/zcode/index.html', source: 'https://zcode.z.ai/en', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/zcode/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/zcode/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');

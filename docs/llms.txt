@@ -188,6 +188,7 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `claude` — Claude Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/claude/ — source: https://claude.com/
 - `ollama` — Ollama Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/ollama/ — source: https://ollama.com/
 - `qwen` — Qwen Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/qwen/ — source: https://qwen.ai/
+- `zcode` — ZCode Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/zcode/ — source: https://zcode.z.ai/en
 
 ## Instructions for AI agents
 
