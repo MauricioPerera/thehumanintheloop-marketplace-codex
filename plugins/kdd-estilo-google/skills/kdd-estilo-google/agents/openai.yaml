@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD Estilo Google Checker"
+  short_description: "Verifica puntuacion, encabezados, codigo/CLI, voz y vocabulario declarado"
+  default_prompt: "Audita esta documentacion contra el estilo de Google con kdd-estilo-google."

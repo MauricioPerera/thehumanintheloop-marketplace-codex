@@ -303,6 +303,10 @@ const plugins = [{
   name: 'kdd-codigo-limpio', displayName: 'KDD Codigo Limpio Checker', category: 'Developer Tools', icon: 'CL', version: '0.1.0',
   description: 'Verifica 30 heuristicas de Clean Code: comentarios, funciones, principios generales G, nombres, pruebas y profundidad de cadena, extraidas con Knowledge-Driven Development.',
   capabilities: ['clean-code', 'codigo-limpio', 'python', 'linting', 'kdd', 'validation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-codigo-limpio', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'kdd-estilo-google', displayName: 'KDD Estilo Google Checker', category: 'Content & Editorial', icon: 'GS', version: '0.1.0',
+  description: 'Verifica 42 reglas del Google developer documentation style guide: puntuacion, numeros/unidades/fechas, encabezados, codigo/CLI, voz/tiempo verbal y vocabulario declarado, extraidas con Knowledge-Driven Development.',
+  capabilities: ['google-style', 'technical-writing', 'documentation', 'prosa', 'kdd', 'validation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-estilo-google', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

@@ -1,0 +1,18 @@
+{
+  "name": "kdd-estilo-google",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para 42 reglas del Google developer documentation style guide, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD Estilo Google Checker",
+    "shortDescription": "Verifica puntuacion, encabezados, codigo/CLI, voz y vocabulario declarado",
+    "longDescription": "Corre 42 chequeos deterministas que kdd-book extrajo de la Google developer documentation style guide: puntuacion, numeros/unidades/fechas, encabezados, bloques de codigo y sintaxis CLI, voz y tiempo verbal, y 5 reglas de vocabulario que el proyecto debe declarar en JSON (lista de palabras, jerga, lenguaje inclusivo, nombres de producto, tipos de aviso). 42 de 80 secciones caen en pila A.",
+    "developerName": "Mauricio Perera",
+    "category": "Content & Editorial",
+    "capabilities": [],
+    "defaultPrompt": "Audita esta documentacion contra el estilo de Google con kdd-estilo-google."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "kdd-estilo-google",
+  "displayName": "KDD Estilo Google Checker",
+  "version": "0.1.0",
+  "description": "Verifica 42 reglas del Google developer documentation style guide: puntuacion, numeros/unidades/fechas, encabezados, codigo/CLI, voz y tiempo verbal, y vocabulario declarado por el proyecto, extraidas y verificadas con Knowledge-Driven Development.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["google-style", "technical-writing", "documentation", "prosa", "kdd", "validation"]
+}
