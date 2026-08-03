@@ -42,3 +42,5 @@ Describe qué se añadió, qué fuentes se utilizaron y qué validaciones ejecut
 Para reportar un problema o proponer una mejora, utiliza las plantillas de **Issues** del repositorio. Para cambios de código, usa la plantilla de pull request y conserva la salida de los validadores en la descripción cuando sea relevante.
 
 Para vulnerabilidades de seguridad, sigue [`SECURITY.md`](SECURITY.md) y no publiques detalles explotables en un issue.
+
+Las contribuciones también deben respetar [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).

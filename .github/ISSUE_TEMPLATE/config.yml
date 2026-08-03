@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Reportar una vulnerabilidad de seguridad
+    url: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/security/advisories/new
+    about: No publiques detalles explotables en un issue. Usa el reporte privado de GitHub.
+  - name: Código de conducta
+    url: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/blob/main/CODE_OF_CONDUCT.md
+    about: Consulta las reglas de participación de la comunidad.

@@ -48,6 +48,7 @@ La GitHub Page permite filtrar por categoría, buscar por nombre o capacidad, co
 - `CONTRIBUTING.md`: flujo para proponer plugins y Design System Analyses.
 - `CHANGELOG.md`: historial de capacidades publicadas.
 - `SECURITY.md`: alcance y procedimiento para reportar vulnerabilidades.
+- `CODE_OF_CONDUCT.md`: reglas de participación de la comunidad.
 
 ## Design System Analyses
 
