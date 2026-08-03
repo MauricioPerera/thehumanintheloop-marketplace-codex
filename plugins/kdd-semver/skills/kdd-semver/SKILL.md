@@ -14,22 +14,30 @@ inventa una regla para los 8 que no puede verificar.
 
 ## Flujo
 
-1. **Encontrá la version.** Buscá `__version__ = "..."` en el código Python del proyecto (típicamente
-   `__init__.py`, `setup.py`, `pyproject.toml` vía `version = "..."`, o donde el usuario indique). Si
-   hay varias declaraciones, pedí cuál es la canónica en vez de asumir.
-2. **Corré el chequeo determinista** contra el archivo que declara `__version__`:
+1. **Encontrá la version.** Un proyecto Python la declara como `__version__ = "..."` (en
+   `__init__.py`, `setup.py`, o donde el usuario indique) o como `[project].version` en
+   `pyproject.toml`. Si hay varias declaraciones en el proyecto, pedí cuál es la canónica en vez de
+   asumir — el script lee *solo el archivo puntual que le pases*, nunca escanea el resto del
+   directorio buscando otras.
+2. **Corré el chequeo determinista** contra ese archivo puntual (`.py` o `pyproject.toml`):
 
    ```bash
-   python scripts/semver_checks.py --rule formato <archivo.py>
-   python scripts/semver_checks.py --rule prerelease <archivo.py>
-   python scripts/semver_checks.py --rule build <archivo.py>
+   python scripts/semver_checks.py --rule formato <archivo>
+   python scripts/semver_checks.py --rule prerelease <archivo>
+   python scripts/semver_checks.py --rule build <archivo>
    ```
 
+   Para auditar un proyecto entero (varios archivos, cada uno con su propia version) usá
+   `--proyecto <directorio>` en vez de un archivo puntual; ahí sí escanea todo `.py` y
+   `pyproject.toml` bajo ese directorio.
+
    Cada corrida devuelve exit `0` (cumple), `1` (no cumple, con archivo:línea:detalle) o `2` (no se
-   pudo verificar — por ejemplo, si no hay ningún `__version__` de pre-release para medir esa regla en
-   particular; eso es correcto, no un error).
-3. **Reportá las 3 reglas siempre**, aunque alguna no aplique (exit 2 = "no verificable", no lo
-   marques como fallo). Usá `[PASSED]` / `[FAILED]` / `[NO VERIFICABLE]`.
+   pudo verificar — el archivo no declara ninguna version, `pyproject.toml` la declara `dynamic`, o
+   no hay `tomllib` disponible en Python < 3.11; eso es correcto, no un error).
+3. **Reportá las 3 reglas siempre**, aunque alguna no aplique a esa version en particular (por
+   ejemplo `build` sobre una version sin `+...`: sale verde porque no hay nada que ese artículo le
+   pida a esa version, no porque se haya verificado algo). Usá `[PASSED]` / `[FAILED]` /
+   `[NO VERIFICABLE]`.
 4. **Para el resto del spec** (los otros 8 artículos), consultá `scripts/knowledge.json` antes de
    responder cualquier pregunta sobre SemVer que no sea una de las 3 reglas. Cada nodo trae `pile`
    (`A`=medible, `B`=juicio real sin umbral, `C`=referencia), `title`, `description` y, si es `B`, un
@@ -40,17 +48,22 @@ inventa una regla para los 8 que no puede verificar.
 
 | Regla | Artículo del spec | Qué mide |
 |---|---|---|
-| `formato` | 2 | `X.Y.Z` con enteros no negativos, sin ceros iniciales, sin sufijo pre-release ni build |
-| `prerelease` | 9 | Identificadores de pre-release no vacíos, `[0-9A-Za-z-]`, sin cero inicial en los numéricos |
-| `build` | 10 | Identificadores de build metadata no vacíos y de solo `[0-9A-Za-z-]` (a diferencia de pre-release, sí puede llevar ceros iniciales) |
+| `formato` | 2 | El *normal version* `X.Y.Z` (el prefijo, sin importar si trae sufijo `-pre`/`+build`) son tres enteros no negativos sin ceros iniciales |
+| `prerelease` | 9 | Si hay sufijo `-...`: identificadores no vacíos, `[0-9A-Za-z-]`, sin cero inicial en los numéricos. Un `-` sin nada detrás es un identificador vacío: inválido |
+| `build` | 10 | Si hay sufijo `+...`: identificadores no vacíos y de solo `[0-9A-Za-z-]` (a diferencia de pre-release, sí puede llevar ceros iniciales). Un `+` sin nada detrás es inválido por el mismo motivo |
+
+`formato` **no** rechaza una version por tener un sufijo válido — `1.2.3-alpha+001` cumple `formato`
+igual que `1.2.3`, porque el artículo 2 describe el prefijo, no la ausencia de sufijos. Eso lo miden
+`prerelease` y `build` por separado, cada uno sobre su propio artículo.
 
 ## Límite declarado, sin excepciones
 
-El script lee código Python vía `ast`, no ejecuta nada y no tiene un parser real de SemVer: solo
-reconoce un literal de string asignado a `__version__`. Una versión armada por concatenación, f-string
-o calculada en tiempo de ejecución no la ve — no es un defecto a ajustar con más regex, es el límite
-de leer código en vez de ejecutarlo, y hay que decirlo así si el usuario pregunta por qué no detectó
-algo.
+El script lee código Python vía `ast` y `pyproject.toml` vía `tomllib` (stdlib desde Python 3.11); no
+ejecuta nada y no tiene un parser real de SemVer. Solo reconoce un literal de string: un `__version__`
+asignado en Python, o `[project].version` en TOML. Una versión armada por concatenación, f-string, o
+declarada `dynamic = ["version"]` en `pyproject.toml` (la resuelve el backend de build, no es un
+literal) no la ve — no es un defecto a ajustar con más regex, es el límite de leer el dato en vez de
+ejecutar el proyecto, y hay que decirlo así si el usuario pregunta por qué no detectó algo.
 
 ## Reporte
 

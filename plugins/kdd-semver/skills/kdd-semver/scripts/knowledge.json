@@ -53,7 +53,7 @@
       ],
       "links": [],
       "instrument": "semver_checks.py --rule formato",
-      "threshold": "ningun string de version que no cumpla el formato X.Y.Z"
+      "threshold": "el normal-version X.Y.Z (el prefijo, sufijos -pre/+build aparte) son tres enteros no negativos sin ceros iniciales"
     },
     {
       "id": "sv03",
