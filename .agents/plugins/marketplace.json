@@ -483,6 +483,42 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Security & Privacy"
+    },
+    {
+      "name": "github-environment-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-environment-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-variable-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-variable-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-package-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-package-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }

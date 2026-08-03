@@ -65,6 +65,9 @@
     {"name":"github-contributor-manager","displayName":"GitHub Contributor Manager","source":"./plugins/github-contributor-manager","category":"Developer Tools"},
     {"name":"github-activity-manager","displayName":"GitHub Activity Manager","source":"./plugins/github-activity-manager","category":"Developer Tools"},
     {"name":"github-traffic-manager","displayName":"GitHub Traffic Manager","source":"./plugins/github-traffic-manager","category":"Developer Tools"},
-    {"name":"github-webhook-manager","displayName":"GitHub Webhook Manager","source":"./plugins/github-webhook-manager","category":"Security & Privacy"}
+    {"name":"github-webhook-manager","displayName":"GitHub Webhook Manager","source":"./plugins/github-webhook-manager","category":"Security & Privacy"},
+    {"name":"github-environment-manager","displayName":"GitHub Environment Manager","source":"./plugins/github-environment-manager","category":"Security & Privacy"},
+    {"name":"github-variable-manager","displayName":"GitHub Variable Manager","source":"./plugins/github-variable-manager","category":"Security & Privacy"},
+    {"name":"github-package-manager","displayName":"GitHub Package Manager","source":"./plugins/github-package-manager","category":"Developer Tools"}
   ]
 }

@@ -28,6 +28,9 @@
 - `github-activity-manager`: reportes temporales de actividad con evidencia y límites.
 - `github-traffic-manager`: análisis de tráfico de repositorios con retención y agregación explícitas.
 - `github-webhook-manager`: planes y auditoría de webhooks con secretos redactados.
+- `github-environment-manager`: auditoría y planes de environments y gates de despliegue.
+- `github-variable-manager`: auditoría de variables sin lectura de valores secretos.
+- `github-package-manager`: revisión de paquetes, versiones y planes de retención.
 
 ## 2026-08-02
 

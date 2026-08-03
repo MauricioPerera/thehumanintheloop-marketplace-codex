@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Package Manager"
+  short_description: "Gestiona paquetes con gh CLI."
+  default_prompt: "Revisa paquetes de GitHub y propone una accion segura."

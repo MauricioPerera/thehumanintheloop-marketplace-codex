@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Variable Manager"
+  short_description: "Audita variables con gh CLI."
+  default_prompt: "Audita variables de GitHub sin exponer secretos."

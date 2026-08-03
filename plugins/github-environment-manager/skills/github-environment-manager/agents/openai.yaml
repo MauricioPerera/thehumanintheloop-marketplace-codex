@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Environment Manager"
+  short_description: "Gestiona environments con gh API."
+  default_prompt: "Revisa o prepara un environment de GitHub con seguridad."
