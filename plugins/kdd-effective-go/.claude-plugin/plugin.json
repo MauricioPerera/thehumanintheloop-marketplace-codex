@@ -1,0 +1,13 @@
+{
+  "name": "kdd-effective-go",
+  "displayName": "KDD Effective Go Checker",
+  "version": "0.1.0",
+  "description": "Verifica 3 convenciones de texto de Effective Go (indentacion con tabs, sin parentesis en if/for/switch, llave de apertura en la misma linea), extraidas y verificadas con Knowledge-Driven Development.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["go", "golang", "effective-go", "kdd", "validation"]
+}
