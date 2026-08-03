@@ -1,0 +1,10 @@
+{
+  "name": "commercial-proposal-builder",
+  "displayName": "Commercial Proposal Builder",
+  "version": "0.1.0",
+  "description": "Redacta propuestas comerciales basadas en requerimientos con trazabilidad, control de alcance, integridad de precios y validación de supuestos.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["commercial", "proposal", "requirements", "scope", "pricing", "sales"]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commercial Proposal Builder"
+  short_description: "Redacta propuestas con requisitos y evidencia."
+  default_prompt: "Redacta una propuesta comercial basada en estos requerimientos sin inventar capacidades ni precios."

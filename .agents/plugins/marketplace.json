@@ -207,6 +207,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Content & Editorial"
+    },
+    {
+      "name": "commercial-proposal-builder",
+      "source": {
+        "source": "local",
+        "path": "./plugins/commercial-proposal-builder"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Content & Editorial"
     }
   ]
 }

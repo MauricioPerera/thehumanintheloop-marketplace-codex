@@ -4,6 +4,8 @@
 
 - Documentación de contribución para plugins y Design System Analyses.
 - Validación automática de metadata SEO, JSON-LD y sitemap para previews.
+- `cv-job-tailor`: adaptación de CVs a ofertas con trazabilidad y validadores anti-fabricación.
+- `commercial-proposal-builder`: propuestas comerciales basadas en requerimientos con control de alcance, precios y supuestos.
 
 ## 2026-08-02
 
