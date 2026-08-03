@@ -74,7 +74,13 @@ Antes de publicar, comprueba que la entrada exista en ambos manifests, que la ru
 
 ## Validación local
 
-Desde la raíz del repositorio:
+Desde la raíz del repositorio puedes ejecutar toda la suite con:
+
+```powershell
+python scripts/validate_all.py
+```
+
+Para ejecutar los controles por separado:
 
 ```powershell
 python plugins/marketplace-validator/scripts/validate_marketplace.py .

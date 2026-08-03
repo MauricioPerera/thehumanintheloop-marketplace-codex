@@ -32,6 +32,12 @@ Incluye `DESIGN.md`, `design-system.json`, `validation-report.json` e `index.htm
 Desde la raíz:
 
 ```powershell
+python scripts/validate_all.py
+```
+
+El comando equivalente por etapas es:
+
+```powershell
 python plugins/marketplace-validator/scripts/validate_marketplace.py .
 python scripts/validate_catalog_metadata.py
 python scripts/validate_analysis_metadata.py

@@ -15,19 +15,5 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Validate marketplace and plugin structure
-        run: python plugins/marketplace-validator/scripts/validate_marketplace.py .
-      - name: Validate JSON manifests
-        shell: bash
-        run: |
-          python -m json.tool .claude-plugin/marketplace.json >/dev/null
-          python -m json.tool .agents/plugins/marketplace.json >/dev/null
-          find plugins -path '*/.claude-plugin/plugin.json' -o -path '*/.codex-plugin/plugin.json' | while read file; do python -m json.tool "$file" >/dev/null; done
-      - name: Check catalog JavaScript
-        run: node --check docs/app.js
-      - name: Check catalog SEO metadata
-        run: python scripts/validate_catalog_metadata.py
-      - name: Check analysis SEO metadata
-        run: python scripts/validate_analysis_metadata.py
-      - name: Check AI-readable catalog
-        run: python scripts/validate_llms_catalog.py
+      - name: Run complete validation suite
+        run: python scripts/validate_all.py
