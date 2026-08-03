@@ -187,6 +187,7 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `anthropic` — Anthropic Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/anthropic/ — source: https://www.anthropic.com/
 - `claude` — Claude Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/claude/ — source: https://claude.com/
 - `ollama` — Ollama Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/ollama/ — source: https://ollama.com/
+- `qwen` — Qwen Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/qwen/ — source: https://qwen.ai/
 
 ## Instructions for AI agents
 

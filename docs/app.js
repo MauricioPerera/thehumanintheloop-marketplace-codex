@@ -318,6 +318,11 @@ const analyses = [{
   description: 'Análisis externo del homepage público con open models, terminal, local/cloud, plan Pro y privacidad.',
   capabilities: ['Developer UI', 'Terminal UX', 'Validation'],
   url: './analyses/ollama/index.html', preview: './analyses/ollama/index.html', source: 'https://ollama.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/ollama/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/ollama/design-system.json'
+}, {
+  name: 'Qwen Homepage', category: 'Design Systems', icon: 'QW', version: '1.0.0',
+  description: 'Análisis externo del homepage público con Qwen Studio, API Platform, Download, modelos y features multimodales.',
+  capabilities: ['AI Product UI', 'Model Cards', 'Validation'],
+  url: './analyses/qwen/index.html', preview: './analyses/qwen/index.html', source: 'https://qwen.ai/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/qwen/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/qwen/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');
