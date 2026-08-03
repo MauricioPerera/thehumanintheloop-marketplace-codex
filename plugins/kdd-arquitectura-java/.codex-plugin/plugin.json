@@ -1,0 +1,18 @@
+{
+  "name": "kdd-arquitectura-java",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para 8 reglas de arquitectura y codigo limpio, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD Arquitectura Java Solida Checker",
+    "shortDescription": "Verifica capas, excepciones, ISP, DI/Factory, AOP y COC",
+    "longDescription": "Corre 8 chequeos deterministas que kdd-book extrajo de 'Arquitectura Java solida': 6 sobre el grafo de imports e instanciacion (arch_checks.py) y 2 de Clean Code (checks.py, compartido con otras fuentes del corpus). El 15 de 33 secciones cae en pila A: el porcentaje contractable mas alto entre los libros de codigo del corpus.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Audita la arquitectura de este proyecto con kdd-arquitectura-java."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "kdd-arquitectura-java",
+  "displayName": "KDD Arquitectura Java Solida Checker",
+  "version": "0.1.0",
+  "description": "Verifica 8 reglas de arquitectura y codigo limpio: capas, excepciones, ISP, inversion de control/DI/Factory, AOP, convencion de nombres (COC), duplicacion (G5) y polimorfismo antes que if/else (G23), extraidas y verificadas con Knowledge-Driven Development.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["arquitectura", "solid", "capas", "dependency-injection", "kdd", "validation"]
+}

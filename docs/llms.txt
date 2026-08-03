@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 78 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 79 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -93,6 +93,7 @@ Use these exact identifiers when referring to plugins:
 - `kdd-wcag` — Accessibility & UX — Verifica 10 criterios de exito de WCAG 2.2 (idioma, contraste, area de toque, etiquetas), extraido con Knowledge-Driven Development.
 - `kdd-doce-factores` — Developer Tools — Verifica 10 tecnicas de The Twelve-Factor App: dependencias, config, servicios, puerto, paridad, daemonizacion, SIGTERM, logs, codebase y release ID.
 - `kdd-htmx` — Developer Tools — Verifica HTML, capturas HTTP y plantillas contra 6 tecnicas medibles de la documentacion de htmx: mejora progresiva, indicador, CSRF, Vary, CSP y escapado, extraidas con Knowledge-Driven Development.
+- `kdd-arquitectura-java` — Developer Tools — Verifica 8 reglas de arquitectura y codigo limpio: capas, excepciones, ISP, DI/Factory, AOP, COC, duplicacion (G5) y polimorfismo antes que if/else (G23), extraidas con Knowledge-Driven Development.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
@@ -228,6 +229,11 @@ Use these exact identifiers when referring to plugins:
 
 - Description: Verifica HTML, capturas HTTP y plantillas contra 6 tecnicas medibles de la documentacion de htmx: mejora progresiva, indicador, CSRF, Vary, CSP y escapado, extraidas con Knowledge-Driven Development.
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-htmx
+
+### kdd-arquitectura-java (`kdd-arquitectura-java`)
+
+- Description: Verifica 8 reglas de arquitectura y codigo limpio: capas, excepciones, ISP, DI/Factory, AOP, COC, duplicacion (G5) y polimorfismo antes que if/else (G23), extraidas con Knowledge-Driven Development.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-arquitectura-java
 
 ## Design System Analyses
 

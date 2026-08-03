@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD Arquitectura Java Solida Checker"
+  short_description: "Verifica capas, excepciones, ISP, DI/Factory, AOP y COC"
+  default_prompt: "Audita la arquitectura de este proyecto con kdd-arquitectura-java."
