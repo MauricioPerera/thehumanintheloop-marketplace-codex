@@ -1,0 +1,18 @@
+{
+  "name": "kdd-pep8",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para 28 reglas de PEP 8, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD PEP 8 Checker",
+    "shortDescription": "Verifica indentacion, imports, comillas, docstrings y nombres PEP 8",
+    "longDescription": "Corre 28 chequeos deterministas que kdd-book extrajo de PEP 8: 27 de forma del codigo (pep8_checks.py) y 1 de longitud de linea (repo_checks.py, compartido con otras fuentes del corpus). 29 de 42 secciones caen en pila A (69%), el porcentaje contractable mas alto del corpus.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Audita el estilo PEP 8 de este codigo con kdd-pep8."
+  }
+}

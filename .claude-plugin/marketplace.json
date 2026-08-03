@@ -104,6 +104,7 @@
   {"name":"kdd-wcag","displayName":"KDD WCAG 2.2 Checker","source":"./plugins/kdd-wcag","category":"Accessibility & UX"},
   {"name":"kdd-doce-factores","displayName":"KDD Twelve-Factor App Checker","source":"./plugins/kdd-doce-factores","category":"Developer Tools"},
 {"name":"kdd-htmx","displayName":"KDD htmx Checker","source":"./plugins/kdd-htmx","category":"Developer Tools"},
-{"name":"kdd-arquitectura-java","displayName":"KDD Arquitectura Java Solida Checker","source":"./plugins/kdd-arquitectura-java","category":"Developer Tools"}
+{"name":"kdd-arquitectura-java","displayName":"KDD Arquitectura Java Solida Checker","source":"./plugins/kdd-arquitectura-java","category":"Developer Tools"},
+{"name":"kdd-pep8","displayName":"KDD PEP 8 Checker","source":"./plugins/kdd-pep8","category":"Developer Tools"}
 ]
 }
