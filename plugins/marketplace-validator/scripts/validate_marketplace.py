@@ -9,6 +9,21 @@ def load(path):
     except Exception as exc:
         raise ValueError(f"Invalid JSON: {path}: {exc}")
 
+def validate_skill(skill_path, errors):
+    lines = skill_path.read_text(encoding="utf-8").splitlines()
+    if not lines or lines[0].strip() != "---":
+        errors.append(f"Skill missing frontmatter: {skill_path.relative_to(skill_path.parents[3])}")
+        return
+    try:
+        end = lines[1:].index("---") + 1
+    except ValueError:
+        errors.append(f"Skill frontmatter not closed: {skill_path}")
+        return
+    frontmatter = "\n".join(lines[1:end])
+    for field in ("name:", "description:"):
+        if field not in frontmatter:
+            errors.append(f"Skill frontmatter missing {field[:-1]}: {skill_path}")
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("root", nargs="?", default=".")
@@ -40,7 +55,9 @@ def main():
                 plugin_root = root / relative
                 if not (plugin_root / ".claude-plugin" / "plugin.json").exists(): errors.append(f"Missing Claude plugin manifest: {relative}")
                 if not (plugin_root / ".codex-plugin" / "plugin.json").exists(): errors.append(f"Missing Codex plugin manifest: {relative}")
-                if not list((plugin_root / "skills").glob("*/SKILL.md")): errors.append(f"Plugin has no discoverable skills: {relative}")
+                skills = list((plugin_root / "skills").glob("*/SKILL.md"))
+                if not skills: errors.append(f"Plugin has no discoverable skills: {relative}")
+                for skill in skills: validate_skill(skill, errors)
     if len(names) == 2 and names[0] != names[1]: errors.append(f"Marketplace plugin mismatch: Claude={sorted(names[0])}, Codex={sorted(names[1])}")
     if len(category_maps) == 2 and category_maps[0] != category_maps[1]: errors.append(f"Marketplace category mismatch: Claude={category_maps[0]}, Codex={category_maps[1]}")
     if errors:
