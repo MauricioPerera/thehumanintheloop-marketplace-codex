@@ -199,6 +199,11 @@ Use these exact identifiers when referring to plugins:
 - Description: Consulta honesta de los 19 aforismos del Zen de Python (0% instrumentado), extraido con Knowledge-Driven Development.
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-zen-of-python
 
+### kdd-agile-manifesto (`kdd-agile-manifesto`)
+
+- Description: Consulta honesta de los 4 valores y 12 principios del Manifiesto Agil (0% instrumentado), extraido con Knowledge-Driven Development.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-agile-manifesto
+
 ## Design System Analyses
 
 Published analyses are reusable results rather than generator plugins. Each analysis may include a `DESIGN.md` source of truth, `design-system.json`, `validation-report.json`, and an HTML preview. The catalog presents these previews inside the marketplace interface.
@@ -220,6 +225,8 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `qwen` — Qwen Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/qwen/ — source: https://qwen.ai/
 - `zcode` — ZCode Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/zcode/ — source: https://zcode.z.ai/en
 - `notebooklm` — NotebookLM / Gemini Notebook — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/notebooklm/ — source: https://notebooklm.google/
+- `kdd-agile-manifesto` — Marketplace & Quality — Consulta honesta de los 4 valores y 12 principios del Manifiesto Agil (0% instrumentado), extraido con Knowledge-Driven Development.
+
 ## Instructions for AI agents
 
 Before modifying this repository, inspect the relevant marketplace manifest and plugin directory. Keep `.claude-plugin/marketplace.json`, `.agents/plugins/marketplace.json`, plugin manifests, and the catalog metadata synchronized. Do not describe an analysis as an official brand system unless its provenance explicitly supports that claim.

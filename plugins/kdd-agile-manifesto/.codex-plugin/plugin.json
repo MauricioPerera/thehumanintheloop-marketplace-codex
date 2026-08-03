@@ -1,0 +1,18 @@
+{
+  "name": "kdd-agile-manifesto",
+  "version": "0.1.0",
+  "description": "Grafo de conocimiento honesto del Manifiesto Agil: 0% instrumentado, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD Agile Manifesto Reference",
+    "shortDescription": "Consulta los 4 valores y 12 principios del Manifiesto Agil con su categoria honesta",
+    "longDescription": "Este plugin no tiene instrumento: los 4 valores y 12 principios del Manifiesto Agil son juicio sobre como trabaja un equipo, no propiedades de un artefacto que un script pueda leer. kdd-book los triago en A=0/B=7/C=10 y documenta por que -incluida la decision explicita de no reusar un instrumento de cadencia de git existente-.",
+    "developerName": "Mauricio Perera",
+    "category": "Marketplace & Quality",
+    "capabilities": [],
+    "defaultPrompt": "Explicame que dice el Manifiesto Agil sobre este caso, citando kdd-agile-manifesto."
+  }
+}

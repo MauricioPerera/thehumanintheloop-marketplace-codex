@@ -267,6 +267,10 @@ const plugins = [{
   name: 'kdd-zen-of-python', displayName: 'KDD Zen of Python Reference', category: 'Developer Tools', icon: 'ZP', version: '0.1.0',
   description: 'Consulta honesta de los 19 aforismos del Zen de Python (0% instrumentado), extraido con Knowledge-Driven Development.',
   capabilities: ['Python', 'Zen of Python', 'KDD'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-zen-of-python', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'kdd-agile-manifesto', displayName: 'KDD Agile Manifesto Reference', category: 'Marketplace & Quality', icon: 'AM', version: '0.1.0',
+  description: 'Consulta honesta de los 4 valores y 12 principios del Manifiesto Agil (0% instrumentado), extraido con Knowledge-Driven Development.',
+  capabilities: ['Agile', 'Manifesto', 'KDD'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-agile-manifesto', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',
