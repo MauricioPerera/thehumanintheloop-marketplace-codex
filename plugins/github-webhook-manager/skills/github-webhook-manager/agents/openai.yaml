@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Webhook Manager"
+  short_description: "Prepara webhooks con gh API."
+  default_prompt: "Revisa o prepara un webhook con plan de seguridad."

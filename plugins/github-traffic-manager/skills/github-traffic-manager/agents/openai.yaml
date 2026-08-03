@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Traffic Manager"
+  short_description: "Analiza trafico con GitHub API."
+  default_prompt: "Analiza views y clones del repositorio con limites claros."

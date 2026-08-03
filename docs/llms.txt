@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 37 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 40 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -40,6 +40,9 @@ Use these exact identifiers when referring to plugins:
 - `github-api-manager` — Developer Tools — Runs safe, reproducible GitHub API queries through gh CLI.
 - `github-codeowners-manager` — Developer Tools — Designs and validates CODEOWNERS ownership mappings.
 - `github-contributor-manager` — Developer Tools — Analyzes contribution activity and reviewer evidence.
+- `github-activity-manager` — Developer Tools — Summarizes dated repository activity with explicit scope.
+- `github-traffic-manager` — Developer Tools — Analyzes views, clones, referrers, and paths with API limits.
+- `github-webhook-manager` — Security & Privacy — Plans and audits GitHub webhooks with secret handling.
 - `repo-quality-gate` — Marketplace & Quality — Repository readiness before commits, PRs, releases, or deployments.
 - `technical-docs-linter` — Developer Tools — README, API docs, examples, commands, and links.
 - `accessibility-auditor` — Accessibility & UX — HTML, ARIA, forms, contrast, and keyboard behavior.

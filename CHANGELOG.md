@@ -25,6 +25,9 @@
 - `github-api-manager`: consultas GitHub API con controles GET-first y evidencia estructurada.
 - `github-codeowners-manager`: validación de CODEOWNERS, ownership y cobertura.
 - `github-contributor-manager`: análisis de contribuciones y planes de reviewers.
+- `github-activity-manager`: reportes temporales de actividad con evidencia y límites.
+- `github-traffic-manager`: análisis de tráfico de repositorios con retención y agregación explícitas.
+- `github-webhook-manager`: planes y auditoría de webhooks con secretos redactados.
 
 ## 2026-08-02
 

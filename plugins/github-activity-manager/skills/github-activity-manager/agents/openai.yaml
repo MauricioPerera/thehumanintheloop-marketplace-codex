@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Activity Manager"
+  short_description: "Resume actividad con gh CLI."
+  default_prompt: "Resume actividad reciente de un repositorio con evidencia."

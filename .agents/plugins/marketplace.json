@@ -447,6 +447,42 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "github-activity-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-activity-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-traffic-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-traffic-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-webhook-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-webhook-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
     }
   ]
 }
