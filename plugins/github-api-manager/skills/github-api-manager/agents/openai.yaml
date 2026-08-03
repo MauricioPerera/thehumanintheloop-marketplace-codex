@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub API Manager"
+  short_description: "Consulta GitHub API con gh CLI."
+  default_prompt: "Ejecuta una consulta segura a la API de GitHub y explica el resultado."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub CODEOWNERS Manager"
+  short_description: "Designs CODEOWNERS with evidence."
+  default_prompt: "Review or prepare a CODEOWNERS file with validation."

@@ -22,6 +22,9 @@
 - `github-milestone-manager`: planificación de hitos con objetivos, fechas y trazabilidad.
 - `github-branch-manager`: gestión segura de ramas y operaciones remotas.
 - `github-template-manager`: validación y mantenimiento de templates de Issues y PRs.
+- `github-api-manager`: consultas GitHub API con controles GET-first y evidencia estructurada.
+- `github-codeowners-manager`: validación de CODEOWNERS, ownership y cobertura.
+- `github-contributor-manager`: análisis de contribuciones y planes de reviewers.
 
 ## 2026-08-02
 

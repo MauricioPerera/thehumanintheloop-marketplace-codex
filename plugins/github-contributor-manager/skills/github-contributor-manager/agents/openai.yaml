@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Contributor Manager"
+  short_description: "Analiza contribuciones con gh CLI."
+  default_prompt: "Analiza contribuciones y propone ownership con evidencia."

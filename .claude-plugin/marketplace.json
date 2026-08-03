@@ -59,6 +59,9 @@
     {"name":"github-repository-manager","displayName":"GitHub Repository Manager","source":"./plugins/github-repository-manager","category":"Developer Tools"},
     {"name":"github-milestone-manager","displayName":"GitHub Milestone Manager","source":"./plugins/github-milestone-manager","category":"Marketplace & Quality"},
     {"name":"github-branch-manager","displayName":"GitHub Branch Manager","source":"./plugins/github-branch-manager","category":"Developer Tools"},
-    {"name":"github-template-manager","displayName":"GitHub Template Manager","source":"./plugins/github-template-manager","category":"Developer Tools"}
+    {"name":"github-template-manager","displayName":"GitHub Template Manager","source":"./plugins/github-template-manager","category":"Developer Tools"},
+    {"name":"github-api-manager","displayName":"GitHub API Manager","source":"./plugins/github-api-manager","category":"Developer Tools"},
+    {"name":"github-codeowners-manager","displayName":"GitHub CODEOWNERS Manager","source":"./plugins/github-codeowners-manager","category":"Developer Tools"},
+    {"name":"github-contributor-manager","displayName":"GitHub Contributor Manager","source":"./plugins/github-contributor-manager","category":"Developer Tools"}
   ]
 }
