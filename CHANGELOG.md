@@ -1,0 +1,14 @@
+# Changelog
+
+## Unreleased
+
+- Documentación de contribución para plugins y Design System Analyses.
+- Validación automática de metadata SEO, JSON-LD y sitemap para previews.
+
+## 2026-08-02
+
+- Marketplace dual para Claude Code y Codex.
+- Catálogo público con 16 plugins y ocho categorías.
+- GitHub Page navegable con búsqueda, filtros, instalación y previews embebidos.
+- Publicación de análisis KDD, Mercado Libre y TheHumanInTheLoop Marketplace.
+- Licencia MIT.

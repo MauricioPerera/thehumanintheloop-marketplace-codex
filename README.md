@@ -45,6 +45,8 @@ La GitHub Page permite filtrar por categoría, buscar por nombre o capacidad, co
 - `plugins/`: un directorio por plugin.
 - Cada plugin puede contener `.claude-plugin/plugin.json` y `.codex-plugin/plugin.json`; ambos reutilizan las mismas skills bajo `skills/`.
 - `docs/analyses/`: resultados publicados de análisis visuales; cada entrada contiene `DESIGN.md`, `design-system.json`, `validation-report.json` y un preview navegable.
+- `CONTRIBUTING.md`: flujo para proponer plugins y Design System Analyses.
+- `CHANGELOG.md`: historial de capacidades publicadas.
 
 ## Design System Analyses
 
