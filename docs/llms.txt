@@ -7,6 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
+Current inventory: 16 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -14,7 +15,7 @@ Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality
 
 - Description: Content validator for search engines and generative engines with hybrid SEO and GEO pre-publication checks.
 - Version: 0.1.0
-- Category: Productivity
+- Category: Content & Editorial
 - Author: Mauricio Perera
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/linter-seo-geo-2026
 - Claude marketplace manifest: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/blob/main/.claude-plugin/marketplace.json
@@ -95,9 +96,21 @@ Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality
 - Description: Validates test evidence, reports, coverage, and quality thresholds before publishing.
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/test-coverage-gate
 
+## Design System Analyses
+
+Published analyses are reusable results rather than generator plugins. Each analysis may include a `DESIGN.md` source of truth, `design-system.json`, `validation-report.json`, and an HTML preview. The catalog presents these previews inside the marketplace interface.
+
+## Instructions for AI agents
+
+Before modifying this repository, inspect the relevant marketplace manifest and plugin directory. Keep `.claude-plugin/marketplace.json`, `.agents/plugins/marketplace.json`, plugin manifests, and the catalog metadata synchronized. Do not describe an analysis as an official brand system unless its provenance explicitly supports that claim.
+
+When adding a plugin, use a lowercase hyphenated directory under `plugins/`, add both platform manifests when cross-platform support is intended, reuse shared skills under `skills/`, and run the repository validation commands documented in `README.md` before publishing.
+
 ## Installation
 
 In Claude Code, add `MauricioPerera/thehumanintheloop-marketplace-codex` and install `linter-seo-geo-2026@thehumanintheloop-marketplace-claude`. In Codex, register the `.agents/plugins` marketplace and install `linter-seo-geo-2026`. Both platforms consume the same plugin directory and shared skills.
+
+For another plugin, replace `linter-seo-geo-2026` with its exact identifier from the catalog. In Claude Desktop, use `+ → Plugins → Add plugin`; `/plugin` commands belong to the interactive Claude Code terminal.
 
 ## Source and updates
 
