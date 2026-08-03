@@ -52,6 +52,17 @@ def main() -> int:
     pages = sorted(analyses.glob("*/index.html"))
     for page in pages:
         name = page.parent.name
+        for filename in ("DESIGN.md", "design-system.json", "validation-report.json", "styles.css", "app.js"):
+            artifact = page.parent / filename
+            if not artifact.exists():
+                errors.append(f"{name}: missing analysis artifact {filename}")
+        for filename in ("design-system.json", "validation-report.json"):
+            artifact = page.parent / filename
+            if artifact.exists():
+                try:
+                    json.loads(artifact.read_text(encoding="utf-8"))
+                except json.JSONDecodeError as exc:
+                    errors.append(f"{name}: invalid JSON in {filename}: {exc}")
         parser = MetadataParser()
         parser.feed(page.read_text(encoding="utf-8"))
         expected = f"{base}{name}/"
