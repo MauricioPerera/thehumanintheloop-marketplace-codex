@@ -298,6 +298,11 @@ const analyses = [{
   description: 'Análisis externo del homepage público con navegación por audiencias, prompt, contenido editorial y productos.',
   capabilities: ['Editorial UI', 'Prompt Entry', 'Validation'],
   url: './analyses/openai/index.html', preview: './analyses/openai/index.html', source: 'https://openai.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/openai/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/openai/design-system.json'
+}, {
+  name: 'Google Antigravity', category: 'Design Systems', icon: 'AG', version: '1.0.0',
+  description: 'Análisis externo de antigravity.google con producto agentic, CLI, SDK, IDE, casos de uso y descargas.',
+  capabilities: ['Product UI', 'Agentic UX', 'Validation'],
+  url: './analyses/antigravity/index.html', preview: './analyses/antigravity/index.html', source: 'https://antigravity.google/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/antigravity/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/antigravity/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');
