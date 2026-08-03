@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Organization Settings Manager
+  short_description: Audits organization policies.
+  default_prompt: Audit organization settings and prepare a safe policy plan.

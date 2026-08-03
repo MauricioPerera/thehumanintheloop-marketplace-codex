@@ -83,6 +83,9 @@
     {"name":"github-archive-manager","displayName":"GitHub Archive Manager","source":"./plugins/github-archive-manager","category":"Developer Tools"},
     {"name":"github-code-scanning-manager","displayName":"GitHub Code Scanning Manager","source":"./plugins/github-code-scanning-manager","category":"Security & Privacy"},
     {"name":"github-secret-scanning-manager","displayName":"GitHub Secret Scanning Manager","source":"./plugins/github-secret-scanning-manager","category":"Security & Privacy"},
-    {"name":"github-security-advisory-manager","displayName":"GitHub Security Advisory Manager","source":"./plugins/github-security-advisory-manager","category":"Security & Privacy"}
+    {"name":"github-security-advisory-manager","displayName":"GitHub Security Advisory Manager","source":"./plugins/github-security-advisory-manager","category":"Security & Privacy"},
+    {"name":"github-dependency-review-manager","displayName":"GitHub Dependency Review Manager","source":"./plugins/github-dependency-review-manager","category":"Security & Privacy"},
+    {"name":"github-private-reporting-manager","displayName":"GitHub Private Reporting Manager","source":"./plugins/github-private-reporting-manager","category":"Security & Privacy"},
+    {"name":"github-organization-settings-manager","displayName":"GitHub Organization Settings Manager","source":"./plugins/github-organization-settings-manager","category":"Security & Privacy"}
   ]
 }

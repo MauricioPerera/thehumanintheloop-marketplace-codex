@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Dependency Review Manager
+  short_description: Reviews new Pull Request dependencies.
+  default_prompt: Review Pull Request dependencies and prepare a risk plan.

@@ -46,6 +46,9 @@
 - `github-code-scanning-manager`: auditoría de alertas, severidad, reglas y remediación.
 - `github-secret-scanning-manager`: análisis seguro de alertas con valores siempre redactados.
 - `github-security-advisory-manager`: borradores de advisories con mitigación y divulgación responsable.
+- `github-dependency-review-manager`: revisión de dependencias nuevas, licencias y supply chain.
+- `github-private-reporting-manager`: reportes privados con evidencia mínima y segura.
+- `github-organization-settings-manager`: auditoría de políticas globales y permisos de organización.
 
 ## 2026-08-02
 

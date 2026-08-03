@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Private Reporting Manager
+  short_description: Manages private vulnerability reports.
+  default_prompt: Prepare a private vulnerability report with minimal evidence.

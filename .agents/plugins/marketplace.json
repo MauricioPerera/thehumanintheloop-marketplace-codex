@@ -699,6 +699,42 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Security & Privacy"
+    },
+    {
+      "name": "github-dependency-review-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-dependency-review-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-private-reporting-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-private-reporting-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-organization-settings-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-organization-settings-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
     }
   ]
 }

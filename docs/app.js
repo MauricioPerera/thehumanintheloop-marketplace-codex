@@ -184,6 +184,18 @@ const plugins = [{
   description: 'Gestiona advisories y divulgación responsable.',
   capabilities: ['Advisories', 'CVE', 'Disclosure'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-security-advisory-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }, {
+  name: 'github-dependency-review-manager', displayName: 'GitHub Dependency Review Manager', category: 'Security & Privacy', icon: 'DREV', version: '0.1.0',
+  description: 'Revisa dependencias nuevas en Pull Requests.',
+  capabilities: ['Dependencies', 'Pull Requests', 'Supply Chain'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-dependency-review-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'github-private-reporting-manager', displayName: 'GitHub Private Reporting Manager', category: 'Security & Privacy', icon: 'PRIV', version: '0.1.0',
+  description: 'Gestiona reportes privados de vulnerabilidades.',
+  capabilities: ['Vulnerability Reports', 'Privacy', 'Disclosure'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-private-reporting-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'github-organization-settings-manager', displayName: 'GitHub Organization Settings Manager', category: 'Security & Privacy', icon: 'ORG', version: '0.1.0',
+  description: 'Audita políticas organizacionales.',
+  capabilities: ['Organizations', 'Policies', 'Administration'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-organization-settings-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
   name: 'repo-quality-gate', displayName: 'Repo Quality Gate', category: 'Marketplace & Quality', icon: 'RQ', version: '0.1.0', description: 'Revisa repositorios antes de commit, PR, release o despliegue.', capabilities: ['Quality', 'CI', 'Release'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/repo-quality-gate', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }, {
   name: 'technical-docs-linter', displayName: 'Technical Docs Linter', category: 'Developer Tools', icon: 'TD', version: '0.1.0', description: 'Valida README, documentación API, ejemplos, comandos y enlaces.', capabilities: ['Docs', 'API', 'Examples'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/technical-docs-linter', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
