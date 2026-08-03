@@ -288,6 +288,11 @@ const analyses = [{
   description: 'Análisis externo del homepage público con streaming UI, rankings, rails, suscripciones y responsive behavior.',
   capabilities: ['Streaming UI', 'Content Rails', 'Validation'],
   url: './analyses/primevideo/index.html', preview: './analyses/primevideo/index.html', source: 'https://www.primevideo.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/primevideo/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/primevideo/design-system.json'
+}, {
+  name: 'Netflix Homepage', category: 'Design Systems', icon: 'NF', version: '1.0.0',
+  description: 'Análisis externo del homepage público con adquisición, email signup, trending, beneficios, FAQ y responsive behavior.',
+  capabilities: ['Streaming UI', 'Acquisition', 'Validation'],
+  url: './analyses/netflix/index.html', preview: './analyses/netflix/index.html', source: 'https://www.netflix.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/netflix/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/netflix/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');
