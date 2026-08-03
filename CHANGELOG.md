@@ -40,6 +40,9 @@
 - `github-team-manager`: auditoría de equipos, membresías y permisos efectivos.
 - `github-merge-queue-manager`: diagnóstico de merge queues, checks y cuellos de botella.
 - `github-fork-manager`: auditoría de forks, sincronización y políticas de visibilidad.
+- `github-commit-signing-manager`: auditoría de firmas, estados verificados y cobertura.
+- `github-migration-manager`: planes de migración con inventario, validación y rollback.
+- `github-archive-manager`: evaluación de archivado, retención y recuperación.
 
 ## 2026-08-02
 

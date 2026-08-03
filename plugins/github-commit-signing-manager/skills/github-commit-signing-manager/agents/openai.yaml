@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Commit Signing Manager
+  short_description: Audits commit signatures and verification.
+  default_prompt: Audit commit signing and prepare a safe improvement plan.

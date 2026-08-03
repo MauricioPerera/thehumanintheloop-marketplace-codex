@@ -1,0 +1,18 @@
+{
+  "name": "github-archive-manager",
+  "version": "0.1.0",
+  "description": "Evalúa archivado y ciclo de vida de repositorios con impacto y recuperación.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub Archive Manager",
+    "shortDescription": "Gestiona el ciclo de vida de repositorios.",
+    "longDescription": "Revisa actividad, dependencias, consumidores, retención y riesgos antes de archivar o restaurar repositorios.",
+    "developerName": "Local developer",
+    "category": "Developer Tools",
+    "capabilities": ["Archive", "Lifecycle", "Repositories"],
+    "defaultPrompt": "Evalúa si un repositorio debe archivarse y prepara un plan reversible."
+  }
+}

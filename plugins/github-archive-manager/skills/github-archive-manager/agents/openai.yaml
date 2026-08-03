@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Archive Manager
+  short_description: Manages repository lifecycle decisions.
+  default_prompt: Evaluate whether a repository should be archived with recovery steps.

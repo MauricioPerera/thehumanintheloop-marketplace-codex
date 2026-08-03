@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Migration Manager
+  short_description: Plans migrations with traceability and rollback.
+  default_prompt: Prepare a repository migration plan with evidence and rollback.

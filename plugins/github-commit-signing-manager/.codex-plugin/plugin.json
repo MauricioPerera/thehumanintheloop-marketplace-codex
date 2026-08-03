@@ -1,0 +1,18 @@
+{
+  "name": "github-commit-signing-manager",
+  "version": "0.1.0",
+  "description": "Audita firmas, estados de verificación y políticas de commits de GitHub.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub Commit Signing Manager",
+    "shortDescription": "Audita firmas y verificación de commits.",
+    "longDescription": "Revisa firmas verificadas, claves, autores, cobertura y políticas de commit, separando evidencia de recomendaciones antes de cambiar configuración.",
+    "developerName": "Local developer",
+    "category": "Security & Privacy",
+    "capabilities": ["Signing", "Commits", "Verification"],
+    "defaultPrompt": "Audita la firma de commits y prepara un plan de mejora seguro."
+  }
+}
