@@ -50,6 +50,9 @@
     {"name":"github-release-manager","displayName":"GitHub Release Manager","source":"./plugins/github-release-manager","category":"Developer Tools"},
     {"name":"github-actions-manager","displayName":"GitHub Actions Manager","source":"./plugins/github-actions-manager","category":"Developer Tools"},
     {"name":"github-project-manager","displayName":"GitHub Project Manager","source":"./plugins/github-project-manager","category":"Developer Tools"},
-    {"name":"github-code-search","displayName":"GitHub Code Search","source":"./plugins/github-code-search","category":"Developer Tools"}
+    {"name":"github-code-search","displayName":"GitHub Code Search","source":"./plugins/github-code-search","category":"Developer Tools"},
+    {"name":"github-security-manager","displayName":"GitHub Security Manager","source":"./plugins/github-security-manager","category":"Security & Privacy"},
+    {"name":"github-dependabot-manager","displayName":"GitHub Dependabot Manager","source":"./plugins/github-dependabot-manager","category":"Security & Privacy"},
+    {"name":"github-notifications-manager","displayName":"GitHub Notifications Manager","source":"./plugins/github-notifications-manager","category":"Developer Tools"}
   ]
 }

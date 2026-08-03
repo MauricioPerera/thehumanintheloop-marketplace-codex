@@ -13,6 +13,9 @@
 - `github-actions-manager`: diagnóstico de workflows, ejecuciones y logs de GitHub Actions.
 - `github-project-manager`: organización de Projects y tareas con plan de mutaciones trazable.
 - `github-code-search`: búsqueda reproducible de código, commits, Issues y Pull Requests.
+- `github-security-manager`: auditoría de alertas de seguridad y planes de remediación.
+- `github-dependabot-manager`: revisión de alertas y actualizaciones Dependabot.
+- `github-notifications-manager`: digest y triage de notificaciones de GitHub.
 
 ## 2026-08-02
 

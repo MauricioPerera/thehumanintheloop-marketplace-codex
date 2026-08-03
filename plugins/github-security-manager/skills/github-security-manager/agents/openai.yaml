@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Security Manager"
+  short_description: "Audita alertas y riesgos con gh CLI."
+  default_prompt: "Audita la seguridad de este repositorio usando gh CLI."

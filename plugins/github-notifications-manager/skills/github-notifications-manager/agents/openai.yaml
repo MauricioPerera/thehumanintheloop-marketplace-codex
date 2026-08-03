@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Notifications Manager"
+  short_description: "Organiza notificaciones con gh CLI."
+  default_prompt: "Resume y clasifica mis notificaciones de GitHub."

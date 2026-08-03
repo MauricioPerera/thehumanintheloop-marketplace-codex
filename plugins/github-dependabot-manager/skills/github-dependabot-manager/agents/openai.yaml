@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Dependabot Manager"
+  short_description: "Gestiona alertas y actualizaciones Dependabot."
+  default_prompt: "Revisa las alertas Dependabot y propone actualizaciones seguras."
