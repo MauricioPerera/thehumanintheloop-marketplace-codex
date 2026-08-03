@@ -1,0 +1,2853 @@
+{
+  "source": {
+    "slug": "scrum-xp",
+    "title": "Scrum y eXtreme Programming para Programadores",
+    "author": "Eugenia Bahit",
+    "file": "Scrum Extreme Programming Para Programadores (Bahit Eugenia).pdf",
+    "pages": 162,
+    "extracted_with": "pymupdf (get_toc)",
+    "tags": [
+      "fuente",
+      "libro",
+      "scrum-xp"
+    ],
+    "corpus": "Los 161 marcadores que la autora dejo en el PDF, menos los 8 contenedores de capitulo de nivel 1: 153 items."
+  },
+  "nodes": [
+    {
+      "id": "002",
+      "title": "¿Qué es el Desarrollo Ágil?",
+      "description": "¿Qué es el Desarrollo Ágil? (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 13",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "003",
+      "title": "Un pantallazo general sobre la gestión de proyectos",
+      "description": "Un pantallazo general sobre la gestión de proyectos (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 13",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "004",
+      "title": "Diferenciando las metodologías de gestión",
+      "description": "Diferenciando las metodologías de gestión (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 15",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "005",
+      "title": "Tipos de Proyecto",
+      "description": "Tipos de Proyecto (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 17",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "006",
+      "title": "Desarrollo de un nuevo sistema informático",
+      "description": "Desarrollo de un nuevo sistema informático (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 17",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "007",
+      "title": "Desarrollo de nuevas funcionalidades",
+      "description": "Desarrollo de nuevas funcionalidades (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 18",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "008",
+      "title": "Reingeniería de un sistema",
+      "description": "Reingeniería de un sistema (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 18",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "009",
+      "title": "Mantenimiento evolutivo",
+      "description": "Mantenimiento evolutivo (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 18",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "010",
+      "title": "Mantenimiento adaptativo",
+      "description": "Mantenimiento adaptativo (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 19",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "011",
+      "title": "Mantenimiento preventivo",
+      "description": "Mantenimiento preventivo (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 19",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "012",
+      "title": "Mantenimiento correctivo",
+      "description": "Mantenimiento correctivo (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 20",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "013",
+      "title": "La octava clasificación",
+      "description": "La octava clasificación (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 20",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "014",
+      "title": "Abordaje de un proyecto de construcción de Software",
+      "description": "Abordaje de un proyecto de construcción de Software (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 20",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "015",
+      "title": "El agilismo y su Manifiesto",
+      "description": "El agilismo y su Manifiesto (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 22",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "016",
+      "title": "Los valores del agilismo",
+      "description": "Los valores del agilismo (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 22",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "017",
+      "title": "Individuos e interacciones sobre procesos y herramientas",
+      "description": "Individuos e interacciones sobre procesos y herramientas (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 22",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "018",
+      "title": "Software funcionando sobre documentación extensiva",
+      "description": "Software funcionando sobre documentación extensiva (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 23",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "019",
+      "title": "Colaboración con el cliente sobre negociación contractual",
+      "description": "Colaboración con el cliente sobre negociación contractual (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 23",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "020",
+      "title": "Respuesta ante el cambio sobre seguir un plan",
+      "description": "Respuesta ante el cambio sobre seguir un plan (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 23",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "021",
+      "title": "Los doce principios del agilismo",
+      "description": "Los doce principios del agilismo (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 24",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "022",
+      "title": "Principio #1: Satisfacer al cliente mediante la entrega temprana y continua de software con valor.",
+      "description": "Principio #1: Satisfacer al cliente mediante la entrega temprana y continua de software con valor. (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 24",
+      "alias": [
+        "entrega temprana y continua",
+        "early and continuous delivery"
+      ],
+      "links": []
+    },
+    {
+      "id": "023",
+      "title": "Principio #2: Aceptamos que los requisitos cambien, incluso en etapas tardías del desarrollo. Los procesos Ágiles aprovechan el cambio para proporcionar ventaja competitiva al cliente.",
+      "description": "Principio #2: Aceptamos que los requisitos cambien, incluso en etapas tardías del desarrollo. Los procesos Ágiles aprovechan el cambio para proporcionar ventaja competitiva al cliente. (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 25",
+      "alias": [
+        "aceptar el cambio",
+        "welcome changing requirements"
+      ],
+      "links": []
+    },
+    {
+      "id": "024",
+      "title": "Principio #3: Entregamos software funcional frecuentemente, entre dos semanas y dos meses, con preferencia al periodo de tiempo más corto posible.",
+      "description": "Principio #3: Entregamos software funcional frecuentemente, entre dos semanas y dos meses, con preferencia al periodo de tiempo más corto posible. (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 25",
+      "alias": [
+        "entregas frecuentes",
+        "frequent delivery"
+      ],
+      "links": [
+        "084"
+      ],
+      "instrument": "git_checks.py --rule cadencia",
+      "threshold": "hueco entre entregas <= 60 dias"
+    },
+    {
+      "id": "025",
+      "title": "Principio #5: Los proyectos se desarrollan en torno a individuos motivados. Hay que darles el entorno y el apoyo que necesitan, y confiarles la ejecución del trabajo.",
+      "description": "Principio #5: Los proyectos se desarrollan en torno a individuos motivados. Hay que darles el entorno y el apoyo que necesitan, y confiarles la ejecución del trabajo. (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 26",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "026",
+      "title": "Principio #6: Conversación cara a cara.",
+      "description": "Principio #6: Conversación cara a cara. (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 26",
+      "alias": [
+        "conversacion cara a cara",
+        "face to face conversation"
+      ],
+      "links": []
+    },
+    {
+      "id": "027",
+      "title": "Principio #7: El software funcionando es la medida principal de progreso.",
+      "description": "Principio #7: El software funcionando es la medida principal de progreso. (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 27",
+      "alias": [
+        "software funcionando como medida",
+        "working software is the measure"
+      ],
+      "links": []
+    },
+    {
+      "id": "028",
+      "title": "Principio #8: Los promotores, desarrolladores y usuarios debemos ser capaces de mantener un ritmo constante de forma indefinida.",
+      "description": "Principio #8: Los promotores, desarrolladores y usuarios debemos ser capaces de mantener un ritmo constante de forma indefinida. (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 27",
+      "alias": [
+        "ritmo sostenible",
+        "sustainable pace"
+      ],
+      "links": []
+    },
+    {
+      "id": "029",
+      "title": "Principio #9: La atención continua a la excelencia técnica y al buen diseño mejora la Agilidad.",
+      "description": "Principio #9: La atención continua a la excelencia técnica y al buen diseño mejora la Agilidad. (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 27",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "030",
+      "title": "Principio #10: La simplicidad, o el arte de maximizar la cantidad de trabajo no realizado, es esencial.",
+      "description": "Principio #10: La simplicidad, o el arte de maximizar la cantidad de trabajo no realizado, es esencial. (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 28",
+      "alias": [
+        "simplicidad",
+        "simplicity",
+        "maximize work not done"
+      ],
+      "links": []
+    },
+    {
+      "id": "031",
+      "title": "Principio #11: Las mejores arquitecturas, requisitos y diseños emergen de equipos auto-organizados.",
+      "description": "Principio #11: Las mejores arquitecturas, requisitos y diseños emergen de equipos auto-organizados. (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 28",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "032",
+      "title": "Principio #12: A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo para a continuación ajustar y perfeccionar su comportamiento en consecuencia.",
+      "description": "Principio #12: A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo para a continuación ajustar y perfeccionar su comportamiento en consecuencia. (seccion: introduccion y agilismo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "introduccion-y-agilismo",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 29",
+      "alias": [
+        "inspeccionar y adaptar",
+        "inspect and adapt"
+      ],
+      "links": [],
+      "instrument": "tablero: retrospectiva registrada por sprint",
+      "threshold": "una por sprint"
+    },
+    {
+      "id": "034",
+      "title": "El Marco de Trabajo de Scrum",
+      "description": "El Marco de Trabajo de Scrum (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 31",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "035",
+      "title": "Los Roles en Scrum",
+      "description": "Los Roles en Scrum (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 33",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "036",
+      "title": "El Dueño de Producto (Product Owner) en Scrum",
+      "description": "El Dueño de Producto (Product Owner) en Scrum (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 33",
+      "alias": [
+        "Product Owner",
+        "dueno de producto"
+      ],
+      "links": []
+    },
+    {
+      "id": "037",
+      "title": "Funciones y responsabilidades",
+      "description": "Funciones y responsabilidades (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 34",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "038",
+      "title": "Aptitudes que debe tener un Dueño de Producto",
+      "description": "Aptitudes que debe tener un Dueño de Producto (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 34",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "039",
+      "title": "El Scrum Master",
+      "description": "El Scrum Master (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 34",
+      "alias": [
+        "Scrum Master"
+      ],
+      "links": []
+    },
+    {
+      "id": "040",
+      "title": "Funciones y responsabilidades",
+      "description": "Funciones y responsabilidades (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 35",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "041",
+      "title": "Aptitudes que debe tener un Scrum Master",
+      "description": "Aptitudes que debe tener un Scrum Master (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 35",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "042",
+      "title": "Actitudes que un buen Scrum Master debe evitar indefectiblemente",
+      "description": "Actitudes que un buen Scrum Master debe evitar indefectiblemente (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 36",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "043",
+      "title": "El Equipo de Desarrollo (Scrum Team o Equipo Scrum)",
+      "description": "El Equipo de Desarrollo (Scrum Team o Equipo Scrum) (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 37",
+      "alias": [
+        "equipo de desarrollo",
+        "development team",
+        "Scrum Team"
+      ],
+      "links": []
+    },
+    {
+      "id": "044",
+      "title": "Funciones y responsabilidades",
+      "description": "Funciones y responsabilidades (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 37",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "045",
+      "title": "Un buen Scrum Team, actúa como un verdadero equipo",
+      "description": "Un buen Scrum Team, actúa como un verdadero equipo (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 38",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "046",
+      "title": "Artefactos y Herramientas",
+      "description": "Artefactos y Herramientas (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 39",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "047",
+      "title": "Backlog de Producto",
+      "description": "Backlog de Producto (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 39",
+      "alias": [
+        "backlog de producto",
+        "product backlog"
+      ],
+      "links": [],
+      "instrument": "tablero: el backlog existe y esta ordenado",
+      "threshold": "orden total definido"
+    },
+    {
+      "id": "048",
+      "title": "Formato del Backlog de Producto",
+      "description": "Formato del Backlog de Producto (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 40",
+      "alias": [
+        "formato del item",
+        "backlog item format"
+      ],
+      "links": [],
+      "instrument": "tablero: campos obligatorios del item",
+      "threshold": "sin campos vacios"
+    },
+    {
+      "id": "049",
+      "title": "Priorización de los ítems del Backlog de Producto",
+      "description": "Priorización de los ítems del Backlog de Producto (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 40",
+      "alias": [
+        "priorizacion del backlog",
+        "backlog ordering"
+      ],
+      "links": [],
+      "instrument": "tablero: prioridad asignada a cada item",
+      "threshold": "sin items sin prioridad"
+    },
+    {
+      "id": "050",
+      "title": "Estimación de esfuerzo",
+      "description": "Estimación de esfuerzo (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 41",
+      "alias": [
+        "estimacion de esfuerzo",
+        "effort estimation",
+        "story points"
+      ],
+      "links": [],
+      "instrument": "tablero: estimacion presente en cada item",
+      "threshold": "sin items sin estimar"
+    },
+    {
+      "id": "051",
+      "title": "Granulidad de los ítems",
+      "description": "Granulidad de los ítems (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 42",
+      "alias": [
+        "granularidad del item",
+        "right sizing"
+      ],
+      "links": [],
+      "why_not": "la granularidad correcta de un item depende del equipo y del contexto"
+    },
+    {
+      "id": "052",
+      "title": "Criterios de Aceptación",
+      "description": "Criterios de Aceptación (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 43",
+      "alias": [
+        "criterios de aceptacion",
+        "acceptance criteria"
+      ],
+      "links": [],
+      "instrument": "tablero: criterios de aceptacion no vacios",
+      "threshold": "sin historias sin criterios"
+    },
+    {
+      "id": "053",
+      "title": "Backlog de Sprint",
+      "description": "Backlog de Sprint (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 45",
+      "alias": [
+        "backlog de sprint",
+        "sprint backlog"
+      ],
+      "links": [],
+      "instrument": "tablero: el sprint backlog sale del tope del backlog",
+      "threshold": "subconjunto del tope"
+    },
+    {
+      "id": "054",
+      "title": "Dividiendo Historias de Usuario en Tareas",
+      "description": "Dividiendo Historias de Usuario en Tareas (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 46",
+      "alias": [
+        "descomposicion en tareas",
+        "task breakdown"
+      ],
+      "links": [],
+      "instrument": "tablero: cada historia tiene tareas",
+      "threshold": "sin historias sin descomponer"
+    },
+    {
+      "id": "055",
+      "title": "Incremento de Funcionalidad",
+      "description": "Incremento de Funcionalidad (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 49",
+      "alias": [
+        "incremento potencialmente entregable",
+        "potentially shippable increment"
+      ],
+      "links": [],
+      "instrument": "build del incremento",
+      "threshold": "exit 0"
+    },
+    {
+      "id": "056",
+      "title": "Ceremonias en Scrum",
+      "description": "Ceremonias en Scrum (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 50",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "057",
+      "title": "Ceremonia de Planificación del Sprint",
+      "description": "Ceremonia de Planificación del Sprint (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 50",
+      "alias": [
+        "planificacion de sprint",
+        "sprint planning"
+      ],
+      "links": [],
+      "instrument": "calendario: la planificacion ocurrio al abrir el sprint",
+      "threshold": "una por sprint"
+    },
+    {
+      "id": "058",
+      "title": "Reunión diaria",
+      "description": "Reunión diaria (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 52",
+      "alias": [
+        "reunion diaria",
+        "daily scrum",
+        "daily standup"
+      ],
+      "links": [],
+      "instrument": "calendario: la reunion diaria ocurrio",
+      "threshold": "una por dia habil"
+    },
+    {
+      "id": "059",
+      "title": "Ceremonia de Revisión",
+      "description": "Ceremonia de Revisión (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 53",
+      "alias": [
+        "revision de sprint",
+        "sprint review"
+      ],
+      "links": [],
+      "instrument": "calendario: la revision ocurrio al cerrar el sprint",
+      "threshold": "una por sprint"
+    },
+    {
+      "id": "060",
+      "title": "Ceremonia de Retrospectiva: la búsqueda de la perfección",
+      "description": "Ceremonia de Retrospectiva: la búsqueda de la perfección (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 55",
+      "alias": [
+        "retrospectiva",
+        "sprint retrospective"
+      ],
+      "links": [],
+      "instrument": "calendario: la retrospectiva ocurrio al cerrar el sprint",
+      "threshold": "una por sprint"
+    },
+    {
+      "id": "061",
+      "title": "Estimando esfuerzos",
+      "description": "Estimando esfuerzos (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 56",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "062",
+      "title": "Estimando con T-Shirt Sizing",
+      "description": "Estimando con T-Shirt Sizing (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 58",
+      "alias": [
+        "T-shirt sizing",
+        "estimacion por tallas"
+      ],
+      "links": [],
+      "instrument": "tablero: la estimacion pertenece a la escala",
+      "threshold": "valor en la escala declarada"
+    },
+    {
+      "id": "063",
+      "title": "¿Cómo se juega?",
+      "description": "¿Cómo se juega? (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 60",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "064",
+      "title": "Estimación por Poker",
+      "description": "Estimación por Poker (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 60",
+      "alias": [
+        "planning poker",
+        "scrum poker"
+      ],
+      "links": []
+    },
+    {
+      "id": "065",
+      "title": "Reglas del Juego",
+      "description": "Reglas del Juego (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 61",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "066",
+      "title": "¿Cómo jugar Scrum Poker?",
+      "description": "¿Cómo jugar Scrum Poker? (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 62",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "067",
+      "title": "Estimando por Columnas",
+      "description": "Estimando por Columnas (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 65",
+      "alias": [
+        "estimacion por columnas",
+        "affinity estimation"
+      ],
+      "links": []
+    },
+    {
+      "id": "068",
+      "title": "Estimación por Columnas y Poker",
+      "description": "Estimación por Columnas y Poker (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 68",
+      "alias": [
+        "estimacion por columnas y poker",
+        "affinity estimation"
+      ],
+      "links": []
+    },
+    {
+      "id": "069",
+      "title": "Scrum Kit",
+      "description": "Scrum Kit (seccion: scrum).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "scrum",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 69",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "071",
+      "title": "Bases de la programación eXtrema",
+      "description": "Bases de la programación eXtrema (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 70",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "072",
+      "title": "Comunicación",
+      "description": "Comunicación (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 70",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "073",
+      "title": "Simplicidad",
+      "description": "Simplicidad (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 71",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "074",
+      "title": "Retroalimentación",
+      "description": "Retroalimentación (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 71",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "075",
+      "title": "Respeto",
+      "description": "Respeto (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 71",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "076",
+      "title": "Coraje",
+      "description": "Coraje (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 71",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "077",
+      "title": "Prácticas técnicas",
+      "description": "Prácticas técnicas (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 72",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "078",
+      "title": "PRÁCTICA #1: CLIENTE IN-SITU (ON-SITE CUSTOMER)",
+      "description": "PRÁCTICA #1: CLIENTE IN-SITU (ON-SITE CUSTOMER) (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 72",
+      "alias": [
+        "cliente in-situ",
+        "on-site customer"
+      ],
+      "links": []
+    },
+    {
+      "id": "079",
+      "title": "PRÁCTICA #2: SEMANA DE 40 HORAS (40 HOUR WEEK)",
+      "description": "PRÁCTICA #2: SEMANA DE 40 HORAS (40 HOUR WEEK) (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 73",
+      "alias": [
+        "semana de 40 horas",
+        "40 hour week",
+        "sustainable pace"
+      ],
+      "links": [],
+      "why_not": "pese al titulo, la autora no fija el numero: habla de no exigir mas esfuerzo del humanamente disponible, que es un juicio"
+    },
+    {
+      "id": "080",
+      "title": "PRÁCTICA #3: METÁFORA (METAPHOR)",
+      "description": "PRÁCTICA #3: METÁFORA (METAPHOR) (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 74",
+      "alias": [
+        "metafora",
+        "system metaphor"
+      ],
+      "links": []
+    },
+    {
+      "id": "081",
+      "title": "PRÁCTICA #4: DISEÑO SIMPLE (SIMPLE DESIGN)",
+      "description": "PRÁCTICA #4: DISEÑO SIMPLE (SIMPLE DESIGN) (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 75",
+      "alias": [
+        "diseno simple",
+        "simple design"
+      ],
+      "links": [],
+      "why_not": "que un diseno sea \"simple\" es exactamente lo que no se puede medir"
+    },
+    {
+      "id": "082",
+      "title": "PRÁCTICA #5: REFACTORIZACIÓN (REFACTORING)",
+      "description": "PRÁCTICA #5: REFACTORIZACIÓN (REFACTORING) (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 76",
+      "alias": [
+        "refactorizacion",
+        "refactoring"
+      ],
+      "links": []
+    },
+    {
+      "id": "083",
+      "title": "PRÁCTICA #6: PROGRAMACIÓN DE A PARES (PAIR PROGRAMMING)",
+      "description": "PRÁCTICA #6: PROGRAMACIÓN DE A PARES (PAIR PROGRAMMING) (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 77",
+      "alias": [
+        "programacion de a pares",
+        "pair programming"
+      ],
+      "links": []
+    },
+    {
+      "id": "084",
+      "title": "PRÁCTICA #7: ENTREGAS CORTAS (SHORT RELEASES)",
+      "description": "PRÁCTICA #7: ENTREGAS CORTAS (SHORT RELEASES) (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 78",
+      "alias": [
+        "entregas cortas",
+        "short releases"
+      ],
+      "links": [
+        "024"
+      ],
+      "instrument": "git_checks.py --rule cadencia",
+      "threshold": "hueco entre entregas <= 30 dias"
+    },
+    {
+      "id": "085",
+      "title": "PRÁCTICA #8: TESTING",
+      "description": "PRÁCTICA #8: TESTING (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 78",
+      "alias": [
+        "testing",
+        "automated testing"
+      ],
+      "links": [
+        "codigo-limpio/t1",
+        "codigo-limpio/e2"
+      ],
+      "instrument": "repo_checks.py --rule e2",
+      "threshold": "un comando corre toda la suite"
+    },
+    {
+      "id": "086",
+      "title": "PRÁCTICA #9: CÓDIGO ESTÁNDAR (CODING STANDARDS)",
+      "description": "PRÁCTICA #9: CÓDIGO ESTÁNDAR (CODING STANDARDS) (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 79",
+      "alias": [
+        "convenciones de codigo",
+        "coding standards"
+      ],
+      "links": [
+        "codigo-limpio/g24"
+      ],
+      "instrument": "repo_checks.py --rule g24",
+      "threshold": "convenciones declaradas en verde"
+    },
+    {
+      "id": "087",
+      "title": "PRÁCTICA #10: PROPIEDAD COLECTIVA (COLLECTIVE OWNERSHIP)",
+      "description": "PRÁCTICA #10: PROPIEDAD COLECTIVA (COLLECTIVE OWNERSHIP) (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 80",
+      "alias": [
+        "propiedad colectiva",
+        "collective ownership"
+      ],
+      "links": [],
+      "why_not": "la autora la define como conocimiento compartido del equipo, no como reparto de autoria; el reparto se medira en git, el conocimiento no"
+    },
+    {
+      "id": "088",
+      "title": "PRÁCTICA #11: INTEGRACIÓN CONTINUA (CONTINUOUS INTEGRACIÓN)",
+      "description": "PRÁCTICA #11: INTEGRACIÓN CONTINUA (CONTINUOUS INTEGRACIÓN) (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 80",
+      "alias": [
+        "integracion continua",
+        "continuous integration"
+      ],
+      "links": [
+        "codigo-limpio/e2",
+        "122"
+      ],
+      "instrument": "CI: corrida por commit con exit 0",
+      "threshold": "sin commits sin integrar"
+    },
+    {
+      "id": "089",
+      "title": "PRÁCTICA #12: JUEGO DE PLANIFICACIÓN (PLANNING GAME)",
+      "description": "PRÁCTICA #12: JUEGO DE PLANIFICACIÓN (PLANNING GAME) (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 81",
+      "alias": [
+        "juego de planificacion",
+        "planning game"
+      ],
+      "links": []
+    },
+    {
+      "id": "090",
+      "title": "Programación de a pares y Coding Dojo: ¿quién dijo que el trabajo es aburrido?",
+      "description": "Programación de a pares y Coding Dojo: ¿quién dijo que el trabajo es aburrido? (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 82",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "091",
+      "title": "¿Por qué \"Dojo\"?",
+      "description": "¿Por qué \"Dojo\"? (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 82",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "092",
+      "title": "¿Para qué hacer en un Coding Dojo? ¿Cuál es la finalidad?",
+      "description": "¿Para qué hacer en un Coding Dojo? ¿Cuál es la finalidad? (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 83",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "093",
+      "title": "Duración de un Coding Dojo",
+      "description": "Duración de un Coding Dojo (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 84",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "094",
+      "title": "¿Qué se hace en un Coding Dojo?",
+      "description": "¿Qué se hace en un Coding Dojo? (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 84",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "095",
+      "title": "Codekata en el Coding Dojo",
+      "description": "Codekata en el Coding Dojo (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 84",
+      "alias": [
+        "code kata",
+        "codekata"
+      ],
+      "links": []
+    },
+    {
+      "id": "096",
+      "title": "El Kata en el Coding Dojo",
+      "description": "El Kata en el Coding Dojo (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 84",
+      "alias": [
+        "code kata",
+        "kata"
+      ],
+      "links": []
+    },
+    {
+      "id": "097",
+      "title": "Un Randori Coding Dojo",
+      "description": "Un Randori Coding Dojo (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 85",
+      "alias": [
+        "randori"
+      ],
+      "links": []
+    },
+    {
+      "id": "098",
+      "title": "El Randori en el Coding Dojo",
+      "description": "El Randori en el Coding Dojo (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 85",
+      "alias": [
+        "randori"
+      ],
+      "links": []
+    },
+    {
+      "id": "099",
+      "title": "Ventajas de implementar un Coding Dojo en el lugar de trabajo de forma periódica",
+      "description": "Ventajas de implementar un Coding Dojo en el lugar de trabajo de forma periódica (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 86",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "100",
+      "title": "Cuándo y cómo implementar el Coding Dojo en la empresa",
+      "description": "Cuándo y cómo implementar el Coding Dojo en la empresa (seccion: programacion extrema y coding dojo).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "programacion-extrema-y-coding-dojo",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 87",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "102",
+      "title": "¿Qué es el desarrollo -o programación- guiado por pruebas?",
+      "description": "¿Qué es el desarrollo -o programación- guiado por pruebas? (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 88",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "103",
+      "title": "Test Unitarios",
+      "description": "Test Unitarios (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 91",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "104",
+      "title": "Características de los Test Unitarios",
+      "description": "Características de los Test Unitarios (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 91",
+      "alias": [
+        "pruebas unitarias",
+        "unit tests",
+        "FIRST"
+      ],
+      "links": [
+        "codigo-limpio/t9"
+      ],
+      "instrument": "repo_checks.py --rule t9 y --rule aislamiento",
+      "threshold": "rapidas e independientes"
+    },
+    {
+      "id": "105",
+      "title": "Anatomía",
+      "description": "Anatomía (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 93",
+      "alias": [
+        "anatomia del test",
+        "arrange act assert"
+      ],
+      "links": [],
+      "instrument": "checks.py --rule anatomia",
+      "threshold": "al menos una asercion por prueba"
+    },
+    {
+      "id": "106",
+      "title": "Algoritmo para escribir pruebas unitarias",
+      "description": "Algoritmo para escribir pruebas unitarias (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 98",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "107",
+      "title": "PRIMER PASO: Escribir el Test y hacer que falle",
+      "description": "PRIMER PASO: Escribir el Test y hacer que falle (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 98",
+      "alias": [
+        "red green refactor",
+        "test first"
+      ],
+      "links": [
+        "108",
+        "109",
+        "110"
+      ],
+      "instrument": "git_checks.py --rule tddorden",
+      "threshold": "el test entra antes que el codigo"
+    },
+    {
+      "id": "108",
+      "title": "SEGUNDO PASO: Escribir la mínima cantidad de código para que el test pase.",
+      "description": "SEGUNDO PASO: Escribir la mínima cantidad de código para que el test pase. (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 100",
+      "alias": [
+        "hacer que pase",
+        "make it pass",
+        "green"
+      ],
+      "links": [
+        "107"
+      ],
+      "instrument": "repo_checks.py --rule e2",
+      "threshold": "la suite completa en verde"
+    },
+    {
+      "id": "109",
+      "title": "TERCER PASO: Escribir un nuevo test y hacer que falle",
+      "description": "TERCER PASO: Escribir un nuevo test y hacer que falle (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 101",
+      "alias": [
+        "red green refactor",
+        "test first"
+      ],
+      "links": [
+        "107",
+        "110"
+      ],
+      "instrument": "git_checks.py --rule tddorden",
+      "threshold": "el test entra antes que el codigo"
+    },
+    {
+      "id": "110",
+      "title": "CUARTO PASO: Escribir el algoritmo necesario para hacer pasar el test",
+      "description": "CUARTO PASO: Escribir el algoritmo necesario para hacer pasar el test (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 102",
+      "alias": [
+        "hacer que pase",
+        "make it pass",
+        "green"
+      ],
+      "links": [
+        "109"
+      ],
+      "instrument": "repo_checks.py --rule e2",
+      "threshold": "la suite completa en verde"
+    },
+    {
+      "id": "111",
+      "title": "Unit Testing con PHPUnit",
+      "description": "Unit Testing con PHPUnit (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 105",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "112",
+      "title": "Métodos Assert de PHPUnit",
+      "description": "Métodos Assert de PHPUnit (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 105",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "113",
+      "title": "Ejercicio",
+      "description": "Ejercicio (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 108",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "114",
+      "title": "Unit Testing con PyUnit",
+      "description": "Unit Testing con PyUnit (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 109",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "115",
+      "title": "Métodos Assert de PyUnit",
+      "description": "Métodos Assert de PyUnit (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 109",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "116",
+      "title": "Corriendo test por línea de comandos",
+      "description": "Corriendo test por línea de comandos (seccion: tdd).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "tdd",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 112",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "118",
+      "title": "Generación de Test de Integración",
+      "description": "Generación de Test de Integración (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 115",
+      "alias": [
+        "test de integracion",
+        "integration tests"
+      ],
+      "links": [],
+      "instrument": "test_command de integracion",
+      "threshold": "exit 0"
+    },
+    {
+      "id": "119",
+      "title": "Test de Aceptación",
+      "description": "Test de Aceptación (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 115",
+      "alias": [
+        "test de aceptacion",
+        "acceptance tests"
+      ],
+      "links": [],
+      "instrument": "test_command de aceptacion",
+      "threshold": "exit 0"
+    },
+    {
+      "id": "120",
+      "title": "Test Funcionales",
+      "description": "Test Funcionales (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 118",
+      "alias": [
+        "test funcionales",
+        "functional tests"
+      ],
+      "links": [],
+      "instrument": "test_command funcional",
+      "threshold": "exit 0"
+    },
+    {
+      "id": "121",
+      "title": "Test de Sistema",
+      "description": "Test de Sistema (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 119",
+      "alias": [
+        "test de sistema",
+        "system tests"
+      ],
+      "links": [],
+      "instrument": "test_command de sistema",
+      "threshold": "exit 0"
+    },
+    {
+      "id": "122",
+      "title": "Unificación del código en Repositorios",
+      "description": "Unificación del código en Repositorios (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 120",
+      "alias": [
+        "repositorio unico",
+        "single repository",
+        "mainline"
+      ],
+      "links": [
+        "088"
+      ],
+      "instrument": "git_checks.py --rule repounico",
+      "threshold": "ninguna rama con commits sin integrar"
+    },
+    {
+      "id": "123",
+      "title": "Sobre los Sistemas de Control de Versiones",
+      "description": "Sobre los Sistemas de Control de Versiones (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 121",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "124",
+      "title": "Integración continua con Bazaar",
+      "description": "Integración continua con Bazaar (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 122",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "125",
+      "title": "Instalación de Bazaar",
+      "description": "Instalación de Bazaar (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 124",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "126",
+      "title": "Bazaar por línea de comandos",
+      "description": "Bazaar por línea de comandos (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 124",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "127",
+      "title": "Presentarse ante Bazaar",
+      "description": "Presentarse ante Bazaar (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 125",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "128",
+      "title": "Iniciar un nuevo proyecto",
+      "description": "Iniciar un nuevo proyecto (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 125",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "129",
+      "title": "Clonar el repositorio central: crear los repositorios locales",
+      "description": "Clonar el repositorio central: crear los repositorios locales (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 126",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "130",
+      "title": "Nociones básicas para integrar código de forma continua",
+      "description": "Nociones básicas para integrar código de forma continua (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 127",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "131",
+      "title": "Guardando el path del repo central",
+      "description": "Guardando el path del repo central (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 129",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "132",
+      "title": "Integración continua avanzada con Bazaar",
+      "description": "Integración continua avanzada con Bazaar (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 130",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "133",
+      "title": "Resumen de comandos de uso frecuente",
+      "description": "Resumen de comandos de uso frecuente (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 131",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "134",
+      "title": "Resumen para uso diario de Bazaar",
+      "description": "Resumen para uso diario de Bazaar (seccion: integracion continua).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "integracion-continua",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 133",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "136",
+      "title": "El problema",
+      "description": "El problema (seccion: refactoring).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "refactoring",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 135",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "137",
+      "title": "La solución",
+      "description": "La solución (seccion: refactoring).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "refactoring",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 136",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "138",
+      "title": "Cuándo y cómo tomar la desición de refactorizar",
+      "description": "Cuándo y cómo tomar la desición de refactorizar (seccion: refactoring).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "refactoring",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 137",
+      "alias": [],
+      "links": [
+        "140",
+        "142",
+        "143"
+      ]
+    },
+    {
+      "id": "139",
+      "title": "Una solución a cada problema",
+      "description": "Una solución a cada problema (seccion: refactoring).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "refactoring",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 138",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "140",
+      "title": "Variables de uso temporal mal implementadas",
+      "description": "Variables de uso temporal mal implementadas (seccion: refactoring).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "refactoring",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 138",
+      "alias": [
+        "variable temporal",
+        "temporary variable"
+      ],
+      "links": [
+        "codigo-limpio/g12",
+        "142"
+      ],
+      "instrument": "checks.py --rule g12",
+      "threshold": "cero variables asignadas y nunca leidas"
+    },
+    {
+      "id": "141",
+      "title": "Métodos que reciben parámetros",
+      "description": "Métodos que reciben parámetros (seccion: refactoring).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "refactoring",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 141",
+      "alias": [
+        "parametro contra propiedad",
+        "parameter versus field"
+      ],
+      "links": [
+        "codigo-limpio/f1"
+      ],
+      "why_not": "es una distincion de diseno entre parametro, variable temporal y propiedad de clase, no un umbral"
+    },
+    {
+      "id": "142",
+      "title": "Expresiones extensas",
+      "description": "Expresiones extensas (seccion: refactoring).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "refactoring",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 142",
+      "alias": [
+        "variable explicativa",
+        "extract variable",
+        "expresiones extensas"
+      ],
+      "links": [
+        "codigo-limpio/g19",
+        "140"
+      ],
+      "instrument": "checks.py --rule exprops",
+      "threshold": "operadores por expresion <= 3",
+      "body": "Martin describe esta misma refactorizacion en G19 y la deja fuera de lo contractable: dice que conviene siempre mas y que es dificil excederse, o sea sin umbral, y ademas le exige nombres descriptivos. Bahit la deja contractable porque su ejemplo extrae las subexpresiones a variables llamadas `$a`, `$b`, `$c`, `$d`: al no reclamar nada del nombre, lo unico que queda de la tecnica es la reduccion de complejidad de la expresion, que es lo que un parser cuenta. La tecnica es la misma; lo que cambia es si el autor la aterrizo."
+    },
+    {
+      "id": "143",
+      "title": "Métodos extensos",
+      "description": "Métodos extensos (seccion: refactoring).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "refactoring",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 142",
+      "alias": [
+        "metodo extenso",
+        "long method",
+        "extract method"
+      ],
+      "links": [
+        "codigo-limpio/g30"
+      ],
+      "instrument": "checks.py --rule metlineas",
+      "threshold": "lineas por metodo <= 15",
+      "body": "El equivalente de Martin es G30 (\"las funciones solo deben hacer una cosa\"), que queda en pila B porque el cuenta operaciones semanticas y nunca da un numero. Bahit lo plantea como extension del metodo, que si tiene umbral."
+    },
+    {
+      "id": "144",
+      "title": "Código duplicado en una misma clase",
+      "description": "Código duplicado en una misma clase (seccion: refactoring).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "refactoring",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 144",
+      "alias": [
+        "DRY",
+        "duplicated code"
+      ],
+      "links": [
+        "codigo-limpio/g5",
+        "145",
+        "146"
+      ],
+      "instrument": "checks.py --rule g5",
+      "threshold": "cero bloques duplicados"
+    },
+    {
+      "id": "145",
+      "title": "Código duplicado en varias clases con la misma herencia",
+      "description": "Código duplicado en varias clases con la misma herencia (seccion: refactoring).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "refactoring",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 145",
+      "alias": [
+        "DRY",
+        "duplicated code",
+        "pull up method"
+      ],
+      "links": [
+        "codigo-limpio/g5",
+        "144"
+      ],
+      "instrument": "checks.py --rule g5",
+      "threshold": "cero bloques duplicados entre clases hermanas"
+    },
+    {
+      "id": "146",
+      "title": "Código duplicado en varias clases sin la misma herencia",
+      "description": "Código duplicado en varias clases sin la misma herencia (seccion: refactoring).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "refactoring",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "pagina 146",
+      "alias": [
+        "DRY",
+        "duplicated code"
+      ],
+      "links": [
+        "codigo-limpio/g5",
+        "144"
+      ],
+      "instrument": "checks.py --rule g5",
+      "threshold": "cero bloques duplicados entre clases sin parentesco"
+    },
+    {
+      "id": "148",
+      "title": "Compatibilizando ambas metodologías",
+      "description": "Compatibilizando ambas metodologías (seccion: combinar scrum y xp).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "combinar-scrum-y-xp",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 148",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "149",
+      "title": "Compatibilidad de Scrum con los valores de XP",
+      "description": "Compatibilidad de Scrum con los valores de XP (seccion: combinar scrum y xp).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "combinar-scrum-y-xp",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 148",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "150",
+      "title": "Compatibilidad con las prácticas técnicas de XP",
+      "description": "Compatibilidad con las prácticas técnicas de XP (seccion: combinar scrum y xp).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "combinar-scrum-y-xp",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 150",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "151",
+      "title": "Combinando ambas metodologías",
+      "description": "Combinando ambas metodologías (seccion: combinar scrum y xp).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "combinar-scrum-y-xp",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 152",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "152",
+      "title": "Combinar Scrum con eXtreme Programming",
+      "description": "Combinar Scrum con eXtreme Programming (seccion: combinar scrum y xp).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "combinar-scrum-y-xp",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 152",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "153",
+      "title": "Combinar Scrum con eXtreme Programming",
+      "description": "Combinar Scrum con eXtreme Programming (seccion: combinar scrum y xp).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "combinar-scrum-y-xp",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 153",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "154",
+      "title": "Material de lectura complementario",
+      "description": "Material de lectura complementario (seccion: combinar scrum y xp).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "combinar-scrum-y-xp",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 154",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "156",
+      "title": "De TOYOTA™ al Desarrollo de Software",
+      "description": "De TOYOTA™ al Desarrollo de Software (seccion: kanban).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "kanban",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 155",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "157",
+      "title": "Las tres reglas de Kanban",
+      "description": "Las tres reglas de Kanban (seccion: kanban).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "kanban",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "pagina 157",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "158",
+      "title": "Mostrar el proceso",
+      "description": "Mostrar el proceso (seccion: kanban).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "kanban",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 157",
+      "alias": [
+        "visualizar el flujo",
+        "visualize the workflow"
+      ],
+      "links": [],
+      "instrument": "tablero: el proceso esta representado en columnas",
+      "threshold": "todas las etapas visibles"
+    },
+    {
+      "id": "159",
+      "title": "Los tableros Kanban",
+      "description": "Los tableros Kanban (seccion: kanban).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "kanban",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 158",
+      "alias": [
+        "tablero Kanban",
+        "kanban board"
+      ],
+      "links": [],
+      "instrument": "tablero: existe y refleja el flujo",
+      "threshold": "una columna por etapa"
+    },
+    {
+      "id": "160",
+      "title": "Limitar el trabajo en curso: WIP",
+      "description": "Limitar el trabajo en curso: WIP (seccion: kanban).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "kanban",
+        "contractable",
+        "proxy"
+      ],
+      "pile": "A",
+      "verification": "proxy",
+      "locator": "pagina 159",
+      "alias": [
+        "limite WIP",
+        "work in progress limit"
+      ],
+      "links": [
+        "159"
+      ],
+      "instrument": "tablero: items simultaneos por columna",
+      "threshold": "limite WIP declarado por columna"
+    },
+    {
+      "id": "161",
+      "title": "Optimizar el flujo de trabajo",
+      "description": "Optimizar el flujo de trabajo (seccion: kanban).",
+      "type": "Concept",
+      "tags": [
+        "scrum-xp",
+        "kanban",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "pagina 161",
+      "alias": [
+        "optimizar el flujo",
+        "optimize flow",
+        "cycle time"
+      ],
+      "links": [
+        "160"
+      ]
+    }
+  ]
+}
