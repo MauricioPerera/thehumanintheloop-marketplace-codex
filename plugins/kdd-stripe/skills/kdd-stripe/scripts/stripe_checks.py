@@ -85,6 +85,16 @@ def _fuentes(proyecto):
     return out
 
 
+def _fuentes_archivo(ruta):
+    """(ruta, arbol, texto) de un unico archivo .py puntual."""
+    try:
+        with open(ruta, 'r', encoding='utf-8') as fh:
+            texto = fh.read()
+        return [(ruta, ast.parse(texto), texto)]
+    except (OSError, SyntaxError, UnicodeDecodeError) as exc:
+        raise NoVerificable('no se pudo leer {}: {}'.format(ruta, exc))
+
+
 def _todos_los_strings(arbol):
     for nodo in ast.walk(arbol):
         if isinstance(nodo, ast.Constant) and isinstance(nodo.value, str):
@@ -191,7 +201,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     parser.add_argument('--rule')
     parser.add_argument('--list', action='store_true')
-    parser.add_argument('--proyecto', help='raiz del proyecto (por defecto, la del target)')
+    parser.add_argument('--proyecto', help='escanea todo el proyecto en vez del archivo puntual')
     parser.add_argument('target', nargs='?')
     args = parser.parse_args(argv)
 
@@ -207,17 +217,13 @@ def main(argv=None):
         print('NO-VERIFICABLE: falta el punto de entrada del proyecto')
         return 2
 
-    if args.proyecto:
-        args.proyecto = os.path.abspath(args.proyecto)
-    else:
-        args.proyecto = os.path.dirname(os.path.abspath(args.target))
-    if not os.path.isdir(args.proyecto):
-        print('NO-VERIFICABLE: no existe el proyecto {}'.format(args.proyecto))
-        return 2
-
     func, etiqueta = RULES[args.rule]
     try:
-        violaciones = func(_fuentes(args.proyecto), args)
+        if args.proyecto:
+            fuentes = _fuentes(os.path.abspath(args.proyecto))
+        else:
+            fuentes = _fuentes_archivo(os.path.abspath(args.target))
+        violaciones = func(fuentes, args)
     except NoVerificable as exc:
         print('NO-VERIFICABLE: {}: {}'.format(etiqueta, exc))
         return 2
