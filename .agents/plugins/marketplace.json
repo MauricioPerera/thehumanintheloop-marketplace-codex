@@ -975,6 +975,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Marketplace & Quality"
+    },
+    {
+      "name": "kdd-codigo-limpio",
+      "source": {
+        "source": "local",
+        "path": "./plugins/kdd-codigo-limpio"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }

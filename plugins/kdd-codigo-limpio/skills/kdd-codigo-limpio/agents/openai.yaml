@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD Codigo Limpio Checker"
+  short_description: "Verifica comentarios, funciones, duplicacion, nombres y pruebas de Clean Code"
+  default_prompt: "Audita este codigo contra Clean Code con kdd-codigo-limpio."

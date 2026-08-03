@@ -1,0 +1,18 @@
+{
+  "name": "kdd-codigo-limpio",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para 30 heuristicas de Clean Code, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD Codigo Limpio Checker",
+    "shortDescription": "Verifica comentarios, funciones, duplicacion, nombres y pruebas de Clean Code",
+    "longDescription": "Corre 30 chequeos deterministas que kdd-book extrajo de Clean Code: 21 heuristicas generales (checks.py), 6 de pruebas (repo_checks.py), argumentos maximos (params_max.py), profundidad de cadena/Ley de Demeter (chain_depth.py) y mutacion de condiciones de limite (mutation_checks.py). 32 de 66 heuristicas caen en pila A; 31 tienen instrumento real.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Audita este codigo contra Clean Code con kdd-codigo-limpio."
+  }
+}

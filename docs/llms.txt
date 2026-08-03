@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 81 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 82 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -96,6 +96,7 @@ Use these exact identifiers when referring to plugins:
 - `kdd-arquitectura-java` — Developer Tools — Verifica 8 reglas de arquitectura y codigo limpio: capas, excepciones, ISP, DI/Factory, AOP, COC, duplicacion (G5) y polimorfismo antes que if/else (G23), extraidas con Knowledge-Driven Development.
 - `kdd-pep8` — Developer Tools — Verifica 28 reglas de PEP 8: indentacion, longitud de linea, imports, comillas, comentarios, docstrings y convenciones de nombres, extraidas con Knowledge-Driven Development.
 - `kdd-scrum-xp` — Marketplace & Quality — Verifica 12 tecnicas de Scrum y eXtreme Programming con instrumento real (cadencia, TDD, repo unico, Clean Code) y documenta 22 tecnicas mas que requieren tablero, calendario o CI reales, extraidas con Knowledge-Driven Development.
+- `kdd-codigo-limpio` — Developer Tools — Verifica 30 heuristicas de Clean Code: comentarios, funciones, principios generales G, nombres, pruebas y profundidad de cadena, extraidas con Knowledge-Driven Development.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
@@ -246,6 +247,11 @@ Use these exact identifiers when referring to plugins:
 
 - Description: Verifica 12 tecnicas de Scrum y eXtreme Programming con instrumento real (cadencia, TDD, repo unico, Clean Code) y documenta 22 tecnicas mas que requieren tablero, calendario o CI reales, extraidas con Knowledge-Driven Development.
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-scrum-xp
+
+### kdd-codigo-limpio (`kdd-codigo-limpio`)
+
+- Description: Verifica 30 heuristicas de Clean Code: comentarios, funciones, principios generales G, nombres, pruebas y profundidad de cadena, extraidas con Knowledge-Driven Development.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-codigo-limpio
 
 ## Design System Analyses
 
