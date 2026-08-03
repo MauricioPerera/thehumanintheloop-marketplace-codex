@@ -287,6 +287,10 @@ const plugins = [{
   name: 'kdd-htmx', displayName: 'KDD htmx Checker', category: 'Developer Tools', icon: 'HX', version: '0.1.0',
   description: 'Verifica HTML, capturas HTTP y plantillas contra 6 tecnicas medibles de la documentacion de htmx: mejora progresiva, indicador, CSRF, Vary, CSP y escapado, extraidas con Knowledge-Driven Development.',
   capabilities: ['htmx', 'hypermedia', 'html', 'csp', 'csrf', 'kdd', 'validation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-htmx', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'kdd-arquitectura-java', displayName: 'KDD Arquitectura Java Solida Checker', category: 'Developer Tools', icon: 'AJ', version: '0.1.0',
+  description: 'Verifica 8 reglas de arquitectura y codigo limpio: capas, excepciones, ISP, DI/Factory, AOP, COC, duplicacion (G5) y polimorfismo antes que if/else (G23), extraidas con Knowledge-Driven Development.',
+  capabilities: ['arquitectura', 'solid', 'capas', 'dependency-injection', 'kdd', 'validation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-arquitectura-java', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

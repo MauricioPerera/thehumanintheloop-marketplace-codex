@@ -1,0 +1,670 @@
+{
+  "source": {
+    "slug": "arquitectura-java",
+    "title": "Arquitectura Java solida",
+    "author": "Cecilio Alvarez Caules",
+    "file": "Arquitectura JAVA solida.pdf",
+    "pages": 405,
+    "extracted_with": "pymupdf",
+    "tags": [
+      "fuente",
+      "libro",
+      "arquitectura-java"
+    ],
+    "corpus": "Los 33 elementos nombrados en los titulos de capitulo. CORPUS MAS DEBIL que el de los otros dos libros: este es un tutorial progresivo, no tiene lista cerrada de conclusiones del autor, y la enumeracion la produjo el triaje. n es menor y la fraccion medida tiene barras de error mas anchas."
+  },
+  "nodes": [
+    {
+      "id": "01",
+      "title": "Introduccion y entorno de desarrollo",
+      "description": "Introduccion y entorno de desarrollo (capitulo 1 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 1",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "02",
+      "title": "HTML",
+      "description": "HTML (capitulo 2 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 2",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "03",
+      "title": "Java Server Pages",
+      "description": "Java Server Pages (capitulo 3 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 3",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "04",
+      "title": "El principio DRY",
+      "description": "El principio DRY (capitulo 4 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 4",
+      "alias": [
+        "DRY",
+        "no te repitas",
+        "duplicated code"
+      ],
+      "links": [
+        "codigo-limpio/g5",
+        "scrum-xp/144",
+        "18"
+      ],
+      "instrument": "checks.py --rule g5",
+      "threshold": "cero bloques duplicados",
+      "body": "Tercera aparicion de la misma tecnica en el grafo. Los tres autores la operacionalizan, y por eso los tres nodos son contractables y comparten instrumento."
+    },
+    {
+      "id": "05",
+      "title": "Editar, borrar y filtrar",
+      "description": "Editar, borrar y filtrar (capitulo 5 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 5",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "06",
+      "title": "Manejo de excepciones",
+      "description": "Manejo de excepciones (capitulo 6 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 6",
+      "alias": [
+        "manejo de excepciones",
+        "exception handling"
+      ],
+      "links": [],
+      "instrument": "arch_checks.py --rule excepciones",
+      "threshold": "cero catch mudos, vacios o amplios"
+    },
+    {
+      "id": "07",
+      "title": "Log4J",
+      "description": "Log4J (capitulo 7 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 7",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "08",
+      "title": "El principio SRP",
+      "description": "El principio SRP (capitulo 8 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 8",
+      "alias": [
+        "SRP",
+        "single responsibility",
+        "separacion de capas"
+      ],
+      "links": [
+        "codigo-limpio/g30",
+        "09",
+        "22"
+      ],
+      "instrument": "arch_checks.py --rule capas",
+      "threshold": "cero imports que crucen capas",
+      "body": "SRP y G30 de Codigo Limpio (\"las funciones solo deben hacer una cosa\") son el mismo principio, y quedan en pilas distintas. Martin nunca lo aterriza: cuenta operaciones semanticas y no da un numero, asi que su nodo queda en pila B. Caules lo aplica como separacion de capas — la JSP no contiene codigo de persistencia — y eso es una regla de imports que un checker de dependencias verifica. La contractabilidad no la decide la tecnica ni el dominio: la decide si el autor la operacionalizo."
+    },
+    {
+      "id": "09",
+      "title": "El modelo MVC",
+      "description": "El modelo MVC (capitulo 9 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 9",
+      "alias": [
+        "MVC",
+        "modelo vista controlador"
+      ],
+      "links": [
+        "08",
+        "12",
+        "22"
+      ],
+      "instrument": "arch_checks.py --rule capas",
+      "threshold": "cero imports que crucen capas"
+    },
+    {
+      "id": "10",
+      "title": "JSTL",
+      "description": "JSTL (capitulo 10 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 10",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "11",
+      "title": "El principio OCP",
+      "description": "El principio OCP (capitulo 11 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 11",
+      "alias": [
+        "OCP",
+        "open closed principle",
+        "abierto cerrado"
+      ],
+      "links": [
+        "codigo-limpio/g23",
+        "13"
+      ],
+      "instrument": "checks.py --rule g23",
+      "threshold": "cero cadenas if/else sobre un discriminante",
+      "body": "Caules no deja OCP en \"abierto a extension, cerrado a modificacion\": lo convierte en una prueba ejecutable — si agregar una funcionalidad obliga a tocar el controlador y sumarle un if/else, no se cumple. Eso es exactamente `touch_only` de un contrato KDD, y ademas coincide con la heuristica G23 de Martin."
+    },
+    {
+      "id": "12",
+      "title": "El modelo MVC 2",
+      "description": "El modelo MVC 2 (capitulo 12 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 12",
+      "alias": [
+        "MVC",
+        "front controller"
+      ],
+      "links": [
+        "09"
+      ],
+      "instrument": "arch_checks.py --rule capas",
+      "threshold": "cero imports que crucen capas"
+    },
+    {
+      "id": "13",
+      "title": "El patron Command",
+      "description": "El patron Command (capitulo 13 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "capitulo 13",
+      "alias": [
+        "patron Command",
+        "command pattern"
+      ],
+      "links": [
+        "11"
+      ],
+      "why_not": "la presencia de un patron no se detecta de forma robusta: una jerarquia con despacho puede ser Command o cualquier otra cosa"
+    },
+    {
+      "id": "14",
+      "title": "Hibernate",
+      "description": "Hibernate (capitulo 14 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 14",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "15",
+      "title": "Java Persistence API",
+      "description": "Java Persistence API (capitulo 15 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 15",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "16",
+      "title": "El principio ISP",
+      "description": "El principio ISP (capitulo 16 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 16",
+      "alias": [
+        "ISP",
+        "interface segregation"
+      ],
+      "links": [
+        "codigo-limpio/g8",
+        "17"
+      ],
+      "instrument": "arch_checks.py --rule isp",
+      "threshold": "cero metodos de los que se depende sin usar"
+    },
+    {
+      "id": "17",
+      "title": "El patron DAO",
+      "description": "El patron DAO (capitulo 17 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 17",
+      "alias": [
+        "DAO",
+        "data access object"
+      ],
+      "links": [
+        "16",
+        "18",
+        "22"
+      ],
+      "instrument": "arch_checks.py --rule capas",
+      "threshold": "cero accesos a persistencia fuera de la capa DAO"
+    },
+    {
+      "id": "18",
+      "title": "El patron GenericDAO",
+      "description": "El patron GenericDAO (capitulo 18 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 18",
+      "alias": [
+        "DAO generico",
+        "generic DAO"
+      ],
+      "links": [
+        "04",
+        "17"
+      ],
+      "instrument": "checks.py --rule g5",
+      "threshold": "cero duplicacion entre los DAO"
+    },
+    {
+      "id": "19",
+      "title": "El principio de inversion de control",
+      "description": "El principio de inversion de control (capitulo 19 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 19",
+      "alias": [
+        "IoC",
+        "inversion de control",
+        "inversion of control"
+      ],
+      "links": [
+        "20",
+        "23"
+      ],
+      "instrument": "arch_checks.py --rule instanciacion",
+      "threshold": "cero colaboradores creados por la clase"
+    },
+    {
+      "id": "20",
+      "title": "El patron Factory",
+      "description": "El patron Factory (capitulo 20 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 20",
+      "alias": [
+        "patron Factory",
+        "factory pattern"
+      ],
+      "links": [
+        "19",
+        "21"
+      ],
+      "instrument": "arch_checks.py --rule instanciacion --permite-crear factoria",
+      "threshold": "creacion solo dentro de la factoria"
+    },
+    {
+      "id": "21",
+      "title": "El patron Abstract Factory",
+      "description": "El patron Abstract Factory (capitulo 21 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "capitulo 21",
+      "alias": [
+        "Abstract Factory"
+      ],
+      "links": [
+        "20"
+      ],
+      "why_not": "lo mismo que Command, y ademas la capa extra sobre las factorias es un juicio"
+    },
+    {
+      "id": "22",
+      "title": "La capa de servicio",
+      "description": "La capa de servicio (capitulo 22 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 22",
+      "alias": [
+        "capa de servicio",
+        "service layer"
+      ],
+      "links": [
+        "08",
+        "17"
+      ],
+      "instrument": "arch_checks.py --rule capas",
+      "threshold": "cero imports que salteen la capa de servicio"
+    },
+    {
+      "id": "23",
+      "title": "La inyeccion de dependencia",
+      "description": "La inyeccion de dependencia (capitulo 23 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 23",
+      "alias": [
+        "inyeccion de dependencia",
+        "dependency injection",
+        "DI"
+      ],
+      "links": [
+        "19"
+      ],
+      "instrument": "arch_checks.py --rule instanciacion",
+      "threshold": "cero dependencias asignadas por la propia clase"
+    },
+    {
+      "id": "24",
+      "title": "El patron Template",
+      "description": "El patron Template (capitulo 24 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "no-especificable"
+      ],
+      "pile": "B",
+      "verification": "none",
+      "locator": "capitulo 24",
+      "alias": [
+        "patron Template",
+        "template method"
+      ],
+      "links": [
+        "26"
+      ],
+      "why_not": "que el paso variable este bien elegido es exactamente la parte que no se puede medir"
+    },
+    {
+      "id": "25",
+      "title": "Spring Templates y JDBCDAOSupport",
+      "description": "Spring Templates y JDBCDAOSupport (capitulo 25 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 25",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "26",
+      "title": "Programacion orientada a aspectos",
+      "description": "Programacion orientada a aspectos (capitulo 26 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 26",
+      "alias": [
+        "AOP",
+        "programacion orientada a aspectos",
+        "aspect oriented"
+      ],
+      "links": [
+        "24"
+      ],
+      "instrument": "arch_checks.py --rule aop",
+      "threshold": "cero logging ni transacciones en el negocio"
+    },
+    {
+      "id": "27",
+      "title": "Proxies con Spring",
+      "description": "Proxies con Spring (capitulo 27 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 27",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "28",
+      "title": "El principio COC",
+      "description": "El principio COC (capitulo 28 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "contractable",
+        "instrumented"
+      ],
+      "pile": "A",
+      "verification": "instrumented",
+      "locator": "capitulo 28",
+      "alias": [
+        "COC",
+        "convention over configuration",
+        "convencion sobre configuracion"
+      ],
+      "links": [],
+      "instrument": "arch_checks.py --rule coc",
+      "threshold": "los campos coinciden con las columnas"
+    },
+    {
+      "id": "29",
+      "title": "Java Server Faces",
+      "description": "Java Server Faces (capitulo 29 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 29",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "30",
+      "title": "Migracion a Java Server Faces",
+      "description": "Migracion a Java Server Faces (capitulo 30 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 30",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "31",
+      "title": "Servicios web y JAX-WS",
+      "description": "Servicios web y JAX-WS (capitulo 31 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 31",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "32",
+      "title": "Administracion y pools de conexiones",
+      "description": "Administracion y pools de conexiones (capitulo 32 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 32",
+      "alias": [],
+      "links": []
+    },
+    {
+      "id": "33",
+      "title": "Conclusiones",
+      "description": "Conclusiones (capitulo 33 del libro).",
+      "type": "Concept",
+      "tags": [
+        "arquitectura-java",
+        "conocimiento"
+      ],
+      "pile": "C",
+      "verification": "none",
+      "locator": "capitulo 33",
+      "alias": [],
+      "links": []
+    }
+  ]
+}
