@@ -1,0 +1,13 @@
+{
+  "name": "kdd-codigo-limpio",
+  "displayName": "KDD Codigo Limpio Checker",
+  "version": "0.1.0",
+  "description": "Verifica 30 heuristicas de Clean Code (comentarios, funciones, principios generales G, nombres, pruebas y profundidad de cadena) sobre 5 scripts deterministas, extraidas y verificadas con Knowledge-Driven Development.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["clean-code", "codigo-limpio", "python", "linting", "kdd", "validation"]
+}
