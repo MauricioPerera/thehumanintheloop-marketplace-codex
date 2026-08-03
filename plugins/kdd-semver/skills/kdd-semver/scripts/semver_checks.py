@@ -166,7 +166,13 @@ def _version_de_pyproject(ruta):
     except tomllib.TOMLDecodeError as exc:
         raise NoVerificable('{} no es TOML valido: {}'.format(ruta, exc))
     proyecto = datos.get('project', {})
-    if 'version' in proyecto.get('dynamic', []):
+    dinamica = 'version' in proyecto.get('dynamic', [])
+    if 'version' not in proyecto and not dinamica:
+        # Este archivo no declara nada de version via PEP 621 -no usa
+        # [project], o usa un backend que no publica metadata ahi-. No es un
+        # error, es lo mismo que un .py sin __version__: no participa.
+        return []
+    if dinamica:
         raise NoVerificable(
             '{} declara version dinamica (dynamic = ["version"]): no hay un '
             'literal que leer, la resuelve el backend de build'.format(ruta))
@@ -195,21 +201,36 @@ def _versiones_de_proyecto(proyecto):
     un string de version de mentira en un fixture es exactamente lo que un
     fixture tiene que tener, y marcarlo pondria el instrumento en rojo por
     hacer bien las cosas.
+
+    Un `pyproject.toml` que declara tener version pero no se puede resolver a
+    un literal -dynamic, TOML invalido, sin tomllib- **no se descarta en
+    silencio**: si el resto del proyecto pasara la regla igual, un agente que
+    solo mire el exit code leeria "cumple" sobre un proyecto donde una de sus
+    fuentes de version quedo sin auditar. Eso es exactamente el hueco que este
+    metodo evita en el resto del repositorio, y esta funcion no es una
+    excepcion: cualquier brecha real se junta y se relanza al final.
     """
     out = []
     vistos = False
+    brechas = []
     for raiz, dirs, archivos in os.walk(proyecto):
         dirs[:] = [d for d in dirs if d not in ('__pycache__', '.git', 'tests')]
         for nombre in sorted(archivos):
             if nombre == 'pyproject.toml':
                 vistos = True
+                ruta = os.path.join(raiz, nombre)
                 try:
-                    out.extend(_version_de_pyproject(os.path.join(raiz, nombre)))
-                except NoVerificable:
-                    continue
+                    out.extend(_version_de_pyproject(ruta))
+                except NoVerificable as exc:
+                    brechas.append(str(exc))
             elif nombre.endswith('.py') and not nombre.startswith('test_'):
                 vistos = True
                 out.extend(_version_de_python(os.path.join(raiz, nombre)))
+    if brechas:
+        raise NoVerificable(
+            '{} archivo(s) declaran una version que no se pudo resolver a un '
+            'literal, asi que el proyecto no se audito completo: {}'.format(
+                len(brechas), '; '.join(brechas)))
     if not vistos:
         raise NoVerificable(
             'el proyecto no tiene ningun .py ni pyproject.toml que leer')
