@@ -303,6 +303,11 @@ const analyses = [{
   description: 'Análisis externo de antigravity.google con producto agentic, CLI, SDK, IDE, casos de uso y descargas.',
   capabilities: ['Product UI', 'Agentic UX', 'Validation'],
   url: './analyses/antigravity/index.html', preview: './analyses/antigravity/index.html', source: 'https://antigravity.google/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/antigravity/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/antigravity/design-system.json'
+}, {
+  name: 'Anthropic Homepage', category: 'Design Systems', icon: 'AN', version: '1.0.0',
+  description: 'Análisis externo del homepage público con safety, research, productos, releases, políticas y navegación editorial.',
+  capabilities: ['Editorial UI', 'Safety', 'Validation'],
+  url: './analyses/anthropic/index.html', preview: './analyses/anthropic/index.html', source: 'https://www.anthropic.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/anthropic/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/anthropic/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');

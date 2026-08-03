@@ -184,6 +184,7 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `netflix` — Netflix Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/netflix/ — source: https://www.netflix.com/
 - `openai` — OpenAI Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/openai/ — source: https://openai.com/
 - `antigravity` — Google Antigravity — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/antigravity/ — source: https://antigravity.google/
+- `anthropic` — Anthropic Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/anthropic/ — source: https://www.anthropic.com/
 
 ## Instructions for AI agents
 
