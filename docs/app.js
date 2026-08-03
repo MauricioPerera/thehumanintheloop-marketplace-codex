@@ -127,6 +127,27 @@ function buildDesignPrompt(button) {
   return `Quiero importar el Design System Analysis "${designName}" en mi proyecto actual.\n\nUsa DESIGN.md como contrato principal y design-system.json como contrato estructurado:\n- DESIGN.md: ${button.dataset.designMd}\n- design-system.json: ${button.dataset.contract}\n\nEl sitio analizado originalmente es: ${button.dataset.source}\n\nPrimero inspecciona el proyecto actual y explica dónde integrarás los tokens, componentes, estados, layout y responsive behavior. Después aplica el sistema de diseño respetando sus validadores y señala cualquier conflicto antes de modificar archivos. No copies contenido ni activos propietarios del sitio de referencia.`;
 }
 
+function renderFilters() {
+  const categories = [...new Set([...plugins, ...analyses].map(item => item.category))].sort();
+  const labels = {
+    'Content & Editorial': 'Contenido',
+    'Design Systems': 'Design Systems',
+    'Marketplace & Quality': 'Marketplace y calidad',
+    'Developer Tools': 'Developer tools',
+    'Accessibility & UX': 'Accesibilidad',
+    'Security & Privacy': 'Seguridad y privacidad',
+    'Research & Evidence': 'Investigación',
+    'AI & Prompt Engineering': 'IA y prompts'
+  };
+  document.querySelector('.filters').innerHTML = ['all', ...categories].map(value => `<button class="filter ${value === 'all' ? 'active' : ''}" data-category="${value}">${value === 'all' ? 'Todos' : (labels[value] || value)}</button>`).join('');
+  document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => {
+    document.querySelector('.filter.active').classList.remove('active');
+    button.classList.add('active');
+    category = button.dataset.category;
+    render();
+  }));
+}
+
 const previewDialog = document.querySelector('#preview-dialog');
 const previewFrame = document.querySelector('#preview-frame');
 const previewTitle = document.querySelector('#preview-title');
@@ -138,7 +159,6 @@ function openPreview(url, title) {
 document.querySelector('#close-preview').addEventListener('click', () => { previewFrame.src = 'about:blank'; previewDialog.close(); });
 previewDialog.addEventListener('click', event => { if (event.target === previewDialog) { previewFrame.src = 'about:blank'; previewDialog.close(); } });
 search.addEventListener('input', render);
-document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => { document.querySelector('.filter.active').classList.remove('active'); button.classList.add('active'); category = button.dataset.category; render(); }));
 document.querySelectorAll('[data-platform-command]').forEach(button => button.addEventListener('click', () => {
   document.querySelectorAll('[data-platform-command]').forEach(item => item.classList.remove('active'));
   button.classList.add('active');
@@ -147,4 +167,5 @@ document.querySelectorAll('[data-platform-command]').forEach(button => button.ad
     : `codex plugin marketplace add MauricioPerera/thehumanintheloop-marketplace-codex\ncodex plugin install linter-seo-geo-2026`;
 }));
 document.querySelector('#copy-command').addEventListener('click', async () => { const text = document.querySelector('#install-command').textContent; try { await navigator.clipboard.writeText(text); document.querySelector('#copy-status').textContent = 'Copiado'; } catch { document.querySelector('#copy-status').textContent = 'Selecciona y copia el comando'; } });
+renderFilters();
 render();
