@@ -1,0 +1,18 @@
+{
+  "name": "github-pages-manager",
+  "version": "0.1.0",
+  "description": "Audita configuración, fuentes y despliegues de GitHub Pages.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub Pages Manager",
+    "shortDescription": "Audita y prepara despliegues de GitHub Pages.",
+    "longDescription": "Revisa fuente, rama, workflow, dominio, estado y errores de publicación; prepara despliegues con validación y rollback.",
+    "developerName": "Local developer",
+    "category": "Developer Tools",
+    "capabilities": ["Pages", "Deployment", "Publishing"],
+    "defaultPrompt": "Audita GitHub Pages y prepara un plan de despliegue."
+  }
+}

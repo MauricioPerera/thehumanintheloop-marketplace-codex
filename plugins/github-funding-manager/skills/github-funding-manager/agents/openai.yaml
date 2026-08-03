@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Funding Manager
+  short_description: Manages repository funding and sponsorship.
+  default_prompt: Audit repository funding configuration.

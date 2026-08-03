@@ -2,7 +2,7 @@
 
 Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
-Catálogo actual: **61 plugins**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
+Catálogo actual: **64 plugins**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
 
 ## Plugins disponibles
 
@@ -67,6 +67,9 @@ Catálogo actual: **61 plugins**, distribuido en dos manifests compatibles y una
 - `GitHub Dependency Review Manager` (`github-dependency-review-manager`): revisa dependencias nuevas en PRs.
 - `GitHub Private Reporting Manager` (`github-private-reporting-manager`): gestiona reportes privados de vulnerabilidades.
 - `GitHub Organization Settings Manager` (`github-organization-settings-manager`): audita políticas organizacionales.
+- `GitHub Pages Manager` (`github-pages-manager`): audita y prepara despliegues de Pages.
+- `GitHub Funding Manager` (`github-funding-manager`): gestiona financiación y sponsorship.
+- `GitHub Workflow Dispatch Manager` (`github-workflow-dispatch-manager`): prepara disparos manuales.
 
 ## Categorías
 
@@ -75,7 +78,7 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Content & Editorial — 6 plugins
 - Design Systems — 1 plugin
 - Marketplace & Quality — 6 plugins
-- Developer Tools — 26 plugins
+- Developer Tools — 29 plugins
 - Accessibility & UX — 1 plugin
 - Security & Privacy — 19 plugins
 - Research & Evidence — 1 plugin

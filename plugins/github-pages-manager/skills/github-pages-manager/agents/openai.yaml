@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Pages Manager
+  short_description: Audits and prepares GitHub Pages deployments.
+  default_prompt: Audit GitHub Pages and prepare a deployment plan.

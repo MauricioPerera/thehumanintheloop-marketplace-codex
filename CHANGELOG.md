@@ -49,6 +49,9 @@
 - `github-dependency-review-manager`: revisión de dependencias nuevas, licencias y supply chain.
 - `github-private-reporting-manager`: reportes privados con evidencia mínima y segura.
 - `github-organization-settings-manager`: auditoría de políticas globales y permisos de organización.
+- `github-pages-manager`: auditoría de fuentes, dominios y despliegues de GitHub Pages.
+- `github-funding-manager`: revisión de FUNDING.yml, sponsors y enlaces públicos.
+- `github-workflow-dispatch-manager`: preparación segura de ejecuciones manuales con inputs.
 
 ## 2026-08-02
 

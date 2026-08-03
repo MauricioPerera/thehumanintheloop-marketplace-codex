@@ -735,6 +735,42 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Security & Privacy"
+    },
+    {
+      "name": "github-pages-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-pages-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-funding-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-funding-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-workflow-dispatch-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-workflow-dispatch-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }

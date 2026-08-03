@@ -86,6 +86,9 @@
     {"name":"github-security-advisory-manager","displayName":"GitHub Security Advisory Manager","source":"./plugins/github-security-advisory-manager","category":"Security & Privacy"},
     {"name":"github-dependency-review-manager","displayName":"GitHub Dependency Review Manager","source":"./plugins/github-dependency-review-manager","category":"Security & Privacy"},
     {"name":"github-private-reporting-manager","displayName":"GitHub Private Reporting Manager","source":"./plugins/github-private-reporting-manager","category":"Security & Privacy"},
-    {"name":"github-organization-settings-manager","displayName":"GitHub Organization Settings Manager","source":"./plugins/github-organization-settings-manager","category":"Security & Privacy"}
+    {"name":"github-organization-settings-manager","displayName":"GitHub Organization Settings Manager","source":"./plugins/github-organization-settings-manager","category":"Security & Privacy"},
+    {"name":"github-pages-manager","displayName":"GitHub Pages Manager","source":"./plugins/github-pages-manager","category":"Developer Tools"},
+    {"name":"github-funding-manager","displayName":"GitHub Funding Manager","source":"./plugins/github-funding-manager","category":"Developer Tools"},
+    {"name":"github-workflow-dispatch-manager","displayName":"GitHub Workflow Dispatch Manager","source":"./plugins/github-workflow-dispatch-manager","category":"Developer Tools"}
   ]
 }

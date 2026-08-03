@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Workflow Dispatch Manager
+  short_description: Prepares manual workflow dispatches.
+  default_prompt: Prepare a safe workflow dispatch with inputs and evidence.
