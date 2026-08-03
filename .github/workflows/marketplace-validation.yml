@@ -27,3 +27,5 @@ jobs:
         run: node --check docs/app.js
       - name: Check catalog SEO metadata
         run: python scripts/validate_catalog_metadata.py
+      - name: Check analysis SEO metadata
+        run: python scripts/validate_analysis_metadata.py

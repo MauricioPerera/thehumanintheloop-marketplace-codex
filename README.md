@@ -73,6 +73,7 @@ Desde la raíz del repositorio:
 ```powershell
 python plugins/marketplace-validator/scripts/validate_marketplace.py .
 python scripts/validate_catalog_metadata.py
+python scripts/validate_analysis_metadata.py
 node --check docs/app.js
 git diff --check
 ```
