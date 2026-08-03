@@ -1,0 +1,10 @@
+{
+  "name": "github-release-manager",
+  "displayName": "GitHub Release Manager",
+  "version": "0.1.0",
+  "description": "Prepara releases de GitHub con gh CLI, notas trazables y checklist de publicacion.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["github", "gh", "release", "tag", "changelog"]
+}

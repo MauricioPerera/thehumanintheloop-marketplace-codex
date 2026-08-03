@@ -7,6 +7,9 @@
 - `cv-job-tailor`: adaptación de CVs a ofertas con trazabilidad y validadores anti-fabricación.
 - `commercial-proposal-builder`: propuestas comerciales basadas en requerimientos con control de alcance, precios y supuestos.
 - `rfp-response-builder`: respuestas de RFP y licitaciones con matriz de cumplimiento, evidencia y pendientes.
+- `github-issue-manager`: gestión de Issues con `gh` CLI y confirmación antes de acciones mutables.
+- `github-pr-manager`: preparación y revisión de Pull Requests con checklist y evidencia.
+- `github-release-manager`: preparación de releases, tags y notas de versión con `gh` CLI.
 
 ## 2026-08-02
 

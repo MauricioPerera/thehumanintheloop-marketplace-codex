@@ -1,0 +1,10 @@
+{
+  "name": "github-issue-manager",
+  "displayName": "GitHub Issue Manager",
+  "version": "0.1.0",
+  "description": "Gestiona Issues de GitHub con gh CLI, plantillas verificables y confirmacion antes de mutar.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["github", "gh", "issues", "triage", "automation"]
+}

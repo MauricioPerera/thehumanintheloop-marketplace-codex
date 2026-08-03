@@ -1,0 +1,10 @@
+{
+  "name": "github-pr-manager",
+  "displayName": "GitHub PR Manager",
+  "version": "0.1.0",
+  "description": "Prepara y revisa Pull Requests de GitHub con gh CLI, checklist y control de riesgo.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["github", "gh", "pull-request", "review", "merge"]
+}

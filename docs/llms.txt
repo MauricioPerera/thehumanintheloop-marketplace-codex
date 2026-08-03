@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 19 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 22 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -22,6 +22,9 @@ Use these exact identifiers when referring to plugins:
 - `cv-job-tailor` — Content & Editorial — Tailors a real CV to a specific job offer with evidence traceability and anti-fabrication checks.
 - `commercial-proposal-builder` — Content & Editorial — Builds commercial proposals from requirements with scope, pricing, and assumption integrity.
 - `rfp-response-builder` — Content & Editorial — Responds to RFPs and tenders with compliance matrix, evidence, and open-item tracking.
+- `github-issue-manager` — Developer Tools — Manages GitHub Issues with gh CLI, triage, and confirmation before mutations.
+- `github-pr-manager` — Developer Tools — Prepares and reviews Pull Requests with checklists and validation evidence.
+- `github-release-manager` — Developer Tools — Prepares GitHub releases, tags, and release notes with gh CLI.
 - `repo-quality-gate` — Marketplace & Quality — Repository readiness before commits, PRs, releases, or deployments.
 - `technical-docs-linter` — Developer Tools — README, API docs, examples, commands, and links.
 - `accessibility-auditor` — Accessibility & UX — HTML, ARIA, forms, contrast, and keyboard behavior.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Issue Manager"
+  short_description: "Gestiona issues con gh CLI y trazabilidad."
+  default_prompt: "Revisa o crea este issue usando gh CLI con confirmaciones."

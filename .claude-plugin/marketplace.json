@@ -44,6 +44,9 @@
     {"name":"test-coverage-gate","displayName":"Test Coverage Gate","source":"./plugins/test-coverage-gate","category":"Marketplace & Quality"},
     {"name":"cv-job-tailor","displayName":"CV Job Tailor","source":"./plugins/cv-job-tailor","category":"Content & Editorial"},
     {"name":"commercial-proposal-builder","displayName":"Commercial Proposal Builder","source":"./plugins/commercial-proposal-builder","category":"Content & Editorial"},
-    {"name":"rfp-response-builder","displayName":"RFP Response Builder","source":"./plugins/rfp-response-builder","category":"Content & Editorial"}
+    {"name":"rfp-response-builder","displayName":"RFP Response Builder","source":"./plugins/rfp-response-builder","category":"Content & Editorial"},
+    {"name":"github-issue-manager","displayName":"GitHub Issue Manager","source":"./plugins/github-issue-manager","category":"Developer Tools"},
+    {"name":"github-pr-manager","displayName":"GitHub PR Manager","source":"./plugins/github-pr-manager","category":"Developer Tools"},
+    {"name":"github-release-manager","displayName":"GitHub Release Manager","source":"./plugins/github-release-manager","category":"Developer Tools"}
   ]
 }

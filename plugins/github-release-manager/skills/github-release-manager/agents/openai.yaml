@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Release Manager"
+  short_description: "Prepara releases con gh CLI y checklist."
+  default_prompt: "Prepara una release con notas y validaciones usando gh CLI."

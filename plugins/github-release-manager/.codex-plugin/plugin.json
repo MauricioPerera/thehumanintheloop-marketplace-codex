@@ -1,0 +1,19 @@
+{
+  "name": "github-release-manager",
+  "version": "0.1.0",
+  "description": "Prepara releases de GitHub con gh CLI, notas trazables y checklist de publicacion.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["github", "gh", "release", "tag", "changelog"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub Release Manager",
+    "shortDescription": "Prepara releases con gh CLI y checklist.",
+    "longDescription": "Prepara releases y notas de version con gh CLI, revisa tags y changelog, y exige confirmacion antes de publicar.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["Releases", "Tags", "Changelog", "gh CLI"],
+    "defaultPrompt": "Prepara una release con notas y validaciones usando gh CLI."
+  }
+}

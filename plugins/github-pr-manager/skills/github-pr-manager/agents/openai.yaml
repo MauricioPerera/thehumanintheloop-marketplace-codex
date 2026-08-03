@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub PR Manager"
+  short_description: "Crea y revisa PRs con gh CLI."
+  default_prompt: "Prepara o revisa este Pull Request con gh CLI."
