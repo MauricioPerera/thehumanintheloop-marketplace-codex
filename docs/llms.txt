@@ -121,6 +121,10 @@ Use these exact identifiers when referring to plugins:
 
 Published analyses are reusable results rather than generator plugins. Each analysis may include a `DESIGN.md` source of truth, `design-system.json`, `validation-report.json`, and an HTML preview. The catalog presents these previews inside the marketplace interface.
 
+- `kdd` — KDD / Knowledge-Driven Development — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/kdd/ — source: https://mauricioperera.github.io/KDD/
+- `mercadolibre` — Mercado Libre México — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/mercadolibre/ — source: https://www.mercadolibre.com.mx/
+- `marketplace` — TheHumanInTheLoop Marketplace — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/marketplace/ — source: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/
+
 ## Instructions for AI agents
 
 Before modifying this repository, inspect the relevant marketplace manifest and plugin directory. Keep `.claude-plugin/marketplace.json`, `.agents/plugins/marketplace.json`, plugin manifests, and the catalog metadata synchronized. Do not describe an analysis as an official brand system unless its provenance explicitly supports that claim.

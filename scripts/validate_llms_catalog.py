@@ -20,6 +20,9 @@ def main() -> int:
             errors.append(f"Missing category in docs/llms.txt: {entry['name']}")
     if "Productivity" in llms:
         errors.append("docs/llms.txt contains obsolete category: Productivity")
+    for analysis in (root / "docs" / "analyses").glob("*/index.html"):
+        if f"`{analysis.parent.name}`" not in llms:
+            errors.append(f"Missing analysis in docs/llms.txt: {analysis.parent.name}")
     result = {"status": "FAILED" if errors else "PASSED", "plugins": len(names), "errors": errors}
     print(json.dumps(result, indent=2, ensure_ascii=False))
     return 1 if errors else 0
