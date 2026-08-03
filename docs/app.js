@@ -268,6 +268,11 @@ const analyses = [{
   description: 'Análisis externo del homepage público con tokens, navegación, CTAs, estados, responsive behavior y procedencia.',
   capabilities: ['Navigation UI', 'Responsive', 'Validation'],
   url: './analyses/github/index.html', preview: './analyses/github/index.html', source: 'https://github.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/github/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/github/design-system.json'
+}, {
+  name: 'Google Homepage', category: 'Design Systems', icon: 'G', version: '1.0.0',
+  description: 'Análisis externo del homepage público con búsqueda, tokens, estados, responsive behavior y procedencia.',
+  capabilities: ['Search UI', 'Responsive', 'Validation'],
+  url: './analyses/google/index.html', preview: './analyses/google/index.html', source: 'https://www.google.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/google/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/google/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');

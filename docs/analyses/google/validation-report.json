@@ -1,0 +1,7 @@
+{
+  "status":"PASSED",
+  "errors":[],
+  "warnings":["External site content and styling are dynamic.","Values may vary by locale, session, experiment, device, and theme.","This is not an official Google design system and does not redistribute Google assets."],
+  "source":"https://www.google.com/",
+  "artifacts":["DESIGN.md","design-system.json","validation-report.json","index.html"]
+}

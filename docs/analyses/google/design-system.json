@@ -1,0 +1,14 @@
+{
+  "name": "google-homepage-analysis",
+  "version": "1.0.0",
+  "description": "External, reproducible analysis of the public Google homepage; not an official Google design system.",
+  "source": "https://www.google.com/",
+  "observedAt": "2026-08-02",
+  "colors": {"canvas":"#FFFFFF","ink":"#202124","muted":"#5F6368","accent":"#1A73E8","border":"#DADCE0","buttonSurface":"#F8F9FA","hoverSurface":"#F1F3F4","error":"#D93025","success":"#188038"},
+  "typography": {"fontFamily":"Roboto, Arial, sans-serif","codeFamily":"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace","utility":{"fontSize":"13px","fontWeight":400,"lineHeight":1.4},"input":{"fontSize":"16px","fontWeight":400,"lineHeight":1.5},"button":{"fontSize":"14px","fontWeight":500,"lineHeight":1.4},"footer":{"fontSize":"14px","fontWeight":400,"lineHeight":1.4}},
+  "rounded": {"button":"4px","search":"24px","avatar":"50%"},
+  "spacing": {"xxs":"4px","xs":"8px","sm":"12px","md":"16px","lg":"24px","xl":"32px","section":"48px","searchMax":"584px"},
+  "breakpoints": {"mobile":"320px","small":"544px","medium":"768px","large":"1280px"},
+  "components": {"utility-header":{"states":["default","hover","focus-visible","compact"]},"search-box":{"states":["empty","typing","focus","submitted","error","disabled"]},"search-actions":{"states":["default","hover","active","focus-visible","disabled"]},"footer-navigation":{"states":["default","hover","focus-visible","stacked-mobile"]}},
+  "provenance": {"type":"external-analysis","official":false,"references":["https://www.google.com/"],"notes":"Values are an analytical snapshot; revalidate before production use and review trademark and asset licensing."}
+}

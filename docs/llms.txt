@@ -177,6 +177,7 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `mercadolibre` — Mercado Libre México — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/mercadolibre/ — source: https://www.mercadolibre.com.mx/
 - `marketplace` — TheHumanInTheLoop Marketplace — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/marketplace/ — source: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/
 - `github` — GitHub Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/github/ — source: https://github.com/
+- `google` — Google Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/google/ — source: https://www.google.com/
 
 ## Instructions for AI agents
 
