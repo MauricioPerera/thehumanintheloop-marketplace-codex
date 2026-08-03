@@ -11,6 +11,27 @@ Current inventory: 16 plugins. The marketplace exposes Claude Code and Codex man
 
 ## Plugin catalog
 
+## Machine-readable inventory
+
+Use these exact identifiers when referring to plugins:
+
+- `linter-seo-geo-2026` — Content & Editorial — SEO/GEO pre-publication content validation.
+- `marketplace-validator` — Marketplace & Quality — Claude Code and Codex manifest validation.
+- `design-system-auditor` — Design Systems — DESIGN.md, tokens, components, and validation contracts.
+- `content-fact-checker` — Content & Editorial — Sources, dates, links, and claim attribution.
+- `repo-quality-gate` — Marketplace & Quality — Repository readiness before commits, PRs, releases, or deployments.
+- `technical-docs-linter` — Developer Tools — README, API docs, examples, commands, and links.
+- `accessibility-auditor` — Accessibility & UX — HTML, ARIA, forms, contrast, and keyboard behavior.
+- `privacy-risk-auditor` — Security & Privacy — PII, secrets, credentials, and privacy risks.
+- `release-readiness` — Marketplace & Quality — Versioning, changelog, license, README, tests, and CI evidence.
+- `prompt-contract-linter` — AI & Prompt Engineering — Prompt objectives, inputs, outputs, constraints, and acceptance criteria.
+- `research-evidence-builder` — Research & Evidence — Research reports and evidence matrices.
+- `brand-voice-validator` — Content & Editorial — Tone, vocabulary, claims, clarity, and editorial consistency.
+- `api-contract-linter` — Developer Tools — OpenAPI paths, operations, responses, and examples.
+- `web-performance-auditor` — Developer Tools — Loading resources and Core Web Vitals.
+- `dependency-risk-auditor` — Security & Privacy — Dependencies, lockfiles, vulnerabilities, and supply-chain risks.
+- `test-coverage-gate` — Marketplace & Quality — Test evidence, reports, coverage, and quality thresholds.
+
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
 - Description: Content validator for search engines and generative engines with hybrid SEO and GEO pre-publication checks.

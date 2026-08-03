@@ -14,6 +14,10 @@ def main() -> int:
     llms = (root / "docs" / "llms.txt").read_text(encoding="utf-8")
     names = [entry["name"] for entry in manifest.get("plugins", [])]
     errors = [f"Missing plugin in docs/llms.txt: {name}" for name in names if f"`{name}`" not in llms]
+    for entry in manifest.get("plugins", []):
+        expected = f"- `{entry['name']}` — {entry.get('category')} —"
+        if expected not in llms:
+            errors.append(f"Missing category in docs/llms.txt: {entry['name']}")
     if "Productivity" in llms:
         errors.append("docs/llms.txt contains obsolete category: Productivity")
     result = {"status": "FAILED" if errors else "PASSED", "plugins": len(names), "errors": errors}
