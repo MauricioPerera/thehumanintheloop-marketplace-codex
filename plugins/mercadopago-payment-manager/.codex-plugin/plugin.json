@@ -1,0 +1,18 @@
+{
+  "name": "mercadopago-payment-manager",
+  "version": "0.1.0",
+  "description": "Prepara enlaces de pago de Mercado Pago con validadores de importe, moneda, URLs y seguridad.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Mercado Pago Payment Manager",
+    "shortDescription": "Crea enlaces de pago con validadores.",
+    "longDescription": "Construye un plan de Checkout Preference, valida artículos, precios, moneda, vencimiento y callbacks, y exige confirmación antes de crear el enlace.",
+    "developerName": "Local developer",
+    "category": "Developer Tools",
+    "capabilities": ["Payments", "Checkout", "Validation"],
+    "defaultPrompt": "Prepara un enlace de pago de Mercado Pago y valida su seguridad."
+  }
+}

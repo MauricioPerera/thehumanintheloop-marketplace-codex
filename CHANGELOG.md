@@ -55,6 +55,7 @@
 - `github-oidc-manager`: auditoría de subjects, audiences y trust de proveedores cloud.
 - `github-action-permissions-manager`: revisión de scopes y mínimo privilegio de GITHUB_TOKEN.
 - `github-merge-conflict-manager`: diagnóstico de conflictos y planes de resolución revisables.
+- `mercadopago-payment-manager`: contrato y validador para enlaces Checkout Preference con confirmación previa.
 
 ## 2026-08-02
 

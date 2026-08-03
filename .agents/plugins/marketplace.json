@@ -807,6 +807,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "mercadopago-payment-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/mercadopago-payment-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }

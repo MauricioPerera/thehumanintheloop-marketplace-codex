@@ -1,0 +1,4 @@
+interface:
+  display_name: Mercado Pago Payment Manager
+  short_description: Creates payment links with validation.
+  default_prompt: Prepare a Mercado Pago payment link and validate its safety.

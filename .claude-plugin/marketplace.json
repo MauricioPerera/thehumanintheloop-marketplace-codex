@@ -92,6 +92,7 @@
     {"name":"github-workflow-dispatch-manager","displayName":"GitHub Workflow Dispatch Manager","source":"./plugins/github-workflow-dispatch-manager","category":"Developer Tools"},
     {"name":"github-oidc-manager","displayName":"GitHub OIDC Manager","source":"./plugins/github-oidc-manager","category":"Security & Privacy"},
     {"name":"github-action-permissions-manager","displayName":"GitHub Action Permissions Manager","source":"./plugins/github-action-permissions-manager","category":"Security & Privacy"},
-    {"name":"github-merge-conflict-manager","displayName":"GitHub Merge Conflict Manager","source":"./plugins/github-merge-conflict-manager","category":"Developer Tools"}
+    {"name":"github-merge-conflict-manager","displayName":"GitHub Merge Conflict Manager","source":"./plugins/github-merge-conflict-manager","category":"Developer Tools"},
+    {"name":"mercadopago-payment-manager","displayName":"Mercado Pago Payment Manager","source":"./plugins/mercadopago-payment-manager","category":"Developer Tools"}
   ]
 }
