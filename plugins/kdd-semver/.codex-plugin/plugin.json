@@ -1,0 +1,18 @@
+{
+  "name": "kdd-semver",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para verificar Semantic Versioning 2.0.0, generado con el metodo Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD SemVer Checker",
+    "shortDescription": "Verifica cumplimiento de Semantic Versioning 2.0.0",
+    "longDescription": "Corre los 3 chequeos deterministas (formato X.Y.Z, identificadores de pre-release, identificadores de build metadata) que kdd-book extrajo del spec de SemVer 2.0.0. El grafo de conocimiento completo (11 tecnicas, incluidas las 8 que no son medibles y por que) viaja junto al chequeo para que el agente pueda explicar el resto del spec sin inventarlo.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Verifica que este proyecto cumple Semantic Versioning 2.0.0 usando kdd-semver."
+  }
+}

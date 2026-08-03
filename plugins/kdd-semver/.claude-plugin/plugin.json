@@ -1,0 +1,13 @@
+{
+  "name": "kdd-semver",
+  "displayName": "KDD SemVer Checker",
+  "version": "0.1.0",
+  "description": "Verifica cumplimiento real de Semantic Versioning 2.0.0 (formato, pre-release, build metadata) con un instrumento determinista extraido y verificado desde el spec original con el metodo Knowledge-Driven Development.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["semver", "versioning", "kdd", "validation"]
+}
