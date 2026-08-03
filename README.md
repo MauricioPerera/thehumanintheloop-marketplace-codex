@@ -49,6 +49,7 @@ La GitHub Page permite filtrar por categoría, buscar por nombre o capacidad, co
 - `CHANGELOG.md`: historial de capacidades publicadas.
 - `SECURITY.md`: alcance y procedimiento para reportar vulnerabilidades.
 - `CODE_OF_CONDUCT.md`: reglas de participación de la comunidad.
+- `AGENTS.md`: instrucciones operativas para agentes de IA y colaboradores automatizados.
 - `.github/CODEOWNERS` y `.github/dependabot.yml`: revisión y actualizaciones automáticas de CI.
 
 ## Design System Analyses
