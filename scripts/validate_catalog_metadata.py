@@ -8,6 +8,7 @@ from pathlib import Path
 def main():
     root = Path(__file__).resolve().parents[1]
     html = (root / "docs" / "index.html").read_text(encoding="utf-8")
+    app_js = (root / "docs" / "app.js").read_text(encoding="utf-8")
     marker = '<script type="application/ld+json">'
     start = html.index(marker) + len(marker)
     end = html.index("</script>", start)
@@ -43,6 +44,12 @@ def main():
         pattern = rf"^- {re.escape(category)} — {count} plugin(?:s)?$"
         if not re.search(pattern, readme, re.MULTILINE):
             errors.append(f"README category count is stale: {category} should be {count}")
+    for entry in marketplace["plugins"]:
+        name = entry["name"]
+        if not re.search(rf"name:\s*['\"]{re.escape(name)}['\"]", app_js):
+            errors.append(f"Plugin missing from docs/app.js: {name}")
+        if not re.search(rf"name:\s*['\"]{re.escape(name)}['\"].*?category:\s*['\"]{re.escape(entry['category'])}['\"]", app_js, re.DOTALL):
+            errors.append(f"Plugin category mismatch in docs/app.js: {name}")
     if errors:
         print(json.dumps({"status": "FAILED", "errors": errors}, indent=2, ensure_ascii=False))
         return 1
