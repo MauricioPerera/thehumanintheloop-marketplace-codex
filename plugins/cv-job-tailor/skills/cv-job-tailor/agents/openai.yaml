@@ -1,0 +1,4 @@
+interface:
+  display_name: "CV Job Tailor"
+  short_description: "Adapta CVs a ofertas con evidencia y ATS."
+  default_prompt: "Adapta mi CV a esta oferta sin inventar informacion."

@@ -41,6 +41,7 @@
     {"name":"api-contract-linter","displayName":"API Contract Linter","source":"./plugins/api-contract-linter","category":"Developer Tools"},
     {"name":"web-performance-auditor","displayName":"Web Performance Auditor","source":"./plugins/web-performance-auditor","category":"Developer Tools"},
     {"name":"dependency-risk-auditor","displayName":"Dependency Risk Auditor","source":"./plugins/dependency-risk-auditor","category":"Security & Privacy"},
-    {"name":"test-coverage-gate","displayName":"Test Coverage Gate","source":"./plugins/test-coverage-gate","category":"Marketplace & Quality"}
+    {"name":"test-coverage-gate","displayName":"Test Coverage Gate","source":"./plugins/test-coverage-gate","category":"Marketplace & Quality"},
+    {"name":"cv-job-tailor","displayName":"CV Job Tailor","source":"./plugins/cv-job-tailor","category":"Content & Editorial"}
   ]
 }

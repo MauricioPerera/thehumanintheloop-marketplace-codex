@@ -1,0 +1,18 @@
+{
+  "name": "cv-job-tailor",
+  "version": "0.1.0",
+  "description": "Adapta un CV real a una oferta laboral concreta con trazabilidad, controles anti-fabricación y validación ATS.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CV Job Tailor",
+    "shortDescription": "Adapta CVs a ofertas con evidencia y ATS.",
+    "longDescription": "Reescribe un CV real para una oferta laboral concreta sin inventar experiencia, fechas, títulos, tecnologías ni métricas.",
+    "developerName": "Mauricio Perera",
+    "category": "Content & Editorial",
+    "capabilities": ["CV", "ATS", "Traceability", "No fabrication"],
+    "defaultPrompt": "Adapta mi CV a esta oferta sin inventar información y entrega un reporte de trazabilidad."
+  }
+}

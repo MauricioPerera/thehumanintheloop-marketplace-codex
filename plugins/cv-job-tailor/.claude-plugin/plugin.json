@@ -1,0 +1,10 @@
+{
+  "name": "cv-job-tailor",
+  "displayName": "CV Job Tailor",
+  "version": "0.1.0",
+  "description": "Adapta un CV real a una oferta laboral concreta con trazabilidad, controles anti-fabricación y validación ATS.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["cv", "resume", "job", "ats", "career", "traceability"]
+}
