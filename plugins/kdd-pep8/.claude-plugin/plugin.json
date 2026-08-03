@@ -1,0 +1,13 @@
+{
+  "name": "kdd-pep8",
+  "displayName": "KDD PEP 8 Checker",
+  "version": "0.1.0",
+  "description": "Verifica 28 reglas de PEP 8 (Style Guide for Python Code): indentacion, longitud de linea, imports, comillas, comentarios, docstrings y las convenciones de nombres, extraidas y verificadas con Knowledge-Driven Development.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["pep8", "python", "style-guide", "linting", "kdd", "validation"]
+}

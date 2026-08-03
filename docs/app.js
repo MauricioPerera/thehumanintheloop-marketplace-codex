@@ -291,6 +291,10 @@ const plugins = [{
   name: 'kdd-arquitectura-java', displayName: 'KDD Arquitectura Java Solida Checker', category: 'Developer Tools', icon: 'AJ', version: '0.1.0',
   description: 'Verifica 8 reglas de arquitectura y codigo limpio: capas, excepciones, ISP, DI/Factory, AOP, COC, duplicacion (G5) y polimorfismo antes que if/else (G23), extraidas con Knowledge-Driven Development.',
   capabilities: ['arquitectura', 'solid', 'capas', 'dependency-injection', 'kdd', 'validation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-arquitectura-java', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'kdd-pep8', displayName: 'KDD PEP 8 Checker', category: 'Developer Tools', icon: 'P8', version: '0.1.0',
+  description: 'Verifica 28 reglas de PEP 8: indentacion, longitud de linea, imports, comillas, comentarios, docstrings y convenciones de nombres, extraidas con Knowledge-Driven Development.',
+  capabilities: ['pep8', 'python', 'style-guide', 'linting', 'kdd', 'validation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-pep8', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD PEP 8 Checker"
+  short_description: "Verifica indentacion, imports, comillas, docstrings y nombres PEP 8"
+  default_prompt: "Audita el estilo PEP 8 de este codigo con kdd-pep8."
