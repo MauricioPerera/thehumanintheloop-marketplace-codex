@@ -251,6 +251,10 @@ const plugins = [{
   name: 'kdd-semver', displayName: 'KDD SemVer Checker', category: 'Developer Tools', icon: 'SV', version: '0.1.0',
   description: 'Verifica cumplimiento de Semantic Versioning 2.0.0 con un instrumento determinista extraido con Knowledge-Driven Development.',
   capabilities: ['SemVer', 'Versioning', 'KDD'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-semver', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'kdd-stripe', displayName: 'KDD Stripe API Checker', category: 'Security & Privacy', icon: 'ST', version: '0.1.0',
+  description: 'Verifica claves de Stripe embebidas en el codigo e Idempotency-Key en peticiones GET/DELETE, extraido con Knowledge-Driven Development.',
+  capabilities: ['Stripe', 'Security', 'KDD'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-stripe', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD Stripe API Checker"
+  short_description: "Verifica claves de Stripe embebidas e Idempotency-Key en GET/DELETE"
+  default_prompt: "Audita este proyecto contra las reglas de la API de Stripe con kdd-stripe."
