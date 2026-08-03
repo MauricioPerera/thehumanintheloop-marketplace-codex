@@ -128,7 +128,8 @@ function buildDesignPrompt(button) {
 }
 
 function renderFilters() {
-  const categories = [...new Set([...plugins, ...analyses].map(item => item.category))].sort();
+  const catalog = [...plugins, ...analyses];
+  const categories = [...new Set(catalog.map(item => item.category))].sort();
   const labels = {
     'Content & Editorial': 'Contenido',
     'Design Systems': 'Design Systems',
@@ -139,10 +140,14 @@ function renderFilters() {
     'Research & Evidence': 'Investigación',
     'AI & Prompt Engineering': 'IA y prompts'
   };
-  document.querySelector('.filters').innerHTML = ['all', ...categories].map(value => `<button class="filter ${value === 'all' ? 'active' : ''}" data-category="${value}">${value === 'all' ? 'Todos' : (labels[value] || value)}</button>`).join('');
+  document.querySelector('.filters').innerHTML = ['all', ...categories].map(value => {
+    const amount = value === 'all' ? catalog.length : catalog.filter(item => item.category === value).length;
+    return `<button class="filter ${value === 'all' ? 'active' : ''}" data-category="${value}" aria-pressed="${value === 'all'}">${value === 'all' ? 'Todos' : (labels[value] || value)} <small>${amount}</small></button>`;
+  }).join('');
   document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => {
     document.querySelector('.filter.active').classList.remove('active');
     button.classList.add('active');
+    document.querySelectorAll('.filter').forEach(item => item.setAttribute('aria-pressed', item === button ? 'true' : 'false'));
     category = button.dataset.category;
     render();
   }));
