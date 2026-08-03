@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD Rust API Guidelines Checker"
+  short_description: "Verifica getters, Debug y ejemplos rustdoc de las Rust API Guidelines"
+  default_prompt: "Audita este crate contra las Rust API Guidelines con kdd-rust-api."

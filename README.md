@@ -82,7 +82,7 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Content & Editorial — 6 plugins
 - Design Systems — 1 plugin
 - Marketplace & Quality — 6 plugins
-- Developer Tools — 32 plugins
+- Developer Tools — 33 plugins
 - Accessibility & UX — 1 plugin
 - Security & Privacy — 22 plugins
 - Research & Evidence — 1 plugin

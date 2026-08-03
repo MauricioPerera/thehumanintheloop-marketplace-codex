@@ -1,0 +1,18 @@
+{
+  "name": "kdd-rust-api",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para 3 tecnicas de las Rust API Guidelines, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD Rust API Guidelines Checker",
+    "shortDescription": "Verifica getters, Debug y ejemplos rustdoc de las Rust API Guidelines",
+    "longDescription": "Corre los 3 chequeos deterministas (getters por valor sin prefijo get_, tipos publicos con #[derive(Debug)], ejemplos rustdoc con ? en vez de unwrap()/try!) que kdd-book extrajo del checklist de 54 items de las Rust API Guidelines. El grafo completo (con pila y why_not para los 51 items que no son medibles con texto) viaja junto al chequeo.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Audita este crate contra las Rust API Guidelines con kdd-rust-api."
+  }
+}
