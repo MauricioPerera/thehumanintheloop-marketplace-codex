@@ -11,7 +11,7 @@
     "shortDescription": "Use Prompt Contract Linter in Codex.",
     "longDescription": "Prompt Contract Linter adds a local Codex plugin scaffold.",
     "developerName": "Local developer",
-    "category": "Productivity",
+    "category": "AI & Prompt Engineering",
     "capabilities": [],
     "defaultPrompt": "Help me use Prompt Contract Linter."
   }

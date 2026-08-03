@@ -12,7 +12,7 @@
     "shortDescription": "Use Design System Auditor in Codex.",
     "longDescription": "Design System Auditor adds a local Codex plugin scaffold.",
     "developerName": "Local developer",
-    "category": "Productivity",
+    "category": "Design Systems",
     "capabilities": [],
     "defaultPrompt": "Help me use Design System Auditor."
   }

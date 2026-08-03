@@ -11,7 +11,7 @@
     "shortDescription": "Valida contenido para buscadores y motores generativos.",
     "longDescription": "Revisa profundidad, cápsulas de respuesta, hechos, FAQ, enlaces, metadatos y atributos multimedia antes de publicar.",
     "developerName": "Mauricio Perera",
-    "category": "Productivity",
+    "category": "Content & Editorial",
     "capabilities": [],
     "defaultPrompt": "Audita este artículo con el linter SEO/GEO 2026 y genera el reporte técnico completo."
   }

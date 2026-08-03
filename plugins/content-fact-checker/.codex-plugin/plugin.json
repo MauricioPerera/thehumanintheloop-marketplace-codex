@@ -12,7 +12,7 @@
     "shortDescription": "Use Content Fact Checker in Codex.",
     "longDescription": "Content Fact Checker adds a local Codex plugin scaffold.",
     "developerName": "Local developer",
-    "category": "Productivity",
+    "category": "Content & Editorial",
     "capabilities": [],
     "defaultPrompt": "Help me use Content Fact Checker."
   }

@@ -11,7 +11,7 @@
     "shortDescription": "Use Repo Quality Gate in Codex.",
     "longDescription": "Repo Quality Gate adds a local Codex plugin scaffold.",
     "developerName": "Local developer",
-    "category": "Productivity",
+    "category": "Marketplace & Quality",
     "capabilities": [],
     "defaultPrompt": "Help me use Repo Quality Gate."
   }

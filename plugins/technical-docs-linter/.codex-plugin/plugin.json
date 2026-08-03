@@ -11,7 +11,7 @@
     "shortDescription": "Use Technical Docs Linter in Codex.",
     "longDescription": "Technical Docs Linter adds a local Codex plugin scaffold.",
     "developerName": "Local developer",
-    "category": "Productivity",
+    "category": "Developer Tools",
     "capabilities": [],
     "defaultPrompt": "Help me use Technical Docs Linter."
   }

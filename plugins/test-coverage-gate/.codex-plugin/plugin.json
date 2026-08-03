@@ -11,7 +11,7 @@
     "shortDescription": "Use Test Coverage Gate in Codex.",
     "longDescription": "Test Coverage Gate adds a local Codex plugin scaffold.",
     "developerName": "Local developer",
-    "category": "Productivity",
+    "category": "Marketplace & Quality",
     "capabilities": [],
     "defaultPrompt": "Help me use Test Coverage Gate."
   }

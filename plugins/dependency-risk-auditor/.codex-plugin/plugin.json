@@ -11,7 +11,7 @@
     "shortDescription": "Use Dependency Risk Auditor in Codex.",
     "longDescription": "Dependency Risk Auditor adds a local Codex plugin scaffold.",
     "developerName": "Local developer",
-    "category": "Productivity",
+    "category": "Security & Privacy",
     "capabilities": [],
     "defaultPrompt": "Help me use Dependency Risk Auditor."
   }
