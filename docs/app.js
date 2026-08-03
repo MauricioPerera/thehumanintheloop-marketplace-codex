@@ -278,6 +278,11 @@ const analyses = [{
   description: 'Análisis externo del homepage público con autenticación, contenido profesional, oportunidades y responsive behavior.',
   capabilities: ['Professional UI', 'Auth States', 'Validation'],
   url: './analyses/linkedin/index.html', preview: './analyses/linkedin/index.html', source: 'https://www.linkedin.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/linkedin/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/linkedin/design-system.json'
+}, {
+  name: 'Crunchyroll Homepage', category: 'Design Systems', icon: 'CR', version: '1.0.0',
+  description: 'Análisis externo del homepage público con streaming UI, hero, rails, planes Premium y responsive behavior.',
+  capabilities: ['Streaming UI', 'Content Rails', 'Validation'],
+  url: './analyses/crunchyroll/index.html', preview: './analyses/crunchyroll/index.html', source: 'https://www.crunchyroll.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/crunchyroll/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/crunchyroll/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');
