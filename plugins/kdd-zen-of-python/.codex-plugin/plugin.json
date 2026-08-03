@@ -1,0 +1,18 @@
+{
+  "name": "kdd-zen-of-python",
+  "version": "0.1.0",
+  "description": "Grafo de conocimiento honesto del Zen de Python: 0% instrumentado, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD Zen of Python Reference",
+    "shortDescription": "Consulta los 19 aforismos del Zen de Python con su categoria honesta",
+    "longDescription": "Este plugin no tiene instrumento: los 19 aforismos del Zen de Python son juicio estetico de diseno, no propiedades binarias. kdd-book los triago en A=0/B=7/C=12 y documenta por que -incluida la decision explicita de no reusar un instrumento existente que hubiera generado falsos positivos-. Util para responder preguntas sobre el Zen sin inventar reglas que el texto no da.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Explicame que dice el Zen de Python sobre este caso, citando kdd-zen-of-python."
+  }
+}

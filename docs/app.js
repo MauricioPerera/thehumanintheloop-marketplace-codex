@@ -263,6 +263,10 @@ const plugins = [{
   name: 'kdd-effective-go', displayName: 'KDD Effective Go Checker', category: 'Developer Tools', icon: 'EG', version: '0.1.0',
   description: 'Verifica indentacion con tabs, parentesis en control y llaves de Effective Go, extraido con Knowledge-Driven Development.',
   capabilities: ['Go', 'Effective Go', 'KDD'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-effective-go', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'kdd-zen-of-python', displayName: 'KDD Zen of Python Reference', category: 'Developer Tools', icon: 'ZP', version: '0.1.0',
+  description: 'Consulta honesta de los 19 aforismos del Zen de Python (0% instrumentado), extraido con Knowledge-Driven Development.',
+  capabilities: ['Python', 'Zen of Python', 'KDD'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-zen-of-python', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',
