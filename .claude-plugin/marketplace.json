@@ -107,6 +107,7 @@
 {"name":"kdd-arquitectura-java","displayName":"KDD Arquitectura Java Solida Checker","source":"./plugins/kdd-arquitectura-java","category":"Developer Tools"},
 {"name":"kdd-pep8","displayName":"KDD PEP 8 Checker","source":"./plugins/kdd-pep8","category":"Developer Tools"},
 {"name":"kdd-scrum-xp","displayName":"KDD Scrum y XP Checker","source":"./plugins/kdd-scrum-xp","category":"Marketplace & Quality"},
-{"name":"kdd-codigo-limpio","displayName":"KDD Codigo Limpio Checker","source":"./plugins/kdd-codigo-limpio","category":"Developer Tools"}
+{"name":"kdd-codigo-limpio","displayName":"KDD Codigo Limpio Checker","source":"./plugins/kdd-codigo-limpio","category":"Developer Tools"},
+{"name":"kdd-estilo-google","displayName":"KDD Estilo Google Checker","source":"./plugins/kdd-estilo-google","category":"Content & Editorial"}
 ]
 }
