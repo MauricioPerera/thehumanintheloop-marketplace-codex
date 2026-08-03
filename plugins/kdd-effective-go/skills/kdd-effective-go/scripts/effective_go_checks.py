@@ -71,6 +71,36 @@ class NoVerificable(Exception):
     """El proyecto no expone artefactos que este instrumento pueda leer."""
 
 
+def _sin_comentario_ni_strings(linea):
+    """La linea sin el comentario `//` final ni el contenido de strings/runas.
+
+    No es un lexer real de Go -no seria consciente de un string/comentario
+    que sigue en la linea siguiente-, pero alcanza para no confundir un
+    `if (` que aparece dentro de un comentario o un literal con codigo de
+    control real. Limite declarado: un string/raw-string multilinea que
+    empieza en una linea anterior no se rastrea aca.
+    """
+    out = []
+    i, n = 0, len(linea)
+    while i < n:
+        c = linea[i]
+        if c == '/' and i + 1 < n and linea[i + 1] == '/':
+            break
+        if c in ('"', '`', "'"):
+            cierre = c
+            i += 1
+            while i < n and linea[i] != cierre:
+                if cierre != '`' and linea[i] == '\\' and i + 1 < n:
+                    i += 2
+                    continue
+                i += 1
+            i += 1
+            continue
+        out.append(c)
+        i += 1
+    return ''.join(out)
+
+
 def _fuentes(proyecto):
     """(ruta, texto) de cada .go del proyecto.
 
@@ -100,18 +130,35 @@ def _fuentes(proyecto):
     return out
 
 
+def _fuentes_archivo(ruta):
+    """(ruta, texto) de un unico archivo .go puntual, sin escanear el directorio."""
+    ruta = os.path.abspath(ruta)
+    try:
+        with open(ruta, 'r', encoding='utf-8') as fh:
+            texto = fh.read()
+    except (OSError, UnicodeDecodeError) as exc:
+        raise NoVerificable('no se pudo leer {}: {}'.format(ruta, exc))
+    return [(ruta, texto)]
+
+
 def check_indentation_tabs(fuentes, opts):
     """gofmt usa tabulaciones. Un .go con espacios en la sangria es rojo.
 
     Effective Go: "indent with tabs". Cada linea cuyo primer caracter no blanco
     sea un espacio (en vez de un tab) cuando hay contenido despues es
-    violacion. Las lineas dentro de comentarios de bloque ``/* ... */`` se
-    excluyen: gofmt preserva su contenido textual.
+    violacion. Las lineas dentro de comentarios de bloque ``/* ... */`` o de
+    un raw string multilinea (`` `...` ``) se excluyen: gofmt preserva su
+    contenido textual tal cual.
     """
     out = []
     for ruta, texto in fuentes:
         en_bloque = False
+        en_raw_string = False
         for i, linea in enumerate(texto.splitlines(), 1):
+            if en_raw_string:
+                if '`' in linea:
+                    en_raw_string = False
+                continue
             if en_bloque:
                 if '*/' in linea:
                     en_bloque = False
@@ -123,6 +170,11 @@ def check_indentation_tabs(fuentes, opts):
                 # La parte anterior al /* podria tener sangria en espacios.
                 antes = linea[:linea.index('/*')]
                 linea = antes
+            # Backtick suelto (numero impar en lo que queda de la linea):
+            # abre un raw string que sigue en las lineas siguientes.
+            if linea.count('`') % 2 == 1:
+                en_raw_string = True
+                linea = linea[:linea.index('`')]
             m = _RE_SANGRIA_ESPACIOS.match(linea)
             if m:
                 out.append((ruta, i,
@@ -142,12 +194,13 @@ def check_no_paren_control(fuentes, opts):
 
     Nota: no se buscan parentesis en llamadas a funciones (``foo(x)``)
     porque la frontera de palabra ``\\b`` exige que if/for/switch sea un
-    token independiente.
+    token independiente. Un `if (` dentro de un comentario `//` o de un
+    string/runa literal en la misma linea no cuenta: no es codigo real.
     """
     out = []
     for ruta, texto in fuentes:
         for i, linea in enumerate(texto.splitlines(), 1):
-            m = _RE_PAREN_CONTROL.search(linea)
+            m = _RE_PAREN_CONTROL.search(_sin_comentario_ni_strings(linea))
             if m:
                 keyword = m.group(1)
                 out.append((ruta, i,
@@ -164,12 +217,15 @@ def check_brace_next_line(fuentes, opts):
     the if statement". Una linea que empieza con if/for/switch (tras
     espacios) y que NO termina con ``{`` —y cuya linea siguiente empieza
     con ``{``— es violacion: la llave esta en la linea de abajo, estilo C/Java.
+    Un `if`/`for`/`switch` que aparece como texto dentro de un comentario o
+    string en esa misma linea no cuenta: se descarta el comentario `//` y
+    el contenido de strings/runas antes de buscar la keyword.
     """
     out = []
     for ruta, texto in fuentes:
         lineas = texto.splitlines()
         for i in range(len(lineas) - 1):
-            actual = lineas[i].rstrip()
+            actual = _sin_comentario_ni_strings(lineas[i]).rstrip()
             if not _RE_CONTROL_INICIO.match(actual):
                 continue
             if actual.endswith('{'):
@@ -204,7 +260,7 @@ def main(argv=None):
     parser.add_argument('--rule')
     parser.add_argument('--list', action='store_true')
     parser.add_argument('--proyecto',
-                        help='raiz del proyecto (por defecto, la del target)')
+                        help='escanea todo el proyecto en vez del archivo puntual')
     parser.add_argument('target', nargs='?')
     args = parser.parse_args(argv)
 
@@ -221,18 +277,12 @@ def main(argv=None):
         print('NO-VERIFICABLE: falta el punto de entrada del proyecto')
         return 2
 
-    if args.proyecto:
-        args.proyecto = os.path.abspath(args.proyecto)
-    else:
-        args.proyecto = os.path.dirname(os.path.abspath(args.target))
-    if not os.path.isdir(args.proyecto):
-        print('NO-VERIFICABLE: no existe el proyecto {}'.format(
-            args.proyecto))
-        return 2
-
     func, etiqueta = RULES[args.rule]
     try:
-        fuentes = _fuentes(args.proyecto)
+        if args.proyecto:
+            fuentes = _fuentes(os.path.abspath(args.proyecto))
+        else:
+            fuentes = _fuentes_archivo(args.target)
         violaciones = func(fuentes, args)
     except NoVerificable as exc:
         print('NO-VERIFICABLE: {}: {}'.format(etiqueta, exc))

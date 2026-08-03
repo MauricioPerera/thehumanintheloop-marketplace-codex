@@ -86,6 +86,7 @@ Use these exact identifiers when referring to plugins:
 - `kdd-semver` — Developer Tools — Verifies Semantic Versioning 2.0.0 compliance with a deterministic instrument extracted via Knowledge-Driven Development.
 - `kdd-stripe` — Security & Privacy — Verifica claves de Stripe embebidas en el codigo e Idempotency-Key en peticiones GET/DELETE, extraido con Knowledge-Driven Development.
 - `kdd-rust-api` — Developer Tools — Verifica getters, Debug y ejemplos rustdoc de las Rust API Guidelines, extraido con Knowledge-Driven Development.
+- `kdd-effective-go` — Developer Tools — Verifica indentacion con tabs, parentesis en control y llaves de Effective Go, extraido con Knowledge-Driven Development.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
@@ -213,8 +214,6 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `qwen` — Qwen Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/qwen/ — source: https://qwen.ai/
 - `zcode` — ZCode Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/zcode/ — source: https://zcode.z.ai/en
 - `notebooklm` — NotebookLM / Gemini Notebook — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/notebooklm/ — source: https://notebooklm.google/
-- `kdd-effective-go` — Developer Tools — Verifica indentacion con tabs, parentesis en control y llaves de Effective Go, extraido con Knowledge-Driven Development.
-
 ## Instructions for AI agents
 
 Before modifying this repository, inspect the relevant marketplace manifest and plugin directory. Keep `.claude-plugin/marketplace.json`, `.agents/plugins/marketplace.json`, plugin manifests, and the catalog metadata synchronized. Do not describe an analysis as an official brand system unless its provenance explicitly supports that claim.
