@@ -1,0 +1,18 @@
+{
+  "name": "kdd-doce-factores",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para 10 tecnicas de The Twelve-Factor App, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD Twelve-Factor App Checker",
+    "shortDescription": "Verifica dependencias, config, servicios, puerto, paridad, SIGTERM y mas",
+    "longDescription": "Corre 10 chequeos deterministas que kdd-book extrajo de The Twelve-Factor App: 8 sobre la forma del proyecto (entorno_checks.py) y 2 de historial de git (git_checks.py). El manifiesto es la fuente con el porcentaje contractable mas alto del corpus (62.5%): un manifiesto es prescripcion pura, sin relleno.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Audita este proyecto contra The Twelve-Factor App con kdd-doce-factores."
+  }
+}

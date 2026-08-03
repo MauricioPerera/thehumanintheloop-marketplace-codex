@@ -1,0 +1,13 @@
+{
+  "name": "kdd-doce-factores",
+  "displayName": "KDD Twelve-Factor App Checker",
+  "version": "0.1.0",
+  "description": "Verifica 8 factores de The Twelve-Factor App sobre la forma del proyecto (dependencias, config, servicios, puerto, paridad, daemonizacion, SIGTERM, logs) y 2 tecnicas de git (codebase unico, release ID), extraidas y verificadas con Knowledge-Driven Development.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["twelve-factor", "12factor", "devops", "kdd", "validation"]
+}

@@ -101,6 +101,7 @@
   {"name":"kdd-zen-of-python","displayName":"KDD Zen of Python Reference","source":"./plugins/kdd-zen-of-python","category":"Developer Tools"},
   {"name":"kdd-agile-manifesto","displayName":"KDD Agile Manifesto Reference","source":"./plugins/kdd-agile-manifesto","category":"Marketplace & Quality"},
   {"name":"kdd-tailwind","displayName":"KDD Tailwind CSS Checker","source":"./plugins/kdd-tailwind","category":"Developer Tools"},
-  {"name":"kdd-wcag","displayName":"KDD WCAG 2.2 Checker","source":"./plugins/kdd-wcag","category":"Accessibility & UX"}
+  {"name":"kdd-wcag","displayName":"KDD WCAG 2.2 Checker","source":"./plugins/kdd-wcag","category":"Accessibility & UX"},
+  {"name":"kdd-doce-factores","displayName":"KDD Twelve-Factor App Checker","source":"./plugins/kdd-doce-factores","category":"Developer Tools"}
 ]
 }

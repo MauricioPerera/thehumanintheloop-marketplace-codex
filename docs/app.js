@@ -279,6 +279,10 @@ const plugins = [{
   name: 'kdd-wcag', displayName: 'KDD WCAG 2.2 Checker', category: 'Accessibility & UX', icon: 'A11', version: '0.1.0',
   description: 'Verifica 10 criterios de exito de WCAG 2.2 (idioma, contraste, area de toque, etiquetas), extraido con Knowledge-Driven Development.',
   capabilities: ['WCAG', 'Accessibility', 'KDD'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-wcag', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'kdd-doce-factores', displayName: 'KDD Twelve-Factor App Checker', category: 'Developer Tools', icon: '12F', version: '0.1.0',
+  description: 'Verifica 10 tecnicas de The Twelve-Factor App: dependencias, config, servicios, puerto, paridad, daemonizacion, SIGTERM, logs, codebase y release ID.',
+  capabilities: ['twelve-factor', '12factor', 'devops', 'kdd', 'validation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-doce-factores', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',
