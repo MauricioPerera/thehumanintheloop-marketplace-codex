@@ -555,6 +555,42 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "github-audit-log-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-audit-log-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-runner-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-runner-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-deployment-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-deployment-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }

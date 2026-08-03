@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Deployment Manager
+  short_description: Controls deployments with evidence and rollback.
+  default_prompt: Analyze GitHub deployments and prepare a safe operations plan.

@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Runner Manager
+  short_description: Audits runners and execution labels.
+  default_prompt: Audit GitHub runners and prepare a security plan.

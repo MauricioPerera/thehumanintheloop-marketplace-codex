@@ -71,6 +71,9 @@
     {"name":"github-package-manager","displayName":"GitHub Package Manager","source":"./plugins/github-package-manager","category":"Developer Tools"},
     {"name":"github-secret-manager","displayName":"GitHub Secret Manager","source":"./plugins/github-secret-manager","category":"Security & Privacy"},
     {"name":"github-ruleset-manager","displayName":"GitHub Ruleset Manager","source":"./plugins/github-ruleset-manager","category":"Security & Privacy"},
-    {"name":"github-checks-manager","displayName":"GitHub Checks Manager","source":"./plugins/github-checks-manager","category":"Developer Tools"}
+    {"name":"github-checks-manager","displayName":"GitHub Checks Manager","source":"./plugins/github-checks-manager","category":"Developer Tools"},
+    {"name":"github-audit-log-manager","displayName":"GitHub Audit Log Manager","source":"./plugins/github-audit-log-manager","category":"Security & Privacy"},
+    {"name":"github-runner-manager","displayName":"GitHub Runner Manager","source":"./plugins/github-runner-manager","category":"Security & Privacy"},
+    {"name":"github-deployment-manager","displayName":"GitHub Deployment Manager","source":"./plugins/github-deployment-manager","category":"Developer Tools"}
   ]
 }

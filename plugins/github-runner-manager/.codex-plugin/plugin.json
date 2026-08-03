@@ -1,0 +1,18 @@
+{
+  "name": "github-runner-manager",
+  "version": "0.1.0",
+  "description": "Audita runners de GitHub Actions, labels, alcance y riesgos de ejecución.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub Runner Manager",
+    "shortDescription": "Audita runners y etiquetas de ejecución.",
+    "longDescription": "Revisa runners hospedados y self-hosted, labels, grupos, estado, repositorios autorizados y controles de aislamiento antes de cambios.",
+    "developerName": "Local developer",
+    "category": "Security & Privacy",
+    "capabilities": ["Runners", "Actions", "Isolation"],
+    "defaultPrompt": "Audita los runners de GitHub y prepara un plan de seguridad sin mutar nada."
+  }
+}

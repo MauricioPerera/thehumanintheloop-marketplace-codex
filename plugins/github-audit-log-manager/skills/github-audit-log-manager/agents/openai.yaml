@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Audit Log Manager
+  short_description: Analyzes administrative activity with evidence.
+  default_prompt: Analyze the GitHub audit log with redacted evidence.

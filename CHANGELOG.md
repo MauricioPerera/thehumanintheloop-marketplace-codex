@@ -34,6 +34,9 @@
 - `github-secret-manager`: auditoría de secretos con valores redactados y planes de rotación.
 - `github-ruleset-manager`: auditoría y diseño de reglasets con bypass, checks y rollback.
 - `github-checks-manager`: análisis de checks, annotations y resultados de CI con evidencia.
+- `github-audit-log-manager`: análisis de actividad administrativa con filtros y datos redactados.
+- `github-runner-manager`: auditoría de runners, labels, alcance y aislamiento.
+- `github-deployment-manager`: análisis operativo de despliegues y planes de rollback.
 
 ## 2026-08-02
 
