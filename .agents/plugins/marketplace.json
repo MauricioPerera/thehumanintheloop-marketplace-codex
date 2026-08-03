@@ -663,6 +663,42 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "github-code-scanning-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-code-scanning-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-secret-scanning-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-secret-scanning-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-security-advisory-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-security-advisory-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
     }
   ]
 }

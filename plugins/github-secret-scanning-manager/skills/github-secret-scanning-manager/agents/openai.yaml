@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Secret Scanning Manager
+  short_description: Analyzes alerts without exposing secrets.
+  default_prompt: Analyze Secret Scanning safely and prepare remediation.

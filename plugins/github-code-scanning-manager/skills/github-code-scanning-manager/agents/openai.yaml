@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Code Scanning Manager
+  short_description: Audits Code Scanning alerts.
+  default_prompt: Audit Code Scanning and prepare a remediation plan.

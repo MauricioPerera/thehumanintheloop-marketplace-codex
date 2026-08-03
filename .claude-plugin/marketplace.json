@@ -80,6 +80,9 @@
     {"name":"github-fork-manager","displayName":"GitHub Fork Manager","source":"./plugins/github-fork-manager","category":"Developer Tools"},
     {"name":"github-commit-signing-manager","displayName":"GitHub Commit Signing Manager","source":"./plugins/github-commit-signing-manager","category":"Security & Privacy"},
     {"name":"github-migration-manager","displayName":"GitHub Migration Manager","source":"./plugins/github-migration-manager","category":"Developer Tools"},
-    {"name":"github-archive-manager","displayName":"GitHub Archive Manager","source":"./plugins/github-archive-manager","category":"Developer Tools"}
+    {"name":"github-archive-manager","displayName":"GitHub Archive Manager","source":"./plugins/github-archive-manager","category":"Developer Tools"},
+    {"name":"github-code-scanning-manager","displayName":"GitHub Code Scanning Manager","source":"./plugins/github-code-scanning-manager","category":"Security & Privacy"},
+    {"name":"github-secret-scanning-manager","displayName":"GitHub Secret Scanning Manager","source":"./plugins/github-secret-scanning-manager","category":"Security & Privacy"},
+    {"name":"github-security-advisory-manager","displayName":"GitHub Security Advisory Manager","source":"./plugins/github-security-advisory-manager","category":"Security & Privacy"}
   ]
 }

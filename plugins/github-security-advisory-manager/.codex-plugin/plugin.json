@@ -1,0 +1,18 @@
+{
+  "name": "github-security-advisory-manager",
+  "version": "0.1.0",
+  "description": "Prepara security advisories con impacto, versiones afectadas y divulgación responsable.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub Security Advisory Manager",
+    "shortDescription": "Gestiona advisories y divulgación responsable.",
+    "longDescription": "Organiza vulnerabilidad, versiones afectadas, CVE, severidad, créditos, mitigación y comunicación sin publicar información no confirmada.",
+    "developerName": "Local developer",
+    "category": "Security & Privacy",
+    "capabilities": ["Advisories", "CVE", "Disclosure"],
+    "defaultPrompt": "Prepara un security advisory con evidencia y mitigación."
+  }
+}

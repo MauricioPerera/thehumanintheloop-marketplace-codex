@@ -1,0 +1,4 @@
+interface:
+  display_name: GitHub Security Advisory Manager
+  short_description: Manages advisories and responsible disclosure.
+  default_prompt: Prepare a security advisory with evidence and mitigation.

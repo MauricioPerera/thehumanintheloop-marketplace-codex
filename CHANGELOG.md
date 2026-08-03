@@ -43,6 +43,9 @@
 - `github-commit-signing-manager`: auditoría de firmas, estados verificados y cobertura.
 - `github-migration-manager`: planes de migración con inventario, validación y rollback.
 - `github-archive-manager`: evaluación de archivado, retención y recuperación.
+- `github-code-scanning-manager`: auditoría de alertas, severidad, reglas y remediación.
+- `github-secret-scanning-manager`: análisis seguro de alertas con valores siempre redactados.
+- `github-security-advisory-manager`: borradores de advisories con mitigación y divulgación responsable.
 
 ## 2026-08-02
 
