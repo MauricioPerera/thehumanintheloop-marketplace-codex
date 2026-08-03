@@ -19,6 +19,9 @@
 - `github-discussion-manager`: gestión de Discussions con respuestas trazables.
 - `github-label-manager`: taxonomía y mantenimiento de labels con plan previo.
 - `github-repository-manager`: inspección y configuración de repositorios con confirmación.
+- `github-milestone-manager`: planificación de hitos con objetivos, fechas y trazabilidad.
+- `github-branch-manager`: gestión segura de ramas y operaciones remotas.
+- `github-template-manager`: validación y mantenimiento de templates de Issues y PRs.
 
 ## 2026-08-02
 

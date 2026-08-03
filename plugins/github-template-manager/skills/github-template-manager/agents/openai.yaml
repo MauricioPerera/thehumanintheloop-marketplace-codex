@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Template Manager"
+  short_description: "Mantiene templates de Issues y PRs."
+  default_prompt: "Revisa o prepara templates de GitHub con validadores."

@@ -56,6 +56,9 @@
     {"name":"github-notifications-manager","displayName":"GitHub Notifications Manager","source":"./plugins/github-notifications-manager","category":"Developer Tools"},
     {"name":"github-discussion-manager","displayName":"GitHub Discussion Manager","source":"./plugins/github-discussion-manager","category":"Developer Tools"},
     {"name":"github-label-manager","displayName":"GitHub Label Manager","source":"./plugins/github-label-manager","category":"Marketplace & Quality"},
-    {"name":"github-repository-manager","displayName":"GitHub Repository Manager","source":"./plugins/github-repository-manager","category":"Developer Tools"}
+    {"name":"github-repository-manager","displayName":"GitHub Repository Manager","source":"./plugins/github-repository-manager","category":"Developer Tools"},
+    {"name":"github-milestone-manager","displayName":"GitHub Milestone Manager","source":"./plugins/github-milestone-manager","category":"Marketplace & Quality"},
+    {"name":"github-branch-manager","displayName":"GitHub Branch Manager","source":"./plugins/github-branch-manager","category":"Developer Tools"},
+    {"name":"github-template-manager","displayName":"GitHub Template Manager","source":"./plugins/github-template-manager","category":"Developer Tools"}
   ]
 }

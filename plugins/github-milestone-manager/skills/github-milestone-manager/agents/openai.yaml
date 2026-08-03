@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Milestone Manager"
+  short_description: "Planifica milestones con gh CLI."
+  default_prompt: "Planifica este milestone con objetivos y trazabilidad."

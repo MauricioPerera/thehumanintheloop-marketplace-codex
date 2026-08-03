@@ -76,6 +76,18 @@ const plugins = [{
   description: 'Inspecciona y configura repositorios con planes de cambio y confirmacion.',
   capabilities: ['Repositories', 'Settings', 'Administration'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-repository-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }, {
+  name: 'github-milestone-manager', displayName: 'GitHub Milestone Manager', category: 'Marketplace & Quality', icon: 'MILE', version: '0.1.0',
+  description: 'Planifica milestones con objetivos medibles, fechas y Issues vinculados.',
+  capabilities: ['Milestones', 'Planning', 'Progress'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-milestone-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'github-branch-manager', displayName: 'GitHub Branch Manager', category: 'Developer Tools', icon: 'BR', version: '0.1.0',
+  description: 'Inspecciona y prepara operaciones de ramas con guardas contra cambios destructivos.',
+  capabilities: ['Branches', 'Git', 'Protection'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-branch-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'github-template-manager', displayName: 'GitHub Template Manager', category: 'Developer Tools', icon: 'TPL', version: '0.1.0',
+  description: 'Revisa y mantiene templates de Issues y Pull Requests con validadores.',
+  capabilities: ['Templates', 'Issues', 'Pull Requests'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-template-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
   name: 'repo-quality-gate', displayName: 'Repo Quality Gate', category: 'Marketplace & Quality', icon: 'RQ', version: '0.1.0', description: 'Revisa repositorios antes de commit, PR, release o despliegue.', capabilities: ['Quality', 'CI', 'Release'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/repo-quality-gate', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }, {
   name: 'technical-docs-linter', displayName: 'Technical Docs Linter', category: 'Developer Tools', icon: 'TD', version: '0.1.0', description: 'Valida README, documentación API, ejemplos, comandos y enlaces.', capabilities: ['Docs', 'API', 'Examples'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/technical-docs-linter', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'

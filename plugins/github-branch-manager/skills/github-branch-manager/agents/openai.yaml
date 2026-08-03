@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Branch Manager"
+  short_description: "Gestiona ramas con gh y git."
+  default_prompt: "Inspecciona o prepara cambios de ramas con confirmacion."
