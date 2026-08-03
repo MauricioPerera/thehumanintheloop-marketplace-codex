@@ -273,6 +273,11 @@ const analyses = [{
   description: 'Análisis externo del homepage público con búsqueda, tokens, estados, responsive behavior y procedencia.',
   capabilities: ['Search UI', 'Responsive', 'Validation'],
   url: './analyses/google/index.html', preview: './analyses/google/index.html', source: 'https://www.google.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/google/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/google/design-system.json'
+}, {
+  name: 'LinkedIn Homepage', category: 'Design Systems', icon: 'in', version: '1.0.0',
+  description: 'Análisis externo del homepage público con autenticación, contenido profesional, oportunidades y responsive behavior.',
+  capabilities: ['Professional UI', 'Auth States', 'Validation'],
+  url: './analyses/linkedin/index.html', preview: './analyses/linkedin/index.html', source: 'https://www.linkedin.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/linkedin/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/linkedin/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');
