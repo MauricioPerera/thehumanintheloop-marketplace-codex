@@ -25,3 +25,5 @@ jobs:
           find plugins -path '*/.claude-plugin/plugin.json' -o -path '*/.codex-plugin/plugin.json' | while read file; do python -m json.tool "$file" >/dev/null; done
       - name: Check catalog JavaScript
         run: node --check docs/app.js
+      - name: Check catalog SEO metadata
+        run: python scripts/validate_catalog_metadata.py
