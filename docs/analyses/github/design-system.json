@@ -1,0 +1,56 @@
+{
+  "name": "github-homepage-analysis",
+  "version": "1.0.0",
+  "description": "External, reproducible analysis of the public GitHub homepage; not an official GitHub design system.",
+  "source": "https://github.com/",
+  "observedAt": "2026-08-02",
+  "colors": {
+    "canvasDefault": "#FFFFFF",
+    "canvasSubtle": "#F6F8FA",
+    "canvasInset": "#F6F8FA",
+    "fgDefault": "#1F2328",
+    "fgMuted": "#59636E",
+    "fgOnEmphasis": "#FFFFFF",
+    "accent": "#0969DA",
+    "accentMuted": "#54AEFF",
+    "neutralEmphasis": "#24292F",
+    "borderDefault": "#D1D9E0",
+    "success": "#1A7F37",
+    "danger": "#D1242F",
+    "attention": "#9A6700",
+    "done": "#8250DF",
+    "sponsor": "#BF3989"
+  },
+  "typography": {
+    "fontFamily": "-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+    "codeFamily": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+    "display": { "fontSize": "48px", "fontWeight": 700, "lineHeight": 1.1 },
+    "heading2": { "fontSize": "32px", "fontWeight": 600, "lineHeight": 1.25 },
+    "heading3": { "fontSize": "24px", "fontWeight": 600, "lineHeight": 1.3 },
+    "body": { "fontSize": "16px", "fontWeight": 400, "lineHeight": 1.5 },
+    "label": { "fontSize": "14px", "fontWeight": 600, "lineHeight": 1.4 },
+    "code": { "fontSize": "13px", "fontWeight": 400, "lineHeight": 1.45 }
+  },
+  "rounded": { "control": "6px", "card": "6px", "pill": "999px", "avatar": "50%" },
+  "spacing": { "xxs": "4px", "xs": "8px", "sm": "12px", "md": "16px", "lg": "24px", "xl": "32px", "section": "48px", "contentMax": "1280px" },
+  "breakpoints": { "mobile": "320px", "small": "544px", "medium": "768px", "large": "1012px", "xlarge": "1280px", "wide": "1400px" },
+  "components": {
+    "global-header": { "states": ["default", "expanded", "compact", "focus-visible"] },
+    "hero-cta": { "states": ["default", "focus", "invalid", "disabled"] },
+    "feature-section": { "states": ["default", "hover-link", "loading", "reduced-motion"] },
+    "product-card": { "states": ["default", "hover", "focus-visible", "disabled"] },
+    "status-callout": { "variants": ["info", "success", "attention", "danger"] },
+    "footer": { "states": ["default", "stacked-mobile"] }
+  },
+  "provenance": {
+    "type": "external-analysis",
+    "official": false,
+    "references": [
+      "https://github.com/",
+      "https://primer.style/product/getting-started/foundations/responsive",
+      "https://primer.style/product/getting-started/foundations/layout/",
+      "https://www.primer.style/product/primitives/color/"
+    ],
+    "notes": "Values are an analytical snapshot and must be revalidated before production use."
+  }
+}

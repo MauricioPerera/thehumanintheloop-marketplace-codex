@@ -1,0 +1,11 @@
+{
+  "status": "PASSED",
+  "errors": [],
+  "warnings": [
+    "External site content and imagery are dynamic.",
+    "Exact computed values may vary by locale, color mode, authentication state, and viewport.",
+    "This is not an official GitHub design system and does not redistribute GitHub assets."
+  ],
+  "source": "https://github.com/",
+  "artifacts": ["DESIGN.md", "design-system.json", "validation-report.json", "index.html"]
+}

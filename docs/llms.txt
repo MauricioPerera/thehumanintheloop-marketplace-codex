@@ -176,6 +176,7 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `kdd` — KDD / Knowledge-Driven Development — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/kdd/ — source: https://mauricioperera.github.io/KDD/
 - `mercadolibre` — Mercado Libre México — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/mercadolibre/ — source: https://www.mercadolibre.com.mx/
 - `marketplace` — TheHumanInTheLoop Marketplace — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/marketplace/ — source: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/
+- `github` — GitHub Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/github/ — source: https://github.com/
 
 ## Instructions for AI agents
 

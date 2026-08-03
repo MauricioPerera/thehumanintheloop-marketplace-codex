@@ -263,6 +263,11 @@ const analyses = [{
   description: 'Análisis del propio marketplace: identidad editorial, tokens, catálogo, instalación, previews y contrato de validación.',
   capabilities: ['Marketplace UI', 'Codex Flow', 'Validation'],
   url: './analyses/marketplace/index.html', preview: './analyses/marketplace/index.html', source: 'https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/marketplace/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/marketplace/design-system.json'
+}, {
+  name: 'GitHub Homepage', category: 'Design Systems', icon: 'GH', version: '1.0.0',
+  description: 'Análisis externo del homepage público con tokens, navegación, CTAs, estados, responsive behavior y procedencia.',
+  capabilities: ['Navigation UI', 'Responsive', 'Validation'],
+  url: './analyses/github/index.html', preview: './analyses/github/index.html', source: 'https://github.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/github/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/github/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');
