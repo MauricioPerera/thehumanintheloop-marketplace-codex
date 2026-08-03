@@ -1,0 +1,13 @@
+{
+  "name": "kdd-rust-api",
+  "displayName": "KDD Rust API Guidelines Checker",
+  "version": "0.1.0",
+  "description": "Verifica 3 tecnicas de texto de las Rust API Guidelines (getters por valor, #[derive(Debug)] en tipos publicos, ? en vez de unwrap()/try! en ejemplos rustdoc), extraidas y verificadas con Knowledge-Driven Development.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["rust", "api-guidelines", "kdd", "validation"]
+}

@@ -85,6 +85,7 @@ Use these exact identifiers when referring to plugins:
 - `test-coverage-gate` — Marketplace & Quality — Test evidence, reports, coverage, and quality thresholds.
 - `kdd-semver` — Developer Tools — Verifies Semantic Versioning 2.0.0 compliance with a deterministic instrument extracted via Knowledge-Driven Development.
 - `kdd-stripe` — Security & Privacy — Verifica claves de Stripe embebidas en el codigo e Idempotency-Key en peticiones GET/DELETE, extraido con Knowledge-Driven Development.
+- `kdd-rust-api` — Developer Tools — Verifica getters, Debug y ejemplos rustdoc de las Rust API Guidelines, extraido con Knowledge-Driven Development.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
@@ -180,6 +181,11 @@ Use these exact identifiers when referring to plugins:
 
 - Description: Verifica claves de Stripe embebidas en el codigo e Idempotency-Key en peticiones GET/DELETE, extraido con Knowledge-Driven Development.
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-stripe
+
+### kdd-rust-api (`kdd-rust-api`)
+
+- Description: Verifica getters, Debug y ejemplos rustdoc de las Rust API Guidelines, extraido con Knowledge-Driven Development.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-rust-api
 
 ## Design System Analyses
 

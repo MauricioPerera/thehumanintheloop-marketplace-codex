@@ -843,6 +843,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Security & Privacy"
+    },
+    {
+      "name": "kdd-rust-api",
+      "source": {
+        "source": "local",
+        "path": "./plugins/kdd-rust-api"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }
