@@ -1,0 +1,18 @@
+{
+  "name": "kdd-stripe",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para las dos prohibiciones sin condicional de la referencia de la API de Stripe, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD Stripe API Checker",
+    "shortDescription": "Verifica claves de Stripe embebidas e Idempotency-Key en GET/DELETE",
+    "longDescription": "Corre los 2 chequeos deterministas (cero claves secretas o restringidas de Stripe en el codigo, cero Idempotency-Key en peticiones GET o DELETE) que kdd-book extrajo de docs.stripe.com/api. El grafo de conocimiento completo (7 tecnicas de 'Using the API', incluidas las 5 que no son medibles y por que) viaja junto al chequeo.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": [],
+    "defaultPrompt": "Audita este proyecto contra las reglas de la API de Stripe con kdd-stripe."
+  }
+}

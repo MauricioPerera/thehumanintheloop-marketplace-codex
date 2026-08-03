@@ -1,0 +1,13 @@
+{
+  "name": "kdd-stripe",
+  "displayName": "KDD Stripe API Checker",
+  "version": "0.1.0",
+  "description": "Verifica las dos prohibiciones sin condicional de docs.stripe.com/api: claves secretas embebidas en el codigo, y headers Idempotency-Key en peticiones GET o DELETE. Extraido y verificado con Knowledge-Driven Development.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["stripe", "api", "security", "kdd", "validation"]
+}

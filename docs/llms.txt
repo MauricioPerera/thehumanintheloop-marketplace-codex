@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 69 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 70 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -175,6 +175,11 @@ Use these exact identifiers when referring to plugins:
 - Description: Verifies Semantic Versioning 2.0.0 compliance (format, pre-release, build metadata) with a deterministic instrument extracted and verified from the original spec using Knowledge-Driven Development.
 - Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-semver
 
+### kdd-stripe (`kdd-stripe`)
+
+- Description: Verifica claves de Stripe embebidas en el codigo e Idempotency-Key en peticiones GET/DELETE, extraido con Knowledge-Driven Development.
+- Source: https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-stripe
+
 ## Design System Analyses
 
 Published analyses are reusable results rather than generator plugins. Each analysis may include a `DESIGN.md` source of truth, `design-system.json`, `validation-report.json`, and an HTML preview. The catalog presents these previews inside the marketplace interface.
@@ -196,6 +201,7 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `qwen` — Qwen Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/qwen/ — source: https://qwen.ai/
 - `zcode` — ZCode Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/zcode/ — source: https://zcode.z.ai/en
 - `notebooklm` — NotebookLM / Gemini Notebook — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/notebooklm/ — source: https://notebooklm.google/
+- `kdd-stripe` — Security & Privacy — Verifica claves de Stripe embebidas en el codigo e Idempotency-Key en peticiones GET/DELETE, extraido con Knowledge-Driven Development.
 
 ## Instructions for AI agents
 
