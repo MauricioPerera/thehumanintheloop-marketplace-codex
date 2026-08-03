@@ -84,6 +84,17 @@ def _fuentes(proyecto):
     return fuentes
 
 
+def _fuentes_archivo(ruta):
+    """Fuentes de un unico archivo .rs puntual (sin escaneo de directorio)."""
+    ruta = os.path.abspath(ruta)
+    try:
+        with open(ruta, encoding='utf-8') as fh:
+            texto = fh.read()
+    except OSError as exc:
+        raise NoVerificable('no se pudo leer {}: {}'.format(ruta, exc))
+    return {'rust': [(ruta, texto)], 'cargo': None, 'cargo_path': None}
+
+
 # ---------------------------------------------------------------------------
 # Helpers de posicion
 # ---------------------------------------------------------------------------
@@ -97,18 +108,23 @@ def _linea_de(texto, offset):
 # Pila A: getters (C-GETTER)
 # ===========================================================================
 
-# Un getter con prefijo `get_`: fn get_<nombre>(...) -> <T>
+# Un getter publico con prefijo `get_`: pub fn get_<nombre>(...) -> <T>
+# `pub\s+fn` no matchea `pub(crate) fn`/`pub(super) fn`: ahi "pub" queda
+# seguido de "(" en vez de un espacio, asi que esas visibilidades
+# restringidas -que no son API publica- quedan afuera solas.
 _RE_GETTER = re.compile(
-    r'fn\s+(?P<nombre>get_[A-Za-z_]\w*)\s*\((?P<params>[^)]*)\)\s*->\s*'
+    r'pub\s+fn\s+(?P<nombre>get_[A-Za-z_]\w*)\s*\((?P<params>[^)]*)\)\s*->\s*'
     r'(?P<retorno>[^;{}\n]+)')
 
 
 def check_getter(fuentes, opts):
-    """C-GETTER: los getters por valor no usan el prefijo `get_`.
+    """C-GETTER: los getters publicos por valor no usan el prefijo `get_`.
 
-    La convencion Rust es que `get_` es exclusivo de getters por
-    referencia; un getter que devuelve por valor debe renombrarse
-    eliminando el prefijo.
+    Las Rust API Guidelines aplican a la API publica de un crate; una
+    funcion privada o `pub(crate)` no es esa superficie, asi que la regla
+    solo mira `pub fn`. La convencion Rust es que `get_` es exclusivo de
+    getters por referencia; un getter que devuelve por valor debe
+    renombrarse eliminando el prefijo.
     """
     out = []
     for ruta, texto in fuentes['rust']:
@@ -247,9 +263,9 @@ def main(argv=None):
     ap.add_argument('--list', action='store_true',
                     help='Lista las reglas disponibles')
     ap.add_argument('--proyecto', default=None,
-                    help='Directorio del proyecto a inspeccionar')
+                    help='Escanea todo el proyecto en vez del archivo puntual')
     ap.add_argument('target', nargs='?', default=None,
-                    help='Ruta objetivo (derive --proyecto de su directorio)')
+                    help='Ruta objetivo (.rs puntual)')
     args = ap.parse_args(argv)
 
     if args.list:
@@ -265,15 +281,15 @@ def main(argv=None):
               file=sys.stderr)
         return 1
 
-    if args.target is not None:
-        if args.proyecto is None:
-            args.proyecto = os.path.dirname(os.path.abspath(args.target))
-    if args.proyecto is None:
+    if args.proyecto is None and args.target is None:
         print('INSTRUMENTO ROJO: falta --proyecto/target', file=sys.stderr)
         return 1
 
     try:
-        fuentes = _fuentes(args.proyecto)
+        if args.proyecto is not None:
+            fuentes = _fuentes(args.proyecto)
+        else:
+            fuentes = _fuentes_archivo(args.target)
     except NoVerificable as exc:
         print('NO-VERIFICABLE: {}'.format(exc), file=sys.stderr)
         return 2
