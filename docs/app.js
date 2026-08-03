@@ -283,6 +283,11 @@ const analyses = [{
   description: 'Análisis externo del homepage público con streaming UI, hero, rails, planes Premium y responsive behavior.',
   capabilities: ['Streaming UI', 'Content Rails', 'Validation'],
   url: './analyses/crunchyroll/index.html', preview: './analyses/crunchyroll/index.html', source: 'https://www.crunchyroll.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/crunchyroll/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/crunchyroll/design-system.json'
+}, {
+  name: 'Prime Video Homepage', category: 'Design Systems', icon: 'PV', version: '1.0.0',
+  description: 'Análisis externo del homepage público con streaming UI, rankings, rails, suscripciones y responsive behavior.',
+  capabilities: ['Streaming UI', 'Content Rails', 'Validation'],
+  url: './analyses/primevideo/index.html', preview: './analyses/primevideo/index.html', source: 'https://www.primevideo.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/primevideo/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/primevideo/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');

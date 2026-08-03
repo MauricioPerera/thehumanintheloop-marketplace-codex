@@ -180,6 +180,7 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `google` — Google Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/google/ — source: https://www.google.com/
 - `linkedin` — LinkedIn Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/linkedin/ — source: https://www.linkedin.com/
 - `crunchyroll` — Crunchyroll Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/crunchyroll/ — source: https://www.crunchyroll.com/
+- `primevideo` — Prime Video Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/primevideo/ — source: https://www.primevideo.com/
 
 ## Instructions for AI agents
 
