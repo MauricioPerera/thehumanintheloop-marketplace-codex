@@ -903,6 +903,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "kdd-wcag",
+      "source": {
+        "source": "local",
+        "path": "./plugins/kdd-wcag"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Accessibility & UX"
     }
   ]
 }

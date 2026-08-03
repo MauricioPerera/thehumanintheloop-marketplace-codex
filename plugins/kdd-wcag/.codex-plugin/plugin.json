@@ -1,0 +1,18 @@
+{
+  "name": "kdd-wcag",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para 10 criterios de exito de WCAG 2.2, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD WCAG 2.2 Checker",
+    "shortDescription": "Verifica idioma, contraste, area de toque, etiquetas y mas de WCAG 2.2",
+    "longDescription": "Corre 10 chequeos deterministas sobre HTML/DOM renderizado que kdd-book extrajo de los 104 criterios de WCAG 2.2. Reusa el mismo arbol de html_checks (parser propio, no un DOM completo) para comparar etiqueta visible contra nombre accesible. Verde significa 'estos 10 mecanismos estan', no 'la pagina es accesible' -quedan 75+ criterios reales fuera de esta pila A-.",
+    "developerName": "Mauricio Perera",
+    "category": "Accessibility & UX",
+    "capabilities": [],
+    "defaultPrompt": "Audita esta pagina HTML contra WCAG 2.2 con kdd-wcag."
+  }
+}

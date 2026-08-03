@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD WCAG 2.2 Checker"
+  short_description: "Verifica 10 criterios de exito de WCAG 2.2 sobre HTML"
+  default_prompt: "Audita esta pagina HTML contra WCAG 2.2 con kdd-wcag."
