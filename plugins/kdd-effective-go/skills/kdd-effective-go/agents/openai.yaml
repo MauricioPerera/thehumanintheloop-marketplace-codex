@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD Effective Go Checker"
+  short_description: "Verifica indentacion, parentesis y llaves de Effective Go"
+  default_prompt: "Audita este codigo Go contra Effective Go con kdd-effective-go."

@@ -96,6 +96,7 @@
     {"name":"mercadopago-payment-manager","displayName":"Mercado Pago Payment Manager","source":"./plugins/mercadopago-payment-manager","category":"Developer Tools"},
     {"name":"kdd-semver","displayName":"KDD SemVer Checker","source":"./plugins/kdd-semver","category":"Developer Tools"},
   {"name":"kdd-stripe","displayName":"KDD Stripe API Checker","source":"./plugins/kdd-stripe","category":"Security & Privacy"},
-  {"name":"kdd-rust-api","displayName":"KDD Rust API Guidelines Checker","source":"./plugins/kdd-rust-api","category":"Developer Tools"}
+  {"name":"kdd-rust-api","displayName":"KDD Rust API Guidelines Checker","source":"./plugins/kdd-rust-api","category":"Developer Tools"},
+  {"name":"kdd-effective-go","displayName":"KDD Effective Go Checker","source":"./plugins/kdd-effective-go","category":"Developer Tools"}
 ]
 }

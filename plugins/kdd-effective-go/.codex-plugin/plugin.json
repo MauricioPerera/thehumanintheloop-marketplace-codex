@@ -1,0 +1,18 @@
+{
+  "name": "kdd-effective-go",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para 3 convenciones de Effective Go, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD Effective Go Checker",
+    "shortDescription": "Verifica indentacion, parentesis y llaves de Effective Go",
+    "longDescription": "Corre los 3 chequeos deterministas (indentacion con tabs, sin parentesis en if/for/switch, llave de apertura en la misma linea) que kdd-book extrajo de Effective Go -la primera fuente de kdd-book sobre prosa narrativa, no un checklist-. El grafo de 45 tecnicas (con pila y why_not, incluidas varias que gofmt ya garantiza) viaja junto al chequeo.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Audita este codigo Go contra Effective Go con kdd-effective-go."
+  }
+}
