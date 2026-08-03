@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Validate the shared Claude Code/Codex marketplace layout."""
-import argparse, json, sys
+import argparse, json, re, sys
 from pathlib import Path
 
 def load(path):
@@ -20,9 +20,14 @@ def validate_skill(skill_path, errors):
         errors.append(f"Skill frontmatter not closed: {skill_path}")
         return
     frontmatter = "\n".join(lines[1:end])
-    for field in ("name:", "description:"):
-        if field not in frontmatter:
-            errors.append(f"Skill frontmatter missing {field[:-1]}: {skill_path}")
+    name_match = re.search(r"^name:\s*['\"]?([^'\"\n]+)", frontmatter, re.MULTILINE)
+    description_match = re.search(r"^description:\s*['\"]?(.+?)['\"]?$", frontmatter, re.MULTILINE)
+    if not name_match:
+        errors.append(f"Skill frontmatter missing name: {skill_path}")
+    elif name_match.group(1).strip() != skill_path.parent.name:
+        errors.append(f"Skill name does not match directory: {skill_path}")
+    if not description_match or not description_match.group(1).strip():
+        errors.append(f"Skill frontmatter missing description: {skill_path}")
 
 def main():
     parser = argparse.ArgumentParser()
