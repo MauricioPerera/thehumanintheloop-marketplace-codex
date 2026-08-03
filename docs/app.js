@@ -293,6 +293,11 @@ const analyses = [{
   description: 'Análisis externo del homepage público con adquisición, email signup, trending, beneficios, FAQ y responsive behavior.',
   capabilities: ['Streaming UI', 'Acquisition', 'Validation'],
   url: './analyses/netflix/index.html', preview: './analyses/netflix/index.html', source: 'https://www.netflix.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/netflix/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/netflix/design-system.json'
+}, {
+  name: 'OpenAI Homepage', category: 'Design Systems', icon: 'OAI', version: '1.0.0',
+  description: 'Análisis externo del homepage público con navegación por audiencias, prompt, contenido editorial y productos.',
+  capabilities: ['Editorial UI', 'Prompt Entry', 'Validation'],
+  url: './analyses/openai/index.html', preview: './analyses/openai/index.html', source: 'https://openai.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/openai/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/openai/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');

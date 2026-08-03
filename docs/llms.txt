@@ -182,6 +182,7 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `crunchyroll` — Crunchyroll Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/crunchyroll/ — source: https://www.crunchyroll.com/
 - `primevideo` — Prime Video Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/primevideo/ — source: https://www.primevideo.com/
 - `netflix` — Netflix Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/netflix/ — source: https://www.netflix.com/
+- `openai` — OpenAI Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/openai/ — source: https://openai.com/
 
 ## Instructions for AI agents
 
