@@ -1,0 +1,18 @@
+{
+  "name": "kdd-htmx",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para 6 tecnicas de la documentacion de htmx, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD htmx Checker",
+    "shortDescription": "Verifica progresivo, indicador, CSRF, Vary, CSP y escapado de htmx",
+    "longDescription": "Corre 6 chequeos deterministas que kdd-book extrajo de la documentacion de htmx (52 paginas, 59 titulos): 3 sobre HTML (html_checks.py), 2 sobre capturas de intercambios HTTP (http_checks.py) y 1 sobre plantillas sin renderizar (template_checks.py). Documentacion de referencia: casi la mitad de los items cae en pila C por definicion del genero.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Audita esta integracion de htmx con kdd-htmx."
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD htmx Checker"
+  short_description: "Verifica progresivo, indicador, CSRF, Vary, CSP y escapado de htmx"
+  default_prompt: "Audita esta integracion de htmx con kdd-htmx."
