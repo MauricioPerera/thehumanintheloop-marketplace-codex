@@ -43,6 +43,7 @@
     {"name":"dependency-risk-auditor","displayName":"Dependency Risk Auditor","source":"./plugins/dependency-risk-auditor","category":"Security & Privacy"},
     {"name":"test-coverage-gate","displayName":"Test Coverage Gate","source":"./plugins/test-coverage-gate","category":"Marketplace & Quality"},
     {"name":"cv-job-tailor","displayName":"CV Job Tailor","source":"./plugins/cv-job-tailor","category":"Content & Editorial"},
-    {"name":"commercial-proposal-builder","displayName":"Commercial Proposal Builder","source":"./plugins/commercial-proposal-builder","category":"Content & Editorial"}
+    {"name":"commercial-proposal-builder","displayName":"Commercial Proposal Builder","source":"./plugins/commercial-proposal-builder","category":"Content & Editorial"},
+    {"name":"rfp-response-builder","displayName":"RFP Response Builder","source":"./plugins/rfp-response-builder","category":"Content & Editorial"}
   ]
 }

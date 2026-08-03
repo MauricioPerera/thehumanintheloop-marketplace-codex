@@ -219,6 +219,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Content & Editorial"
+    },
+    {
+      "name": "rfp-response-builder",
+      "source": {
+        "source": "local",
+        "path": "./plugins/rfp-response-builder"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Content & Editorial"
     }
   ]
 }

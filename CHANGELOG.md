@@ -6,6 +6,7 @@
 - Validación automática de metadata SEO, JSON-LD y sitemap para previews.
 - `cv-job-tailor`: adaptación de CVs a ofertas con trazabilidad y validadores anti-fabricación.
 - `commercial-proposal-builder`: propuestas comerciales basadas en requerimientos con control de alcance, precios y supuestos.
+- `rfp-response-builder`: respuestas de RFP y licitaciones con matriz de cumplimiento, evidencia y pendientes.
 
 ## 2026-08-02
 

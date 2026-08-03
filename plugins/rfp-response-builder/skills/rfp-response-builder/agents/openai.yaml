@@ -1,0 +1,4 @@
+interface:
+  display_name: "RFP Response Builder"
+  short_description: "Responde RFPs con evidencia y cobertura."
+  default_prompt: "Responde esta RFP sin inventar capacidades y entrega una matriz de cumplimiento."

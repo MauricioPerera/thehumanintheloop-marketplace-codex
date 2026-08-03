@@ -2,7 +2,7 @@
 
 Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
-Catálogo actual: **18 plugins**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
+Catálogo actual: **19 plugins**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
 
 ## Plugins disponibles
 
@@ -24,12 +24,13 @@ Catálogo actual: **18 plugins**, distribuido en dos manifests compatibles y una
 - `Test Coverage Gate` (`test-coverage-gate`): valida evidencia de tests y cobertura.
 - `CV Job Tailor` (`cv-job-tailor`): adapta CVs a ofertas laborales con trazabilidad y controles anti-fabricación.
 - `Commercial Proposal Builder` (`commercial-proposal-builder`): redacta propuestas comerciales basadas en requerimientos con integridad de alcance y precios.
+- `RFP Response Builder` (`rfp-response-builder`): responde RFPs y licitaciones con matriz de cumplimiento y evidencia.
 
 ## Categorías
 
 El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 
-- Content & Editorial — 5 plugins
+- Content & Editorial — 6 plugins
 - Design Systems — 1 plugin
 - Marketplace & Quality — 4 plugins
 - Developer Tools — 3 plugins

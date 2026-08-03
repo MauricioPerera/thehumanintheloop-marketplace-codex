@@ -1,0 +1,13 @@
+{
+  "name": "rfp-response-builder",
+  "displayName": "RFP Response Builder",
+  "version": "0.1.0",
+  "description": "Responde RFPs y licitaciones con matriz de cumplimiento, evidencia y control de compromisos.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["rfp", "tender", "compliance", "requirements", "proposal", "evidence"]
+}
