@@ -47,6 +47,9 @@
     {"name":"rfp-response-builder","displayName":"RFP Response Builder","source":"./plugins/rfp-response-builder","category":"Content & Editorial"},
     {"name":"github-issue-manager","displayName":"GitHub Issue Manager","source":"./plugins/github-issue-manager","category":"Developer Tools"},
     {"name":"github-pr-manager","displayName":"GitHub PR Manager","source":"./plugins/github-pr-manager","category":"Developer Tools"},
-    {"name":"github-release-manager","displayName":"GitHub Release Manager","source":"./plugins/github-release-manager","category":"Developer Tools"}
+    {"name":"github-release-manager","displayName":"GitHub Release Manager","source":"./plugins/github-release-manager","category":"Developer Tools"},
+    {"name":"github-actions-manager","displayName":"GitHub Actions Manager","source":"./plugins/github-actions-manager","category":"Developer Tools"},
+    {"name":"github-project-manager","displayName":"GitHub Project Manager","source":"./plugins/github-project-manager","category":"Developer Tools"},
+    {"name":"github-code-search","displayName":"GitHub Code Search","source":"./plugins/github-code-search","category":"Developer Tools"}
   ]
 }

@@ -10,6 +10,9 @@
 - `github-issue-manager`: gestión de Issues con `gh` CLI y confirmación antes de acciones mutables.
 - `github-pr-manager`: preparación y revisión de Pull Requests con checklist y evidencia.
 - `github-release-manager`: preparación de releases, tags y notas de versión con `gh` CLI.
+- `github-actions-manager`: diagnóstico de workflows, ejecuciones y logs de GitHub Actions.
+- `github-project-manager`: organización de Projects y tareas con plan de mutaciones trazable.
+- `github-code-search`: búsqueda reproducible de código, commits, Issues y Pull Requests.
 
 ## 2026-08-02
 

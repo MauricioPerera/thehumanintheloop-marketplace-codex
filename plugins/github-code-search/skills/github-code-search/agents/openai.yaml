@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Code Search"
+  short_description: "Busca codigo y referencias con gh CLI."
+  default_prompt: "Busca esta referencia en GitHub y entrega resultados trazables."

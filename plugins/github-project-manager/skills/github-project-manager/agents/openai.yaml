@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Project Manager"
+  short_description: "Organiza Projects y tareas con gh CLI."
+  default_prompt: "Organiza este trabajo en GitHub Projects con trazabilidad."

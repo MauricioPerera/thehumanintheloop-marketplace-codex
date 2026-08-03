@@ -1,0 +1,10 @@
+{
+  "name": "github-actions-manager",
+  "version": "0.1.0",
+  "description": "Inspects GitHub Actions workflows and logs with gh CLI and evidence-based failure summaries.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT", "keywords": ["github", "gh", "actions", "ci", "logs"],
+  "skills": "./skills/",
+  "interface": {"displayName": "GitHub Actions Manager", "shortDescription": "Inspecciona workflows y logs con gh CLI.", "longDescription": "Investiga ejecuciones de GitHub Actions, extrae logs relevantes y distingue evidencia de hipotesis sin modificar workflows por accidente.", "developerName": "Mauricio Perera", "category": "Developer Tools", "capabilities": ["Actions", "CI", "Logs", "Diagnosis"], "defaultPrompt": "Investiga esta ejecucion de GitHub Actions y resume el fallo."}
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Actions Manager"
+  short_description: "Inspecciona workflows y logs con gh CLI."
+  default_prompt: "Investiga esta ejecucion de GitHub Actions y resume el fallo."

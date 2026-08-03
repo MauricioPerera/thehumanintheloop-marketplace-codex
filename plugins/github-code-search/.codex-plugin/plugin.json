@@ -1,0 +1,10 @@
+{
+  "name": "github-code-search",
+  "version": "0.1.0",
+  "description": "Searches GitHub code, commits, Issues, and Pull Requests with reproducible gh CLI queries.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT", "keywords": ["github", "gh", "code-search", "commits", "references"],
+  "skills": "./skills/",
+  "interface": {"displayName": "GitHub Code Search", "shortDescription": "Busca codigo y referencias con gh CLI.", "longDescription": "Busca codigo y referencias en GitHub, conserva consultas reproducibles y separa resultados exactos de inferencias.", "developerName": "Mauricio Perera", "category": "Developer Tools", "capabilities": ["Code Search", "References", "Commits", "Traceability"], "defaultPrompt": "Busca esta referencia en GitHub y entrega resultados trazables."}
+}
