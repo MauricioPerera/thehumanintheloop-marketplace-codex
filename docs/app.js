@@ -313,6 +313,11 @@ const analyses = [{
   description: 'Análisis externo del producto Claude con autenticación, planes, beneficios, FAQ y navegación de ecosistema.',
   capabilities: ['Product UI', 'Pricing', 'Validation'],
   url: './analyses/claude/index.html', preview: './analyses/claude/index.html', source: 'https://claude.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/claude/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/claude/design-system.json'
+}, {
+  name: 'Ollama Homepage', category: 'Design Systems', icon: 'OL', version: '1.0.0',
+  description: 'Análisis externo del homepage público con open models, terminal, local/cloud, plan Pro y privacidad.',
+  capabilities: ['Developer UI', 'Terminal UX', 'Validation'],
+  url: './analyses/ollama/index.html', preview: './analyses/ollama/index.html', source: 'https://ollama.com/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/ollama/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/ollama/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');
