@@ -1,0 +1,13 @@
+{
+  "name": "kdd-wcag",
+  "displayName": "KDD WCAG 2.2 Checker",
+  "version": "0.1.0",
+  "description": "Verifica 10 criterios de exito de WCAG 2.2 (idioma, contraste, area de toque, etiquetas, autocomplete, movimiento, autoplay, saltar bloques, nombre/rol) sobre HTML, extraidos y verificados con Knowledge-Driven Development.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["wcag", "accessibility", "a11y", "kdd", "validation"]
+}
