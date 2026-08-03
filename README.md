@@ -27,14 +27,14 @@ Catálogo actual: **16 plugins**, distribuido en dos manifests compatibles y una
 
 El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 
-- Content & Editorial
-- Design Systems
-- Marketplace & Quality
-- Developer Tools
-- Accessibility & UX
-- Security & Privacy
-- Research & Evidence
-- AI & Prompt Engineering
+- Content & Editorial — 3 plugins
+- Design Systems — 1 plugin
+- Marketplace & Quality — 4 plugins
+- Developer Tools — 3 plugins
+- Accessibility & UX — 1 plugin
+- Security & Privacy — 2 plugins
+- Research & Evidence — 1 plugin
+- AI & Prompt Engineering — 1 plugin
 
 La GitHub Page permite filtrar por categoría, buscar por nombre o capacidad, copiar instrucciones de instalación y abrir el código fuente de cada plugin.
 
