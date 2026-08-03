@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Discussion Manager"
+  short_description: "Gestiona Discussions con gh CLI."
+  default_prompt: "Revisa o responde esta Discussion de GitHub con trazabilidad."

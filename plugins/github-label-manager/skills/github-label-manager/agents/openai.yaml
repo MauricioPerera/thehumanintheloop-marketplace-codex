@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Label Manager"
+  short_description: "Estandariza labels con gh CLI."
+  default_prompt: "Propone o aplica una taxonomia de labels en GitHub."

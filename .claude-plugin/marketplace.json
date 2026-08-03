@@ -53,6 +53,9 @@
     {"name":"github-code-search","displayName":"GitHub Code Search","source":"./plugins/github-code-search","category":"Developer Tools"},
     {"name":"github-security-manager","displayName":"GitHub Security Manager","source":"./plugins/github-security-manager","category":"Security & Privacy"},
     {"name":"github-dependabot-manager","displayName":"GitHub Dependabot Manager","source":"./plugins/github-dependabot-manager","category":"Security & Privacy"},
-    {"name":"github-notifications-manager","displayName":"GitHub Notifications Manager","source":"./plugins/github-notifications-manager","category":"Developer Tools"}
+    {"name":"github-notifications-manager","displayName":"GitHub Notifications Manager","source":"./plugins/github-notifications-manager","category":"Developer Tools"},
+    {"name":"github-discussion-manager","displayName":"GitHub Discussion Manager","source":"./plugins/github-discussion-manager","category":"Developer Tools"},
+    {"name":"github-label-manager","displayName":"GitHub Label Manager","source":"./plugins/github-label-manager","category":"Marketplace & Quality"},
+    {"name":"github-repository-manager","displayName":"GitHub Repository Manager","source":"./plugins/github-repository-manager","category":"Developer Tools"}
   ]
 }

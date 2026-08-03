@@ -16,6 +16,9 @@
 - `github-security-manager`: auditoría de alertas de seguridad y planes de remediación.
 - `github-dependabot-manager`: revisión de alertas y actualizaciones Dependabot.
 - `github-notifications-manager`: digest y triage de notificaciones de GitHub.
+- `github-discussion-manager`: gestión de Discussions con respuestas trazables.
+- `github-label-manager`: taxonomía y mantenimiento de labels con plan previo.
+- `github-repository-manager`: inspección y configuración de repositorios con confirmación.
 
 ## 2026-08-02
 

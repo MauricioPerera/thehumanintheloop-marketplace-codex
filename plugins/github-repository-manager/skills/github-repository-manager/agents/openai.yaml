@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Repository Manager"
+  short_description: "Administra repositorios con gh CLI."
+  default_prompt: "Inspecciona o configura este repositorio con confirmacion."
