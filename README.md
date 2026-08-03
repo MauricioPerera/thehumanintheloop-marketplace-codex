@@ -47,6 +47,7 @@ La GitHub Page permite filtrar por categoría, buscar por nombre o capacidad, co
 - `docs/analyses/`: resultados publicados de análisis visuales; cada entrada contiene `DESIGN.md`, `design-system.json`, `validation-report.json` y un preview navegable.
 - `CONTRIBUTING.md`: flujo para proponer plugins y Design System Analyses.
 - `CHANGELOG.md`: historial de capacidades publicadas.
+- `SECURITY.md`: alcance y procedimiento para reportar vulnerabilidades.
 
 ## Design System Analyses
 
