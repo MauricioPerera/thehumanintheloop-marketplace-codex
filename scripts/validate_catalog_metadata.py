@@ -20,6 +20,16 @@ def main():
         for item in structured["mainEntity"]["itemListElement"]
     }
     errors = []
+    canonical_categories = {
+        "Content & Editorial",
+        "Design Systems",
+        "Marketplace & Quality",
+        "Developer Tools",
+        "Accessibility & UX",
+        "Security & Privacy",
+        "Research & Evidence",
+        "AI & Prompt Engineering",
+    }
     if structured["mainEntity"]["numberOfItems"] != len(expected):
         errors.append("JSON-LD numberOfItems does not match marketplace")
     if expected != actual:
@@ -28,6 +38,8 @@ def main():
     for entry in marketplace["plugins"]:
         category_counts[entry["category"]] = category_counts.get(entry["category"], 0) + 1
     for category, count in category_counts.items():
+        if category not in canonical_categories:
+            errors.append(f"Unknown marketplace category: {category}")
         pattern = rf"^- {re.escape(category)} — {count} plugin(?:s)?$"
         if not re.search(pattern, readme, re.MULTILINE):
             errors.append(f"README category count is stale: {category} should be {count}")
