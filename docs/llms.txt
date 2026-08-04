@@ -125,6 +125,7 @@ Use these exact identifiers when referring to plugins:
 - `vps-network-diagnostics` — Developer Tools — Diagnostica DNS, latencia, puertos, rutas y conectividad HTTP/TLS.
 - `vps-service-exposure-auditor` — Security & Privacy — Correlaciona listeners públicos, puertos Docker, firewall y reverse proxy sin aplicar cambios.
 - `vps-observability-auditor` — Developer Tools — Audita métricas, logs, healthchecks, retención y alertas sin instalar agentes.
+- `vps-deployment-readiness-auditor` — Developer Tools — Valida Compose, healthchecks, imágenes, dependencias y rollback antes de desplegar.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
