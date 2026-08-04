@@ -999,6 +999,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Content & Editorial"
+    },
+    {
+      "name": "vps-ssh-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-ssh-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }
