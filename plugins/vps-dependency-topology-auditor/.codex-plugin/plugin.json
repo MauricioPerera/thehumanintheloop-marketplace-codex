@@ -1,0 +1,16 @@
+{
+  "name": "vps-dependency-topology-auditor",
+  "version": "0.1.0",
+  "description": "Construye un mapa de dependencias y blast radius entre dominios, proxies, servicios Docker y bases de datos de un VPS.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VPS Dependency Topology Auditor",
+    "shortDescription": "Mapea dependencias e impacto de fallos.",
+    "longDescription": "Relaciona dominios, Nginx, puertos, servicios systemd, proyectos Compose, redes y dependencias declaradas para identificar puntos únicos de fallo y blast radius.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["Dependency Graph", "Blast Radius", "Nginx", "Docker"],
+    "defaultPrompt": "Construye un mapa de dependencias de mi VPS sin modificar servicios ni consultar datos de aplicación."
+  }
+}
