@@ -1,0 +1,12 @@
+{
+  "name": "nginx-reverse-proxy-manager",
+  "version": "0.1.0",
+  "description": "Audita Nginx y reverse proxies de un VPS por SSH: hosts, upstreams, headers, límites y rutas sin editar configuración.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Nginx Reverse Proxy Manager", "shortDescription": "Audita reverse proxies sin editar Nginx.", "longDescription": "Inspecciona hosts, upstreams, headers, límites, TLS y rutas públicas; los cambios requieren backup, validación y confirmación.", "developerName": "Mauricio Perera", "category": "Developer Tools", "capabilities": ["Nginx", "Reverse Proxy", "TLS", "Routing"], "defaultPrompt": "Audita el reverse proxy de mi VPS."
+  }
+}

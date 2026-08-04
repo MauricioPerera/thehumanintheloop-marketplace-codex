@@ -125,6 +125,11 @@
 {"name":"vps-backup-manager","displayName":"VPS Backup Manager","source":"./plugins/vps-backup-manager","category":"Security & Privacy"},
 {"name":"vps-resource-monitor","displayName":"VPS Resource Monitor","source":"./plugins/vps-resource-monitor","category":"Developer Tools"},
 {"name":"tls-domain-manager","displayName":"TLS Domain Manager","source":"./plugins/tls-domain-manager","category":"Security & Privacy"},
-{"name":"vps-incident-responder","displayName":"VPS Incident Responder","source":"./plugins/vps-incident-responder","category":"Developer Tools"}
+{"name":"vps-incident-responder","displayName":"VPS Incident Responder","source":"./plugins/vps-incident-responder","category":"Developer Tools"},
+{"name":"firewall-policy-manager","displayName":"Firewall Policy Manager","source":"./plugins/firewall-policy-manager","category":"Security & Privacy"},
+{"name":"system-update-planner","displayName":"System Update Planner","source":"./plugins/system-update-planner","category":"Developer Tools"},
+{"name":"cron-automation-auditor","displayName":"Cron Automation Auditor","source":"./plugins/cron-automation-auditor","category":"Developer Tools"},
+{"name":"secrets-exposure-auditor","displayName":"Secrets Exposure Auditor","source":"./plugins/secrets-exposure-auditor","category":"Security & Privacy"},
+{"name":"nginx-reverse-proxy-manager","displayName":"Nginx Reverse Proxy Manager","source":"./plugins/nginx-reverse-proxy-manager","category":"Developer Tools"}
 ]
 }

@@ -90,6 +90,11 @@ Catálogo actual: **89 plugins y 17 Design System Analyses**, distribuido en dos
 - `VPS Resource Monitor` (`vps-resource-monitor`): mide CPU, memoria, disco, inodos y carga sin instalar agentes.
 - `TLS Domain Manager` (`tls-domain-manager`): audita certificados, dominios, SNI y redirecciones HTTPS.
 - `VPS Incident Responder` (`vps-incident-responder`): correlaciona señales del sistema, red y Docker para incidentes.
+- `Firewall Policy Manager` (`firewall-policy-manager`): audita UFW, iptables y nftables sin modificar reglas.
+- `System Update Planner` (`system-update-planner`): prepara actualizaciones de paquetes y kernel con rollback.
+- `Cron Automation Auditor` (`cron-automation-auditor`): audita cron y systemd timers sin ejecutar tareas.
+- `Secrets Exposure Auditor` (`secrets-exposure-auditor`): detecta indicios de secretos sin revelar valores.
+- `Nginx Reverse Proxy Manager` (`nginx-reverse-proxy-manager`): audita hosts, upstreams, headers y rutas públicas.
 
 ## Categorías
 
@@ -98,9 +103,9 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Content & Editorial — 7 plugins
 - Design Systems — 1 plugin
 - Marketplace & Quality — 8 plugins
-- Developer Tools — 52 plugins
+- Developer Tools — 55 plugins
 - Accessibility & UX — 2 plugins
-- Security & Privacy — 28 plugins
+- Security & Privacy — 30 plugins
 - Research & Evidence — 1 plugin
 - AI & Prompt Engineering — 1 plugin
 
