@@ -95,6 +95,9 @@ Catálogo actual: **89 plugins y 17 Design System Analyses**, distribuido en dos
 - `Cron Automation Auditor` (`cron-automation-auditor`): audita cron y systemd timers sin ejecutar tareas.
 - `Secrets Exposure Auditor` (`secrets-exposure-auditor`): detecta indicios de secretos sin revelar valores.
 - `Nginx Reverse Proxy Manager` (`nginx-reverse-proxy-manager`): audita hosts, upstreams, headers y rutas públicas.
+- `Database Operations Manager` (`database-operations-manager`): diagnostica PostgreSQL, MySQL y Redis con guardas.
+- `VPS Cost & Capacity Auditor` (`vps-cost-capacity-auditor`): relaciona recursos, crecimiento y eficiencia sin inventar precios.
+- `VPS Network Diagnostics` (`vps-network-diagnostics`): diagnostica DNS, latencia, puertos y conectividad.
 
 ## Categorías
 
@@ -103,7 +106,7 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Content & Editorial — 7 plugins
 - Design Systems — 1 plugin
 - Marketplace & Quality — 8 plugins
-- Developer Tools — 55 plugins
+- Developer Tools — 58 plugins
 - Accessibility & UX — 2 plugins
 - Security & Privacy — 30 plugins
 - Research & Evidence — 1 plugin

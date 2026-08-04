@@ -130,6 +130,9 @@
 {"name":"system-update-planner","displayName":"System Update Planner","source":"./plugins/system-update-planner","category":"Developer Tools"},
 {"name":"cron-automation-auditor","displayName":"Cron Automation Auditor","source":"./plugins/cron-automation-auditor","category":"Developer Tools"},
 {"name":"secrets-exposure-auditor","displayName":"Secrets Exposure Auditor","source":"./plugins/secrets-exposure-auditor","category":"Security & Privacy"},
-{"name":"nginx-reverse-proxy-manager","displayName":"Nginx Reverse Proxy Manager","source":"./plugins/nginx-reverse-proxy-manager","category":"Developer Tools"}
+{"name":"nginx-reverse-proxy-manager","displayName":"Nginx Reverse Proxy Manager","source":"./plugins/nginx-reverse-proxy-manager","category":"Developer Tools"},
+{"name":"database-operations-manager","displayName":"Database Operations Manager","source":"./plugins/database-operations-manager","category":"Developer Tools"},
+{"name":"vps-cost-capacity-auditor","displayName":"VPS Cost & Capacity Auditor","source":"./plugins/vps-cost-capacity-auditor","category":"Developer Tools"},
+{"name":"vps-network-diagnostics","displayName":"VPS Network Diagnostics","source":"./plugins/vps-network-diagnostics","category":"Developer Tools"}
 ]
 }

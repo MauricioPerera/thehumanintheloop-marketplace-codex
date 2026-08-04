@@ -1,0 +1,12 @@
+{
+  "name": "database-operations-manager",
+  "version": "0.1.0",
+  "description": "Diagnostica y administra PostgreSQL, MySQL y Redis en un VPS por SSH con consultas seguras, backups y confirmación.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Database Operations Manager", "shortDescription": "Diagnostica bases de datos con guardas.", "longDescription": "Inspecciona salud, conexiones, locks, tamaño y mantenimiento de PostgreSQL, MySQL y Redis sin mutaciones implícitas.", "developerName": "Mauricio Perera", "category": "Developer Tools", "capabilities": ["PostgreSQL", "MySQL", "Redis", "Database Ops"], "defaultPrompt": "Diagnostica mi base de datos sin modificarla."
+  }
+}
