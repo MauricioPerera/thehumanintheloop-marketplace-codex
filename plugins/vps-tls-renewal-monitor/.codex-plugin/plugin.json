@@ -1,0 +1,16 @@
+{
+  "name": "vps-tls-renewal-monitor",
+  "version": "0.1.0",
+  "description": "Audita jobs de renovación TLS, expiración y coherencia de certificados de un VPS sin renovarlos ni recargar proxies.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VPS TLS Renewal Monitor",
+    "shortDescription": "Comprueba que la renovación TLS esté operativa.",
+    "longDescription": "Correlaciona certificados, dominios, certbot timers, última ejecución, próxima renovación, errores y certificado servido sin solicitar certificados ni modificar Nginx.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": ["TLS Renewal", "Certbot", "Certificate Expiry", "HTTPS"],
+    "defaultPrompt": "Audita la renovación TLS de mis dominios del VPS sin renovar certificados ni recargar servicios."
+  }
+}

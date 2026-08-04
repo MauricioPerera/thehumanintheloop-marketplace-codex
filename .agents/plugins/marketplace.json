@@ -1152,6 +1152,7 @@
     {"name":"vps-docker-network-isolation-auditor","source":{"source":"local","path":"./plugins/vps-docker-network-isolation-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
     {"name":"vps-docker-resource-limits-auditor","source":{"source":"local","path":"./plugins/vps-docker-resource-limits-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
     {"name":"vps-dependency-topology-auditor","source":{"source":"local","path":"./plugins/vps-dependency-topology-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"vps-backup-job-monitor","source":{"source":"local","path":"./plugins/vps-backup-job-monitor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"}
+    {"name":"vps-backup-job-monitor","source":{"source":"local","path":"./plugins/vps-backup-job-monitor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"vps-tls-renewal-monitor","source":{"source":"local","path":"./plugins/vps-tls-renewal-monitor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"}
   ]
 }
