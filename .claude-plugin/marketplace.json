@@ -140,5 +140,6 @@
 ,{"name":"vps-backup-restore-verifier","displayName":"VPS Backup Restore Verifier","source":"./plugins/vps-backup-restore-verifier","category":"Developer Tools"}
 ,{"name":"vps-configuration-drift-auditor","displayName":"VPS Configuration Drift Auditor","source":"./plugins/vps-configuration-drift-auditor","category":"Developer Tools"}
 ,{"name":"vps-container-security-auditor","displayName":"VPS Container Security Auditor","source":"./plugins/vps-container-security-auditor","category":"Security & Privacy"}
+,{"name":"vps-image-provenance-auditor","displayName":"VPS Image Provenance Auditor","source":"./plugins/vps-image-provenance-auditor","category":"Security & Privacy"}
 ]
 }
