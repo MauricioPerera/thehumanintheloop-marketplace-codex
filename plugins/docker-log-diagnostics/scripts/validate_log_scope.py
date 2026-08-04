@@ -2,7 +2,7 @@
 from __future__ import annotations
 import argparse
 from pathlib import Path
-FORBIDDEN = ("--env", "docker exec", "docker restart", "docker rm", ".env", "password", "token")
+FORBIDDEN = ("--env", "docker exec", "docker restart", "docker rm", ".env", "password=", "token=", "api_key=", "secret=")
 REQUIRED = ("since", "limit", "redact")
 def main() -> int:
     parser = argparse.ArgumentParser(); parser.add_argument("--plan", required=True); args = parser.parse_args()
