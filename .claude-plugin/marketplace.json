@@ -134,5 +134,6 @@
 {"name":"database-operations-manager","displayName":"Database Operations Manager","source":"./plugins/database-operations-manager","category":"Developer Tools"},
 {"name":"vps-cost-capacity-auditor","displayName":"VPS Cost & Capacity Auditor","source":"./plugins/vps-cost-capacity-auditor","category":"Developer Tools"},
 {"name":"vps-network-diagnostics","displayName":"VPS Network Diagnostics","source":"./plugins/vps-network-diagnostics","category":"Developer Tools"}
+,{"name":"vps-service-exposure-auditor","displayName":"VPS Service Exposure Auditor","source":"./plugins/vps-service-exposure-auditor","category":"Security & Privacy"}
 ]
 }
