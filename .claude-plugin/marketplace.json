@@ -136,5 +136,6 @@
 {"name":"vps-network-diagnostics","displayName":"VPS Network Diagnostics","source":"./plugins/vps-network-diagnostics","category":"Developer Tools"}
 ,{"name":"vps-service-exposure-auditor","displayName":"VPS Service Exposure Auditor","source":"./plugins/vps-service-exposure-auditor","category":"Security & Privacy"}
 ,{"name":"vps-observability-auditor","displayName":"VPS Observability Auditor","source":"./plugins/vps-observability-auditor","category":"Developer Tools"}
+,{"name":"vps-deployment-readiness-auditor","displayName":"VPS Deployment Readiness Auditor","source":"./plugins/vps-deployment-readiness-auditor","category":"Developer Tools"}
 ]
 }
