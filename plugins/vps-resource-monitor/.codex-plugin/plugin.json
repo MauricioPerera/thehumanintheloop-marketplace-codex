@@ -1,0 +1,18 @@
+{
+  "name": "vps-resource-monitor",
+  "version": "0.1.0",
+  "description": "Analiza CPU, memoria, disco, inodos, procesos y carga de un VPS por SSH con umbrales y evidencia temporal.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VPS Resource Monitor",
+    "shortDescription": "Mide recursos y capacidad del VPS.",
+    "longDescription": "Recoge CPU, RAM, disco, inodos, procesos y carga para detectar saturación y tendencias sin instalar agentes.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["CPU", "Memory", "Disk", "Capacity"],
+    "defaultPrompt": "Analiza los recursos de mi VPS."
+  }
+}

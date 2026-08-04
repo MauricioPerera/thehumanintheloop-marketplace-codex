@@ -1,0 +1,18 @@
+{
+  "name": "tls-domain-manager",
+  "version": "0.1.0",
+  "description": "Audita TLS, dominios, certificados, reverse proxies y redirecciones HTTPS de un VPS sin renovar ni modificar configuración.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "TLS Domain Manager",
+    "shortDescription": "Audita certificados y dominios HTTPS.",
+    "longDescription": "Comprueba expiración, cadena, SNI, redirecciones y configuración de Nginx o Traefik con cambios separados y confirmables.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": ["TLS", "Domains", "Nginx", "HTTPS"],
+    "defaultPrompt": "Audita TLS y dominios de mi VPS."
+  }
+}

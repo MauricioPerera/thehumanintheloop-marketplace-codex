@@ -120,6 +120,11 @@
 {"name":"docker-service-manager","displayName":"Docker Service Manager","source":"./plugins/docker-service-manager","category":"Developer Tools"},
 {"name":"docker-image-manager","displayName":"Docker Image Manager","source":"./plugins/docker-image-manager","category":"Developer Tools"},
 {"name":"docker-storage-auditor","displayName":"Docker Storage Auditor","source":"./plugins/docker-storage-auditor","category":"Security & Privacy"},
-{"name":"docker-log-diagnostics","displayName":"Docker Log Diagnostics","source":"./plugins/docker-log-diagnostics","category":"Developer Tools"}
+{"name":"docker-log-diagnostics","displayName":"Docker Log Diagnostics","source":"./plugins/docker-log-diagnostics","category":"Developer Tools"},
+{"name":"vps-security-auditor","displayName":"VPS Security Auditor","source":"./plugins/vps-security-auditor","category":"Security & Privacy"},
+{"name":"vps-backup-manager","displayName":"VPS Backup Manager","source":"./plugins/vps-backup-manager","category":"Security & Privacy"},
+{"name":"vps-resource-monitor","displayName":"VPS Resource Monitor","source":"./plugins/vps-resource-monitor","category":"Developer Tools"},
+{"name":"tls-domain-manager","displayName":"TLS Domain Manager","source":"./plugins/tls-domain-manager","category":"Security & Privacy"},
+{"name":"vps-incident-responder","displayName":"VPS Incident Responder","source":"./plugins/vps-incident-responder","category":"Developer Tools"}
 ]
 }

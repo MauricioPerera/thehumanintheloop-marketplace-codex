@@ -1113,6 +1113,26 @@
       "source": {"source": "local", "path": "./plugins/docker-log-diagnostics"},
       "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
       "category": "Developer Tools"
+    },
+    {
+      "name": "vps-security-auditor", "source": {"source": "local", "path": "./plugins/vps-security-auditor"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}, "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-backup-manager", "source": {"source": "local", "path": "./plugins/vps-backup-manager"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}, "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-resource-monitor", "source": {"source": "local", "path": "./plugins/vps-resource-monitor"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}, "category": "Developer Tools"
+    },
+    {
+      "name": "tls-domain-manager", "source": {"source": "local", "path": "./plugins/tls-domain-manager"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}, "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-incident-responder", "source": {"source": "local", "path": "./plugins/vps-incident-responder"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}, "category": "Developer Tools"
     }
   ]
 }

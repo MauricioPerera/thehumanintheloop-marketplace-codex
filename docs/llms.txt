@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 95 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 100 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -110,6 +110,11 @@ Use these exact identifiers when referring to plugins:
 - `docker-image-manager` — Developer Tools — Audita imágenes, digests y espacio recuperable con guardas contra limpieza destructiva.
 - `docker-storage-auditor` — Security & Privacy — Audita volúmenes, redes, mounts y exposición Docker sin leer secretos.
 - `docker-log-diagnostics` — Developer Tools — Correlaciona logs acotados, eventos, reinicios y healthchecks para investigar incidentes.
+- `vps-security-auditor` — Security & Privacy — Audita firewall, puertos, SSH, usuarios y fail2ban sin aplicar cambios.
+- `vps-backup-manager` — Security & Privacy — Planifica backups y restauraciones verificables de datos y configuración del VPS.
+- `vps-resource-monitor` — Developer Tools — Mide CPU, RAM, disco, inodos, procesos y carga sin instalar agentes.
+- `tls-domain-manager` — Security & Privacy — Audita certificados, dominios, SNI, redirecciones y reverse proxies HTTPS.
+- `vps-incident-responder` — Developer Tools — Correlaciona sistema, red, Docker, disco y memoria para investigar incidentes.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 

@@ -1,0 +1,18 @@
+{
+  "name": "vps-backup-manager",
+  "version": "0.1.0",
+  "description": "Planifica y verifica backups de VPS, Docker volumes, PostgreSQL y configuraciones por SSH con restauración comprobable.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VPS Backup Manager",
+    "shortDescription": "Planifica backups y restauraciones verificables.",
+    "longDescription": "Diseña retención, cifrado, destino, consistencia y pruebas de restauración para datos y configuración del VPS.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": ["Backups", "Docker Volumes", "PostgreSQL", "Recovery"],
+    "defaultPrompt": "Planifica un backup verificable de mi VPS."
+  }
+}

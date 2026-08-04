@@ -1,0 +1,18 @@
+{
+  "name": "vps-incident-responder",
+  "version": "0.1.0",
+  "description": "Investiga incidentes de VPS por SSH correlacionando procesos, conexiones, Docker, disco, memoria y servicios sin realizar cambios.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VPS Incident Responder",
+    "shortDescription": "Diagnostica incidentes remotos con evidencia.",
+    "longDescription": "Correlaciona señales del sistema, Docker, red, disco, memoria y servicios para separar hechos de hipótesis.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["Incident Response", "SSH", "Docker", "Diagnostics"],
+    "defaultPrompt": "Investiga un incidente en mi VPS sin modificarlo."
+  }
+}
