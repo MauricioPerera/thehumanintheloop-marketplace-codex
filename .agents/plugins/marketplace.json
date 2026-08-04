@@ -1144,6 +1144,7 @@
     {"name":"vps-network-diagnostics","source":{"source":"local","path":"./plugins/vps-network-diagnostics"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
     {"name":"vps-service-exposure-auditor","source":{"source":"local","path":"./plugins/vps-service-exposure-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
     {"name":"vps-observability-auditor","source":{"source":"local","path":"./plugins/vps-observability-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"vps-deployment-readiness-auditor","source":{"source":"local","path":"./plugins/vps-deployment-readiness-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"}
+    {"name":"vps-deployment-readiness-auditor","source":{"source":"local","path":"./plugins/vps-deployment-readiness-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"vps-backup-restore-verifier","source":{"source":"local","path":"./plugins/vps-backup-restore-verifier"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"}
   ]
 }

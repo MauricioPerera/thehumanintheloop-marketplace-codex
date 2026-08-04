@@ -126,6 +126,7 @@ Use these exact identifiers when referring to plugins:
 - `vps-service-exposure-auditor` — Security & Privacy — Correlaciona listeners públicos, puertos Docker, firewall y reverse proxy sin aplicar cambios.
 - `vps-observability-auditor` — Developer Tools — Audita métricas, logs, healthchecks, retención y alertas sin instalar agentes.
 - `vps-deployment-readiness-auditor` — Developer Tools — Valida Compose, healthchecks, imágenes, dependencias y rollback antes de desplegar.
+- `vps-backup-restore-verifier` — Developer Tools — Verifica integridad, cobertura y recuperabilidad de backups sin tocar producción.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
