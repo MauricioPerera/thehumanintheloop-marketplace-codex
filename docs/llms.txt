@@ -135,6 +135,7 @@ Use these exact identifiers when referring to plugins:
 - `vps-dependency-topology-auditor` — Developer Tools — Mapea dependencias, puntos únicos de fallo y blast radius del VPS.
 - `vps-backup-job-monitor` — Developer Tools — Audita ejecución, frescura, fallos y cobertura de jobs programados de backup.
 - `vps-tls-renewal-monitor` — Security & Privacy — Audita Certbot, expiración, jobs y coherencia de certificados TLS.
+- `vps-dns-email-auth-auditor` — Security & Privacy — Audita DNS, DNSSEC, SPF, DKIM y DMARC sin cambiar registros.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
