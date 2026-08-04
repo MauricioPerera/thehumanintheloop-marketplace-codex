@@ -85,6 +85,11 @@ Catálogo actual: **89 plugins y 17 Design System Analyses**, distribuido en dos
 - `Docker Image Manager` (`docker-image-manager`): audita imágenes, digests y espacio recuperable antes de limpiar.
 - `Docker Storage Auditor` (`docker-storage-auditor`): audita volúmenes, redes, mounts y exposición sin leer secretos.
 - `Docker Log Diagnostics` (`docker-log-diagnostics`): correlaciona logs, eventos y healthchecks para investigar incidentes.
+- `VPS Security Auditor` (`vps-security-auditor`): audita firewall, puertos, SSH, usuarios y fail2ban sin cambios.
+- `VPS Backup Manager` (`vps-backup-manager`): planifica backups y restauraciones verificables de datos y configuración.
+- `VPS Resource Monitor` (`vps-resource-monitor`): mide CPU, memoria, disco, inodos y carga sin instalar agentes.
+- `TLS Domain Manager` (`tls-domain-manager`): audita certificados, dominios, SNI y redirecciones HTTPS.
+- `VPS Incident Responder` (`vps-incident-responder`): correlaciona señales del sistema, red y Docker para incidentes.
 
 ## Categorías
 
@@ -93,9 +98,9 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Content & Editorial — 7 plugins
 - Design Systems — 1 plugin
 - Marketplace & Quality — 8 plugins
-- Developer Tools — 50 plugins
+- Developer Tools — 52 plugins
 - Accessibility & UX — 2 plugins
-- Security & Privacy — 25 plugins
+- Security & Privacy — 28 plugins
 - Research & Evidence — 1 plugin
 - AI & Prompt Engineering — 1 plugin
 
