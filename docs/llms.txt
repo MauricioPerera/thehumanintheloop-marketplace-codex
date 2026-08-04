@@ -132,6 +132,7 @@ Use these exact identifiers when referring to plugins:
 - `vps-image-provenance-auditor` — Security & Privacy — Audita procedencia, digest, registry y coherencia de imágenes Docker.
 - `vps-docker-network-isolation-auditor` — Security & Privacy — Audita segmentación, redes compartidas y exposición entre contenedores.
 - `vps-docker-resource-limits-auditor` — Developer Tools — Audita CPU, memoria, PIDs, OOM y políticas de reinicio por contenedor.
+- `vps-dependency-topology-auditor` — Developer Tools — Mapea dependencias, puntos únicos de fallo y blast radius del VPS.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
