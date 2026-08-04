@@ -1,0 +1,12 @@
+{
+  "name": "cron-automation-auditor",
+  "version": "0.1.0",
+  "description": "Audita cron, systemd timers y automatizaciones de un VPS por SSH con historial, fallos y duplicados sin ejecutar tareas.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Cron Automation Auditor", "shortDescription": "Audita tareas programadas del VPS.", "longDescription": "Relaciona cron y systemd timers con scripts, salidas y fallos sin ejecutar ni editar automatizaciones.", "developerName": "Mauricio Perera", "category": "Developer Tools", "capabilities": ["Cron", "Systemd Timers", "Automation", "Auditing"], "defaultPrompt": "Audita las automatizaciones de mi VPS."
+  }
+}

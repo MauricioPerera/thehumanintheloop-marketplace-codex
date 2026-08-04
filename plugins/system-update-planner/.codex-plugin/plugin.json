@@ -1,0 +1,12 @@
+{
+  "name": "system-update-planner",
+  "version": "0.1.0",
+  "description": "Planifica actualizaciones de paquetes y kernel en un VPS por SSH con reinicio requerido, impacto y rollback documentados.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "System Update Planner", "shortDescription": "Prepara actualizaciones seguras del VPS.", "longDescription": "Inspecciona paquetes, kernel, reinicios y servicios afectados sin actualizar hasta contar con ventana y confirmación.", "developerName": "Mauricio Perera", "category": "Developer Tools", "capabilities": ["Updates", "Kernel", "Packages", "Rollback"], "defaultPrompt": "Prepara un plan de actualización para mi VPS."
+  }
+}

@@ -1133,6 +1133,11 @@
     {
       "name": "vps-incident-responder", "source": {"source": "local", "path": "./plugins/vps-incident-responder"},
       "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}, "category": "Developer Tools"
-    }
+    },
+    {"name":"firewall-policy-manager","source":{"source":"local","path":"./plugins/firewall-policy-manager"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"system-update-planner","source":{"source":"local","path":"./plugins/system-update-planner"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"cron-automation-auditor","source":{"source":"local","path":"./plugins/cron-automation-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"secrets-exposure-auditor","source":{"source":"local","path":"./plugins/secrets-exposure-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"nginx-reverse-proxy-manager","source":{"source":"local","path":"./plugins/nginx-reverse-proxy-manager"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"}
   ]
 }

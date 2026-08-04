@@ -1,0 +1,12 @@
+{
+  "name": "firewall-policy-manager",
+  "version": "0.1.0",
+  "description": "Audita políticas UFW, iptables y nftables de un VPS por SSH y propone cambios con evidencia y rollback.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Firewall Policy Manager", "shortDescription": "Audita firewall sin aplicar cambios.", "longDescription": "Inspecciona reglas, puertos y exposición de UFW, iptables o nftables y prepara planes con rollback.", "developerName": "Mauricio Perera", "category": "Security & Privacy", "capabilities": ["Firewall", "UFW", "iptables", "Hardening"], "defaultPrompt": "Audita el firewall de mi VPS sin modificarlo."
+  }
+}

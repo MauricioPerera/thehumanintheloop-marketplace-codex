@@ -1,0 +1,12 @@
+{
+  "name": "secrets-exposure-auditor",
+  "version": "0.1.0",
+  "description": "Busca indicios de secretos expuestos en configuración, Compose, procesos y logs de un VPS sin mostrar valores.",
+  "author": {
+    "name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Secrets Exposure Auditor", "shortDescription": "Detecta secretos sin revelar valores.", "longDescription": "Inspecciona nombres, permisos y patrones de exposición en configuración, Compose, procesos y logs con redacción obligatoria.", "developerName": "Mauricio Perera", "category": "Security & Privacy", "capabilities": ["Secrets", "Docker", "Redaction", "Security"], "defaultPrompt": "Audita posibles secretos expuestos sin mostrar sus valores."
+  }
+}
