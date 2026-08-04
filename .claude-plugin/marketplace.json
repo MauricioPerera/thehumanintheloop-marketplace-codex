@@ -137,5 +137,6 @@
 ,{"name":"vps-service-exposure-auditor","displayName":"VPS Service Exposure Auditor","source":"./plugins/vps-service-exposure-auditor","category":"Security & Privacy"}
 ,{"name":"vps-observability-auditor","displayName":"VPS Observability Auditor","source":"./plugins/vps-observability-auditor","category":"Developer Tools"}
 ,{"name":"vps-deployment-readiness-auditor","displayName":"VPS Deployment Readiness Auditor","source":"./plugins/vps-deployment-readiness-auditor","category":"Developer Tools"}
+,{"name":"vps-backup-restore-verifier","displayName":"VPS Backup Restore Verifier","source":"./plugins/vps-backup-restore-verifier","category":"Developer Tools"}
 ]
 }
