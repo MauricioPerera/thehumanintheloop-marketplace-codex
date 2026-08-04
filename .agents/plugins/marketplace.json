@@ -1148,6 +1148,7 @@
     {"name":"vps-backup-restore-verifier","source":{"source":"local","path":"./plugins/vps-backup-restore-verifier"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
     {"name":"vps-configuration-drift-auditor","source":{"source":"local","path":"./plugins/vps-configuration-drift-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
     {"name":"vps-container-security-auditor","source":{"source":"local","path":"./plugins/vps-container-security-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"vps-image-provenance-auditor","source":{"source":"local","path":"./plugins/vps-image-provenance-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"}
+    {"name":"vps-image-provenance-auditor","source":{"source":"local","path":"./plugins/vps-image-provenance-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"vps-docker-network-isolation-auditor","source":{"source":"local","path":"./plugins/vps-docker-network-isolation-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"}
   ]
 }

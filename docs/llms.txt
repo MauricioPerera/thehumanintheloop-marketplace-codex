@@ -130,6 +130,7 @@ Use these exact identifiers when referring to plugins:
 - `vps-configuration-drift-auditor` — Developer Tools — Detecta diferencias entre configuración declarada y estado activo de Docker, systemd y Nginx.
 - `vps-container-security-auditor` — Security & Privacy — Audita privilegios, capabilities, mounts y aislamiento de contenedores Docker.
 - `vps-image-provenance-auditor` — Security & Privacy — Audita procedencia, digest, registry y coherencia de imágenes Docker.
+- `vps-docker-network-isolation-auditor` — Security & Privacy — Audita segmentación, redes compartidas y exposición entre contenedores.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
