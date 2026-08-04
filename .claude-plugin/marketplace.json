@@ -142,5 +142,6 @@
 ,{"name":"vps-container-security-auditor","displayName":"VPS Container Security Auditor","source":"./plugins/vps-container-security-auditor","category":"Security & Privacy"}
 ,{"name":"vps-image-provenance-auditor","displayName":"VPS Image Provenance Auditor","source":"./plugins/vps-image-provenance-auditor","category":"Security & Privacy"}
 ,{"name":"vps-docker-network-isolation-auditor","displayName":"VPS Docker Network Isolation Auditor","source":"./plugins/vps-docker-network-isolation-auditor","category":"Security & Privacy"}
+,{"name":"vps-docker-resource-limits-auditor","displayName":"VPS Docker Resource Limits Auditor","source":"./plugins/vps-docker-resource-limits-auditor","category":"Developer Tools"}
 ]
 }
