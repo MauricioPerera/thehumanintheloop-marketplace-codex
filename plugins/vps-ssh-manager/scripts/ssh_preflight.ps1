@@ -8,7 +8,8 @@ param(
 $ErrorActionPreference = 'Stop'
 $ssh = Get-Command ssh -ErrorAction SilentlyContinue
 $keyExists = [string]::IsNullOrWhiteSpace($IdentityFile) -or (Test-Path -LiteralPath $IdentityFile -PathType Leaf)
-$knownHosts = Join-Path $HOME '.ssh\known_hosts'
+$sshDirectory = Join-Path $HOME '.ssh'
+$knownHosts = Join-Path $sshDirectory 'known_hosts'
 
 [pscustomobject]@{
   ssh_available = $null -ne $ssh

@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Conecta y administra VPS propios por SSH con preflight, verificación de host key y confirmación explícita antes de cambios.",
   "author": {
-    "name": "Local developer"
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
   },
   "skills": "./skills/",
   "interface": {
