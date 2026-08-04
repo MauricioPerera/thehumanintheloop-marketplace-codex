@@ -307,6 +307,10 @@ const plugins = [{
   name: 'kdd-estilo-google', displayName: 'KDD Estilo Google Checker', category: 'Content & Editorial', icon: 'GS', version: '0.1.0',
   description: 'Verifica 42 reglas del Google developer documentation style guide: puntuacion, numeros/unidades/fechas, encabezados, codigo/CLI, voz/tiempo verbal y vocabulario declarado, extraidas con Knowledge-Driven Development.',
   capabilities: ['google-style', 'technical-writing', 'documentation', 'prosa', 'kdd', 'validation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-estilo-google', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'vps-ssh-manager', displayName: 'VPS SSH Manager', category: 'Developer Tools', icon: 'SSH', version: '0.1.0',
+  description: 'Conecta a VPS propios por SSH con preflight, verificación de host key y confirmación antes de cambios.',
+  capabilities: ['SSH', 'VPS', 'Preflight', 'Remote diagnostics'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/vps-ssh-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',
