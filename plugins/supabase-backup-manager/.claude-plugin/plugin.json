@@ -1,0 +1,10 @@
+{
+  "name": "supabase-backup-manager",
+  "displayName": "Supabase Backup Manager",
+  "version": "0.1.0",
+  "description": "Planifica y verifica backups y recuperaciones de PostgreSQL en Supabase self-hosted con retención, cifrado y rollback.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["supabase", "backup", "restore", "postgresql", "recovery"]
+}

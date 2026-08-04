@@ -2,7 +2,7 @@
 
 Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
-Catálogo actual: **83 plugins y 17 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
+Catálogo actual: **89 plugins y 17 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
 
 ## Plugins disponibles
 
@@ -74,6 +74,12 @@ Catálogo actual: **83 plugins y 17 Design System Analyses**, distribuido en dos
 - `GitHub Action Permissions Manager` (`github-action-permissions-manager`): audita permisos de workflows.
 - `GitHub Merge Conflict Manager` (`github-merge-conflict-manager`): diagnostica conflictos de PRs.
 - `Mercado Pago Payment Manager` (`mercadopago-payment-manager`): prepara enlaces de pago con validadores de seguridad.
+- `Supabase Self-hosted Observer` (`supabase-selfhosted-observer`): observa contenedores, healthchecks, versiones y recursos de Supabase por SSH.
+- `Supabase Database Manager` (`supabase-database-manager`): diagnostica PostgreSQL y clasifica consultas antes de mutar.
+- `Supabase Service Manager` (`supabase-service-manager`): opera servicios Docker Compose con rollback y confirmación.
+- `Supabase Config Auditor` (`supabase-config-auditor`): audita configuración, puertos y variables sin revelar secretos.
+- `Supabase Backup Manager` (`supabase-backup-manager`): planifica backups y restores con retención y verificación.
+- `Supabase Upgrade Manager` (`supabase-upgrade-manager`): evalúa upgrades con compatibilidad, backup y rollback.
 
 ## Categorías
 
@@ -82,9 +88,9 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Content & Editorial — 7 plugins
 - Design Systems — 1 plugin
 - Marketplace & Quality — 8 plugins
-- Developer Tools — 42 plugins
+- Developer Tools — 46 plugins
 - Accessibility & UX — 2 plugins
-- Security & Privacy — 22 plugins
+- Security & Privacy — 24 plugins
 - Research & Evidence — 1 plugin
 - AI & Prompt Engineering — 1 plugin
 

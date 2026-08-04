@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 84 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 90 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -99,6 +99,12 @@ Use these exact identifiers when referring to plugins:
 - `kdd-codigo-limpio` — Developer Tools — Verifica 30 heuristicas de Clean Code: comentarios, funciones, principios generales G, nombres, pruebas y profundidad de cadena, extraidas con Knowledge-Driven Development.
 - `kdd-estilo-google` — Content & Editorial — Verifica 42 reglas del Google developer documentation style guide: puntuacion, numeros/unidades/fechas, encabezados, codigo/CLI, voz/tiempo verbal y vocabulario declarado, extraidas con Knowledge-Driven Development.
 - `vps-ssh-manager` — Developer Tools — Conecta a VPS propios por SSH con preflight, verificacion de host key y confirmacion antes de cambios.
+- `supabase-selfhosted-observer` — Developer Tools — Observa contenedores, healthchecks, versiones y recursos de Supabase self-hosted por SSH sin exponer secretos.
+- `supabase-database-manager` — Developer Tools — Diagnostica PostgreSQL de Supabase self-hosted con consultas seguras y confirmación antes de mutaciones.
+- `supabase-service-manager` — Developer Tools — Diagnostica y opera servicios Docker Compose de Supabase con rollback y confirmación explícita.
+- `supabase-config-auditor` — Security & Privacy — Audita configuración, puertos, volúmenes y variables sin revelar secretos.
+- `supabase-backup-manager` — Security & Privacy — Planifica y verifica backups y recuperaciones de PostgreSQL con retención, cifrado y rollback.
+- `supabase-upgrade-manager` — Developer Tools — Evalúa upgrades de Supabase con compatibilidad, backup, ventana y rollback.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 

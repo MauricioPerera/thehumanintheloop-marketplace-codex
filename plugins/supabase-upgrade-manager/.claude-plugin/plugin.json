@@ -1,0 +1,10 @@
+{
+  "name": "supabase-upgrade-manager",
+  "displayName": "Supabase Upgrade Manager",
+  "version": "0.1.0",
+  "description": "Evalúa y prepara upgrades de Supabase self-hosted por SSH con compatibilidad, backup, ventana y rollback.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["supabase", "upgrade", "docker", "postgresql", "rollback"]
+}

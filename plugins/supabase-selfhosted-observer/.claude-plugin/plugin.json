@@ -1,0 +1,10 @@
+{
+  "name": "supabase-selfhosted-observer",
+  "displayName": "Supabase Self-hosted Observer",
+  "version": "0.1.0",
+  "description": "Inspecciona salud, versiones, contenedores y recursos de Supabase self-hosted por SSH sin exponer secretos ni mutar el VPS.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["supabase", "self-hosted", "docker", "observability", "ssh"]
+}

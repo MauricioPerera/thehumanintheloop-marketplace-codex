@@ -1,0 +1,16 @@
+{
+  "name": "supabase-database-manager",
+  "version": "0.1.0",
+  "description": "Diagnostica y administra PostgreSQL de Supabase self-hosted por SSH con consultas seguras y confirmación antes de mutaciones.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Supabase Database Manager",
+    "shortDescription": "Gestiona PostgreSQL de Supabase por SSH.",
+    "longDescription": "Revisa metadata, conexiones, locks, espacio y SQL con clasificación read-only/DDL/DML y confirmación antes de cambios.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["Supabase", "PostgreSQL", "SQL", "SSH"],
+    "defaultPrompt": "Diagnostica PostgreSQL de mi instancia Supabase self-hosted."
+  }
+}

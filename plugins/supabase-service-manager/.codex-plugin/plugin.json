@@ -1,0 +1,16 @@
+{
+  "name": "supabase-service-manager",
+  "version": "0.1.0",
+  "description": "Diagnostica y opera servicios Supabase en Docker Compose por SSH con rollback y confirmación explícita.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Supabase Service Manager",
+    "shortDescription": "Opera servicios Supabase en Docker Compose.",
+    "longDescription": "Diagnostica contenedores, logs y healthchecks, y prepara reinicios o cambios con impacto, rollback y confirmación.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["Supabase", "Docker Compose", "Services", "Rollback"],
+    "defaultPrompt": "Diagnostica los servicios Docker de mi instancia Supabase."
+  }
+}
