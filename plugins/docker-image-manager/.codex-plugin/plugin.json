@@ -1,0 +1,16 @@
+{
+  "name": "docker-image-manager",
+  "version": "0.1.0",
+  "description": "Audita y gestiona imágenes Docker en un VPS por SSH con inventario, digest, espacio recuperable y guardas contra borrados accidentales.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Docker Image Manager",
+    "shortDescription": "Audita imágenes y espacio Docker.",
+    "longDescription": "Inspecciona tags, digests, vulnerabilidades declaradas y espacio reclaimable; las acciones de pull, tag o prune requieren confirmación.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["Docker Images", "Disk Usage", "Digests", "Safe Cleanup"],
+    "defaultPrompt": "Audita las imágenes Docker y el espacio recuperable."
+  }
+}

@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 90 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 95 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -105,6 +105,11 @@ Use these exact identifiers when referring to plugins:
 - `supabase-config-auditor` — Security & Privacy — Audita configuración, puertos, volúmenes y variables sin revelar secretos.
 - `supabase-backup-manager` — Security & Privacy — Planifica y verifica backups y recuperaciones de PostgreSQL con retención, cifrado y rollback.
 - `supabase-upgrade-manager` — Developer Tools — Evalúa upgrades de Supabase con compatibilidad, backup, ventana y rollback.
+- `docker-vps-observer` — Developer Tools — Observa daemon, contenedores, healthchecks, recursos y puertos Docker por SSH sin mutaciones.
+- `docker-service-manager` — Developer Tools — Planifica cambios Docker Compose con preflight, confirmación, ventana y rollback.
+- `docker-image-manager` — Developer Tools — Audita imágenes, digests y espacio recuperable con guardas contra limpieza destructiva.
+- `docker-storage-auditor` — Security & Privacy — Audita volúmenes, redes, mounts y exposición Docker sin leer secretos.
+- `docker-log-diagnostics` — Developer Tools — Correlaciona logs acotados, eventos, reinicios y healthchecks para investigar incidentes.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 

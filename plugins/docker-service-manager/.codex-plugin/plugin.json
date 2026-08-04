@@ -1,0 +1,16 @@
+{
+  "name": "docker-service-manager",
+  "version": "0.1.0",
+  "description": "Diagnostica y opera servicios Docker Compose en un VPS por SSH con preflight, confirmación, ventana de cambio y rollback.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Docker Service Manager",
+    "shortDescription": "Opera Compose con rollback seguro.",
+    "longDescription": "Planifica reinicios, despliegues y cambios de servicios Docker Compose por SSH; exige preflight y confirmación explícita.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["Docker Compose", "SSH", "Deployments", "Rollback"],
+    "defaultPrompt": "Prepara un cambio de Docker Compose con rollback."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "docker-vps-observer",
+  "version": "0.1.0",
+  "description": "Inspecciona Docker en un VPS por SSH: daemon, contenedores, salud, recursos y exposición sin mutaciones.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Docker VPS Observer",
+    "shortDescription": "Observa Docker remoto sin mutaciones.",
+    "longDescription": "Ejecuta diagnósticos de solo lectura sobre Docker en un VPS mediante SSH y produce evidencia verificable.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["Docker", "SSH", "Healthchecks", "Resources"],
+    "defaultPrompt": "Inspecciona Docker en mi VPS sin modificar nada."
+  }
+}
