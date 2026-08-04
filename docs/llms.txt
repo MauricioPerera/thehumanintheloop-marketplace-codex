@@ -134,6 +134,7 @@ Use these exact identifiers when referring to plugins:
 - `vps-docker-resource-limits-auditor` — Developer Tools — Audita CPU, memoria, PIDs, OOM y políticas de reinicio por contenedor.
 - `vps-dependency-topology-auditor` — Developer Tools — Mapea dependencias, puntos únicos de fallo y blast radius del VPS.
 - `vps-backup-job-monitor` — Developer Tools — Audita ejecución, frescura, fallos y cobertura de jobs programados de backup.
+- `vps-tls-renewal-monitor` — Security & Privacy — Audita Certbot, expiración, jobs y coherencia de certificados TLS.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 

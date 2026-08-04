@@ -145,5 +145,6 @@
 ,{"name":"vps-docker-resource-limits-auditor","displayName":"VPS Docker Resource Limits Auditor","source":"./plugins/vps-docker-resource-limits-auditor","category":"Developer Tools"}
 ,{"name":"vps-dependency-topology-auditor","displayName":"VPS Dependency Topology Auditor","source":"./plugins/vps-dependency-topology-auditor","category":"Developer Tools"}
 ,{"name":"vps-backup-job-monitor","displayName":"VPS Backup Job Monitor","source":"./plugins/vps-backup-job-monitor","category":"Developer Tools"}
+,{"name":"vps-tls-renewal-monitor","displayName":"VPS TLS Renewal Monitor","source":"./plugins/vps-tls-renewal-monitor","category":"Security & Privacy"}
 ]
 }
