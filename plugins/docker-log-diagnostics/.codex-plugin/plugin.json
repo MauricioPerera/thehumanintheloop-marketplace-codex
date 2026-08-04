@@ -1,0 +1,16 @@
+{
+  "name": "docker-log-diagnostics",
+  "version": "0.1.0",
+  "description": "Investiga fallos de contenedores Docker por SSH con logs acotados, eventos, healthchecks y correlación temporal.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Docker Log Diagnostics",
+    "shortDescription": "Diagnostica logs y fallos Docker.",
+    "longDescription": "Recoge evidencia limitada de logs, eventos, reinicios y healthchecks para explicar incidentes sin volcar secretos ni modificar contenedores.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["Docker Logs", "Events", "Healthchecks", "Incident Response"],
+    "defaultPrompt": "Investiga por qué falló un contenedor Docker."
+  }
+}

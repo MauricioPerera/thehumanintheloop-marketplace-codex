@@ -115,6 +115,11 @@
 {"name":"supabase-service-manager","displayName":"Supabase Service Manager","source":"./plugins/supabase-service-manager","category":"Developer Tools"},
 {"name":"supabase-config-auditor","displayName":"Supabase Config Auditor","source":"./plugins/supabase-config-auditor","category":"Security & Privacy"},
 {"name":"supabase-backup-manager","displayName":"Supabase Backup Manager","source":"./plugins/supabase-backup-manager","category":"Security & Privacy"},
-{"name":"supabase-upgrade-manager","displayName":"Supabase Upgrade Manager","source":"./plugins/supabase-upgrade-manager","category":"Developer Tools"}
+{"name":"supabase-upgrade-manager","displayName":"Supabase Upgrade Manager","source":"./plugins/supabase-upgrade-manager","category":"Developer Tools"},
+{"name":"docker-vps-observer","displayName":"Docker VPS Observer","source":"./plugins/docker-vps-observer","category":"Developer Tools"},
+{"name":"docker-service-manager","displayName":"Docker Service Manager","source":"./plugins/docker-service-manager","category":"Developer Tools"},
+{"name":"docker-image-manager","displayName":"Docker Image Manager","source":"./plugins/docker-image-manager","category":"Developer Tools"},
+{"name":"docker-storage-auditor","displayName":"Docker Storage Auditor","source":"./plugins/docker-storage-auditor","category":"Security & Privacy"},
+{"name":"docker-log-diagnostics","displayName":"Docker Log Diagnostics","source":"./plugins/docker-log-diagnostics","category":"Developer Tools"}
 ]
 }

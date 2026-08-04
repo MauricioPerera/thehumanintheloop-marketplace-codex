@@ -1,0 +1,16 @@
+{
+  "name": "docker-storage-auditor",
+  "version": "0.1.0",
+  "description": "Audita volúmenes, redes, mounts y exposición de Docker en un VPS por SSH sin revelar datos ni modificar recursos.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Docker Storage Auditor",
+    "shortDescription": "Audita volúmenes, redes y mounts.",
+    "longDescription": "Relaciona contenedores con volúmenes y redes, detecta mounts sensibles y documenta exposición sin inspeccionar secretos.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": ["Docker", "Volumes", "Networks", "Exposure"],
+    "defaultPrompt": "Audita el almacenamiento y la exposición de Docker."
+  }
+}

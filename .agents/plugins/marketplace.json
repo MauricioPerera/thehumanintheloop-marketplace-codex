@@ -1083,6 +1083,36 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "docker-vps-observer",
+      "source": {"source": "local", "path": "./plugins/docker-vps-observer"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Developer Tools"
+    },
+    {
+      "name": "docker-service-manager",
+      "source": {"source": "local", "path": "./plugins/docker-service-manager"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Developer Tools"
+    },
+    {
+      "name": "docker-image-manager",
+      "source": {"source": "local", "path": "./plugins/docker-image-manager"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Developer Tools"
+    },
+    {
+      "name": "docker-storage-auditor",
+      "source": {"source": "local", "path": "./plugins/docker-storage-auditor"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "docker-log-diagnostics",
+      "source": {"source": "local", "path": "./plugins/docker-log-diagnostics"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Developer Tools"
     }
   ]
 }
