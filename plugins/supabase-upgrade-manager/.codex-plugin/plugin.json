@@ -1,0 +1,16 @@
+{
+  "name": "supabase-upgrade-manager",
+  "version": "0.1.0",
+  "description": "Evalúa y prepara upgrades de Supabase self-hosted por SSH con compatibilidad, backup, ventana y rollback.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Supabase Upgrade Manager",
+    "shortDescription": "Prepara upgrades seguros de Supabase self-hosted.",
+    "longDescription": "Compara versiones, dependencias, backups, compatibilidad, ventana, verificación y rollback antes de actualizar Compose.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["Supabase", "Upgrades", "Compatibility", "Rollback"],
+    "defaultPrompt": "Evalúa un upgrade de mi instancia Supabase self-hosted."
+  }
+}

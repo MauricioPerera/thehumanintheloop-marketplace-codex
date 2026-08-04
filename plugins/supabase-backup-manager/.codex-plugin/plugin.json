@@ -1,0 +1,16 @@
+{
+  "name": "supabase-backup-manager",
+  "version": "0.1.0",
+  "description": "Planifica y verifica backups y recuperaciones de PostgreSQL en Supabase self-hosted con retención, cifrado y rollback.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Supabase Backup Manager",
+    "shortDescription": "Planifica backups y restores de Supabase.",
+    "longDescription": "Define destino, retención, cifrado, verificación, pruebas de restore y rollback sin exponer dumps ni borrar respaldos.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": ["Supabase", "Backup", "Restore", "Recovery"],
+    "defaultPrompt": "Prepara un plan seguro de backup para mi instancia Supabase."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "supabase-selfhosted-observer",
+  "version": "0.1.0",
+  "description": "Inspecciona salud, versiones, contenedores y recursos de Supabase self-hosted por SSH sin exponer secretos ni mutar el VPS.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Supabase Self-hosted Observer",
+    "shortDescription": "Observa una instancia Supabase self-hosted por SSH.",
+    "longDescription": "Inspecciona contenedores, healthchecks, versiones y recursos con comandos read-only y reportes sin secretos.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["Supabase", "Docker", "Observability", "SSH"],
+    "defaultPrompt": "Inspecciona la salud de mi instancia Supabase self-hosted por SSH."
+  }
+}

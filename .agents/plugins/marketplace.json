@@ -1011,6 +1011,78 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "supabase-selfhosted-observer",
+      "source": {
+        "source": "local",
+        "path": "./plugins/supabase-selfhosted-observer"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "supabase-database-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/supabase-database-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "supabase-service-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/supabase-service-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "supabase-config-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/supabase-config-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "supabase-backup-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/supabase-backup-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "supabase-upgrade-manager",
+      "source": {
+        "source": "local",
+      "path": "./plugins/supabase-upgrade-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }

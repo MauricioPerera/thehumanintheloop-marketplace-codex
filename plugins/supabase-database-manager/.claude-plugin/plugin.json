@@ -1,0 +1,10 @@
+{
+  "name": "supabase-database-manager",
+  "displayName": "Supabase Database Manager",
+  "version": "0.1.0",
+  "description": "Diagnostica y administra PostgreSQL de Supabase self-hosted por SSH con consultas seguras y confirmación antes de mutaciones.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["supabase", "postgresql", "database", "ssh", "sql"]
+}

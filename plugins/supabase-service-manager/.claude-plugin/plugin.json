@@ -1,0 +1,10 @@
+{
+  "name": "supabase-service-manager",
+  "displayName": "Supabase Service Manager",
+  "version": "0.1.0",
+  "description": "Diagnostica y opera servicios Supabase en Docker Compose por SSH con rollback y confirmación explícita.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["supabase", "docker", "compose", "services", "ssh"]
+}

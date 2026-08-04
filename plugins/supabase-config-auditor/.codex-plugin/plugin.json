@@ -1,0 +1,16 @@
+{
+  "name": "supabase-config-auditor",
+  "version": "0.1.0",
+  "description": "Audita configuración, variables, puertos, volúmenes y exposición de Supabase self-hosted sin revelar secretos.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Supabase Config Auditor",
+    "shortDescription": "Audita configuración Supabase sin exponer secretos.",
+    "longDescription": "Compara variables, Compose, puertos, volúmenes y permisos; redacta valores sensibles y separa hallazgos de remediaciones.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": ["Supabase", "Configuration", "Secrets", "Security"],
+    "defaultPrompt": "Audita la configuración de mi instancia Supabase sin mostrar secretos."
+  }
+}
