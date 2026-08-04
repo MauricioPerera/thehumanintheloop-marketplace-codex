@@ -1,0 +1,10 @@
+{
+  "name": "supabase-policy-security-auditor",
+  "displayName": "Supabase Policy Security Auditor",
+  "version": "0.1.0",
+  "description": "Audita RLS, políticas de Storage, Auth/JWT y Edge Functions/Realtime de Supabase self-hosted en modo lectura sin mutar ni exponer secretos.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["supabase", "rls", "policies", "auth", "jwt", "storage", "edge-functions", "security"]
+}

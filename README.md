@@ -80,6 +80,7 @@ Catálogo actual: **89 plugins y 17 Design System Analyses**, distribuido en dos
 - `Supabase Config Auditor` (`supabase-config-auditor`): audita configuración, puertos y variables sin revelar secretos.
 - `Supabase Backup Manager` (`supabase-backup-manager`): planifica backups y restores con retención y verificación.
 - `Supabase Upgrade Manager` (`supabase-upgrade-manager`): evalúa upgrades con compatibilidad, backup y rollback.
+- `Supabase Policy Security Auditor` (`supabase-policy-security-auditor`): audita RLS, Storage, Auth/JWT y Edge Functions en modo lectura.
 - `Docker VPS Observer` (`docker-vps-observer`): observa daemon, contenedores, salud, recursos y puertos Docker por SSH.
 - `Docker Service Manager` (`docker-service-manager`): planifica cambios Docker Compose con confirmación y rollback.
 - `Docker Image Manager` (`docker-image-manager`): audita imágenes, digests y espacio recuperable antes de limpiar.
@@ -108,7 +109,7 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Marketplace & Quality — 8 plugins
 - Developer Tools — 65 plugins
 - Accessibility & UX — 2 plugins
-- Security & Privacy — 36 plugins
+- Security & Privacy — 37 plugins
 - Research & Evidence — 1 plugin
 - AI & Prompt Engineering — 1 plugin
 

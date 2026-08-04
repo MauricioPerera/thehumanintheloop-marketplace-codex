@@ -1,0 +1,16 @@
+{
+  "name": "supabase-policy-security-auditor",
+  "version": "0.1.0",
+  "description": "Audita RLS, políticas de Storage, Auth/JWT y Edge Functions/Realtime de Supabase self-hosted en modo lectura sin mutar ni exponer secretos.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Supabase Policy Security Auditor",
+    "shortDescription": "Audita RLS, Storage, Auth/JWT y Edge Functions de Supabase en modo lectura.",
+    "longDescription": "Inspecciona políticas Row Level Security, Storage, Auth/JWT y Edge Functions/Realtime con consultas read-only, redacta secretos y separa hallazgos de remediaciones.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": ["Supabase", "RLS", "Policies", "Auth", "JWT", "Storage", "Edge Functions", "Realtime"],
+    "defaultPrompt": "Audita las políticas de seguridad de mi instancia Supabase self-hosted sin mutar ni revelar secretos."
+  }
+}
