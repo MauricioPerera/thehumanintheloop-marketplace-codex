@@ -280,6 +280,8 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `qwen` — Qwen Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/qwen/ — source: https://qwen.ai/
 - `zcode` — ZCode Homepage — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/zcode/ — source: https://zcode.z.ai/en
 - `notebooklm` — NotebookLM / Gemini Notebook — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/notebooklm/ — source: https://notebooklm.google/
+- `mihomo-gate` — Mihomo Gate Dashboard — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/mihomo-gate/ — source: local:pasted-text.txt
+- `echo-pace-logistics` — Echo Pace Logistics ERP — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/echo-pace-logistics/ — source: local:pasted-text.txt
 ## Instructions for AI agents
 
 Before modifying this repository, inspect the relevant marketplace manifest and plugin directory. Keep `.claude-plugin/marketplace.json`, `.agents/plugins/marketplace.json`, plugin manifests, and the catalog metadata synchronized. Do not describe an analysis as an official brand system unless its provenance explicitly supports that claim.

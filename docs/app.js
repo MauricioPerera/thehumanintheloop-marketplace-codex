@@ -393,6 +393,16 @@ const analyses = [{
   description: 'Análisis externo de NotebookLM/Gemini Notebook con fuentes, citas, outputs multimodales y notebooks públicos.',
   capabilities: ['Research UI', 'Source Grounding', 'Validation'],
   url: './analyses/notebooklm/index.html', preview: './analyses/notebooklm/index.html', source: 'https://notebooklm.google/', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/notebooklm/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/notebooklm/design-system.json'
+}, {
+  name: 'Mihomo Gate Dashboard', category: 'Design Systems', icon: 'MG', version: '1.0.0',
+  description: 'Análisis de un dashboard local oscuro con tokens índigo, navegación operativa, métricas, proxies, logs y responsive behavior.',
+  capabilities: ['Dashboard UI', 'Dark Theme', 'Validation'],
+  url: './analyses/mihomo-gate/index.html', preview: './analyses/mihomo-gate/index.html', source: 'local:pasted-text.txt', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/mihomo-gate/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/mihomo-gate/design-system.json'
+}, {
+  name: 'Echo Pace Logistics ERP', category: 'Design Systems', icon: 'EP', version: '1.0.0',
+  description: 'Análisis de un dashboard ERP de logística con sidebar azul, métricas, gráficos, envíos, finanzas y facturación.',
+  capabilities: ['ERP Dashboard', 'Logistics UI', 'Validation'],
+  url: './analyses/echo-pace-logistics/index.html', preview: './analyses/echo-pace-logistics/index.html', source: 'local:pasted-text.txt', codexUrl: 'codex://new', designMdUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/echo-pace-logistics/DESIGN.md', contractUrl: 'https://raw.githubusercontent.com/MauricioPerera/thehumanintheloop-marketplace-codex/main/docs/analyses/echo-pace-logistics/design-system.json'
 }];
 const grid = document.querySelector('#plugin-grid');
 const empty = document.querySelector('#empty-state');

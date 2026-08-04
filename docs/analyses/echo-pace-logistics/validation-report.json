@@ -1,0 +1,13 @@
+{
+  "status": "PASSED",
+  "errors": [],
+  "warnings": [
+    "Source is local React code; no live CSS computed values were available.",
+    "Business metrics, customer names and tracking numbers are mock data.",
+    "Empty and error states are not fully implemented in the source."
+  ],
+  "source": "local:pasted-text.txt",
+  "tokenCount": 61,
+  "components": 6,
+  "observedSections": ["Dashboard", "Operations", "Finance", "Invoicing"]
+}

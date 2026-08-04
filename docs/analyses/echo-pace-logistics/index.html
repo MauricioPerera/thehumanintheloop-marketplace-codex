@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Echo Pace Logistics · Design System Analysis</title>
+  <meta name="description" content="Análisis del sistema visual de un dashboard ERP de logística React: tokens, componentes, estados y responsive behavior.">
+  <meta name="author" content="Mauricio Perera">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/echo-pace-logistics/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Echo Pace Logistics ERP · Design System Analysis">
+  <meta property="og:description" content="Análisis del dashboard ERP de logística con tokens, componentes, estados y comportamiento responsive.">
+  <meta property="og:url" content="https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/echo-pace-logistics/">
+  <meta property="og:site_name" content="TheHumanInTheLoop Marketplace">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Echo Pace Logistics ERP · Design System Analysis","description":"Análisis del dashboard ERP de logística con tokens, componentes, estados y comportamiento responsive.","url":"https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/echo-pace-logistics/","inLanguage":"es-MX","author":{"@type":"Person","name":"Mauricio Perera","url":"https://github.com/MauricioPerera"},"isPartOf":{"@type":"WebSite","name":"TheHumanInTheLoop Marketplace","url":"https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/"},"about":"Echo Pace Logistics ERP dashboard visual analysis"}</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero"><div class="wrap hero-grid"><div><p class="eyebrow">DESIGN SYSTEM ANALYSIS · LOCAL SOURCE</p><h1>Echo Pace Logistics ERP</h1><p class="lede">Contrato visual extraído del código React: dashboard operativo con navegación azul, métricas, envíos, finanzas y facturación.</p><div class="actions"><a class="button primary" href="DESIGN.md">Leer DESIGN.md</a><a class="button" href="design-system.json">Ver tokens JSON</a><a class="button" href="validation-report.json">Reporte</a></div></div><aside class="notice"><strong>STATUS · <span>PASSED</span></strong><br>Con advertencias de fuente local y estados no verificables.</aside></div></header>
+  <main class="wrap">
+    <section><h2>Identidad y paleta</h2><p class="muted">Un dashboard administrativo de superficies blancas sobre gris claro, con sidebar azul profunda y color semántico para el estado operativo.</p><div class="swatches"><div><i style="background:#1d4ed8"></i><b>sidebarStart</b><code>#1D4ED8</code></div><div><i style="background:#1e3a8a"></i><b>sidebarEnd</b><code>#1E3A8A</code></div><div><i style="background:#2563eb"></i><b>action</b><code>#2563EB</code></div><div><i style="background:#f9fafb"></i><b>page</b><code>#F9FAFB</code></div><div><i style="background:#22c55e"></i><b>success</b><code>#22C55E</code></div><div><i style="background:#ef4444"></i><b>danger</b><code>#EF4444</code></div></div></section>
+    <section><h2>Tipografía y controles</h2><div class="demo-grid"><article class="panel"><p class="eyebrow">SYSTEM SANS · METRIC</p><div class="metric">$86,450</div><p class="muted">Total Revenue · 30px / 700</p></article><article class="panel"><p class="eyebrow">STATUS PILLS</p><div class="button-row"><button class="button primary">Create Invoice</button><span class="pill success">Delivered</span><span class="pill warning">Pending</span><span class="pill danger">Delayed</span></div></article></div></section>
+    <section><h2>Inventario de componentes</h2><div class="component-grid"><article class="panel"><h3>Sidebar / navigation</h3><p class="muted">256px, gradiente azul, item activo y perfil de usuario al final.</p><span class="state active">active</span><span class="state">hover</span></article><article class="panel"><h3>Stat card</h3><p class="muted">Valor grande, delta semántico e icono circular de 48px.</p><span class="state success">positive</span><span class="state danger">negative</span></article><article class="panel"><h3>Table / status</h3><p class="muted">Cabecera gris, filas separadas, select y overflow móvil localizado.</p><span class="state info">in transit</span><span class="state warning">pending</span></article><article class="panel"><h3>Invoice form</h3><p class="muted">Campos requeridos, loading, foco azul y confirmación de creación.</p><span class="state">focus</span><span class="state active">loading</span></article></div></section>
+    <section><h2>Responsive behavior</h2><table><thead><tr><th>Viewport</th><th>Comportamiento observado</th></tr></thead><tbody><tr><td>Desktop</td><td>Sidebar de 256px, cuatro métricas y gráficos en dos columnas.</td></tr><tr><td>Tablet</td><td>Dos métricas por fila y formularios/acciones en dos columnas.</td></tr><tr><td>Móvil</td><td>Una métrica por fila, contenido apilado y tablas con scroll horizontal localizado.</td></tr></tbody></table></section>
+    <section><h2>Procedencia y validación</h2><p class="muted">Fuente local: <code>pasted-text.txt</code>. La fuente contiene datos mock de envíos, clientes, facturas y métricas; no son claims reales.</p><p class="pass">✓ PASSED — contrato duro, contrato blando, tokens, componentes, responsive y reporte presentes.</p></section>
+  </main>
+  <footer class="wrap footer">Análisis técnico independiente · No es un sistema oficial de Echo Pace Logistics.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
