@@ -136,6 +136,7 @@ Use these exact identifiers when referring to plugins:
 - `vps-backup-job-monitor` — Developer Tools — Audita ejecución, frescura, fallos y cobertura de jobs programados de backup.
 - `vps-tls-renewal-monitor` — Security & Privacy — Audita Certbot, expiración, jobs y coherencia de certificados TLS.
 - `vps-dns-email-auth-auditor` — Security & Privacy — Audita DNS, DNSSEC, SPF, DKIM y DMARC sin cambiar registros.
+- `supabase-policy-security-auditor` — Security & Privacy — Audita RLS, Storage, Auth/JWT y Edge Functions/Realtime de Supabase self-hosted en modo lectura sin exponer secretos.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
