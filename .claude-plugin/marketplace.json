@@ -139,5 +139,6 @@
 ,{"name":"vps-deployment-readiness-auditor","displayName":"VPS Deployment Readiness Auditor","source":"./plugins/vps-deployment-readiness-auditor","category":"Developer Tools"}
 ,{"name":"vps-backup-restore-verifier","displayName":"VPS Backup Restore Verifier","source":"./plugins/vps-backup-restore-verifier","category":"Developer Tools"}
 ,{"name":"vps-configuration-drift-auditor","displayName":"VPS Configuration Drift Auditor","source":"./plugins/vps-configuration-drift-auditor","category":"Developer Tools"}
+,{"name":"vps-container-security-auditor","displayName":"VPS Container Security Auditor","source":"./plugins/vps-container-security-auditor","category":"Security & Privacy"}
 ]
 }

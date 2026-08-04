@@ -128,6 +128,7 @@ Use these exact identifiers when referring to plugins:
 - `vps-deployment-readiness-auditor` — Developer Tools — Valida Compose, healthchecks, imágenes, dependencias y rollback antes de desplegar.
 - `vps-backup-restore-verifier` — Developer Tools — Verifica integridad, cobertura y recuperabilidad de backups sin tocar producción.
 - `vps-configuration-drift-auditor` — Developer Tools — Detecta diferencias entre configuración declarada y estado activo de Docker, systemd y Nginx.
+- `vps-container-security-auditor` — Security & Privacy — Audita privilegios, capabilities, mounts y aislamiento de contenedores Docker.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
