@@ -1,0 +1,16 @@
+{
+  "name": "vps-backup-job-monitor",
+  "version": "0.1.0",
+  "description": "Audita jobs programados de backup, frescura, fallos y cobertura de un VPS sin ejecutarlos ni modificarlos.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VPS Backup Job Monitor",
+    "shortDescription": "Comprueba que los backups programados realmente funcionen.",
+    "longDescription": "Correlaciona cron, systemd timers, logs de ejecución, timestamps de artefactos, retención y cobertura de servicios para detectar backups atrasados o fallidos.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["Backup Jobs", "Cron", "Systemd Timers", "Freshness"],
+    "defaultPrompt": "Audita si los jobs de backup del VPS se están ejecutando correctamente sin lanzarlos."
+  }
+}
