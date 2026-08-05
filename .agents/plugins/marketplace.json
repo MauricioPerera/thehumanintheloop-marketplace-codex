@@ -1155,6 +1155,7 @@
     {"name":"vps-backup-job-monitor","source":{"source":"local","path":"./plugins/vps-backup-job-monitor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
     {"name":"vps-tls-renewal-monitor","source":{"source":"local","path":"./plugins/vps-tls-renewal-monitor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
     {"name":"vps-dns-email-auth-auditor","source":{"source":"local","path":"./plugins/vps-dns-email-auth-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"supabase-policy-security-auditor","source":{"source":"local","path":"./plugins/supabase-policy-security-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"}
+    {"name":"supabase-policy-security-auditor","source":{"source":"local","path":"./plugins/supabase-policy-security-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"vps-image-vulnerability-sbom-auditor","source":{"source":"local","path":"./plugins/vps-image-vulnerability-sbom-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"}
   ]
 }
