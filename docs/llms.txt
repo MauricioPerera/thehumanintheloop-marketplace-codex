@@ -325,7 +325,7 @@ Published analyses are reusable results rather than generator plugins. Each anal
 - `notebooklm` — NotebookLM / Gemini Notebook — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/notebooklm/ — source: https://notebooklm.google/
 - `mihomo-gate` — Mihomo Gate Dashboard — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/mihomo-gate/ — source: local:pasted-text.txt
 - `echo-pace-logistics` — Echo Pace Logistics ERP — preview: https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/analyses/echo-pace-logistics/ — source: local:pasted-text.txt
-- `agent-tools-runtime-poc` — Developer Tools — Runtime MCP instalable basado en just-bash para cargar adaptadores MCP, REST y CLI progresivamente desde skills, con validadores, sesiones, OAuth host-side y confirmación. — https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/agent-tools-runtime-poc
+- `agent-tools-runtime-poc` — Developer Tools — Runtime MCP instalable basado en just-bash para cargar adaptadores MCP, REST y CLI progresivamente desde skills, con validadores, sesiones, preflight de CLIs, OAuth host-side y confirmación. — https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/agent-tools-runtime-poc
 
 ## Instructions for AI agents
 
