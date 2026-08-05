@@ -13,8 +13,12 @@ function runLocal() {
 if (process.env.AGENT_TOOLS_RUNTIME_SOURCE === 'local') {
   runLocal();
 } else {
-  const executable = process.platform === 'win32' ? 'npx.cmd' : 'npx';
-  const child = spawn(executable, ['--yes', '--package', packageSpec, 'agent-tools-mcp'], {
+  const isWindows = process.platform === 'win32';
+  const executable = isWindows ? (process.env.ComSpec || 'cmd.exe') : 'npx';
+  const args = isWindows
+    ? ['/d', '/s', '/c', `npx --yes --package=${packageSpec} --call agent-tools-mcp`]
+    : ['--yes', '--package', packageSpec, '--call', 'agent-tools-mcp'];
+  const child = spawn(executable, args, {
     stdio: 'inherit',
     env: { ...process.env, npm_config_ignore_scripts: 'true' },
     windowsHide: true,

@@ -145,6 +145,16 @@ test('MCP facade exposes only two stable tools', async (t) => {
   assert.match(help, /commands\/local-cli\.mjs/);
 });
 
+test('MCP launcher supports an explicit bundled-runtime fallback', () => {
+  const result = spawnSync(process.execPath, ['bin/agent-tools-mcp.mjs'], {
+    input: '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}\n',
+    encoding: 'utf8',
+    env: { ...process.env, AGENT_TOOLS_RUNTIME_SOURCE: 'local' },
+  });
+  assert.equal(result.status, 0);
+  assert.equal(JSON.parse(result.stdout).result.serverInfo.name, 'agent-tools-runtime');
+});
+
 test('Claude and Codex MCP manifests point to the same MCP launcher', async () => {
   const pluginRoot = fileURLToPath(new URL('..', import.meta.url));
   const claudeManifest = JSON.parse(await readFile(join(pluginRoot, '.mcp.json'), 'utf8'));
