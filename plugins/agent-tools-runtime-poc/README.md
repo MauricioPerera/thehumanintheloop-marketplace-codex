@@ -55,7 +55,7 @@ y una ruta relativa al plugin. Así ambos clientes arrancan la misma fachada sin
 depender de una ruta de manifiesto no estándar.
 
 La fachada MCP usa npx/npm exec con la versión exacta publicada
-`@rckflr/agent-tools-runtime@0.1.1`, `--call` para compatibilidad con npm 11 en
+`@rckflr/agent-tools-runtime@0.1.2`, `--call` para compatibilidad con npm 11 en
 Windows y scripts de instalación deshabilitados. La
 copia local se conserva como fallback; para forzarla durante una prueba, define
 `AGENT_TOOLS_RUNTIME_SOURCE=local`.

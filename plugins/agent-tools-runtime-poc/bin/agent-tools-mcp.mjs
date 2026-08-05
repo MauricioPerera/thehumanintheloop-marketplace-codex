@@ -2,7 +2,7 @@
 
 import { spawn } from 'node:child_process';
 
-const packageSpec = '@rckflr/agent-tools-runtime@0.1.1';
+const packageSpec = '@rckflr/agent-tools-runtime@0.1.2';
 const localServer = new URL('../runtime/mcp-server.mjs', import.meta.url);
 
 function runLocal() {
