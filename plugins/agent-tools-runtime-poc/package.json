@@ -1,6 +1,6 @@
 {
   "name": "@thehumanintheloop/agent-tools-runtime-poc",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "private": true,
   "type": "module",
   "description": "Persistent just-bash runtime with progressive MCP tool discovery for plugin skills.",
