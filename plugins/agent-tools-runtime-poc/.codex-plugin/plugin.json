@@ -1,6 +1,6 @@
 {
   "name": "agent-tools-runtime-poc",
-  "version": "0.9.2+codex.20260805213111",
+  "version": "0.9.2+codex.20260805213911",
   "description": "Valida la disponibilidad de un runtime just-bash persistente y documenta c\u00f3mo cargar comandos de plugins sin ejecutarlos autom\u00e1ticamente.",
   "author": {
     "name": "Mauricio Perera",
