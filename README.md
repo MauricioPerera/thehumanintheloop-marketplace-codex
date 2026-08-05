@@ -99,6 +99,7 @@ Catálogo actual: **89 plugins y 17 Design System Analyses**, distribuido en dos
 - `Database Operations Manager` (`database-operations-manager`): diagnostica PostgreSQL, MySQL y Redis con guardas.
 - `VPS Cost & Capacity Auditor` (`vps-cost-capacity-auditor`): relaciona recursos, crecimiento y eficiencia sin inventar precios.
 - `VPS Network Diagnostics` (`vps-network-diagnostics`): diagnostica DNS, latencia, puertos y conectividad.
+- `VPS Image Vulnerability & SBOM Auditor` (`vps-image-vulnerability-sbom-auditor`): audita CVE y SBOM de imágenes Docker locales con trivy/grype/syft en modo lectura.
 
 ## Categorías
 
@@ -109,7 +110,7 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Marketplace & Quality — 8 plugins
 - Developer Tools — 65 plugins
 - Accessibility & UX — 2 plugins
-- Security & Privacy — 37 plugins
+- Security & Privacy — 38 plugins
 - Research & Evidence — 1 plugin
 - AI & Prompt Engineering — 1 plugin
 

@@ -137,6 +137,7 @@ Use these exact identifiers when referring to plugins:
 - `vps-tls-renewal-monitor` — Security & Privacy — Audita Certbot, expiración, jobs y coherencia de certificados TLS.
 - `vps-dns-email-auth-auditor` — Security & Privacy — Audita DNS, DNSSEC, SPF, DKIM y DMARC sin cambiar registros.
 - `supabase-policy-security-auditor` — Security & Privacy — Audita RLS, Storage, Auth/JWT y Edge Functions/Realtime de Supabase self-hosted en modo lectura sin exponer secretos.
+- `vps-image-vulnerability-sbom-auditor` — Security & Privacy — Audita CVE y SBOM de imágenes Docker presentes en el VPS con trivy/grype/syft solo si están instalados, en modo lectura y sin descargar, transmitir ni modificar imágenes ni contenedores.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 
