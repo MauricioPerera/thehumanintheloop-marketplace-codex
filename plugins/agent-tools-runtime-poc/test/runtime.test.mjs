@@ -131,6 +131,10 @@ test('MCP facade exposes only two stable tools', async (t) => {
   assert.equal((await waitFor(1)).result.serverInfo.name, 'agent-tools-runtime');
   send({ jsonrpc: '2.0', id: 2, method: 'tools/list', params: {} });
   assert.deepEqual((await waitFor(2)).result.tools.map((tool) => tool.name), ['agent_tools_help', 'agent_tools_exec']);
+  send({ jsonrpc: '2.0', id: 3, method: 'tools/call', params: { name: 'agent_tools_help', arguments: {} } });
+  const help = (await waitFor(3)).result.content[0].text;
+  assert.match(help, /commands\/generic-mcp\.mjs/);
+  assert.match(help, /commands\/local-cli\.mjs/);
 });
 
 test('Claude and Codex MCP manifests point to the same local facade', async () => {
