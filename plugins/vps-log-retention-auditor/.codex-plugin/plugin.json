@@ -1,0 +1,16 @@
+{
+  "name": "vps-log-retention-auditor",
+  "version": "0.1.0",
+  "description": "Audita retención y crecimiento de logs de un VPS (journald y logging de Docker) en modo lectura sin borrar, truncar, rotar, reiniciar servicios ni cambiar configuración.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VPS Log Retention Auditor",
+    "shortDescription": "Inspecciona retención y crecimiento de logs del VPS sin mutarlos.",
+    "longDescription": "Mide uso de disco de journald, tamaño y antigüedad de archivos de log, y configuración de logging de Docker (driver, max-size, max-file) con journalctl, docker info/inspect/system df, du y df. No ejecuta vacuum, rotate, flush, rm, truncate, logrotate, restart/reload ni prune.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["Log Retention", "Journald", "Docker Logging", "Disk Usage", "Read-only"],
+    "defaultPrompt": "Audita la retención y el crecimiento de los logs de mi VPS (journald y Docker) sin borrar, truncar, rotar, reiniciar ni cambiar configuración."
+  }
+}

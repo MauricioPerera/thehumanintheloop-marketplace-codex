@@ -148,6 +148,8 @@
 ,{"name":"vps-tls-renewal-monitor","displayName":"VPS TLS Renewal Monitor","source":"./plugins/vps-tls-renewal-monitor","category":"Security & Privacy"}
 ,{"name":"vps-dns-email-auth-auditor","displayName":"VPS DNS & Email Auth Auditor","source":"./plugins/vps-dns-email-auth-auditor","category":"Security & Privacy"},
 {"name":"supabase-policy-security-auditor","displayName":"Supabase Policy Security Auditor","source":"./plugins/supabase-policy-security-auditor","category":"Security & Privacy"},
-{"name":"vps-image-vulnerability-sbom-auditor","displayName":"VPS Image Vulnerability & SBOM Auditor","source":"./plugins/vps-image-vulnerability-sbom-auditor","category":"Security & Privacy"}
+{"name":"vps-image-vulnerability-sbom-auditor","displayName":"VPS Image Vulnerability & SBOM Auditor","source":"./plugins/vps-image-vulnerability-sbom-auditor","category":"Security & Privacy"},
+{"name":"supabase-migration-drift-auditor","displayName":"Supabase Migration Drift Auditor","source":"./plugins/supabase-migration-drift-auditor","category":"Security & Privacy"},
+{"name":"vps-log-retention-auditor","displayName":"VPS Log Retention Auditor","source":"./plugins/vps-log-retention-auditor","category":"Developer Tools"}
 ]
 }

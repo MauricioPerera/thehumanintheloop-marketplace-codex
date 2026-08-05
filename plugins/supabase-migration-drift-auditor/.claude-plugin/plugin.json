@@ -1,0 +1,10 @@
+{
+  "name": "supabase-migration-drift-auditor",
+  "displayName": "Supabase Migration Drift Auditor",
+  "version": "0.1.0",
+  "description": "Audita en modo lectura el sistema de migraciones de Supabase self-hosted: compara migraciones aplicadas vs archivos en disco vs catálogos PostgreSQL, detecta drift de schema sin aplicar ni revertir migraciones y sin leer datos de usuario ni secretos.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["supabase", "migrations", "drift", "schema", "postgres", "read-only", "security"]
+}

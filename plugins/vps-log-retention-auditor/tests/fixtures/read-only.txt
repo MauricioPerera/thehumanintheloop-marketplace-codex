@@ -1,0 +1,45 @@
+# Read-only log retention & growth audit of a VPS (journald + Docker logging)
+# Confirms host, scope and baseline before inspecting; no delete, truncate, rotate, restart or config change.
+command -v journalctl docker logrotate || true
+which journalctl docker logrotate
+whereis journalctl docker logrotate
+# journald inspection
+journalctl --disk-usage
+journalctl --list-boots --no-pager
+journalctl --header
+journalctl --since "1 hour ago" --no-pager
+journalctl --unit=systemd-journald --no-pager
+journalctl --unit=docker --since today --no-pager
+journalctl --no-pager --output=short-iso -n 50
+# journald retention config (read-only)
+cat /etc/systemd/journald.conf
+grep -v '^[[:space:]]*#' /etc/systemd/journald.conf
+systemctl status systemd-journald --no-pager
+systemctl show systemd-journald -p FragmentPath -p DropInPaths
+systemctl list-units --type=service --no-pager
+systemctl list-timers --all --no-pager
+# Docker logging config & disk usage (read-only)
+docker info --format '{{.LoggingDriver}} {{.DockerRootDir}}'
+docker info
+docker version --format '{{.Server.Version}}'
+docker context ls
+docker inspect webapp --format '{{.HostConfig.LogConfig.Type}} {{.HostConfig.LogConfig.Config}}'
+docker ps --format '{{.Names}} {{.Image}}'
+docker system df
+docker system df -v
+docker logs --tail 50 webapp
+docker stats --no-stream --format '{{.Name}} {{.MemUsage}}'
+cat /etc/docker/daemon.json
+# Filesystem & directory growth (read-only)
+df -h
+df -h /var/log
+du -sh /var/log
+du -sh /var/log/journal
+du -sh /var/lib/docker/containers
+du -ah /var/log --max-depth=1 | sort -h
+ls -lh /var/log
+stat /var/log/journal
+find /var/log -maxdepth 2 -type f -printf '%s %p\n' | sort -rn | head -20
+# logrotate config is read-only when catted (running logrotate is not)
+cat /etc/logrotate.d/syslog
+grep -v '^[[:space:]]*#' /etc/logrotate.d/syslog

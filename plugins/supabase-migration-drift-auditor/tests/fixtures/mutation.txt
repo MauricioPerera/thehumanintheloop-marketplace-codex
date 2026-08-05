@@ -1,0 +1,39 @@
+supabase db push
+supabase migration up
+supabase migration new add_users_table
+supabase migration repair --id 20240101000000
+supabase migration squash
+supabase db reset
+supabase db pull
+supabase db diff
+supabase db commit "snap"
+supabase functions deploy auth
+supabase start
+supabase stop
+supabase restart
+docker restart supabase-db
+docker compose up -d
+docker compose down
+docker compose restart
+INSERT INTO supabase_migrations.schema_migrations (version, name, statements) VALUES ('20240101000000', 'x', '{}');
+UPDATE public.users SET email='a@b.com';
+DELETE FROM public.audit_log;
+TRUNCATE public.sessions;
+ALTER TABLE public.users ADD COLUMN x int;
+DROP POLICY p ON public.users;
+CREATE TABLE public.leak (id int);
+GRANT SELECT ON public.users TO anon;
+REVOKE SELECT ON public.users FROM anon;
+pg_dump -t public.users -f dump.sql
+SET ROLE service_role
+cat .env
+cat ~/.supabase/.env
+JWT_SECRET=supersecret
+anon_key=eyJabc
+service_role_key=eyJxyz
+password=hunter2
+token=abc123
+pgpassword=hunter2
+authorization: bearer eyJtoken
+-----BEGIN PRIVATE KEY-----
+docker exec supabase-db cat /etc/postgresql/pg_hba.conf
