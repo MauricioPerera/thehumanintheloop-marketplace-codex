@@ -1158,6 +1158,7 @@
     {"name":"supabase-policy-security-auditor","source":{"source":"local","path":"./plugins/supabase-policy-security-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
     {"name":"vps-image-vulnerability-sbom-auditor","source":{"source":"local","path":"./plugins/vps-image-vulnerability-sbom-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
     {"name":"supabase-migration-drift-auditor","source":{"source":"local","path":"./plugins/supabase-migration-drift-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"vps-log-retention-auditor","source":{"source":"local","path":"./plugins/vps-log-retention-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"}
+    {"name":"vps-log-retention-auditor","source":{"source":"local","path":"./plugins/vps-log-retention-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"supabase-pgcron-auditor","source":{"source":"local","path":"./plugins/supabase-pgcron-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"}
   ]
 }

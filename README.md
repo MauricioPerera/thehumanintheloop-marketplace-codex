@@ -102,6 +102,7 @@ Catálogo actual: **89 plugins y 17 Design System Analyses**, distribuido en dos
 - `VPS Image Vulnerability & SBOM Auditor` (`vps-image-vulnerability-sbom-auditor`): audita CVE y SBOM de imágenes Docker locales con trivy/grype/syft en modo lectura.
 - `Supabase Migration Drift Auditor` (`supabase-migration-drift-auditor`): audita migraciones aplicadas vs archivos en disco vs catálogos PostgreSQL para detectar drift de schema en modo lectura.
 - `VPS Log Retention Auditor` (`vps-log-retention-auditor`): audita retención y crecimiento de logs de journald y Docker en modo lectura.
+- `Supabase pg_cron Auditor` (`supabase-pgcron-auditor`): audita jobs pg_cron de Supabase self-hosted en modo lectura listando cron.job y cron.job_run_details, detectando jobs fallidos, pausados, duplicados, frecuencias peligrosas y comandos que expongan secretos o muten fuera de alcance.
 
 ## Categorías
 
@@ -110,7 +111,7 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Content & Editorial — 7 plugins
 - Design Systems — 1 plugin
 - Marketplace & Quality — 8 plugins
-- Developer Tools — 66 plugins
+- Developer Tools — 67 plugins
 - Accessibility & UX — 2 plugins
 - Security & Privacy — 39 plugins
 - Research & Evidence — 1 plugin

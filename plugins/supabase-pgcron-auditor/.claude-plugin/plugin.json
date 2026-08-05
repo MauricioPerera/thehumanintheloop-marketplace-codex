@@ -1,0 +1,10 @@
+{
+  "name": "supabase-pgcron-auditor",
+  "displayName": "Supabase pg_cron Auditor",
+  "version": "0.1.0",
+  "description": "Audita jobs pg_cron de Supabase self-hosted en modo estrictamente read-only: lista cron.job, cron.job_run_details y configuracion, detecta jobs fallidos, pausados, duplicados, frecuencias peligrosas y comandos que expongan secretos o muten fuera de alcance.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["supabase", "pg_cron", "cron", "auditor", "read-only", "security", "self-hosted"]
+}
