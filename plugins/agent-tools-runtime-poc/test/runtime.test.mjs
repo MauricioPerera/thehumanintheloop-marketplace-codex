@@ -116,6 +116,14 @@ test('runtime probe reports requested CLI availability without executing it', ()
   assert.equal(report.checks.requestedCommand.executed, false);
 });
 
+test('runtime status exposes adapter catalog without loading adapters', () => {
+  const result = spawnSync(process.execPath, ['runtime/agent-tools-runtime.mjs', 'status'], { encoding: 'utf8' });
+  assert.equal(result.status, 0);
+  const status = JSON.parse(result.stdout);
+  assert.deepEqual(status.data.commands, []);
+  assert.deepEqual(status.data.availableAdapters.map(({ name }) => name), ['generic-mcp', 'n8n-mcp', 'rest-api', 'local-cli']);
+});
+
 test('MCP facade exposes only two stable tools', async (t) => {
   const child = spawn(process.execPath, ['runtime/mcp-server.mjs'], { stdio: ['pipe', 'pipe', 'inherit'] });
   t.after(() => child.kill());

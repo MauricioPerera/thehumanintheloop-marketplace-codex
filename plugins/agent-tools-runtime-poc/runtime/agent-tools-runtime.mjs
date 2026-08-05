@@ -8,6 +8,12 @@ import { createInterface } from 'node:readline';
 const require = createRequire(import.meta.url);
 const runtimeRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const commands = new Map();
+const availableAdapters = [
+  { name: 'generic-mcp', module: 'commands/generic-mcp.mjs', env: ['AGENT_MCP_URL', 'AGENT_MCP_TOKEN'] },
+  { name: 'n8n-mcp', module: 'commands/n8n-mcp.mjs', env: ['N8N_MCP_URL', 'N8N_MCP_TOKEN'] },
+  { name: 'rest-api', module: 'commands/rest-api.mjs', env: ['AGENT_API_BASE_URL', 'AGENT_API_TOKEN'] },
+  { name: 'local-cli', module: 'commands/local-cli.mjs', env: ['AGENT_CLI_ALLOWLIST'] },
+];
 let bash = null;
 let bashImportError = null;
 let justBashModule = null;
@@ -46,6 +52,7 @@ async function status() {
     status: dependency ? 'READY' : 'IMPLEMENTABLE',
     justBash: { available: dependency, initialized: Boolean(bash) },
     commands: [...commands.keys()],
+    availableAdapters,
     next: dependency ? 'Use load and exec.' : 'Install just-bash with npm install just-bash, then restart the runtime.',
   }, dependency ? null : bashImportError || 'just-bash is not available');
 }
