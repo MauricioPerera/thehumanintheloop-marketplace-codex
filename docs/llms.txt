@@ -138,6 +138,8 @@ Use these exact identifiers when referring to plugins:
 - `vps-dns-email-auth-auditor` — Security & Privacy — Audita DNS, DNSSEC, SPF, DKIM y DMARC sin cambiar registros.
 - `supabase-policy-security-auditor` — Security & Privacy — Audita RLS, Storage, Auth/JWT y Edge Functions/Realtime de Supabase self-hosted en modo lectura sin exponer secretos.
 - `vps-image-vulnerability-sbom-auditor` — Security & Privacy — Audita CVE y SBOM de imágenes Docker presentes en el VPS con trivy/grype/syft solo si están instalados, en modo lectura y sin descargar, transmitir ni modificar imágenes ni contenedores.
+- `supabase-migration-drift-auditor` — Security & Privacy — Audita migraciones aplicadas, archivos en disco y catálogos PostgreSQL de Supabase self-hosted para detectar drift de schema sin aplicar ni revertir migraciones y sin leer datos de usuario ni secretos.
+- `vps-log-retention-auditor` — Developer Tools — Audita retención y crecimiento de logs de un VPS (journald y logging de Docker) en modo lectura sin borrar, truncar, rotar, reiniciar servicios ni cambiar configuración.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)
 

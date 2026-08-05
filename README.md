@@ -100,6 +100,8 @@ Catálogo actual: **89 plugins y 17 Design System Analyses**, distribuido en dos
 - `VPS Cost & Capacity Auditor` (`vps-cost-capacity-auditor`): relaciona recursos, crecimiento y eficiencia sin inventar precios.
 - `VPS Network Diagnostics` (`vps-network-diagnostics`): diagnostica DNS, latencia, puertos y conectividad.
 - `VPS Image Vulnerability & SBOM Auditor` (`vps-image-vulnerability-sbom-auditor`): audita CVE y SBOM de imágenes Docker locales con trivy/grype/syft en modo lectura.
+- `Supabase Migration Drift Auditor` (`supabase-migration-drift-auditor`): audita migraciones aplicadas vs archivos en disco vs catálogos PostgreSQL para detectar drift de schema en modo lectura.
+- `VPS Log Retention Auditor` (`vps-log-retention-auditor`): audita retención y crecimiento de logs de journald y Docker en modo lectura.
 
 ## Categorías
 
@@ -108,9 +110,9 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Content & Editorial — 7 plugins
 - Design Systems — 1 plugin
 - Marketplace & Quality — 8 plugins
-- Developer Tools — 65 plugins
+- Developer Tools — 66 plugins
 - Accessibility & UX — 2 plugins
-- Security & Privacy — 38 plugins
+- Security & Privacy — 39 plugins
 - Research & Evidence — 1 plugin
 - AI & Prompt Engineering — 1 plugin
 

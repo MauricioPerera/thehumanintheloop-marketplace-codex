@@ -1,0 +1,64 @@
+# Forbidden: journald mutation (vacuum / rotate / flush / sync)
+journalctl --vacuum-size=100M
+journalctl --vacuum-time=7d
+journalctl --vacuum-files=3
+journalctl --vacuum
+journalctl --vacuum-size=100M --rotate
+journalctl --rotate
+journalctl --flush
+journalctl --sync
+# Forbidden: delete / truncate log files
+rm /var/log/syslog
+rm -f /var/log/app.log
+rm -rf /var/log/journal
+truncate -s 0 /var/log/app.log
+truncate -s 100M /var/log/big.log
+# Forbidden: forced rotation
+logrotate -f /etc/logrotate.d/app
+logrotate /etc/logrotate.conf
+# Forbidden: restart / reload / state change of services
+systemctl restart systemd-journald
+systemctl reload systemd-journald
+systemctl stop systemd-journald
+systemctl start systemd-journald
+systemctl daemon-reload
+systemctl enable rsyslog
+systemctl disable rsyslog
+systemctl mask rsyslog
+# Forbidden: Docker pruning / lifecycle mutation
+docker system prune -f
+docker container prune -f
+docker image prune -a -f
+docker volume prune -f
+docker network prune -f
+docker builder prune -f
+docker prune
+docker restart webapp
+docker exec webapp sh
+docker stop webapp
+docker start webapp
+docker rm -f webapp
+docker kill webapp
+docker run --rm alpine:3.20 sh
+docker create alpine:3.20
+docker rmi alpine:3.20
+docker image rm alpine:3.20
+docker volume rm logdata
+# Forbidden: compose mutation
+docker compose up -d
+docker compose down
+docker compose restart
+docker compose pull
+# Forbidden: config editing (in-place mutation)
+sed -i 's/#Storage.*/Storage=persistent/' /etc/systemd/journald.conf
+echo 'SystemMaxUse=500M' >> /etc/systemd/journald.conf
+tee /etc/systemd/journald.conf
+# Forbidden: credential reading
+docker login -u user -p passw0rd
+cat ~/.docker/config.json
+cat /root/.docker/config.json
+cat .env
+cat /etc/shadow
+echo password=hunter2 >> .env
+# Forbidden: detection line chained with mutation (must still be caught)
+command -v logrotate && rm -rf /var/log

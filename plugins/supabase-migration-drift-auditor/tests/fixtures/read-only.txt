@@ -1,0 +1,16 @@
+command -v psql ssh sha256sum awk sed grep find || true
+docker ps --format '{{.Names}} {{.Image}}'
+docker inspect --format '{{.Config.Image}}' supabase-db
+docker exec supabase-db psql -U postgres -d postgres -At -c "SELECT version, name FROM supabase_migrations.schema_migrations ORDER BY version;"
+docker exec supabase-db psql -U postgres -d postgres -At -c "SELECT n.nspname, c.relname, c.relkind FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname IN ('public','auth','storage','_realtime') AND c.relkind IN ('r','v','m','S','f');"
+docker exec supabase-db psql -U postgres -d postgres -At -c "SELECT schemaname, indexname, indexdef FROM pg_indexes WHERE schemaname IN ('public','auth','storage');"
+docker exec supabase-db psql -U postgres -d postgres -At -c "SELECT n.nspname, p.proname FROM pg_proc p JOIN pg_namespace n ON n.oid=p.pronamespace WHERE n.nspname IN ('public','auth','storage');"
+docker exec supabase-db psql -U postgres -d postgres -At -c "SELECT event_object_table, trigger_name, action_statement FROM information_schema.triggers WHERE trigger_schema IN ('public','auth','storage');"
+SELECT version, name, statements FROM supabase_migrations.schema_migrations ORDER BY version;
+SELECT n.nspname, c.relname, c.relkind FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname IN ('public','auth','storage','_realtime') AND c.relkind IN ('r','v','m','S','f');
+SELECT schemaname, indexname, indexdef FROM pg_indexes WHERE schemaname IN ('public','auth','storage');
+find supabase/migrations -maxdepth 1 -type f -name '*.sql' -printf '%f %s %T@\n'
+sha256sum supabase/migrations/*.sql
+psql -c "SELECT version, name FROM supabase_migrations.schema_migrations ORDER BY version;"
+# listado de migraciones aplicadas y catálogos, solo metadatos
+-- sin datos de usuario ni secretos
