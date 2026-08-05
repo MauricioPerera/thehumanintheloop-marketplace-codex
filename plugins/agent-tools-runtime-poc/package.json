@@ -1,6 +1,6 @@
 {
   "name": "@thehumanintheloop/agent-tools-runtime-poc",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "private": true,
   "type": "module",
   "description": "Persistent just-bash runtime with progressive MCP tool discovery for plugin skills.",
@@ -24,7 +24,6 @@
     "skills"
   ],
   "dependencies": {
-    "@rckflr/agent-tools-runtime": "0.1.0",
     "just-bash": "^3.2.0"
   },
   "scripts": {

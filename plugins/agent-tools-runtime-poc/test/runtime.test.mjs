@@ -145,7 +145,7 @@ test('MCP facade exposes only two stable tools', async (t) => {
   assert.match(help, /commands\/local-cli\.mjs/);
 });
 
-test('Claude and Codex MCP manifests point to the same local facade', async () => {
+test('Claude and Codex MCP manifests point to the same MCP launcher', async () => {
   const pluginRoot = fileURLToPath(new URL('..', import.meta.url));
   const claudeManifest = JSON.parse(await readFile(join(pluginRoot, '.mcp.json'), 'utf8'));
   const codexPlugin = JSON.parse(await readFile(join(pluginRoot, '.codex-plugin', 'plugin.json'), 'utf8'));
@@ -153,7 +153,7 @@ test('Claude and Codex MCP manifests point to the same local facade', async () =
   assert.match(claudeManifest.mcpServers['agent-tools'].args[0], /CLAUDE_PLUGIN_ROOT/);
   assert.deepEqual(codexPlugin.mcpServers['agent-tools'], {
     command: 'node',
-    args: ['./runtime/mcp-server.mjs'],
+    args: ['./bin/agent-tools-mcp.mjs'],
     cwd: '.',
   });
 });

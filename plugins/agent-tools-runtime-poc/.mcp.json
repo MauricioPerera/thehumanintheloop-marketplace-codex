@@ -3,7 +3,7 @@
     "agent-tools": {
       "command": "node",
       "args": [
-        "${CLAUDE_PLUGIN_ROOT}/runtime/mcp-server.mjs"
+        "${CLAUDE_PLUGIN_ROOT}/bin/agent-tools-mcp.mjs"
       ]
     }
   }
