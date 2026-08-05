@@ -1,0 +1,22 @@
+# Mutating pg_cron calls (MUST be blocked)
+cron.schedule('*/1 * * * *', 'DELETE FROM public.orders WHERE created_at < now() - interval ''30 days''');
+cron.unschedule('cleanup-job');
+cron.alter_job(1, schedule='* * * * *');
+
+# DML/DDL via psql (MUST be blocked)
+docker exec supabase-db psql -U postgres -d postgres -c "UPDATE cron.job SET active = false WHERE jobid = 1;"
+docker exec supabase-db psql -U postgres -d postgres -c "INSERT INTO cron.job (schedule, command) VALUES ('*/5 * * * *', 'VACUUM');"
+docker exec supabase-db psql -U postgres -d postgres -c "DROP TABLE public.audit_log;"
+docker exec supabase-db psql -U postgres -d postgres -c "TRUNCATE public.events;"
+
+# Out-of-scope read (non-allowed relation) (MUST be blocked)
+docker exec supabase-db psql -U postgres -d postgres -c "SELECT * FROM public.users;"
+
+# Dangerous CLI / secrets (MUST be blocked)
+supabase functions deploy
+docker restart supabase-db
+docker compose up -d
+docker compose down
+pg_dump -U postgres -d postgres > backup.sql
+cat .env
+docker exec supabase-db psql -U postgres -d postgres -c "SELECT * FROM cron.job WHERE command LIKE '%JWT_SECRET=abcdef%';"

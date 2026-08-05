@@ -1,0 +1,21 @@
+# Detect pg_cron client and Postgres container (read-only)
+command -v psql
+command -v docker
+docker ps --filter name=supabase-db --format '{{.Names}} {{.Status}}'
+docker inspect supabase-db --format '{{.State.Running}}'
+
+# List pg_cron jobs
+docker exec supabase-db psql -U postgres -d postgres -c "SELECT jobid, jobname, schedule, command, active, database, username FROM cron.job ORDER BY jobid;"
+
+# Recent run history (failed/paused detection)
+docker exec supabase-db psql -U postgres -d postgres -c "SELECT runid, jobid, command, status, return_message, start_time, end_time FROM cron.job_run_details ORDER BY start_time DESC LIMIT 50;"
+
+# pg_cron settings and extension version
+docker exec supabase-db psql -U postgres -d postgres -c "SELECT name, setting, source FROM pg_settings WHERE name LIKE 'cron%';"
+docker exec supabase-db psql -U postgres -d postgres -c "SELECT extname, extversion FROM pg_extension WHERE extname = 'pg_cron';"
+
+# Inspect config files (no .env, no secrets)
+grep -E '^cron\.' /etc/supabase/config.toml
+awk '/cron/' /etc/supabase/config.toml
+sed -n '1,40p' /etc/supabase/docker-compose.yml
+find /etc/supabase -name 'config.toml' -type f

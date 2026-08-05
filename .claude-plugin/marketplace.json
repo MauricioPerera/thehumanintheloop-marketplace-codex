@@ -150,6 +150,7 @@
 {"name":"supabase-policy-security-auditor","displayName":"Supabase Policy Security Auditor","source":"./plugins/supabase-policy-security-auditor","category":"Security & Privacy"},
 {"name":"vps-image-vulnerability-sbom-auditor","displayName":"VPS Image Vulnerability & SBOM Auditor","source":"./plugins/vps-image-vulnerability-sbom-auditor","category":"Security & Privacy"},
 {"name":"supabase-migration-drift-auditor","displayName":"Supabase Migration Drift Auditor","source":"./plugins/supabase-migration-drift-auditor","category":"Security & Privacy"},
-{"name":"vps-log-retention-auditor","displayName":"VPS Log Retention Auditor","source":"./plugins/vps-log-retention-auditor","category":"Developer Tools"}
+{"name":"vps-log-retention-auditor","displayName":"VPS Log Retention Auditor","source":"./plugins/vps-log-retention-auditor","category":"Developer Tools"},
+{"name":"supabase-pgcron-auditor","displayName":"Supabase pg_cron Auditor","source":"./plugins/supabase-pgcron-auditor","category":"Developer Tools"}
 ]
 }
