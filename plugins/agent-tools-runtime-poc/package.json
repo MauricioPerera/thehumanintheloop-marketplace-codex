@@ -1,12 +1,16 @@
 {
   "name": "@thehumanintheloop/agent-tools-runtime-poc",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "private": true,
   "type": "module",
   "description": "Persistent just-bash runtime with progressive MCP tool discovery for plugin skills.",
   "license": "MIT",
-  "engines": { "node": ">=20.18.1" },
-  "bin": { "agent-tools": "./bin/agent-tools.mjs" },
+  "engines": {
+    "node": ">=20.18.1"
+  },
+  "bin": {
+    "agent-tools": "./bin/agent-tools.mjs"
+  },
   "files": [
     ".claude-plugin",
     ".codex-plugin",
@@ -19,7 +23,10 @@
     "scripts",
     "skills"
   ],
-  "dependencies": { "just-bash": "^3.2.0" },
+  "dependencies": {
+    "@rckflr/agent-tools-runtime": "0.1.0",
+    "just-bash": "^3.2.0"
+  },
   "scripts": {
     "probe": "node scripts/runtime_probe.mjs --json",
     "serve": "node runtime/agent-tools-runtime.mjs serve",

@@ -54,6 +54,11 @@ Codex declara el servidor inline en `.codex-plugin/plugin.json`, con `cwd: "."`
 y una ruta relativa al plugin. Así ambos clientes arrancan la misma fachada sin
 depender de una ruta de manifiesto no estándar.
 
+Cuando el paquete publicado `@rckflr/agent-tools-runtime@0.1.0` está instalado,
+el launcher lo usa como runtime canónico. La copia local se conserva como
+fallback; para forzarla durante una prueba, define
+`AGENT_TOOLS_RUNTIME_SOURCE=local`.
+
 Cargar únicamente el adaptador requerido por la skill:
 
 ```text

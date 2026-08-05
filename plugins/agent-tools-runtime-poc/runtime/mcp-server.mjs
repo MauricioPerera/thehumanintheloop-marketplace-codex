@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import { createInterface } from 'node:readline';
-import { handle } from './agent-tools-runtime.mjs';
 
 const tools = [
   {
@@ -21,7 +20,10 @@ const help = `Agent Tools runtime\n\n1. agent_tools_help()\n2. agent_tools_exec(
 function reply(id, result) { return { jsonrpc: '2.0', id, result }; }
 function error(id, code, message) { return { jsonrpc: '2.0', id, error: { code, message } }; }
 
-async function processMessage(message) {
+async function startLocal() {
+  const { handle } = await import('./agent-tools-runtime.mjs');
+
+  async function processMessage(message) {
   if (message.method === 'initialize') return reply(message.id, { protocolVersion: '2025-03-26', capabilities: { tools: {} }, serverInfo: { name: 'agent-tools-runtime', version: '0.8.0' } });
   if (message.method === 'notifications/initialized') return null;
   if (message.method === 'tools/list') return reply(message.id, { tools });
@@ -33,15 +35,26 @@ async function processMessage(message) {
   if (typeof command !== 'string' || !command.trim()) return error(message.id, -32602, 'command must be a non-empty string');
   const result = await handle({ action: 'exec', command });
   return reply(message.id, { isError: result.code !== 0, content: [{ type: 'text', text: JSON.stringify(result) }] });
+  }
+
+  const rl = createInterface({ input: process.stdin, crlfDelay: Infinity });
+  for await (const line of rl) {
+    if (!line.trim()) continue;
+    try {
+      const result = await processMessage(JSON.parse(line));
+      if (result) console.log(JSON.stringify(result));
+    } catch (err) {
+      console.log(JSON.stringify(error(null, -32603, err.message)));
+    }
+  }
 }
 
-const rl = createInterface({ input: process.stdin, crlfDelay: Infinity });
-for await (const line of rl) {
-  if (!line.trim()) continue;
+if (process.env.AGENT_TOOLS_RUNTIME_SOURCE !== 'local') {
   try {
-    const result = await processMessage(JSON.parse(line));
-    if (result) console.log(JSON.stringify(result));
-  } catch (err) {
-    console.log(JSON.stringify(error(null, -32603, err.message)));
+    await import('@rckflr/agent-tools-runtime/runtime/mcp-server.mjs');
+  } catch {
+    await startLocal();
   }
+} else {
+  await startLocal();
 }

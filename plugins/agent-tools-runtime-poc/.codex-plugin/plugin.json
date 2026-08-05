@@ -1,7 +1,7 @@
 {
   "name": "agent-tools-runtime-poc",
-  "version": "0.9.0",
-  "description": "Valida la disponibilidad de un runtime just-bash persistente y documenta cómo cargar comandos de plugins sin ejecutarlos automáticamente.",
+  "version": "0.9.1+codex.20260805212524",
+  "description": "Valida la disponibilidad de un runtime just-bash persistente y documenta c\u00f3mo cargar comandos de plugins sin ejecutarlos autom\u00e1ticamente.",
   "author": {
     "name": "Mauricio Perera",
     "url": "https://github.com/MauricioPerera"
@@ -10,17 +10,25 @@
   "mcpServers": {
     "agent-tools": {
       "command": "node",
-      "args": ["./runtime/mcp-server.mjs"],
+      "args": [
+        "./runtime/mcp-server.mjs"
+      ],
       "cwd": "."
     }
   },
   "interface": {
     "displayName": "Agent Tools Runtime POC",
     "shortDescription": "Valida y documenta un runtime just-bash para plugins.",
-    "longDescription": "Comprueba si just-bash, el runtime y los comandos de un plugin están disponibles; si faltan, aporta contexto de implementación sin instalar ni ejecutar código automáticamente.",
+    "longDescription": "Comprueba si just-bash, el runtime y los comandos de un plugin est\u00e1n disponibles; si faltan, aporta contexto de implementaci\u00f3n sin instalar ni ejecutar c\u00f3digo autom\u00e1ticamente.",
     "developerName": "Mauricio Perera",
     "category": "Developer Tools",
-    "capabilities": ["just-bash", "MCP", "API", "CLI", "Preflight"],
-    "defaultPrompt": "Comprueba si el runtime de Agent Tools está disponible y dime cómo implementar lo que falte."
+    "capabilities": [
+      "just-bash",
+      "MCP",
+      "API",
+      "CLI",
+      "Preflight"
+    ],
+    "defaultPrompt": "Comprueba si el runtime de Agent Tools est\u00e1 disponible y dime c\u00f3mo implementar lo que falte."
   }
 }
