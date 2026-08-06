@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- `github-security-suite`, `github-cicd-governance`, `github-repo-governance`, `github-collab-activity`, `github-branch-release-ops`, `github-org-lifecycle`: version 0.1.0 -> 0.2.0 (validador de scripts restaurado y estructura multi-skill instalada y verificada end-to-end tras la consolidación).
 - Tabla de migración para los 43 plugins `github-*` consolidados en 6 plugins multi-skill: ver [`README.md#migración-de-plugins-github-consolidados`](README.md#migración-de-plugins-github-consolidados).
 - Consolidacion de 43 plugins `github-*` de superficie unica en 6 plugins multi-skill (misma cobertura, menos entradas instalables).
 - `github-security-suite` (GitHub Security Suite): consolida 8 plugins GitHub anteriores en un plugin multi-skill (github-security-manager, github-code-scanning-manager, github-secret-scanning-manager, github-security-advisory-manager, github-dependency-review-manager, github-dependabot-manager, github-private-reporting-manager, github-secret-manager).

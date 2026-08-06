@@ -240,42 +240,42 @@ const plugins = [{
 
 }, {
 
-  name: 'github-security-suite', displayName: 'GitHub Security Suite', category: 'Security & Privacy', icon: 'SEC', version: '0.1.0',
+  name: 'github-security-suite', displayName: 'GitHub Security Suite', category: 'Security & Privacy', icon: 'SEC', version: '0.2.0',
   description: 'Audita seguridad de GitHub: code/secret scanning, advisories, dependencias, Dependabot, reportes privados y secretos, con planes de remediación.',
   capabilities: ['Code scanning', 'Secret scanning', 'Advisories', 'Dependency review', 'Dependabot', 'Private reporting', 'Secrets'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-security-suite', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 
 }, {
 
-  name: 'github-cicd-governance', displayName: 'GitHub CI/CD Governance', category: 'Security & Privacy', icon: 'CID', version: '0.1.0',
+  name: 'github-cicd-governance', displayName: 'GitHub CI/CD Governance', category: 'Security & Privacy', icon: 'CID', version: '0.2.0',
   description: 'Audita la gobernanza de CI/CD en GitHub Actions: permisos, environments, checks, merge queue, runners, OIDC, variables y despliegues manuales.',
   capabilities: ['Action permissions', 'Environments', 'Checks', 'Merge queue', 'Runners', 'OIDC', 'Variables', 'Workflow dispatch'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-cicd-governance', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 
 }, {
 
-  name: 'github-repo-governance', displayName: 'GitHub Repository Governance', category: 'Developer Tools', icon: 'RGV', version: '0.1.0',
+  name: 'github-repo-governance', displayName: 'GitHub Repository Governance', category: 'Developer Tools', icon: 'RGV', version: '0.2.0',
   description: 'Audita y prepara configuración de repositorios GitHub: settings, CODEOWNERS, templates, labels, milestones, funding, Pages y rulesets de protección.',
   capabilities: ['Repository settings', 'CODEOWNERS', 'Templates', 'Labels', 'Milestones', 'Funding', 'Pages', 'Rulesets'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-repo-governance', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 
 }, {
 
-  name: 'github-collab-activity', displayName: 'GitHub Collaboration & Activity', category: 'Developer Tools', icon: 'COL', version: '0.1.0',
+  name: 'github-collab-activity', displayName: 'GitHub Collaboration & Activity', category: 'Developer Tools', icon: 'COL', version: '0.2.0',
   description: 'Resume actividad y colaboración en GitHub: Discussions, notificaciones, contribuidores, equipos, actividad temporal, tráfico y audit log administrativo.',
   capabilities: ['Discussions', 'Notifications', 'Contributors', 'Teams', 'Activity', 'Traffic', 'Audit log'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-collab-activity', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 
 }, {
 
-  name: 'github-branch-release-ops', displayName: 'GitHub Branch & Release Ops', category: 'Developer Tools', icon: 'BRO', version: '0.1.0',
+  name: 'github-branch-release-ops', displayName: 'GitHub Branch & Release Ops', category: 'Developer Tools', icon: 'BRO', version: '0.2.0',
   description: 'Opera el ciclo de vida de ramas y despliegues en GitHub: ramas, firma de commits, despliegues, conflictos de merge y paquetes.',
   capabilities: ['Branches', 'Commit signing', 'Deployments', 'Merge conflicts', 'Packages'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-branch-release-ops', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 
 }, {
 
-  name: 'github-org-lifecycle', displayName: 'GitHub Org & Lifecycle', category: 'Developer Tools', icon: 'ORG', version: '0.1.0',
+  name: 'github-org-lifecycle', displayName: 'GitHub Org & Lifecycle', category: 'Developer Tools', icon: 'ORG', version: '0.2.0',
   description: 'Audita configuración organizacional y ciclo de vida de repositorios en GitHub: settings de organización, archivado, migraciones, forks, webhooks, API y Projects.',
   capabilities: ['Organization settings', 'Archive', 'Migration', 'Forks', 'Webhooks', 'API queries', 'Projects'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-org-lifecycle', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'

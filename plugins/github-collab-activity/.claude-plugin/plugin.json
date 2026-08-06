@@ -1,7 +1,7 @@
 {
   "name": "github-collab-activity",
   "displayName": "GitHub Collaboration & Activity",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Resume actividad y colaboración en GitHub: Discussions, notificaciones, contribuidores, equipos, actividad temporal, tráfico y audit log administrativo.",
   "author": {
     "name": "Mauricio Perera",

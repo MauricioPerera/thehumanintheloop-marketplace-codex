@@ -1,6 +1,6 @@
 {
   "name": "github-org-lifecycle",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Audita configuración organizacional y ciclo de vida de repositorios en GitHub: settings de organización, archivado, migraciones, forks, webhooks, API y Projects.",
   "author": {
     "name": "Mauricio Perera",
