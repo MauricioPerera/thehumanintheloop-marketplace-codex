@@ -1,0 +1,13 @@
+{
+  "name": "kdd-guide",
+  "displayName": "KDD Guide",
+  "version": "0.1.0",
+  "description": "Explica cómo iniciar y operar proyectos con Knowledge-Driven Development usando OKF y CCDD.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/KDD",
+  "license": "MIT",
+  "keywords": ["KDD", "OKF", "CCDD", "contracts", "knowledge-base"]
+}

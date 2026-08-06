@@ -1160,6 +1160,8 @@
     {"name":"supabase-migration-drift-auditor","source":{"source":"local","path":"./plugins/supabase-migration-drift-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
     {"name":"vps-log-retention-auditor","source":{"source":"local","path":"./plugins/vps-log-retention-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
     {"name":"supabase-pgcron-auditor","source":{"source":"local","path":"./plugins/supabase-pgcron-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"agent-tools-runtime-poc","source":{"source":"local","path":"./plugins/agent-tools-runtime-poc"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"}
+    {"name":"agent-tools-runtime-poc","source":{"source":"local","path":"./plugins/agent-tools-runtime-poc"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"plugin-authoring","source":{"source":"local","path":"./plugins/plugin-authoring"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Marketplace & Quality"},
+    {"name":"kdd-guide","source":{"source":"local","path":"./plugins/kdd-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"}
   ]
 }
