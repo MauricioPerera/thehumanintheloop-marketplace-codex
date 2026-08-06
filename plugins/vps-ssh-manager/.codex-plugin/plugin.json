@@ -1,7 +1,7 @@
 {
   "name": "vps-ssh-manager",
-  "version": "0.1.1",
-  "description": "Conecta y administra VPS propios por SSH reutilizando perfiles nativos, claves y known_hosts existentes, con preflight y confirmación antes de cambios.",
+  "version": "0.1.0",
+  "description": "Conecta y administra VPS propios por SSH con preflight, verificación de host key y confirmación explícita antes de cambios.",
   "author": {
     "name": "Mauricio Perera",
     "url": "https://github.com/MauricioPerera"
@@ -13,7 +13,7 @@
     "longDescription": "Verifica requisitos locales, inspecciona la huella del servidor, configura autenticación por clave y guía diagnósticos o cambios remotos con confirmación.",
     "developerName": "Mauricio Perera",
     "category": "Developer Tools",
-    "capabilities": ["SSH", "VPS", "SSH profiles", "Known hosts", "Preflight", "Remote diagnostics"],
+    "capabilities": ["SSH", "VPS", "Preflight", "Remote diagnostics"],
     "defaultPrompt": "Ayúdame a conectarme de forma segura a mi VPS por SSH."
   }
 }

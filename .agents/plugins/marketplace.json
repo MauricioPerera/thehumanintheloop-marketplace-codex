@@ -1134,305 +1134,35 @@
       "name": "vps-incident-responder", "source": {"source": "local", "path": "./plugins/vps-incident-responder"},
       "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}, "category": "Developer Tools"
     },
-    {
-      "name": "vps-network-diagnostics",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-network-diagnostics"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-service-exposure-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-service-exposure-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-observability-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-observability-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-deployment-readiness-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-deployment-readiness-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-backup-restore-verifier",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-backup-restore-verifier"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-configuration-drift-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-configuration-drift-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-container-security-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-container-security-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-image-provenance-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-image-provenance-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-docker-network-isolation-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-docker-network-isolation-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-docker-resource-limits-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-docker-resource-limits-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-dependency-topology-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-dependency-topology-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-backup-job-monitor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-backup-job-monitor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-tls-renewal-monitor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-tls-renewal-monitor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-dns-email-auth-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-dns-email-auth-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "supabase-policy-security-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/supabase-policy-security-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-image-vulnerability-sbom-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-image-vulnerability-sbom-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "supabase-migration-drift-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/supabase-migration-drift-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-log-retention-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-log-retention-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "supabase-pgcron-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/supabase-pgcron-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "agent-tools-runtime-poc",
-      "source": {
-        "source": "local",
-        "path": "./plugins/agent-tools-runtime-poc"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "plugin-authoring",
-      "source": {
-        "source": "local",
-        "path": "./plugins/plugin-authoring"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Marketplace & Quality"
-    },
-    {
-      "name": "kdd-guide",
-      "source": {
-        "source": "local",
-        "path": "./plugins/kdd-guide"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "ai-prompt-workflow",
-      "source": {
-        "source": "local",
-        "path": "./plugins/ai-prompt-workflow"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "AI & Prompt Engineering"
-    },
-    {
-      "name": "ux-accessibility-guide",
-      "source": {
-        "source": "local",
-        "path": "./plugins/ux-accessibility-guide"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Accessibility & UX"
-    },
-    {
-      "name": "research-methods-guide",
-      "source": {
-        "source": "local",
-        "path": "./plugins/research-methods-guide"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Research & Evidence"
-    }
+    {"name":"firewall-policy-manager","source":{"source":"local","path":"./plugins/firewall-policy-manager"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"system-update-planner","source":{"source":"local","path":"./plugins/system-update-planner"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"cron-automation-auditor","source":{"source":"local","path":"./plugins/cron-automation-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"secrets-exposure-auditor","source":{"source":"local","path":"./plugins/secrets-exposure-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"nginx-reverse-proxy-manager","source":{"source":"local","path":"./plugins/nginx-reverse-proxy-manager"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"database-operations-manager","source":{"source":"local","path":"./plugins/database-operations-manager"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"vps-cost-capacity-auditor","source":{"source":"local","path":"./plugins/vps-cost-capacity-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"vps-network-diagnostics","source":{"source":"local","path":"./plugins/vps-network-diagnostics"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"vps-service-exposure-auditor","source":{"source":"local","path":"./plugins/vps-service-exposure-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"vps-observability-auditor","source":{"source":"local","path":"./plugins/vps-observability-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"vps-deployment-readiness-auditor","source":{"source":"local","path":"./plugins/vps-deployment-readiness-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"vps-backup-restore-verifier","source":{"source":"local","path":"./plugins/vps-backup-restore-verifier"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"vps-configuration-drift-auditor","source":{"source":"local","path":"./plugins/vps-configuration-drift-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"vps-container-security-auditor","source":{"source":"local","path":"./plugins/vps-container-security-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"vps-image-provenance-auditor","source":{"source":"local","path":"./plugins/vps-image-provenance-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"vps-docker-network-isolation-auditor","source":{"source":"local","path":"./plugins/vps-docker-network-isolation-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"vps-docker-resource-limits-auditor","source":{"source":"local","path":"./plugins/vps-docker-resource-limits-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"vps-dependency-topology-auditor","source":{"source":"local","path":"./plugins/vps-dependency-topology-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"vps-backup-job-monitor","source":{"source":"local","path":"./plugins/vps-backup-job-monitor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"vps-tls-renewal-monitor","source":{"source":"local","path":"./plugins/vps-tls-renewal-monitor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"vps-dns-email-auth-auditor","source":{"source":"local","path":"./plugins/vps-dns-email-auth-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"supabase-policy-security-auditor","source":{"source":"local","path":"./plugins/supabase-policy-security-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"vps-image-vulnerability-sbom-auditor","source":{"source":"local","path":"./plugins/vps-image-vulnerability-sbom-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"supabase-migration-drift-auditor","source":{"source":"local","path":"./plugins/supabase-migration-drift-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
+    {"name":"vps-log-retention-auditor","source":{"source":"local","path":"./plugins/vps-log-retention-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"supabase-pgcron-auditor","source":{"source":"local","path":"./plugins/supabase-pgcron-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"agent-tools-runtime-poc","source":{"source":"local","path":"./plugins/agent-tools-runtime-poc"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"ai-prompt-workflow","source":{"source":"local","path":"./plugins/ai-prompt-workflow"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"AI & Prompt Engineering"},
+    {"name":"ux-accessibility-guide","source":{"source":"local","path":"./plugins/ux-accessibility-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Accessibility & UX"},
+    {"name":"research-methods-guide","source":{"source":"local","path":"./plugins/research-methods-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Research & Evidence"}
   ]
 }

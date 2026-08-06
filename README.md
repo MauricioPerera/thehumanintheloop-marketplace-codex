@@ -2,14 +2,12 @@
 
 Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
-Catálogo actual: **132 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
+Catálogo actual: **130 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
 
 ## Plugins disponibles
 
 - `Auditor SEO/GEO 2026` (`linter-seo-geo-2026`): validador de contenido para buscadores y motores generativos.
 - `Marketplace Validator` (`marketplace-validator`): valida manifests y sincronización Claude Code/Codex.
-- `Plugin Authoring` (`plugin-authoring`): crea y valida plugins para este marketplace.
-- `KDD Guide` (`kdd-guide`): explica y aplica Knowledge-Driven Development con OKF y CCDD.
 - `AI Prompt Workflow` (`ai-prompt-workflow`): diseña prompts evaluables y reutilizables.
 - `UX Accessibility Guide` (`ux-accessibility-guide`): audita UX y accesibilidad con evidencia.
 - `Research Methods Guide` (`research-methods-guide`): estructura investigaciones con fuentes y evidencia trazable.
@@ -115,8 +113,8 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 
 - Content & Editorial — 7 plugins
 - Design Systems — 1 plugin
-- Marketplace & Quality — 9 plugins
-- Developer Tools — 69 plugins
+- Marketplace & Quality — 8 plugins
+- Developer Tools — 68 plugins
 - Accessibility & UX — 3 plugins
 - Security & Privacy — 39 plugins
 - Research & Evidence — 2 plugins
