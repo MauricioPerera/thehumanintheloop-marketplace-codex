@@ -1,7 +1,7 @@
 {
   "name": "github-branch-release-ops",
   "displayName": "GitHub Branch & Release Ops",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Opera el ciclo de vida de ramas y despliegues en GitHub: ramas, firma de commits, despliegues, conflictos de merge y paquetes.",
   "author": {
     "name": "Mauricio Perera",

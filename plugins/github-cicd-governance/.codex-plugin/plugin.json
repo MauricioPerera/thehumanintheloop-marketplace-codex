@@ -1,6 +1,6 @@
 {
   "name": "github-cicd-governance",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Audita la gobernanza de CI/CD en GitHub Actions: permisos, environments, checks, merge queue, runners, OIDC, variables y despliegues manuales.",
   "author": {
     "name": "Mauricio Perera",

@@ -1,7 +1,7 @@
 {
   "name": "github-security-suite",
   "displayName": "GitHub Security Suite",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Audita seguridad de GitHub: code/secret scanning, advisories, dependencias, Dependabot, reportes privados y secretos, con planes de remediación.",
   "author": {
     "name": "Mauricio Perera",

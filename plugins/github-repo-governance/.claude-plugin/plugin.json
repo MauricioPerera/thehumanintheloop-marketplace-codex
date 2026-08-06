@@ -1,7 +1,7 @@
 {
   "name": "github-repo-governance",
   "displayName": "GitHub Repository Governance",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Audita y prepara configuración de repositorios GitHub: settings, CODEOWNERS, templates, labels, milestones, funding, Pages y rulesets de protección.",
   "author": {
     "name": "Mauricio Perera",
