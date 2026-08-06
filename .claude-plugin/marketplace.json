@@ -30,134 +30,557 @@
       "source": "./plugins/content-fact-checker",
       "category": "Content & Editorial"
     },
-    {"name":"repo-quality-gate","displayName":"Repo Quality Gate","source":"./plugins/repo-quality-gate","category":"Marketplace & Quality"},
-    {"name":"technical-docs-linter","displayName":"Technical Docs Linter","source":"./plugins/technical-docs-linter","category":"Developer Tools"},
-    {"name":"accessibility-auditor","displayName":"Accessibility Auditor","source":"./plugins/accessibility-auditor","category":"Accessibility & UX"},
-    {"name":"privacy-risk-auditor","displayName":"Privacy Risk Auditor","source":"./plugins/privacy-risk-auditor","category":"Security & Privacy"},
-    {"name":"release-readiness","displayName":"Release Readiness","source":"./plugins/release-readiness","category":"Marketplace & Quality"},
-    {"name":"prompt-contract-linter","displayName":"Prompt Contract Linter","source":"./plugins/prompt-contract-linter","category":"AI & Prompt Engineering"},
-    {"name":"research-evidence-builder","displayName":"Research Evidence Builder","source":"./plugins/research-evidence-builder","category":"Research & Evidence"},
-    {"name":"brand-voice-validator","displayName":"Brand Voice Validator","source":"./plugins/brand-voice-validator","category":"Content & Editorial"},
-    {"name":"api-contract-linter","displayName":"API Contract Linter","source":"./plugins/api-contract-linter","category":"Developer Tools"},
-    {"name":"web-performance-auditor","displayName":"Web Performance Auditor","source":"./plugins/web-performance-auditor","category":"Developer Tools"},
-    {"name":"dependency-risk-auditor","displayName":"Dependency Risk Auditor","source":"./plugins/dependency-risk-auditor","category":"Security & Privacy"},
-    {"name":"test-coverage-gate","displayName":"Test Coverage Gate","source":"./plugins/test-coverage-gate","category":"Marketplace & Quality"},
-    {"name":"cv-job-tailor","displayName":"CV Job Tailor","source":"./plugins/cv-job-tailor","category":"Content & Editorial"},
-    {"name":"commercial-proposal-builder","displayName":"Commercial Proposal Builder","source":"./plugins/commercial-proposal-builder","category":"Content & Editorial"},
-    {"name":"rfp-response-builder","displayName":"RFP Response Builder","source":"./plugins/rfp-response-builder","category":"Content & Editorial"},
-    {"name":"github-issue-manager","displayName":"GitHub Issue Manager","source":"./plugins/github-issue-manager","category":"Developer Tools"},
-    {"name":"github-pr-manager","displayName":"GitHub PR Manager","source":"./plugins/github-pr-manager","category":"Developer Tools"},
-    {"name":"github-release-manager","displayName":"GitHub Release Manager","source":"./plugins/github-release-manager","category":"Developer Tools"},
-    {"name":"github-actions-manager","displayName":"GitHub Actions Manager","source":"./plugins/github-actions-manager","category":"Developer Tools"},
-    {"name":"github-project-manager","displayName":"GitHub Project Manager","source":"./plugins/github-project-manager","category":"Developer Tools"},
-    {"name":"github-code-search","displayName":"GitHub Code Search","source":"./plugins/github-code-search","category":"Developer Tools"},
-    {"name":"github-security-manager","displayName":"GitHub Security Manager","source":"./plugins/github-security-manager","category":"Security & Privacy"},
-    {"name":"github-dependabot-manager","displayName":"GitHub Dependabot Manager","source":"./plugins/github-dependabot-manager","category":"Security & Privacy"},
-    {"name":"github-notifications-manager","displayName":"GitHub Notifications Manager","source":"./plugins/github-notifications-manager","category":"Developer Tools"},
-    {"name":"github-discussion-manager","displayName":"GitHub Discussion Manager","source":"./plugins/github-discussion-manager","category":"Developer Tools"},
-    {"name":"github-label-manager","displayName":"GitHub Label Manager","source":"./plugins/github-label-manager","category":"Marketplace & Quality"},
-    {"name":"github-repository-manager","displayName":"GitHub Repository Manager","source":"./plugins/github-repository-manager","category":"Developer Tools"},
-    {"name":"github-milestone-manager","displayName":"GitHub Milestone Manager","source":"./plugins/github-milestone-manager","category":"Marketplace & Quality"},
-    {"name":"github-branch-manager","displayName":"GitHub Branch Manager","source":"./plugins/github-branch-manager","category":"Developer Tools"},
-    {"name":"github-template-manager","displayName":"GitHub Template Manager","source":"./plugins/github-template-manager","category":"Developer Tools"},
-    {"name":"github-api-manager","displayName":"GitHub API Manager","source":"./plugins/github-api-manager","category":"Developer Tools"},
-    {"name":"github-codeowners-manager","displayName":"GitHub CODEOWNERS Manager","source":"./plugins/github-codeowners-manager","category":"Developer Tools"},
-    {"name":"github-contributor-manager","displayName":"GitHub Contributor Manager","source":"./plugins/github-contributor-manager","category":"Developer Tools"},
-    {"name":"github-activity-manager","displayName":"GitHub Activity Manager","source":"./plugins/github-activity-manager","category":"Developer Tools"},
-    {"name":"github-traffic-manager","displayName":"GitHub Traffic Manager","source":"./plugins/github-traffic-manager","category":"Developer Tools"},
-    {"name":"github-webhook-manager","displayName":"GitHub Webhook Manager","source":"./plugins/github-webhook-manager","category":"Security & Privacy"},
-    {"name":"github-environment-manager","displayName":"GitHub Environment Manager","source":"./plugins/github-environment-manager","category":"Security & Privacy"},
-    {"name":"github-variable-manager","displayName":"GitHub Variable Manager","source":"./plugins/github-variable-manager","category":"Security & Privacy"},
-    {"name":"github-package-manager","displayName":"GitHub Package Manager","source":"./plugins/github-package-manager","category":"Developer Tools"},
-    {"name":"github-secret-manager","displayName":"GitHub Secret Manager","source":"./plugins/github-secret-manager","category":"Security & Privacy"},
-    {"name":"github-ruleset-manager","displayName":"GitHub Ruleset Manager","source":"./plugins/github-ruleset-manager","category":"Security & Privacy"},
-    {"name":"github-checks-manager","displayName":"GitHub Checks Manager","source":"./plugins/github-checks-manager","category":"Developer Tools"},
-    {"name":"github-audit-log-manager","displayName":"GitHub Audit Log Manager","source":"./plugins/github-audit-log-manager","category":"Security & Privacy"},
-    {"name":"github-runner-manager","displayName":"GitHub Runner Manager","source":"./plugins/github-runner-manager","category":"Security & Privacy"},
-    {"name":"github-deployment-manager","displayName":"GitHub Deployment Manager","source":"./plugins/github-deployment-manager","category":"Developer Tools"},
-    {"name":"github-team-manager","displayName":"GitHub Team Manager","source":"./plugins/github-team-manager","category":"Security & Privacy"},
-    {"name":"github-merge-queue-manager","displayName":"GitHub Merge Queue Manager","source":"./plugins/github-merge-queue-manager","category":"Developer Tools"},
-    {"name":"github-fork-manager","displayName":"GitHub Fork Manager","source":"./plugins/github-fork-manager","category":"Developer Tools"},
-    {"name":"github-commit-signing-manager","displayName":"GitHub Commit Signing Manager","source":"./plugins/github-commit-signing-manager","category":"Security & Privacy"},
-    {"name":"github-migration-manager","displayName":"GitHub Migration Manager","source":"./plugins/github-migration-manager","category":"Developer Tools"},
-    {"name":"github-archive-manager","displayName":"GitHub Archive Manager","source":"./plugins/github-archive-manager","category":"Developer Tools"},
-    {"name":"github-code-scanning-manager","displayName":"GitHub Code Scanning Manager","source":"./plugins/github-code-scanning-manager","category":"Security & Privacy"},
-    {"name":"github-secret-scanning-manager","displayName":"GitHub Secret Scanning Manager","source":"./plugins/github-secret-scanning-manager","category":"Security & Privacy"},
-    {"name":"github-security-advisory-manager","displayName":"GitHub Security Advisory Manager","source":"./plugins/github-security-advisory-manager","category":"Security & Privacy"},
-    {"name":"github-dependency-review-manager","displayName":"GitHub Dependency Review Manager","source":"./plugins/github-dependency-review-manager","category":"Security & Privacy"},
-    {"name":"github-private-reporting-manager","displayName":"GitHub Private Reporting Manager","source":"./plugins/github-private-reporting-manager","category":"Security & Privacy"},
-    {"name":"github-organization-settings-manager","displayName":"GitHub Organization Settings Manager","source":"./plugins/github-organization-settings-manager","category":"Security & Privacy"},
-    {"name":"github-pages-manager","displayName":"GitHub Pages Manager","source":"./plugins/github-pages-manager","category":"Developer Tools"},
-    {"name":"github-funding-manager","displayName":"GitHub Funding Manager","source":"./plugins/github-funding-manager","category":"Developer Tools"},
-    {"name":"github-workflow-dispatch-manager","displayName":"GitHub Workflow Dispatch Manager","source":"./plugins/github-workflow-dispatch-manager","category":"Developer Tools"},
-    {"name":"github-oidc-manager","displayName":"GitHub OIDC Manager","source":"./plugins/github-oidc-manager","category":"Security & Privacy"},
-    {"name":"github-action-permissions-manager","displayName":"GitHub Action Permissions Manager","source":"./plugins/github-action-permissions-manager","category":"Security & Privacy"},
-    {"name":"github-merge-conflict-manager","displayName":"GitHub Merge Conflict Manager","source":"./plugins/github-merge-conflict-manager","category":"Developer Tools"},
-    {"name":"mercadopago-payment-manager","displayName":"Mercado Pago Payment Manager","source":"./plugins/mercadopago-payment-manager","category":"Developer Tools"},
-    {"name":"kdd-semver","displayName":"KDD SemVer Checker","source":"./plugins/kdd-semver","category":"Developer Tools"},
-  {"name":"kdd-stripe","displayName":"KDD Stripe API Checker","source":"./plugins/kdd-stripe","category":"Security & Privacy"},
-  {"name":"kdd-rust-api","displayName":"KDD Rust API Guidelines Checker","source":"./plugins/kdd-rust-api","category":"Developer Tools"},
-  {"name":"kdd-effective-go","displayName":"KDD Effective Go Checker","source":"./plugins/kdd-effective-go","category":"Developer Tools"},
-  {"name":"kdd-zen-of-python","displayName":"KDD Zen of Python Reference","source":"./plugins/kdd-zen-of-python","category":"Developer Tools"},
-  {"name":"kdd-agile-manifesto","displayName":"KDD Agile Manifesto Reference","source":"./plugins/kdd-agile-manifesto","category":"Marketplace & Quality"},
-  {"name":"kdd-tailwind","displayName":"KDD Tailwind CSS Checker","source":"./plugins/kdd-tailwind","category":"Developer Tools"},
-  {"name":"kdd-wcag","displayName":"KDD WCAG 2.2 Checker","source":"./plugins/kdd-wcag","category":"Accessibility & UX"},
-  {"name":"kdd-doce-factores","displayName":"KDD Twelve-Factor App Checker","source":"./plugins/kdd-doce-factores","category":"Developer Tools"},
-{"name":"kdd-htmx","displayName":"KDD htmx Checker","source":"./plugins/kdd-htmx","category":"Developer Tools"},
-{"name":"kdd-arquitectura-java","displayName":"KDD Arquitectura Java Solida Checker","source":"./plugins/kdd-arquitectura-java","category":"Developer Tools"},
-{"name":"kdd-pep8","displayName":"KDD PEP 8 Checker","source":"./plugins/kdd-pep8","category":"Developer Tools"},
-{"name":"kdd-scrum-xp","displayName":"KDD Scrum y XP Checker","source":"./plugins/kdd-scrum-xp","category":"Marketplace & Quality"},
-{"name":"kdd-codigo-limpio","displayName":"KDD Codigo Limpio Checker","source":"./plugins/kdd-codigo-limpio","category":"Developer Tools"},
-{"name":"kdd-estilo-google","displayName":"KDD Estilo Google Checker","source":"./plugins/kdd-estilo-google","category":"Content & Editorial"},
-{"name":"vps-ssh-manager","displayName":"VPS SSH Manager","source":"./plugins/vps-ssh-manager","category":"Developer Tools"},
-{"name":"supabase-selfhosted-observer","displayName":"Supabase Self-hosted Observer","source":"./plugins/supabase-selfhosted-observer","category":"Developer Tools"},
-{"name":"supabase-database-manager","displayName":"Supabase Database Manager","source":"./plugins/supabase-database-manager","category":"Developer Tools"},
-{"name":"supabase-service-manager","displayName":"Supabase Service Manager","source":"./plugins/supabase-service-manager","category":"Developer Tools"},
-{"name":"supabase-config-auditor","displayName":"Supabase Config Auditor","source":"./plugins/supabase-config-auditor","category":"Security & Privacy"},
-{"name":"supabase-backup-manager","displayName":"Supabase Backup Manager","source":"./plugins/supabase-backup-manager","category":"Security & Privacy"},
-{"name":"supabase-upgrade-manager","displayName":"Supabase Upgrade Manager","source":"./plugins/supabase-upgrade-manager","category":"Developer Tools"},
-{"name":"docker-vps-observer","displayName":"Docker VPS Observer","source":"./plugins/docker-vps-observer","category":"Developer Tools"},
-{"name":"docker-service-manager","displayName":"Docker Service Manager","source":"./plugins/docker-service-manager","category":"Developer Tools"},
-{"name":"docker-image-manager","displayName":"Docker Image Manager","source":"./plugins/docker-image-manager","category":"Developer Tools"},
-{"name":"docker-storage-auditor","displayName":"Docker Storage Auditor","source":"./plugins/docker-storage-auditor","category":"Security & Privacy"},
-{"name":"docker-log-diagnostics","displayName":"Docker Log Diagnostics","source":"./plugins/docker-log-diagnostics","category":"Developer Tools"},
-{"name":"vps-security-auditor","displayName":"VPS Security Auditor","source":"./plugins/vps-security-auditor","category":"Security & Privacy"},
-{"name":"vps-backup-manager","displayName":"VPS Backup Manager","source":"./plugins/vps-backup-manager","category":"Security & Privacy"},
-{"name":"vps-resource-monitor","displayName":"VPS Resource Monitor","source":"./plugins/vps-resource-monitor","category":"Developer Tools"},
-{"name":"tls-domain-manager","displayName":"TLS Domain Manager","source":"./plugins/tls-domain-manager","category":"Security & Privacy"},
-{"name":"vps-incident-responder","displayName":"VPS Incident Responder","source":"./plugins/vps-incident-responder","category":"Developer Tools"},
-{"name":"firewall-policy-manager","displayName":"Firewall Policy Manager","source":"./plugins/firewall-policy-manager","category":"Security & Privacy"},
-{"name":"system-update-planner","displayName":"System Update Planner","source":"./plugins/system-update-planner","category":"Developer Tools"},
-{"name":"cron-automation-auditor","displayName":"Cron Automation Auditor","source":"./plugins/cron-automation-auditor","category":"Developer Tools"},
-{"name":"secrets-exposure-auditor","displayName":"Secrets Exposure Auditor","source":"./plugins/secrets-exposure-auditor","category":"Security & Privacy"},
-{"name":"nginx-reverse-proxy-manager","displayName":"Nginx Reverse Proxy Manager","source":"./plugins/nginx-reverse-proxy-manager","category":"Developer Tools"},
-{"name":"database-operations-manager","displayName":"Database Operations Manager","source":"./plugins/database-operations-manager","category":"Developer Tools"},
-{"name":"vps-cost-capacity-auditor","displayName":"VPS Cost & Capacity Auditor","source":"./plugins/vps-cost-capacity-auditor","category":"Developer Tools"},
-{"name":"vps-network-diagnostics","displayName":"VPS Network Diagnostics","source":"./plugins/vps-network-diagnostics","category":"Developer Tools"}
-,{"name":"vps-service-exposure-auditor","displayName":"VPS Service Exposure Auditor","source":"./plugins/vps-service-exposure-auditor","category":"Security & Privacy"}
-,{"name":"vps-observability-auditor","displayName":"VPS Observability Auditor","source":"./plugins/vps-observability-auditor","category":"Developer Tools"}
-,{"name":"vps-deployment-readiness-auditor","displayName":"VPS Deployment Readiness Auditor","source":"./plugins/vps-deployment-readiness-auditor","category":"Developer Tools"}
-,{"name":"vps-backup-restore-verifier","displayName":"VPS Backup Restore Verifier","source":"./plugins/vps-backup-restore-verifier","category":"Developer Tools"}
-,{"name":"vps-configuration-drift-auditor","displayName":"VPS Configuration Drift Auditor","source":"./plugins/vps-configuration-drift-auditor","category":"Developer Tools"}
-,{"name":"vps-container-security-auditor","displayName":"VPS Container Security Auditor","source":"./plugins/vps-container-security-auditor","category":"Security & Privacy"}
-,{"name":"vps-image-provenance-auditor","displayName":"VPS Image Provenance Auditor","source":"./plugins/vps-image-provenance-auditor","category":"Security & Privacy"}
-,{"name":"vps-docker-network-isolation-auditor","displayName":"VPS Docker Network Isolation Auditor","source":"./plugins/vps-docker-network-isolation-auditor","category":"Security & Privacy"}
-,{"name":"vps-docker-resource-limits-auditor","displayName":"VPS Docker Resource Limits Auditor","source":"./plugins/vps-docker-resource-limits-auditor","category":"Developer Tools"}
-,{"name":"vps-dependency-topology-auditor","displayName":"VPS Dependency Topology Auditor","source":"./plugins/vps-dependency-topology-auditor","category":"Developer Tools"}
-,{"name":"vps-backup-job-monitor","displayName":"VPS Backup Job Monitor","source":"./plugins/vps-backup-job-monitor","category":"Developer Tools"}
-,{"name":"vps-tls-renewal-monitor","displayName":"VPS TLS Renewal Monitor","source":"./plugins/vps-tls-renewal-monitor","category":"Security & Privacy"}
-,{"name":"vps-dns-email-auth-auditor","displayName":"VPS DNS & Email Auth Auditor","source":"./plugins/vps-dns-email-auth-auditor","category":"Security & Privacy"},
-{"name":"supabase-policy-security-auditor","displayName":"Supabase Policy Security Auditor","source":"./plugins/supabase-policy-security-auditor","category":"Security & Privacy"},
-{"name":"vps-image-vulnerability-sbom-auditor","displayName":"VPS Image Vulnerability & SBOM Auditor","source":"./plugins/vps-image-vulnerability-sbom-auditor","category":"Security & Privacy"},
-{"name":"supabase-migration-drift-auditor","displayName":"Supabase Migration Drift Auditor","source":"./plugins/supabase-migration-drift-auditor","category":"Security & Privacy"},
-{"name":"vps-log-retention-auditor","displayName":"VPS Log Retention Auditor","source":"./plugins/vps-log-retention-auditor","category":"Developer Tools"},
-{"name":"supabase-pgcron-auditor","displayName":"Supabase pg_cron Auditor","source":"./plugins/supabase-pgcron-auditor","category":"Developer Tools"},
-{"name":"agent-tools-runtime-poc","displayName":"Agent Tools Runtime POC","source":"./plugins/agent-tools-runtime-poc","category":"Developer Tools"},
-{"name":"plugin-authoring","displayName":"Plugin Authoring","source":"./plugins/plugin-authoring","category":"Marketplace & Quality"},
-{"name":"kdd-guide","displayName":"KDD Guide","source":"./plugins/kdd-guide","category":"Developer Tools"},
-{"name":"ai-prompt-workflow","displayName":"AI Prompt Workflow","source":"./plugins/ai-prompt-workflow","category":"AI & Prompt Engineering"},
-{"name":"ux-accessibility-guide","displayName":"UX Accessibility Guide","source":"./plugins/ux-accessibility-guide","category":"Accessibility & UX"},
-{"name":"research-methods-guide","displayName":"Research Methods Guide","source":"./plugins/research-methods-guide","category":"Research & Evidence"},
-{"name":"design-system-governance","displayName":"Design System Governance","source":"./plugins/design-system-governance","category":"Design Systems"}
-]
+    {
+      "name": "repo-quality-gate",
+      "displayName": "Repo Quality Gate",
+      "source": "./plugins/repo-quality-gate",
+      "category": "Marketplace & Quality"
+    },
+    {
+      "name": "technical-docs-linter",
+      "displayName": "Technical Docs Linter",
+      "source": "./plugins/technical-docs-linter",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "accessibility-auditor",
+      "displayName": "Accessibility Auditor",
+      "source": "./plugins/accessibility-auditor",
+      "category": "Accessibility & UX"
+    },
+    {
+      "name": "privacy-risk-auditor",
+      "displayName": "Privacy Risk Auditor",
+      "source": "./plugins/privacy-risk-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "release-readiness",
+      "displayName": "Release Readiness",
+      "source": "./plugins/release-readiness",
+      "category": "Marketplace & Quality"
+    },
+    {
+      "name": "prompt-contract-linter",
+      "displayName": "Prompt Contract Linter",
+      "source": "./plugins/prompt-contract-linter",
+      "category": "AI & Prompt Engineering"
+    },
+    {
+      "name": "research-evidence-builder",
+      "displayName": "Research Evidence Builder",
+      "source": "./plugins/research-evidence-builder",
+      "category": "Research & Evidence"
+    },
+    {
+      "name": "brand-voice-validator",
+      "displayName": "Brand Voice Validator",
+      "source": "./plugins/brand-voice-validator",
+      "category": "Content & Editorial"
+    },
+    {
+      "name": "api-contract-linter",
+      "displayName": "API Contract Linter",
+      "source": "./plugins/api-contract-linter",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "web-performance-auditor",
+      "displayName": "Web Performance Auditor",
+      "source": "./plugins/web-performance-auditor",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "dependency-risk-auditor",
+      "displayName": "Dependency Risk Auditor",
+      "source": "./plugins/dependency-risk-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "test-coverage-gate",
+      "displayName": "Test Coverage Gate",
+      "source": "./plugins/test-coverage-gate",
+      "category": "Marketplace & Quality"
+    },
+    {
+      "name": "cv-job-tailor",
+      "displayName": "CV Job Tailor",
+      "source": "./plugins/cv-job-tailor",
+      "category": "Content & Editorial"
+    },
+    {
+      "name": "commercial-proposal-builder",
+      "displayName": "Commercial Proposal Builder",
+      "source": "./plugins/commercial-proposal-builder",
+      "category": "Content & Editorial"
+    },
+    {
+      "name": "rfp-response-builder",
+      "displayName": "RFP Response Builder",
+      "source": "./plugins/rfp-response-builder",
+      "category": "Content & Editorial"
+    },
+    {
+      "name": "github-issue-manager",
+      "displayName": "GitHub Issue Manager",
+      "source": "./plugins/github-issue-manager",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-pr-manager",
+      "displayName": "GitHub PR Manager",
+      "source": "./plugins/github-pr-manager",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-release-manager",
+      "displayName": "GitHub Release Manager",
+      "source": "./plugins/github-release-manager",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-actions-manager",
+      "displayName": "GitHub Actions Manager",
+      "source": "./plugins/github-actions-manager",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-code-search",
+      "displayName": "GitHub Code Search",
+      "source": "./plugins/github-code-search",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "mercadopago-payment-manager",
+      "displayName": "Mercado Pago Payment Manager",
+      "source": "./plugins/mercadopago-payment-manager",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "kdd-semver",
+      "displayName": "KDD SemVer Checker",
+      "source": "./plugins/kdd-semver",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "kdd-stripe",
+      "displayName": "KDD Stripe API Checker",
+      "source": "./plugins/kdd-stripe",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "kdd-rust-api",
+      "displayName": "KDD Rust API Guidelines Checker",
+      "source": "./plugins/kdd-rust-api",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "kdd-effective-go",
+      "displayName": "KDD Effective Go Checker",
+      "source": "./plugins/kdd-effective-go",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "kdd-zen-of-python",
+      "displayName": "KDD Zen of Python Reference",
+      "source": "./plugins/kdd-zen-of-python",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "kdd-agile-manifesto",
+      "displayName": "KDD Agile Manifesto Reference",
+      "source": "./plugins/kdd-agile-manifesto",
+      "category": "Marketplace & Quality"
+    },
+    {
+      "name": "kdd-tailwind",
+      "displayName": "KDD Tailwind CSS Checker",
+      "source": "./plugins/kdd-tailwind",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "kdd-wcag",
+      "displayName": "KDD WCAG 2.2 Checker",
+      "source": "./plugins/kdd-wcag",
+      "category": "Accessibility & UX"
+    },
+    {
+      "name": "kdd-doce-factores",
+      "displayName": "KDD Twelve-Factor App Checker",
+      "source": "./plugins/kdd-doce-factores",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "kdd-htmx",
+      "displayName": "KDD htmx Checker",
+      "source": "./plugins/kdd-htmx",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "kdd-arquitectura-java",
+      "displayName": "KDD Arquitectura Java Solida Checker",
+      "source": "./plugins/kdd-arquitectura-java",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "kdd-pep8",
+      "displayName": "KDD PEP 8 Checker",
+      "source": "./plugins/kdd-pep8",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "kdd-scrum-xp",
+      "displayName": "KDD Scrum y XP Checker",
+      "source": "./plugins/kdd-scrum-xp",
+      "category": "Marketplace & Quality"
+    },
+    {
+      "name": "kdd-codigo-limpio",
+      "displayName": "KDD Codigo Limpio Checker",
+      "source": "./plugins/kdd-codigo-limpio",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "kdd-estilo-google",
+      "displayName": "KDD Estilo Google Checker",
+      "source": "./plugins/kdd-estilo-google",
+      "category": "Content & Editorial"
+    },
+    {
+      "name": "vps-ssh-manager",
+      "displayName": "VPS SSH Manager",
+      "source": "./plugins/vps-ssh-manager",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "supabase-selfhosted-observer",
+      "displayName": "Supabase Self-hosted Observer",
+      "source": "./plugins/supabase-selfhosted-observer",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "supabase-database-manager",
+      "displayName": "Supabase Database Manager",
+      "source": "./plugins/supabase-database-manager",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "supabase-service-manager",
+      "displayName": "Supabase Service Manager",
+      "source": "./plugins/supabase-service-manager",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "supabase-config-auditor",
+      "displayName": "Supabase Config Auditor",
+      "source": "./plugins/supabase-config-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "supabase-backup-manager",
+      "displayName": "Supabase Backup Manager",
+      "source": "./plugins/supabase-backup-manager",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "supabase-upgrade-manager",
+      "displayName": "Supabase Upgrade Manager",
+      "source": "./plugins/supabase-upgrade-manager",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "docker-vps-observer",
+      "displayName": "Docker VPS Observer",
+      "source": "./plugins/docker-vps-observer",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "docker-service-manager",
+      "displayName": "Docker Service Manager",
+      "source": "./plugins/docker-service-manager",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "docker-image-manager",
+      "displayName": "Docker Image Manager",
+      "source": "./plugins/docker-image-manager",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "docker-storage-auditor",
+      "displayName": "Docker Storage Auditor",
+      "source": "./plugins/docker-storage-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "docker-log-diagnostics",
+      "displayName": "Docker Log Diagnostics",
+      "source": "./plugins/docker-log-diagnostics",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-security-auditor",
+      "displayName": "VPS Security Auditor",
+      "source": "./plugins/vps-security-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-backup-manager",
+      "displayName": "VPS Backup Manager",
+      "source": "./plugins/vps-backup-manager",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-resource-monitor",
+      "displayName": "VPS Resource Monitor",
+      "source": "./plugins/vps-resource-monitor",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "tls-domain-manager",
+      "displayName": "TLS Domain Manager",
+      "source": "./plugins/tls-domain-manager",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-incident-responder",
+      "displayName": "VPS Incident Responder",
+      "source": "./plugins/vps-incident-responder",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "firewall-policy-manager",
+      "displayName": "Firewall Policy Manager",
+      "source": "./plugins/firewall-policy-manager",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "system-update-planner",
+      "displayName": "System Update Planner",
+      "source": "./plugins/system-update-planner",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "cron-automation-auditor",
+      "displayName": "Cron Automation Auditor",
+      "source": "./plugins/cron-automation-auditor",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "secrets-exposure-auditor",
+      "displayName": "Secrets Exposure Auditor",
+      "source": "./plugins/secrets-exposure-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "nginx-reverse-proxy-manager",
+      "displayName": "Nginx Reverse Proxy Manager",
+      "source": "./plugins/nginx-reverse-proxy-manager",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "database-operations-manager",
+      "displayName": "Database Operations Manager",
+      "source": "./plugins/database-operations-manager",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-cost-capacity-auditor",
+      "displayName": "VPS Cost & Capacity Auditor",
+      "source": "./plugins/vps-cost-capacity-auditor",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-network-diagnostics",
+      "displayName": "VPS Network Diagnostics",
+      "source": "./plugins/vps-network-diagnostics",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-service-exposure-auditor",
+      "displayName": "VPS Service Exposure Auditor",
+      "source": "./plugins/vps-service-exposure-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-observability-auditor",
+      "displayName": "VPS Observability Auditor",
+      "source": "./plugins/vps-observability-auditor",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-deployment-readiness-auditor",
+      "displayName": "VPS Deployment Readiness Auditor",
+      "source": "./plugins/vps-deployment-readiness-auditor",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-backup-restore-verifier",
+      "displayName": "VPS Backup Restore Verifier",
+      "source": "./plugins/vps-backup-restore-verifier",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-configuration-drift-auditor",
+      "displayName": "VPS Configuration Drift Auditor",
+      "source": "./plugins/vps-configuration-drift-auditor",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-container-security-auditor",
+      "displayName": "VPS Container Security Auditor",
+      "source": "./plugins/vps-container-security-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-image-provenance-auditor",
+      "displayName": "VPS Image Provenance Auditor",
+      "source": "./plugins/vps-image-provenance-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-docker-network-isolation-auditor",
+      "displayName": "VPS Docker Network Isolation Auditor",
+      "source": "./plugins/vps-docker-network-isolation-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-docker-resource-limits-auditor",
+      "displayName": "VPS Docker Resource Limits Auditor",
+      "source": "./plugins/vps-docker-resource-limits-auditor",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-dependency-topology-auditor",
+      "displayName": "VPS Dependency Topology Auditor",
+      "source": "./plugins/vps-dependency-topology-auditor",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-backup-job-monitor",
+      "displayName": "VPS Backup Job Monitor",
+      "source": "./plugins/vps-backup-job-monitor",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-tls-renewal-monitor",
+      "displayName": "VPS TLS Renewal Monitor",
+      "source": "./plugins/vps-tls-renewal-monitor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-dns-email-auth-auditor",
+      "displayName": "VPS DNS & Email Auth Auditor",
+      "source": "./plugins/vps-dns-email-auth-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "supabase-policy-security-auditor",
+      "displayName": "Supabase Policy Security Auditor",
+      "source": "./plugins/supabase-policy-security-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-image-vulnerability-sbom-auditor",
+      "displayName": "VPS Image Vulnerability & SBOM Auditor",
+      "source": "./plugins/vps-image-vulnerability-sbom-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "supabase-migration-drift-auditor",
+      "displayName": "Supabase Migration Drift Auditor",
+      "source": "./plugins/supabase-migration-drift-auditor",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-log-retention-auditor",
+      "displayName": "VPS Log Retention Auditor",
+      "source": "./plugins/vps-log-retention-auditor",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "supabase-pgcron-auditor",
+      "displayName": "Supabase pg_cron Auditor",
+      "source": "./plugins/supabase-pgcron-auditor",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "agent-tools-runtime-poc",
+      "displayName": "Agent Tools Runtime POC",
+      "source": "./plugins/agent-tools-runtime-poc",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "plugin-authoring",
+      "displayName": "Plugin Authoring",
+      "source": "./plugins/plugin-authoring",
+      "category": "Marketplace & Quality"
+    },
+    {
+      "name": "kdd-guide",
+      "displayName": "KDD Guide",
+      "source": "./plugins/kdd-guide",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "ai-prompt-workflow",
+      "displayName": "AI Prompt Workflow",
+      "source": "./plugins/ai-prompt-workflow",
+      "category": "AI & Prompt Engineering"
+    },
+    {
+      "name": "ux-accessibility-guide",
+      "displayName": "UX Accessibility Guide",
+      "source": "./plugins/ux-accessibility-guide",
+      "category": "Accessibility & UX"
+    },
+    {
+      "name": "research-methods-guide",
+      "displayName": "Research Methods Guide",
+      "source": "./plugins/research-methods-guide",
+      "category": "Research & Evidence"
+    },
+    {
+      "name": "design-system-governance",
+      "displayName": "Design System Governance",
+      "source": "./plugins/design-system-governance",
+      "category": "Design Systems"
+    },
+    {
+      "name": "github-security-suite",
+      "displayName": "GitHub Security Suite",
+      "source": "./plugins/github-security-suite",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-cicd-governance",
+      "displayName": "GitHub CI/CD Governance",
+      "source": "./plugins/github-cicd-governance",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-repo-governance",
+      "displayName": "GitHub Repository Governance",
+      "source": "./plugins/github-repo-governance",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-collab-activity",
+      "displayName": "GitHub Collaboration & Activity",
+      "source": "./plugins/github-collab-activity",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-branch-release-ops",
+      "displayName": "GitHub Branch & Release Ops",
+      "source": "./plugins/github-branch-release-ops",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-org-lifecycle",
+      "displayName": "GitHub Org & Lifecycle",
+      "source": "./plugins/github-org-lifecycle",
+      "category": "Developer Tools"
+    }
+  ]
 }

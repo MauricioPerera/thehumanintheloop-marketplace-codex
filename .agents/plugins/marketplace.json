@@ -281,526 +281,10 @@
       "category": "Developer Tools"
     },
     {
-      "name": "github-project-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-project-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
       "name": "github-code-search",
       "source": {
         "source": "local",
         "path": "./plugins/github-code-search"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-security-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-security-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-dependabot-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-dependabot-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-notifications-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-notifications-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-discussion-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-discussion-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-label-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-label-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Marketplace & Quality"
-    },
-    {
-      "name": "github-repository-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-repository-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-milestone-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-milestone-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Marketplace & Quality"
-    },
-    {
-      "name": "github-branch-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-branch-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-template-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-template-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-api-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-api-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-codeowners-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-codeowners-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-contributor-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-contributor-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-activity-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-activity-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-traffic-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-traffic-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-webhook-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-webhook-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-environment-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-environment-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-variable-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-variable-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-package-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-package-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-secret-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-secret-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-ruleset-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-ruleset-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-checks-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-checks-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-audit-log-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-audit-log-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-runner-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-runner-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-deployment-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-deployment-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-team-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-team-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-merge-queue-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-merge-queue-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-fork-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-fork-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-commit-signing-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-commit-signing-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-migration-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-migration-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-archive-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-archive-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-code-scanning-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-code-scanning-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-secret-scanning-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-secret-scanning-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-security-advisory-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-security-advisory-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-dependency-review-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-dependency-review-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-private-reporting-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-private-reporting-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-organization-settings-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-organization-settings-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-pages-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-pages-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-funding-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-funding-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-workflow-dispatch-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-workflow-dispatch-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "github-oidc-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-oidc-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-action-permissions-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-action-permissions-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "github-merge-conflict-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/github-merge-conflict-manager"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -1076,7 +560,7 @@
       "name": "supabase-upgrade-manager",
       "source": {
         "source": "local",
-      "path": "./plugins/supabase-upgrade-manager"
+        "path": "./plugins/supabase-upgrade-manager"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -1086,86 +570,591 @@
     },
     {
       "name": "docker-vps-observer",
-      "source": {"source": "local", "path": "./plugins/docker-vps-observer"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "source": {
+        "source": "local",
+        "path": "./plugins/docker-vps-observer"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Developer Tools"
     },
     {
       "name": "docker-service-manager",
-      "source": {"source": "local", "path": "./plugins/docker-service-manager"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "source": {
+        "source": "local",
+        "path": "./plugins/docker-service-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Developer Tools"
     },
     {
       "name": "docker-image-manager",
-      "source": {"source": "local", "path": "./plugins/docker-image-manager"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "source": {
+        "source": "local",
+        "path": "./plugins/docker-image-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Developer Tools"
     },
     {
       "name": "docker-storage-auditor",
-      "source": {"source": "local", "path": "./plugins/docker-storage-auditor"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "source": {
+        "source": "local",
+        "path": "./plugins/docker-storage-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Security & Privacy"
     },
     {
       "name": "docker-log-diagnostics",
-      "source": {"source": "local", "path": "./plugins/docker-log-diagnostics"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "source": {
+        "source": "local",
+        "path": "./plugins/docker-log-diagnostics"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Developer Tools"
     },
     {
-      "name": "vps-security-auditor", "source": {"source": "local", "path": "./plugins/vps-security-auditor"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}, "category": "Security & Privacy"
+      "name": "vps-security-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-security-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
     },
     {
-      "name": "vps-backup-manager", "source": {"source": "local", "path": "./plugins/vps-backup-manager"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}, "category": "Security & Privacy"
+      "name": "vps-backup-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-backup-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
     },
     {
-      "name": "vps-resource-monitor", "source": {"source": "local", "path": "./plugins/vps-resource-monitor"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}, "category": "Developer Tools"
+      "name": "vps-resource-monitor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-resource-monitor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     },
     {
-      "name": "tls-domain-manager", "source": {"source": "local", "path": "./plugins/tls-domain-manager"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}, "category": "Security & Privacy"
+      "name": "tls-domain-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tls-domain-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
     },
     {
-      "name": "vps-incident-responder", "source": {"source": "local", "path": "./plugins/vps-incident-responder"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}, "category": "Developer Tools"
+      "name": "vps-incident-responder",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-incident-responder"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     },
-    {"name":"firewall-policy-manager","source":{"source":"local","path":"./plugins/firewall-policy-manager"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"system-update-planner","source":{"source":"local","path":"./plugins/system-update-planner"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"cron-automation-auditor","source":{"source":"local","path":"./plugins/cron-automation-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"secrets-exposure-auditor","source":{"source":"local","path":"./plugins/secrets-exposure-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"nginx-reverse-proxy-manager","source":{"source":"local","path":"./plugins/nginx-reverse-proxy-manager"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"database-operations-manager","source":{"source":"local","path":"./plugins/database-operations-manager"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"vps-cost-capacity-auditor","source":{"source":"local","path":"./plugins/vps-cost-capacity-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"vps-network-diagnostics","source":{"source":"local","path":"./plugins/vps-network-diagnostics"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"vps-service-exposure-auditor","source":{"source":"local","path":"./plugins/vps-service-exposure-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"vps-observability-auditor","source":{"source":"local","path":"./plugins/vps-observability-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"vps-deployment-readiness-auditor","source":{"source":"local","path":"./plugins/vps-deployment-readiness-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"vps-backup-restore-verifier","source":{"source":"local","path":"./plugins/vps-backup-restore-verifier"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"vps-configuration-drift-auditor","source":{"source":"local","path":"./plugins/vps-configuration-drift-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"vps-container-security-auditor","source":{"source":"local","path":"./plugins/vps-container-security-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"vps-image-provenance-auditor","source":{"source":"local","path":"./plugins/vps-image-provenance-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"vps-docker-network-isolation-auditor","source":{"source":"local","path":"./plugins/vps-docker-network-isolation-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"vps-docker-resource-limits-auditor","source":{"source":"local","path":"./plugins/vps-docker-resource-limits-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"vps-dependency-topology-auditor","source":{"source":"local","path":"./plugins/vps-dependency-topology-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"vps-backup-job-monitor","source":{"source":"local","path":"./plugins/vps-backup-job-monitor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"vps-tls-renewal-monitor","source":{"source":"local","path":"./plugins/vps-tls-renewal-monitor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"vps-dns-email-auth-auditor","source":{"source":"local","path":"./plugins/vps-dns-email-auth-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"supabase-policy-security-auditor","source":{"source":"local","path":"./plugins/supabase-policy-security-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"vps-image-vulnerability-sbom-auditor","source":{"source":"local","path":"./plugins/vps-image-vulnerability-sbom-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"supabase-migration-drift-auditor","source":{"source":"local","path":"./plugins/supabase-migration-drift-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Security & Privacy"},
-    {"name":"vps-log-retention-auditor","source":{"source":"local","path":"./plugins/vps-log-retention-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"supabase-pgcron-auditor","source":{"source":"local","path":"./plugins/supabase-pgcron-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"agent-tools-runtime-poc","source":{"source":"local","path":"./plugins/agent-tools-runtime-poc"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"plugin-authoring","source":{"source":"local","path":"./plugins/plugin-authoring"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Marketplace & Quality"},
-    {"name":"kdd-guide","source":{"source":"local","path":"./plugins/kdd-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
-    {"name":"ai-prompt-workflow","source":{"source":"local","path":"./plugins/ai-prompt-workflow"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"AI & Prompt Engineering"},
-    {"name":"ux-accessibility-guide","source":{"source":"local","path":"./plugins/ux-accessibility-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Accessibility & UX"},
-    {"name":"research-methods-guide","source":{"source":"local","path":"./plugins/research-methods-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Research & Evidence"},
-    {"name":"design-system-governance","source":{"source":"local","path":"./plugins/design-system-governance"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Design Systems"}
+    {
+      "name": "firewall-policy-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/firewall-policy-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "system-update-planner",
+      "source": {
+        "source": "local",
+        "path": "./plugins/system-update-planner"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "cron-automation-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/cron-automation-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "secrets-exposure-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/secrets-exposure-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "nginx-reverse-proxy-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nginx-reverse-proxy-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "database-operations-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/database-operations-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-cost-capacity-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-cost-capacity-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-network-diagnostics",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-network-diagnostics"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-service-exposure-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-service-exposure-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-observability-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-observability-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-deployment-readiness-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-deployment-readiness-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-backup-restore-verifier",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-backup-restore-verifier"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-configuration-drift-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-configuration-drift-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-container-security-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-container-security-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-image-provenance-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-image-provenance-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-docker-network-isolation-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-docker-network-isolation-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-docker-resource-limits-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-docker-resource-limits-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-dependency-topology-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-dependency-topology-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-backup-job-monitor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-backup-job-monitor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-tls-renewal-monitor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-tls-renewal-monitor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-dns-email-auth-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-dns-email-auth-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "supabase-policy-security-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/supabase-policy-security-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-image-vulnerability-sbom-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-image-vulnerability-sbom-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "supabase-migration-drift-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/supabase-migration-drift-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-log-retention-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-log-retention-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "supabase-pgcron-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/supabase-pgcron-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "agent-tools-runtime-poc",
+      "source": {
+        "source": "local",
+        "path": "./plugins/agent-tools-runtime-poc"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "plugin-authoring",
+      "source": {
+        "source": "local",
+        "path": "./plugins/plugin-authoring"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Marketplace & Quality"
+    },
+    {
+      "name": "kdd-guide",
+      "source": {
+        "source": "local",
+        "path": "./plugins/kdd-guide"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "ai-prompt-workflow",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ai-prompt-workflow"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "AI & Prompt Engineering"
+    },
+    {
+      "name": "ux-accessibility-guide",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ux-accessibility-guide"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Accessibility & UX"
+    },
+    {
+      "name": "research-methods-guide",
+      "source": {
+        "source": "local",
+        "path": "./plugins/research-methods-guide"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research & Evidence"
+    },
+    {
+      "name": "design-system-governance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/design-system-governance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design Systems"
+    },
+    {
+      "name": "github-security-suite",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-security-suite"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-cicd-governance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-cicd-governance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "github-repo-governance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-repo-governance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-collab-activity",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-collab-activity"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-branch-release-ops",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-branch-release-ops"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github-org-lifecycle",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-org-lifecycle"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
   ]
 }

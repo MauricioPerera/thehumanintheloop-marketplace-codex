@@ -1,0 +1,39 @@
+{
+  "name": "github-security-suite",
+  "version": "0.1.0",
+  "description": "Audita seguridad de GitHub: code/secret scanning, advisories, dependencias, Dependabot, reportes privados y secretos, con planes de remediación.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "security",
+    "code-scanning",
+    "secret-scanning",
+    "advisories",
+    "dependencies",
+    "dependabot",
+    "secrets"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub Security Suite",
+    "shortDescription": "Audita seguridad de GitHub con planes de remediación.",
+    "longDescription": "Audita alertas de Code Scanning y Secret Scanning, gestiona advisories de seguridad, revisa dependencias nuevas y alertas de Dependabot, procesa reportes privados de vulnerabilidades y audita secretos configurados, siempre con valores redactados y planes de remediación antes de mutar.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": [
+      "Code scanning",
+      "Secret scanning",
+      "Advisories",
+      "Dependency review",
+      "Dependabot",
+      "Private reporting",
+      "Secrets"
+    ],
+    "defaultPrompt": "Usa GitHub Security Suite para auditar o preparar cambios en GitHub con gh CLI y confirmación."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "github-cicd-governance",
+  "version": "0.1.0",
+  "description": "Audita la gobernanza de CI/CD en GitHub Actions: permisos, environments, checks, merge queue, runners, OIDC, variables y despliegues manuales.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "cicd",
+    "actions",
+    "permissions",
+    "environments",
+    "checks",
+    "merge-queue",
+    "runners",
+    "oidc",
+    "variables",
+    "workflow-dispatch"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub CI/CD Governance",
+    "shortDescription": "Audita la gobernanza de CI/CD de GitHub Actions.",
+    "longDescription": "Revisa permisos de GITHUB_TOKEN, environments y gates de despliegue, checks y annotations de CI, cuellos de botella de merge queue, runners y su aislamiento, confianza OIDC con proveedores cloud, variables de Actions y ejecuciones manuales vía workflow_dispatch, con evidencia y confirmación antes de mutar.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": [
+      "Action permissions",
+      "Environments",
+      "Checks",
+      "Merge queue",
+      "Runners",
+      "OIDC",
+      "Variables",
+      "Workflow dispatch"
+    ],
+    "defaultPrompt": "Usa GitHub CI/CD Governance para auditar o preparar cambios en GitHub con gh CLI y confirmación."
+  }
+}

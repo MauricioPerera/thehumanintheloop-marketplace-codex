@@ -1,0 +1,41 @@
+{
+  "name": "github-repo-governance",
+  "version": "0.1.0",
+  "description": "Audita y prepara configuración de repositorios GitHub: settings, CODEOWNERS, templates, labels, milestones, funding, Pages y rulesets de protección.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "repository",
+    "codeowners",
+    "templates",
+    "labels",
+    "milestones",
+    "funding",
+    "pages",
+    "rulesets"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub Repository Governance",
+    "shortDescription": "Audita configuración y gobernanza de repositorios GitHub.",
+    "longDescription": "Inspecciona y prepara cambios de configuración de repositorio, valida cobertura de CODEOWNERS, revisa templates de Issues y PRs, diseña taxonomías de labels, planifica milestones, revisa FUNDING.yml, audita fuentes y dominios de GitHub Pages, y diseña rulesets de protección de ramas y tags, con confirmación antes de mutar.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Repository settings",
+      "CODEOWNERS",
+      "Templates",
+      "Labels",
+      "Milestones",
+      "Funding",
+      "Pages",
+      "Rulesets"
+    ],
+    "defaultPrompt": "Usa GitHub Repository Governance para auditar o preparar cambios en GitHub con gh CLI y confirmación."
+  }
+}

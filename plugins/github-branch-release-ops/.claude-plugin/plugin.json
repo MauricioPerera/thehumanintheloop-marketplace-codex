@@ -1,0 +1,20 @@
+{
+  "name": "github-branch-release-ops",
+  "displayName": "GitHub Branch & Release Ops",
+  "version": "0.1.0",
+  "description": "Opera el ciclo de vida de ramas y despliegues en GitHub: ramas, firma de commits, despliegues, conflictos de merge y paquetes.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "branches",
+    "commit-signing",
+    "deployments",
+    "merge-conflicts",
+    "packages"
+  ]
+}

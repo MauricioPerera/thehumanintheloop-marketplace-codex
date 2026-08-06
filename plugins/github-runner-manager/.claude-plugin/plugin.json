@@ -1,8 +1,0 @@
-{
-  "name": "github-runner-manager",
-  "displayName": "GitHub Runner Manager",
-  "version": "0.1.0",
-  "description": "Audita runners de GitHub Actions y sus controles de aislamiento.",
-  "author": {"name": "Mauricio Perera"},
-  "skills": "./skills/"
-}

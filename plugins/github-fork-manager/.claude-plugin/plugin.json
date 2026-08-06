@@ -1,8 +1,0 @@
-{
-  "name": "github-fork-manager",
-  "displayName": "GitHub Fork Manager",
-  "version": "0.1.0",
-  "description": "Audita forks y políticas de redes de código.",
-  "author": {"name": "Mauricio Perera"},
-  "skills": "./skills/"
-}

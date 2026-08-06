@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 133 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 96 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -15,6 +15,12 @@ Current inventory: 133 plugins. The marketplace exposes Claude Code and Codex ma
 
 Use these exact identifiers when referring to plugins:
 
+- `github-security-suite` — Security & Privacy — Audita seguridad de GitHub: code/secret scanning, advisories, dependencias, Dependabot, reportes privados y secretos, con planes de remediación.
+- `github-cicd-governance` — Security & Privacy — Audita la gobernanza de CI/CD en GitHub Actions: permisos, environments, checks, merge queue, runners, OIDC, variables y despliegues manuales.
+- `github-repo-governance` — Developer Tools — Audita y prepara configuración de repositorios GitHub: settings, CODEOWNERS, templates, labels, milestones, funding, Pages y rulesets de protección.
+- `github-collab-activity` — Developer Tools — Resume actividad y colaboración en GitHub: Discussions, notificaciones, contribuidores, equipos, actividad temporal, tráfico y audit log administrativo.
+- `github-branch-release-ops` — Developer Tools — Opera el ciclo de vida de ramas y despliegues en GitHub: ramas, firma de commits, despliegues, conflictos de merge y paquetes.
+- `github-org-lifecycle` — Developer Tools — Audita configuración organizacional y ciclo de vida de repositorios en GitHub: settings de organización, archivado, migraciones, forks, webhooks, API y Projects.
 - `linter-seo-geo-2026` — Content & Editorial — SEO/GEO pre-publication content validation.
 - `marketplace-validator` — Marketplace & Quality — Claude Code and Codex manifest validation.
 - `ai-prompt-workflow` — AI & Prompt Engineering — Designs and evaluates prompts with goals, context, constraints, and guardrails.
@@ -32,51 +38,8 @@ Use these exact identifiers when referring to plugins:
 - `github-pr-manager` — Developer Tools — Prepares and reviews Pull Requests with checklists and validation evidence.
 - `github-release-manager` — Developer Tools — Prepares GitHub releases, tags, and release notes with gh CLI.
 - `github-actions-manager` — Developer Tools — Inspects GitHub Actions workflows, runs, jobs, and logs.
-- `github-project-manager` — Developer Tools — Organizes GitHub Projects, fields, views, and work items.
 - `github-code-search` — Developer Tools — Searches GitHub code, commits, Issues, and Pull Requests reproducibly.
-- `github-secret-manager` — Security & Privacy — Audits secret scopes and references without exposing values.
-- `github-ruleset-manager` — Security & Privacy — Designs rulesets, bypass actors, and required checks.
-- `github-checks-manager` — Developer Tools — Analyzes checks, annotations, conclusions, and CI remediation.
-- `github-audit-log-manager` — Security & Privacy — Analyzes administrative activity with redacted evidence.
-- `github-runner-manager` — Security & Privacy — Audits runners, labels, scope, and Actions isolation.
-- `github-deployment-manager` — Developer Tools — Controls deployments with evidence and rollback plans.
-- `github-team-manager` — Security & Privacy — Audits teams, memberships, and effective permissions.
-- `github-merge-queue-manager` — Developer Tools — Analyzes merge queues, checks, and integration bottlenecks.
-- `github-fork-manager` — Developer Tools — Audits forks, synchronization, and visibility policies.
-- `github-commit-signing-manager` — Security & Privacy — Audits signatures, verification states, and coverage.
-- `github-migration-manager` — Developer Tools — Plans repository migrations with validation and rollback.
-- `github-archive-manager` — Developer Tools — Manages repository lifecycle, retention, and recovery.
-- `github-code-scanning-manager` — Security & Privacy — Audits Code Scanning alerts and remediation.
-- `github-secret-scanning-manager` — Security & Privacy — Analyzes alerts without exposing secret values.
-- `github-security-advisory-manager` — Security & Privacy — Manages advisories and responsible disclosure.
-- `github-dependency-review-manager` — Security & Privacy — Reviews new dependencies, licenses, and supply-chain risk.
-- `github-private-reporting-manager` — Security & Privacy — Manages private vulnerability reports with minimal evidence.
-- `github-organization-settings-manager` — Security & Privacy — Audits organization-wide policies and permissions.
-- `github-pages-manager` — Developer Tools — Audits and prepares GitHub Pages deployments.
-- `github-funding-manager` — Developer Tools — Manages repository funding and sponsorship links.
-- `github-workflow-dispatch-manager` — Developer Tools — Prepares manual workflow dispatches with inputs.
-- `github-oidc-manager` — Security & Privacy — Audits Actions OIDC trust and cloud conditions.
-- `github-action-permissions-manager` — Security & Privacy — Audits workflows and GITHUB_TOKEN scopes.
-- `github-merge-conflict-manager` — Developer Tools — Diagnoses Pull Request conflicts and resolutions.
 - `mercadopago-payment-manager` — Developer Tools — Prepares Mercado Pago Checkout Preference links with safety validation.
-- `github-security-manager` — Security & Privacy — Audits GitHub security alerts and repository risks.
-- `github-dependabot-manager` — Security & Privacy — Reviews Dependabot alerts and dependency upgrade plans.
-- `github-notifications-manager` — Developer Tools — Summarizes and triages GitHub notifications.
-- `github-discussion-manager` — Developer Tools — Manages GitHub Discussions with sourced replies.
-- `github-label-manager` — Marketplace & Quality — Designs and maintains GitHub label taxonomies.
-- `github-repository-manager` — Developer Tools — Inspects and configures repositories with explicit change plans.
-- `github-milestone-manager` — Marketplace & Quality — Plans and tracks GitHub milestones with Issue traceability.
-- `github-branch-manager` — Developer Tools — Inspects and manages branches with destructive-operation guards.
-- `github-template-manager` — Developer Tools — Reviews and maintains Issue and Pull Request templates.
-- `github-api-manager` — Developer Tools — Runs safe, reproducible GitHub API queries through gh CLI.
-- `github-codeowners-manager` — Developer Tools — Designs and validates CODEOWNERS ownership mappings.
-- `github-contributor-manager` — Developer Tools — Analyzes contribution activity and reviewer evidence.
-- `github-activity-manager` — Developer Tools — Summarizes dated repository activity with explicit scope.
-- `github-traffic-manager` — Developer Tools — Analyzes views, clones, referrers, and paths with API limits.
-- `github-webhook-manager` — Security & Privacy — Plans and audits GitHub webhooks with secret handling.
-- `github-environment-manager` — Security & Privacy — Plans and audits deployment environments and protection rules.
-- `github-variable-manager` — Security & Privacy — Audits Actions variable names and scopes without secret values.
-- `github-package-manager` — Developer Tools — Inspects packages, versions, visibility, and retention plans.
 - `repo-quality-gate` — Marketplace & Quality — Repository readiness before commits, PRs, releases, or deployments.
 - `technical-docs-linter` — Developer Tools — README, API docs, examples, commands, and links.
 - `accessibility-auditor` — Accessibility & UX — HTML, ARIA, forms, contrast, and keyboard behavior.

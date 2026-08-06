@@ -1,8 +1,0 @@
-{
-  "name": "github-deployment-manager",
-  "displayName": "GitHub Deployment Manager",
-  "version": "0.1.0",
-  "description": "Analiza despliegues de GitHub y planes seguros de rollback.",
-  "author": {"name": "Mauricio Perera"},
-  "skills": "./skills/"
-}

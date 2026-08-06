@@ -217,47 +217,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-action-permissions-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-actions-manager/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-activity-manager/</loc>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-branch-release-ops/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-api-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-archive-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-audit-log-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-branch-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-checks-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-code-scanning-manager/</loc>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-cicd-governance/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -267,52 +237,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-codeowners-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-commit-signing-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-contributor-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-dependabot-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-dependency-review-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-deployment-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-discussion-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-environment-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-fork-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-funding-manager/</loc>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-collab-activity/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -322,52 +247,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-label-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-merge-conflict-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-merge-queue-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-migration-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-milestone-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-notifications-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-oidc-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-organization-settings-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-package-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-pages-manager/</loc>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-org-lifecycle/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -377,82 +257,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-private-reporting-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-project-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-release-manager/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-repository-manager/</loc>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-repo-governance/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-ruleset-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-runner-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-secret-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-secret-scanning-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-security-advisory-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-security-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-team-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-template-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-traffic-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-variable-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-webhook-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-workflow-dispatch-manager/</loc>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/github-security-suite/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

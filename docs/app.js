@@ -44,181 +44,9 @@ const plugins = [{
   description: 'Inspecciona ejecuciones, jobs y logs de GitHub Actions con evidencia.',
   capabilities: ['Actions', 'CI', 'Logs'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-actions-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }, {
-  name: 'github-project-manager', displayName: 'GitHub Project Manager', category: 'Developer Tools', icon: 'PROJ', version: '0.1.0',
-  description: 'Organiza Projects, tareas y campos con planes de mutacion trazables.',
-  capabilities: ['Projects', 'Planning', 'Tasks'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-project-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
   name: 'github-code-search', displayName: 'GitHub Code Search', category: 'Developer Tools', icon: 'SEARCH', version: '0.1.0',
   description: 'Busca codigo, commits y referencias en GitHub con consultas reproducibles.',
   capabilities: ['Code Search', 'References', 'Commits'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-code-search', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-security-manager', displayName: 'GitHub Security Manager', category: 'Security & Privacy', icon: 'SEC', version: '0.1.0',
-  description: 'Audita alertas de seguridad y propone remediaciones trazables.',
-  capabilities: ['Security', 'Scanning', 'Evidence'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-security-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-dependabot-manager', displayName: 'GitHub Dependabot Manager', category: 'Security & Privacy', icon: 'DEP', version: '0.1.0',
-  description: 'Revisa alertas Dependabot y propone actualizaciones seguras.',
-  capabilities: ['Dependabot', 'Dependencies', 'Risk'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-dependabot-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-notifications-manager', displayName: 'GitHub Notifications Manager', category: 'Developer Tools', icon: 'INBOX', version: '0.1.0',
-  description: 'Resume y prioriza notificaciones de GitHub con enlaces y siguientes acciones.',
-  capabilities: ['Notifications', 'Triage', 'Priority'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-notifications-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-discussion-manager', displayName: 'GitHub Discussion Manager', category: 'Developer Tools', icon: 'DISC', version: '0.1.0',
-  description: 'Resume y prepara respuestas trazables para GitHub Discussions.',
-  capabilities: ['Discussions', 'Community', 'Moderation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-discussion-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-label-manager', displayName: 'GitHub Label Manager', category: 'Marketplace & Quality', icon: 'LAB', version: '0.1.0',
-  description: 'Disena taxonomias y planes de labels con consistencia y preview.',
-  capabilities: ['Labels', 'Taxonomy', 'Triage'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-label-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-repository-manager', displayName: 'GitHub Repository Manager', category: 'Developer Tools', icon: 'REPO', version: '0.1.0',
-  description: 'Inspecciona y configura repositorios con planes de cambio y confirmacion.',
-  capabilities: ['Repositories', 'Settings', 'Administration'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-repository-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-milestone-manager', displayName: 'GitHub Milestone Manager', category: 'Marketplace & Quality', icon: 'MILE', version: '0.1.0',
-  description: 'Planifica milestones con objetivos medibles, fechas y Issues vinculados.',
-  capabilities: ['Milestones', 'Planning', 'Progress'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-milestone-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-branch-manager', displayName: 'GitHub Branch Manager', category: 'Developer Tools', icon: 'BR', version: '0.1.0',
-  description: 'Inspecciona y prepara operaciones de ramas con guardas contra cambios destructivos.',
-  capabilities: ['Branches', 'Git', 'Protection'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-branch-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-template-manager', displayName: 'GitHub Template Manager', category: 'Developer Tools', icon: 'TPL', version: '0.1.0',
-  description: 'Revisa y mantiene templates de Issues y Pull Requests con validadores.',
-  capabilities: ['Templates', 'Issues', 'Pull Requests'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-template-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-api-manager', displayName: 'GitHub API Manager', category: 'Developer Tools', icon: 'API+', version: '0.1.0',
-  description: 'Ejecuta consultas seguras y reproducibles a GitHub API mediante gh CLI.',
-  capabilities: ['REST API', 'GraphQL', 'Safe queries'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-api-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-codeowners-manager', displayName: 'GitHub CODEOWNERS Manager', category: 'Developer Tools', icon: 'OWN', version: '0.1.0',
-  description: 'Valida ownership y cobertura de rutas en CODEOWNERS.',
-  capabilities: ['CODEOWNERS', 'Ownership', 'Coverage'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-codeowners-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-contributor-manager', displayName: 'GitHub Contributor Manager', category: 'Developer Tools', icon: 'CON', version: '0.1.0',
-  description: 'Analiza actividad de contribuyentes y propone reviewers con evidencia.',
-  capabilities: ['Contributors', 'Ownership', 'Reviewers'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-contributor-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-activity-manager', displayName: 'GitHub Activity Manager', category: 'Developer Tools', icon: 'ACT', version: '0.1.0',
-  description: 'Resume actividad temporal del repositorio con evidencia y limites de alcance.',
-  capabilities: ['Activity', 'Timeline', 'Evidence'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-activity-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-traffic-manager', displayName: 'GitHub Traffic Manager', category: 'Developer Tools', icon: 'TRAF', version: '0.1.0',
-  description: 'Analiza views, clones, referrers y rutas populares con limites claros.',
-  capabilities: ['Traffic', 'Views', 'Clones'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-traffic-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-webhook-manager', displayName: 'GitHub Webhook Manager', category: 'Security & Privacy', icon: 'HOOK', version: '0.1.0',
-  description: 'Audita y prepara webhooks con eventos acotados y secretos redactados.',
-  capabilities: ['Webhooks', 'Events', 'Security'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-webhook-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-environment-manager', displayName: 'GitHub Environment Manager', category: 'Security & Privacy', icon: 'ENV', version: '0.1.0',
-  description: 'Gestiona environments, reviewers y gates de despliegue con plan previo.',
-  capabilities: ['Environments', 'Deployments', 'Protection'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-environment-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-variable-manager', displayName: 'GitHub Variable Manager', category: 'Security & Privacy', icon: 'VAR', version: '0.1.0',
-  description: 'Audita variables de Actions sin exponer secretos ni valores sensibles.',
-  capabilities: ['Variables', 'Actions', 'Scopes'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-variable-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-package-manager', displayName: 'GitHub Package Manager', category: 'Developer Tools', icon: 'PKG', version: '0.1.0',
-  description: 'Revisa paquetes, versiones, visibilidad y planes de retencion.',
-  capabilities: ['Packages', 'Versions', 'Retention'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-package-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-secret-manager', displayName: 'GitHub Secret Manager', category: 'Security & Privacy', icon: 'SEC+', version: '0.1.0',
-  description: 'Audita secretos por scope y referencias sin exponer valores.',
-  capabilities: ['Secrets', 'Scopes', 'Rotation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-secret-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-ruleset-manager', displayName: 'GitHub Ruleset Manager', category: 'Security & Privacy', icon: 'RULE', version: '0.1.0',
-  description: 'Diseña reglasets, bypass actors y checks requeridos.',
-  capabilities: ['Rulesets', 'Branches', 'Governance'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-ruleset-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-checks-manager', displayName: 'GitHub Checks Manager', category: 'Developer Tools', icon: 'CHK', version: '0.1.0',
-  description: 'Analiza checks, annotations y resultados de CI con evidencia.',
-  capabilities: ['Checks', 'CI', 'Annotations'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-checks-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-audit-log-manager', displayName: 'GitHub Audit Log Manager', category: 'Security & Privacy', icon: 'AUD', version: '0.1.0',
-  description: 'Analiza actividad administrativa con datos redactados.',
-  capabilities: ['Audit Log', 'Activity', 'Evidence'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-audit-log-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-runner-manager', displayName: 'GitHub Runner Manager', category: 'Security & Privacy', icon: 'RUN', version: '0.1.0',
-  description: 'Audita runners, labels y aislamiento de Actions.',
-  capabilities: ['Runners', 'Actions', 'Isolation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-runner-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-deployment-manager', displayName: 'GitHub Deployment Manager', category: 'Developer Tools', icon: 'DEPLOY', version: '0.1.0',
-  description: 'Controla despliegues con evidencia y rollback.',
-  capabilities: ['Deployments', 'Environments', 'Rollback'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-deployment-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-team-manager', displayName: 'GitHub Team Manager', category: 'Security & Privacy', icon: 'TEAM', version: '0.1.0',
-  description: 'Audita equipos, membresías y permisos.',
-  capabilities: ['Teams', 'Permissions', 'Access'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-team-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-merge-queue-manager', displayName: 'GitHub Merge Queue Manager', category: 'Developer Tools', icon: 'QUEUE', version: '0.1.0',
-  description: 'Analiza colas de integración y checks.',
-  capabilities: ['Merge Queue', 'Pull Requests', 'Integration'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-merge-queue-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-fork-manager', displayName: 'GitHub Fork Manager', category: 'Developer Tools', icon: 'FORK', version: '0.1.0',
-  description: 'Audita forks y políticas de redes de código.',
-  capabilities: ['Forks', 'Networks', 'Governance'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-fork-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-commit-signing-manager', displayName: 'GitHub Commit Signing Manager', category: 'Security & Privacy', icon: 'SIGN', version: '0.1.0',
-  description: 'Audita firmas y verificación de commits.',
-  capabilities: ['Signing', 'Commits', 'Verification'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-commit-signing-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-migration-manager', displayName: 'GitHub Migration Manager', category: 'Developer Tools', icon: 'MIG', version: '0.1.0',
-  description: 'Planifica migraciones con trazabilidad y rollback.',
-  capabilities: ['Migration', 'Repositories', 'Rollback'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-migration-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-archive-manager', displayName: 'GitHub Archive Manager', category: 'Developer Tools', icon: 'ARC', version: '0.1.0',
-  description: 'Gestiona el ciclo de vida de repositorios.',
-  capabilities: ['Archive', 'Lifecycle', 'Repositories'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-archive-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-code-scanning-manager', displayName: 'GitHub Code Scanning Manager', category: 'Security & Privacy', icon: 'CODE', version: '0.1.0',
-  description: 'Audita alertas de Code Scanning.',
-  capabilities: ['Code Scanning', 'Alerts', 'Remediation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-code-scanning-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-secret-scanning-manager', displayName: 'GitHub Secret Scanning Manager', category: 'Security & Privacy', icon: 'SS', version: '0.1.0',
-  description: 'Analiza alertas sin exponer secretos.',
-  capabilities: ['Secret Scanning', 'Exposure', 'Revocation'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-secret-scanning-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-security-advisory-manager', displayName: 'GitHub Security Advisory Manager', category: 'Security & Privacy', icon: 'ADV', version: '0.1.0',
-  description: 'Gestiona advisories y divulgación responsable.',
-  capabilities: ['Advisories', 'CVE', 'Disclosure'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-security-advisory-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-dependency-review-manager', displayName: 'GitHub Dependency Review Manager', category: 'Security & Privacy', icon: 'DREV', version: '0.1.0',
-  description: 'Revisa dependencias nuevas en Pull Requests.',
-  capabilities: ['Dependencies', 'Pull Requests', 'Supply Chain'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-dependency-review-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-private-reporting-manager', displayName: 'GitHub Private Reporting Manager', category: 'Security & Privacy', icon: 'PRIV', version: '0.1.0',
-  description: 'Gestiona reportes privados de vulnerabilidades.',
-  capabilities: ['Vulnerability Reports', 'Privacy', 'Disclosure'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-private-reporting-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-organization-settings-manager', displayName: 'GitHub Organization Settings Manager', category: 'Security & Privacy', icon: 'ORG', version: '0.1.0',
-  description: 'Audita políticas organizacionales.',
-  capabilities: ['Organizations', 'Policies', 'Administration'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-organization-settings-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-pages-manager', displayName: 'GitHub Pages Manager', category: 'Developer Tools', icon: 'PAGES', version: '0.1.0',
-  description: 'Audita y prepara despliegues de GitHub Pages.',
-  capabilities: ['Pages', 'Deployment', 'Publishing'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-pages-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-funding-manager', displayName: 'GitHub Funding Manager', category: 'Developer Tools', icon: 'FUND', version: '0.1.0',
-  description: 'Gestiona financiación y sponsorship.',
-  capabilities: ['Funding', 'Sponsors', 'Repository'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-funding-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-workflow-dispatch-manager', displayName: 'GitHub Workflow Dispatch Manager', category: 'Developer Tools', icon: 'DISP', version: '0.1.0',
-  description: 'Prepara disparos manuales de workflows.',
-  capabilities: ['Workflows', 'Dispatch', 'Inputs'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-workflow-dispatch-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-oidc-manager', displayName: 'GitHub OIDC Manager', category: 'Security & Privacy', icon: 'OIDC', version: '0.1.0',
-  description: 'Audita confianza OIDC de Actions.',
-  capabilities: ['OIDC', 'Actions', 'Cloud Trust'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-oidc-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-action-permissions-manager', displayName: 'GitHub Action Permissions Manager', category: 'Security & Privacy', icon: 'PERM', version: '0.1.0',
-  description: 'Audita permisos de workflows y GITHUB_TOKEN.',
-  capabilities: ['Actions', 'Permissions', 'GITHUB_TOKEN'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-action-permissions-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
-}, {
-  name: 'github-merge-conflict-manager', displayName: 'GitHub Merge Conflict Manager', category: 'Developer Tools', icon: 'CONF', version: '0.1.0',
-  description: 'Diagnostica conflictos de Pull Requests.',
-  capabilities: ['Conflicts', 'Pull Requests', 'Resolution'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-merge-conflict-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }, {
   name: 'mercadopago-payment-manager', displayName: 'Mercado Pago Payment Manager', category: 'Developer Tools', icon: 'MP', version: '0.1.0',
   description: 'Prepara enlaces de pago con validadores de seguridad.',
@@ -409,6 +237,48 @@ const plugins = [{
   name: 'research-methods-guide', displayName: 'Research Methods Guide', category: 'Research & Evidence', icon: 'RM', version: '0.1.0', description: 'Estructura investigaciones reproducibles con preguntas, fuentes, evidencia, incertidumbre y síntesis.', capabilities: ['Research', 'Sources', 'Evidence', 'Synthesis'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/research-methods-guide', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }, {
   name: 'design-system-governance', displayName: 'Design System Governance', category: 'Design Systems', icon: 'DSG', version: '0.1.0', description: 'Mantiene contratos de diseño y detecta drift entre tokens, componentes, documentación e implementación.', capabilities: ['Governance', 'Tokens', 'Components', 'Drift', 'Accessibility'], url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/design-system-governance', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+
+}, {
+
+  name: 'github-security-suite', displayName: 'GitHub Security Suite', category: 'Security & Privacy', icon: 'SEC', version: '0.1.0',
+  description: 'Audita seguridad de GitHub: code/secret scanning, advisories, dependencias, Dependabot, reportes privados y secretos, con planes de remediación.',
+  capabilities: ['Code scanning', 'Secret scanning', 'Advisories', 'Dependency review', 'Dependabot', 'Private reporting', 'Secrets'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-security-suite', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+
+}, {
+
+  name: 'github-cicd-governance', displayName: 'GitHub CI/CD Governance', category: 'Security & Privacy', icon: 'CID', version: '0.1.0',
+  description: 'Audita la gobernanza de CI/CD en GitHub Actions: permisos, environments, checks, merge queue, runners, OIDC, variables y despliegues manuales.',
+  capabilities: ['Action permissions', 'Environments', 'Checks', 'Merge queue', 'Runners', 'OIDC', 'Variables', 'Workflow dispatch'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-cicd-governance', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+
+}, {
+
+  name: 'github-repo-governance', displayName: 'GitHub Repository Governance', category: 'Developer Tools', icon: 'RGV', version: '0.1.0',
+  description: 'Audita y prepara configuración de repositorios GitHub: settings, CODEOWNERS, templates, labels, milestones, funding, Pages y rulesets de protección.',
+  capabilities: ['Repository settings', 'CODEOWNERS', 'Templates', 'Labels', 'Milestones', 'Funding', 'Pages', 'Rulesets'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-repo-governance', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+
+}, {
+
+  name: 'github-collab-activity', displayName: 'GitHub Collaboration & Activity', category: 'Developer Tools', icon: 'COL', version: '0.1.0',
+  description: 'Resume actividad y colaboración en GitHub: Discussions, notificaciones, contribuidores, equipos, actividad temporal, tráfico y audit log administrativo.',
+  capabilities: ['Discussions', 'Notifications', 'Contributors', 'Teams', 'Activity', 'Traffic', 'Audit log'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-collab-activity', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+
+}, {
+
+  name: 'github-branch-release-ops', displayName: 'GitHub Branch & Release Ops', category: 'Developer Tools', icon: 'BRO', version: '0.1.0',
+  description: 'Opera el ciclo de vida de ramas y despliegues en GitHub: ramas, firma de commits, despliegues, conflictos de merge y paquetes.',
+  capabilities: ['Branches', 'Commit signing', 'Deployments', 'Merge conflicts', 'Packages'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-branch-release-ops', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+
+}, {
+
+  name: 'github-org-lifecycle', displayName: 'GitHub Org & Lifecycle', category: 'Developer Tools', icon: 'ORG', version: '0.1.0',
+  description: 'Audita configuración organizacional y ciclo de vida de repositorios en GitHub: settings de organización, archivado, migraciones, forks, webhooks, API y Projects.',
+  capabilities: ['Organization settings', 'Archive', 'Migration', 'Forks', 'Webhooks', 'API queries', 'Projects'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/github-org-lifecycle', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

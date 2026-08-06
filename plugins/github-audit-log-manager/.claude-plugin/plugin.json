@@ -1,8 +1,0 @@
-{
-  "name": "github-audit-log-manager",
-  "displayName": "GitHub Audit Log Manager",
-  "version": "0.1.0",
-  "description": "Analiza actividad administrativa de GitHub con evidencia redactada.",
-  "author": {"name": "Mauricio Perera"},
-  "skills": "./skills/"
-}
