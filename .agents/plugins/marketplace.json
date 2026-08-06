@@ -975,6 +975,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Security & Privacy"
+    },
+    {
+      "name": "terraform-plan-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/terraform-plan-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
     }
   ]
 }

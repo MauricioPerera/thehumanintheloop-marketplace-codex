@@ -1,0 +1,10 @@
+{
+  "name": "terraform-plan-auditor",
+  "displayName": "Terraform Plan Auditor",
+  "version": "0.1.0",
+  "description": "Audita el output de `terraform plan` antes de aplicarlo: cambios destructivos, recursos con estado, permisos amplios y exposición pública, sin ejecutar apply, destroy ni modificar el state.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["terraform", "iac", "infrastructure-as-code", "plan-review", "cloud", "security"]
+}

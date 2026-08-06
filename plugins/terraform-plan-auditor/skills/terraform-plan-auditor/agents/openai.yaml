@@ -1,0 +1,4 @@
+interface:
+  display_name: Terraform Plan Auditor
+  short_description: Audits terraform plan output before apply.
+  default_prompt: Audit this Terraform plan before it is applied, without running apply or destroy.

@@ -1,0 +1,19 @@
+{
+  "name": "terraform-plan-auditor",
+  "version": "0.1.0",
+  "description": "Audita el output de `terraform plan` antes de aplicarlo: cambios destructivos, recursos con estado, permisos amplios y exposición pública, sin ejecutar apply, destroy ni modificar el state.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["terraform", "iac", "infrastructure-as-code", "plan-review", "cloud", "security"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Terraform Plan Auditor",
+    "shortDescription": "Audita planes de Terraform antes de aplicarlos.",
+    "longDescription": "Revisa el output de `terraform plan` o `terraform show -json`, clasifica cada cambio por acción (create/update/delete/replace), señala pérdida de datos irreversible en recursos con estado, detecta permisos IAM amplios, reglas de firewall más permisivas y exposición pública de storage, y entrega un reporte de riesgo con evidencia y recomendación sin ejecutar apply, destroy, import ni tocar el state remoto.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": ["Plan review", "Destructive change detection", "IAM risk", "Public exposure", "Drift-safe"],
+    "defaultPrompt": "Audita este plan de Terraform antes de aplicarlo, sin ejecutar apply ni destroy."
+  }
+}
