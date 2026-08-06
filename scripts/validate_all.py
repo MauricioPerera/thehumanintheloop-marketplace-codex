@@ -24,6 +24,7 @@ def main() -> int:
     commands = [
         [sys.executable, "plugins/marketplace-validator/scripts/validate_marketplace.py", "."],
         [sys.executable, "scripts/validate_catalog_metadata.py"],
+        [sys.executable, "scripts/validate_plugin_pages.py"],
         [sys.executable, "scripts/validate_analysis_metadata.py"],
         [sys.executable, "scripts/validate_llms_catalog.py"],
         ["node", "--check", "docs/app.js"],

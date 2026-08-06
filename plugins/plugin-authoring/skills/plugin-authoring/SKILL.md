@@ -25,8 +25,9 @@ Ayuda a convertir una idea en un plugin instalable y verificable para este marke
 4. Si el plugin necesita scripts, añade validadores deterministas y documenta sus comandos.
 5. Registra la misma entrada en `.claude-plugin/marketplace.json` y `.agents/plugins/marketplace.json`.
 6. Actualiza la ficha en `docs/app.js`, el JSON-LD de `docs/index.html` y los conteos del `README.md` cuando corresponda.
-7. Ejecuta la suite completa de validación.
-8. Revisa `git diff`, `git status` y los cambios de autoría o licencia antes de publicar.
+7. Corre `python scripts/generate_plugin_pages.py` para regenerar la página estática compartible del plugin (`docs/plugins/<nombre>/`) y su entrada en `docs/sitemap.xml`.
+8. Ejecuta la suite completa de validación.
+9. Revisa `git diff`, `git status` y los cambios de autoría o licencia antes de publicar.
 
 ## Manifests mínimos
 
@@ -49,6 +50,7 @@ Si necesitas aislar un problema:
 ```powershell
 python plugins/marketplace-validator/scripts/validate_marketplace.py .
 python scripts/validate_catalog_metadata.py
+python scripts/validate_plugin_pages.py
 python scripts/validate_analysis_metadata.py
 python scripts/validate_llms_catalog.py
 node --check docs/app.js
