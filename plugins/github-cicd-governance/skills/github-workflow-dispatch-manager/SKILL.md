@@ -16,5 +16,5 @@ Inspecciona el workflow y sus inputs antes de cualquier `gh workflow run`. Prese
 5. Valida:
 
 ```bash
-python plugins/github-workflow-dispatch-manager/scripts/validate_dispatch_plan.py --input dispatch.md --json dispatch-report.json
+python plugins/github-cicd-governance/skills/github-workflow-dispatch-manager/scripts/validate_dispatch_plan.py --input dispatch.md --json dispatch-report.json
 ```

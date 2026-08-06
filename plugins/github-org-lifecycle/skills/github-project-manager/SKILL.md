@@ -13,7 +13,7 @@ description: "Organize GitHub Projects and work items with the gh CLI. Use when 
 6. Validate a project plan before delivery:
 
 ```text
-python plugins/github-project-manager/scripts/validate_project_plan.py --input project-plan.md --json project-report.json
+python plugins/github-org-lifecycle/skills/github-project-manager/scripts/validate_project_plan.py --input project-plan.md --json project-report.json
 ```
 
 The plan must include owner/project, item list, status mapping, dependencies, open decisions, and mutation commands.

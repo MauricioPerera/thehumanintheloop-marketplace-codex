@@ -12,5 +12,5 @@ description: "Review and maintain GitHub Issue, Pull Request, and config templat
 5. Validate the template set:
 
 ```text
-python plugins/github-template-manager/scripts/validate_templates.py --input templates.md --json templates-report.json
+python plugins/github-repo-governance/skills/github-template-manager/scripts/validate_templates.py --input templates.md --json templates-report.json
 ```

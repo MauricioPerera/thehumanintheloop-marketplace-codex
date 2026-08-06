@@ -12,5 +12,5 @@ description: "Audit and plan GitHub webhooks with gh API. Use to inspect endpoin
 5. Validate the plan:
 
 ```text
-python plugins/github-webhook-manager/scripts/validate_webhook_plan.py --input webhook.md --json webhook-report.json
+python plugins/github-org-lifecycle/skills/github-webhook-manager/scripts/validate_webhook_plan.py --input webhook.md --json webhook-report.json
 ```

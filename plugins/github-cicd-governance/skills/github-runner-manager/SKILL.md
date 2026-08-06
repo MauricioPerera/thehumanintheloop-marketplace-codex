@@ -16,7 +16,7 @@ Inspecciona runners y permisos sin ejecutar cambios. Trata un runner self-hosted
 5. Valida el plan:
 
 ```bash
-python plugins/github-runner-manager/scripts/validate_runner_plan.py --input runners.md --json runners-report.json
+python plugins/github-cicd-governance/skills/github-runner-manager/scripts/validate_runner_plan.py --input runners.md --json runners-report.json
 ```
 
 No registres ni elimines runners, ni cambies grupos, sin mostrar el cambio y recibir confirmación explícita.

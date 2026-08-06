@@ -16,5 +16,5 @@ Resume el estado operativo de despliegues con `gh` y `gh api`. No promociones, c
 5. Valida el plan:
 
 ```bash
-python plugins/github-deployment-manager/scripts/validate_deployment_plan.py --input deployment.md --json deployment-report.json
+python plugins/github-branch-release-ops/skills/github-deployment-manager/scripts/validate_deployment_plan.py --input deployment.md --json deployment-report.json
 ```

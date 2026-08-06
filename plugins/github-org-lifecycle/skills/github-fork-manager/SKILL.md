@@ -16,5 +16,5 @@ Inspecciona la red de forks y sus relaciones con `gh`. No crees, elimines, trans
 5. Valida el plan:
 
 ```bash
-python plugins/github-fork-manager/scripts/validate_fork_plan.py --input forks.md --json forks-report.json
+python plugins/github-org-lifecycle/skills/github-fork-manager/scripts/validate_fork_plan.py --input forks.md --json forks-report.json
 ```

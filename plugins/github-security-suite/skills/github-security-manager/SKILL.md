@@ -13,7 +13,7 @@ description: "Audit GitHub security alerts and repository risks with gh CLI, inc
 6. Validate the audit report:
 
 ```text
-python plugins/github-security-manager/scripts/validate_security_report.py --input security-report.md --json security-report.json
+python plugins/github-security-suite/skills/github-security-manager/scripts/validate_security_report.py --input security-report.md --json security-report.json
 ```
 
 The report must include repository, scope, findings, severity, evidence, remediation, verification, and open decisions.

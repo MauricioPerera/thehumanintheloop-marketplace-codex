@@ -16,5 +16,5 @@ Inspecciona la base y el head con `gh`, identifica archivos y commits divergente
 5. Valida:
 
 ```bash
-python plugins/github-merge-conflict-manager/scripts/validate_conflict_plan.py --input conflict.md --json conflict-report.json
+python plugins/github-branch-release-ops/skills/github-merge-conflict-manager/scripts/validate_conflict_plan.py --input conflict.md --json conflict-report.json
 ```

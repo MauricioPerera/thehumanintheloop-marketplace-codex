@@ -16,5 +16,5 @@ Redacta el mínimo necesario para que un maintainer reproduzca y responda. No pu
 5. Valida:
 
 ```bash
-python plugins/github-private-reporting-manager/scripts/validate_private_report.py --input report.md --json report-check.json
+python plugins/github-security-suite/skills/github-private-reporting-manager/scripts/validate_private_report.py --input report.md --json report-check.json
 ```

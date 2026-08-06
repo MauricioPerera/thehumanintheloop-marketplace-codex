@@ -16,7 +16,7 @@ Convierte la política de protección en evidencia y un plan aplicable. Usa `gh 
 5. Valida el plan con:
 
 ```bash
-python plugins/github-ruleset-manager/scripts/validate_ruleset_plan.py --input ruleset-plan.md --json ruleset-report.json
+python plugins/github-repo-governance/skills/github-ruleset-manager/scripts/validate_ruleset_plan.py --input ruleset-plan.md --json ruleset-report.json
 ```
 
 Nunca habilites enforcement sobre producción sin confirmar propietarios, bypass de emergencia y procedimiento de recuperación.

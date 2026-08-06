@@ -16,5 +16,5 @@ Inspecciona la organización en modo lectura y separa configuración observada d
 5. Valida:
 
 ```bash
-python plugins/github-organization-settings-manager/scripts/validate_org_settings.py --input org.md --json org-report.json
+python plugins/github-org-lifecycle/skills/github-organization-settings-manager/scripts/validate_org_settings.py --input org.md --json org-report.json
 ```

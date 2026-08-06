@@ -12,7 +12,7 @@ description: "Run safe, reproducible GitHub REST or GraphQL queries through gh C
 5. Validate the query plan:
 
 ```text
-python plugins/github-api-manager/scripts/validate_api_query.py --input api-query.md --json api-report.json
+python plugins/github-org-lifecycle/skills/github-api-manager/scripts/validate_api_query.py --input api-query.md --json api-report.json
 ```
 
 Never print tokens, headers, or private response fields unnecessarily.

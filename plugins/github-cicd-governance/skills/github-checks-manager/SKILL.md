@@ -16,7 +16,7 @@ Inspecciona check runs y resultados asociados a commits o Pull Requests usando `
 5. Valida el informe con:
 
 ```bash
-python plugins/github-checks-manager/scripts/validate_checks_report.py --input checks.md --json checks-report.json
+python plugins/github-cicd-governance/skills/github-checks-manager/scripts/validate_checks_report.py --input checks.md --json checks-report.json
 ```
 
 No inventes conclusiones cuando faltan logs; declara los datos no observables.

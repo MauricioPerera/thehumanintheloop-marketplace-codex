@@ -16,5 +16,5 @@ Construye el advisory a partir de evidencia confirmada. No publiques CVE, detall
 5. Valida:
 
 ```bash
-python plugins/github-security-advisory-manager/scripts/validate_advisory.py --input advisory.md --json advisory-report.json
+python plugins/github-security-suite/skills/github-security-advisory-manager/scripts/validate_advisory.py --input advisory.md --json advisory-report.json
 ```

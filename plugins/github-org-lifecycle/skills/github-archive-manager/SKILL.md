@@ -16,5 +16,5 @@ Archivar es una decisión de ciclo de vida, no una limpieza automática. Revisa 
 5. Valida:
 
 ```bash
-python plugins/github-archive-manager/scripts/validate_archive_plan.py --input archive.md --json archive-report.json
+python plugins/github-org-lifecycle/skills/github-archive-manager/scripts/validate_archive_plan.py --input archive.md --json archive-report.json
 ```

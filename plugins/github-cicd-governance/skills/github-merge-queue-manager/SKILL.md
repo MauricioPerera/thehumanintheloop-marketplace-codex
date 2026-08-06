@@ -16,5 +16,5 @@ Usa `gh` para revisar estado, checks y políticas de integración. Distingue una
 5. Valida el informe:
 
 ```bash
-python plugins/github-merge-queue-manager/scripts/validate_merge_queue.py --input queue.md --json queue-report.json
+python plugins/github-cicd-governance/skills/github-merge-queue-manager/scripts/validate_merge_queue.py --input queue.md --json queue-report.json
 ```

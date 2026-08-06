@@ -11,5 +11,5 @@ description: "Summarize GitHub repository activity with gh CLI. Use for dated re
 4. Validate the report:
 
 ```text
-python plugins/github-activity-manager/scripts/validate_activity_report.py --input activity.md --json activity-report.json
+python plugins/github-collab-activity/skills/github-activity-manager/scripts/validate_activity_report.py --input activity.md --json activity-report.json
 ```

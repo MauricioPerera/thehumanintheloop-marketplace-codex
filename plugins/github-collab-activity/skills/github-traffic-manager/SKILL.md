@@ -11,5 +11,5 @@ description: "Analyze GitHub repository traffic through gh API. Use for views, c
 4. Validate the report:
 
 ```text
-python plugins/github-traffic-manager/scripts/validate_traffic_report.py --input traffic.md --json traffic-report.json
+python plugins/github-collab-activity/skills/github-traffic-manager/scripts/validate_traffic_report.py --input traffic.md --json traffic-report.json
 ```

@@ -16,5 +16,5 @@ Revisa commits y estados de verificación con `gh`. No expongas material privado
 5. Valida:
 
 ```bash
-python plugins/github-commit-signing-manager/scripts/validate_signing_audit.py --input signing.md --json signing-report.json
+python plugins/github-branch-release-ops/skills/github-commit-signing-manager/scripts/validate_signing_audit.py --input signing.md --json signing-report.json
 ```

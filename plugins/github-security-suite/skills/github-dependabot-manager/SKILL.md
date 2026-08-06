@@ -13,7 +13,7 @@ description: "Review GitHub Dependabot alerts and dependency updates with gh CLI
 6. Validate the plan:
 
 ```text
-python plugins/github-dependabot-manager/scripts/validate_dependabot_plan.py --input dependabot-plan.md --json dependabot-report.json
+python plugins/github-security-suite/skills/github-dependabot-manager/scripts/validate_dependabot_plan.py --input dependabot-plan.md --json dependabot-report.json
 ```
 
 Never claim an alert is fixed without a current alert or CI result proving it.

@@ -16,5 +16,5 @@ Construye un inventario antes de migrar. No transfieras, borres ni cambies URLs 
 5. Valida:
 
 ```bash
-python plugins/github-migration-manager/scripts/validate_migration_plan.py --input migration.md --json migration-report.json
+python plugins/github-org-lifecycle/skills/github-migration-manager/scripts/validate_migration_plan.py --input migration.md --json migration-report.json
 ```

@@ -16,7 +16,7 @@ Analiza configuración y uso de secretos, no sus contenidos. Ejecuta primero con
 5. Valida el informe con:
 
 ```bash
-python plugins/github-secret-manager/scripts/validate_secret_audit.py --input audit.md --json audit-report.json
+python plugins/github-security-suite/skills/github-secret-manager/scripts/validate_secret_audit.py --input audit.md --json audit-report.json
 ```
 
 ## Seguridad

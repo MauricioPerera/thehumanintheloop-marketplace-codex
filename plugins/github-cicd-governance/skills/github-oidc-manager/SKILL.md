@@ -16,5 +16,5 @@ Inspecciona workflows y configuración cloud en modo lectura. Compara claims esp
 5. Valida:
 
 ```bash
-python plugins/github-oidc-manager/scripts/validate_oidc_audit.py --input oidc.md --json oidc-report.json
+python plugins/github-cicd-governance/skills/github-oidc-manager/scripts/validate_oidc_audit.py --input oidc.md --json oidc-report.json
 ```

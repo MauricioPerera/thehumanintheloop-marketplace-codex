@@ -12,5 +12,5 @@ description: "Design and maintain GitHub label taxonomies with gh CLI. Use to au
 5. Validate the taxonomy:
 
 ```text
-python plugins/github-label-manager/scripts/validate_label_plan.py --input labels.md --json labels-report.json
+python plugins/github-repo-governance/skills/github-label-manager/scripts/validate_label_plan.py --input labels.md --json labels-report.json
 ```

@@ -12,5 +12,5 @@ description: "Inspect and manage Git branches with git and gh CLI. Use for branc
 5. Validate the plan:
 
 ```text
-python plugins/github-branch-manager/scripts/validate_branch_plan.py --input branch.md --json branch-report.json
+python plugins/github-branch-release-ops/skills/github-branch-manager/scripts/validate_branch_plan.py --input branch.md --json branch-report.json
 ```

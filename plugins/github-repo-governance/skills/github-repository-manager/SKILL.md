@@ -12,7 +12,7 @@ description: "Inspect and configure GitHub repositories with gh CLI. Use for rep
 5. Validate the plan:
 
 ```text
-python plugins/github-repository-manager/scripts/validate_repository_plan.py --input repository-plan.md --json repository-report.json
+python plugins/github-repo-governance/skills/github-repository-manager/scripts/validate_repository_plan.py --input repository-plan.md --json repository-report.json
 ```
 
 Never print tokens or infer authorization from repository ownership alone.

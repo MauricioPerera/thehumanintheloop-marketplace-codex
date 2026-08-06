@@ -12,5 +12,5 @@ description: "Plan and track GitHub milestones with gh CLI. Use to define measur
 5. Validate the plan:
 
 ```text
-python plugins/github-milestone-manager/scripts/validate_milestone_plan.py --input milestone.md --json milestone-report.json
+python plugins/github-repo-governance/skills/github-milestone-manager/scripts/validate_milestone_plan.py --input milestone.md --json milestone-report.json
 ```

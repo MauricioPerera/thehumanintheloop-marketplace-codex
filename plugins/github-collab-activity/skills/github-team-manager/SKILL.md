@@ -16,5 +16,5 @@ Inspecciona equipos y accesos con `gh` o `gh api` en modo lectura. No agregues, 
 5. Valida el informe:
 
 ```bash
-python plugins/github-team-manager/scripts/validate_team_access.py --input team-audit.md --json team-report.json
+python plugins/github-collab-activity/skills/github-team-manager/scripts/validate_team_access.py --input team-audit.md --json team-report.json
 ```

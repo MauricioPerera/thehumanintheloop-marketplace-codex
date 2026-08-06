@@ -16,5 +16,5 @@ Inspecciona Pages y workflows con `gh` en modo lectura. Revisa fuente, branch, a
 5. Valida:
 
 ```bash
-python plugins/github-pages-manager/scripts/validate_pages_plan.py --input pages.md --json pages-report.json
+python plugins/github-repo-governance/skills/github-pages-manager/scripts/validate_pages_plan.py --input pages.md --json pages-report.json
 ```

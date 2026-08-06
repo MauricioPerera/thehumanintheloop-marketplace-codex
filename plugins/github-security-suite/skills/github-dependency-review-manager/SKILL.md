@@ -16,5 +16,5 @@ Compara la base y el head del Pull Request con `gh`. Revisa paquete, versión, e
 5. Valida:
 
 ```bash
-python plugins/github-dependency-review-manager/scripts/validate_dependency_review.py --input review.md --json review-report.json
+python plugins/github-security-suite/skills/github-dependency-review-manager/scripts/validate_dependency_review.py --input review.md --json review-report.json
 ```

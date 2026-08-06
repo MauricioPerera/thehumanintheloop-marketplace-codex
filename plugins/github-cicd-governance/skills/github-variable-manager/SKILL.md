@@ -12,5 +12,5 @@ description: "Audit GitHub Actions variable names, scopes, and references with g
 5. Validate the audit:
 
 ```text
-python plugins/github-variable-manager/scripts/validate_variable_audit.py --input variables.md --json variables-report.json
+python plugins/github-cicd-governance/skills/github-variable-manager/scripts/validate_variable_audit.py --input variables.md --json variables-report.json
 ```

@@ -12,5 +12,5 @@ description: "Audit and plan GitHub deployment environments, reviewers, branch r
 5. Validate the plan:
 
 ```text
-python plugins/github-environment-manager/scripts/validate_environment_plan.py --input environment.md --json environment-report.json
+python plugins/github-cicd-governance/skills/github-environment-manager/scripts/validate_environment_plan.py --input environment.md --json environment-report.json
 ```

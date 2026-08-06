@@ -12,5 +12,5 @@ description: "Analyze GitHub contributor activity with gh CLI and prepare eviden
 5. Validate the report:
 
 ```text
-python plugins/github-contributor-manager/scripts/validate_contributor_report.py --input contributors.md --json contributors-report.json
+python plugins/github-collab-activity/skills/github-contributor-manager/scripts/validate_contributor_report.py --input contributors.md --json contributors-report.json
 ```

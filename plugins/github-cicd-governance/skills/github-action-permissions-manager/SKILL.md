@@ -16,5 +16,5 @@ Lee workflows y políticas de Actions; no los edita automáticamente. Identifica
 5. Valida:
 
 ```bash
-python plugins/github-action-permissions-manager/scripts/validate_action_permissions.py --input permissions.md --json permissions-report.json
+python plugins/github-cicd-governance/skills/github-action-permissions-manager/scripts/validate_action_permissions.py --input permissions.md --json permissions-report.json
 ```

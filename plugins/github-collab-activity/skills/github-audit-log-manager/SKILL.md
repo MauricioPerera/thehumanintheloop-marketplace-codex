@@ -16,5 +16,5 @@ Consulta eventos administrativos en modo lectura con `gh` o `gh api`. Define sie
 5. Valida el informe:
 
 ```bash
-python plugins/github-audit-log-manager/scripts/validate_audit_log_report.py --input audit.md --json audit-report.json
+python plugins/github-collab-activity/skills/github-audit-log-manager/scripts/validate_audit_log_report.py --input audit.md --json audit-report.json
 ```

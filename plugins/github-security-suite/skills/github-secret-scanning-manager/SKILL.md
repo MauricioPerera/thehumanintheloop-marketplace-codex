@@ -16,5 +16,5 @@ Los valores nunca se imprimen ni se copian a informes. Revisa proveedor, ubicaci
 5. Valida:
 
 ```bash
-python plugins/github-secret-scanning-manager/scripts/validate_secret_scan_report.py --input secrets.md --json secrets-report.json
+python plugins/github-security-suite/skills/github-secret-scanning-manager/scripts/validate_secret_scan_report.py --input secrets.md --json secrets-report.json
 ```

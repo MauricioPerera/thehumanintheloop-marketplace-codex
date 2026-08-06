@@ -12,5 +12,5 @@ description: "Inspect and plan GitHub Packages operations with gh CLI or API. Us
 5. Validate the plan:
 
 ```text
-python plugins/github-package-manager/scripts/validate_package_plan.py --input packages.md --json packages-report.json
+python plugins/github-branch-release-ops/skills/github-package-manager/scripts/validate_package_plan.py --input packages.md --json packages-report.json
 ```

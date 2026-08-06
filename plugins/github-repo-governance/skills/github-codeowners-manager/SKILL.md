@@ -12,5 +12,5 @@ description: "Design and validate GitHub CODEOWNERS mappings. Use to inspect own
 5. Validate the mapping:
 
 ```text
-python plugins/github-codeowners-manager/scripts/validate_codeowners.py --input CODEOWNERS --json codeowners-report.json
+python plugins/github-repo-governance/skills/github-codeowners-manager/scripts/validate_codeowners.py --input CODEOWNERS --json codeowners-report.json
 ```

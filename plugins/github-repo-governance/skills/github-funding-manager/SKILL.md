@@ -16,5 +16,5 @@ Revisa configuración pública y enlaces; nunca maneja pagos, claves ni datos fi
 5. Valida:
 
 ```bash
-python plugins/github-funding-manager/scripts/validate_funding_audit.py --input funding.md --json funding-report.json
+python plugins/github-repo-governance/skills/github-funding-manager/scripts/validate_funding_audit.py --input funding.md --json funding-report.json
 ```

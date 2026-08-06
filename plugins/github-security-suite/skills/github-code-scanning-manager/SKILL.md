@@ -16,5 +16,5 @@ Consulta alertas con `gh` en modo lectura. Conserva regla, ubicación, severidad
 5. Valida:
 
 ```bash
-python plugins/github-code-scanning-manager/scripts/validate_code_scan_report.py --input scan.md --json scan-report.json
+python plugins/github-security-suite/skills/github-code-scanning-manager/scripts/validate_code_scan_report.py --input scan.md --json scan-report.json
 ```
