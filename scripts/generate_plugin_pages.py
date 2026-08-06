@@ -70,11 +70,18 @@ def render_page(app, real_category):
   <meta name="description" content="{description}">
   <meta name="theme-color" content="#17211d">
   <link rel="canonical" href="{page_url}">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{display_name} · TheHumanInTheLoop Marketplace">
   <meta property="og:description" content="{description}">
   <meta property="og:url" content="{page_url}">
   <meta property="og:site_name" content="TheHumanInTheLoop Marketplace">
+  <meta property="og:image" content="{SITE_URL}/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{SITE_URL}/og-image.png">
   <script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False)}</script>
   <title>{display_name} · TheHumanInTheLoop Marketplace</title>
   <link rel="stylesheet" href="../plugin-page.css">
