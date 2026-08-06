@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 108 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 132 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -17,6 +17,11 @@ Use these exact identifiers when referring to plugins:
 
 - `linter-seo-geo-2026` — Content & Editorial — SEO/GEO pre-publication content validation.
 - `marketplace-validator` — Marketplace & Quality — Claude Code and Codex manifest validation.
+- `plugin-authoring` — Marketplace & Quality — Creates and validates plugins, manifests, skills, synchronized catalog entries, and publication checks.
+- `kdd-guide` — Developer Tools — Explains and applies Knowledge-Driven Development with OKF, CCDD, deterministic contracts, and validation gates.
+- `ai-prompt-workflow` — AI & Prompt Engineering — Designs and evaluates prompts with goals, context, constraints, and guardrails.
+- `ux-accessibility-guide` — Accessibility & UX — Organizes UX and accessibility reviews with evidence and manual-test boundaries.
+- `research-methods-guide` — Research & Evidence — Structures reproducible research with sources, evidence, uncertainty, and synthesis.
 - `design-system-auditor` — Design Systems — DESIGN.md, tokens, components, and validation contracts.
 - `content-fact-checker` — Content & Editorial — Sources, dates, links, and claim attribution.
 - `cv-job-tailor` — Content & Editorial — Tailors a real CV to a specific job offer with evidence traceability and anti-fabrication checks.
@@ -98,7 +103,7 @@ Use these exact identifiers when referring to plugins:
 - `kdd-scrum-xp` — Marketplace & Quality — Verifica 12 tecnicas de Scrum y eXtreme Programming con instrumento real (cadencia, TDD, repo unico, Clean Code) y documenta 22 tecnicas mas que requieren tablero, calendario o CI reales, extraidas con Knowledge-Driven Development.
 - `kdd-codigo-limpio` — Developer Tools — Verifica 30 heuristicas de Clean Code: comentarios, funciones, principios generales G, nombres, pruebas y profundidad de cadena, extraidas con Knowledge-Driven Development.
 - `kdd-estilo-google` — Content & Editorial — Verifica 42 reglas del Google developer documentation style guide: puntuacion, numeros/unidades/fechas, encabezados, codigo/CLI, voz/tiempo verbal y vocabulario declarado, extraidas con Knowledge-Driven Development.
-- `vps-ssh-manager` — Developer Tools — Conecta a VPS propios por SSH con preflight, verificacion de host key y confirmacion antes de cambios.
+- `vps-ssh-manager` — Developer Tools — Conecta a VPS propios por SSH reutilizando perfiles nativos, claves y known_hosts existentes, con preflight y confirmacion antes de cambios.
 - `supabase-selfhosted-observer` — Developer Tools — Observa contenedores, healthchecks, versiones y recursos de Supabase self-hosted por SSH sin exponer secretos.
 - `supabase-database-manager` — Developer Tools — Diagnostica PostgreSQL de Supabase self-hosted con consultas seguras y confirmación antes de mutaciones.
 - `supabase-service-manager` — Developer Tools — Diagnostica y opera servicios Docker Compose de Supabase con rollback y confirmación explícita.

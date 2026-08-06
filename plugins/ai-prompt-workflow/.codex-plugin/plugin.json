@@ -1,0 +1,19 @@
+{
+  "name": "ai-prompt-workflow",
+  "version": "0.1.0",
+  "description": "Diseña, revisa y mejora flujos de prompting con objetivos, contexto, restricciones y criterios de evaluación.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI Prompt Workflow",
+    "shortDescription": "Diseña prompts evaluables y reutilizables.",
+    "longDescription": "Ayuda a convertir objetivos ambiguos en prompts con contexto, límites, criterios de salida y pruebas de evaluación.",
+    "developerName": "Mauricio Perera",
+    "category": "AI & Prompt Engineering",
+    "capabilities": ["Prompt design", "Evaluation", "Context", "Guardrails"],
+    "defaultPrompt": "Ayúdame a diseñar y evaluar este prompt."
+  }
+}

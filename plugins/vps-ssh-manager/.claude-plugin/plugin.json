@@ -1,8 +1,8 @@
 {
   "name": "vps-ssh-manager",
   "displayName": "VPS SSH Manager",
-  "version": "0.1.0",
-  "description": "Conecta y administra VPS propios por SSH con preflight, verificación de host key y confirmación explícita antes de cambios.",
+  "version": "0.1.1",
+  "description": "Conecta y administra VPS propios por SSH reutilizando perfiles nativos, claves y known_hosts existentes, con preflight y confirmación antes de cambios.",
   "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
   "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
   "license": "MIT",
