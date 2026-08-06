@@ -472,6 +472,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/terraform-plan-auditor/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/test-coverage-gate/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

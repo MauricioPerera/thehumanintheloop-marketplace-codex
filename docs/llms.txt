@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 81 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 82 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -15,6 +15,7 @@ Current inventory: 81 plugins. The marketplace exposes Claude Code and Codex man
 
 Use these exact identifiers when referring to plugins:
 
+- `terraform-plan-auditor` — Security & Privacy — Audita el output de `terraform plan` antes de aplicarlo: cambios destructivos, recursos con estado, permisos amplios y exposición pública, sin ejecutar apply, destroy ni modificar el state.
 - `vps-backup-suite` — Developer Tools — Planifica, monitorea y verifica backups de un VPS: jobs programados, planes de backup con restauración comprobable y verificación de integridad de restores, sin ejecutar cambios.
 - `vps-container-security-suite` — Security & Privacy — Audita seguridad de contenedores Docker en un VPS: postura general, aislamiento de red, límites de recursos, procedencia de imágenes y CVE/SBOM, en modo lectura.
 - `vps-network-exposure-suite` — Security & Privacy — Audita la superficie de red expuesta de un VPS: DNS y autenticación de correo (SPF, DKIM, DMARC), diagnóstico de conectividad, exposición de servicios y renovación de certificados TLS.

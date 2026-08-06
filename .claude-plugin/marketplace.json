@@ -491,6 +491,12 @@
       "displayName": "VPS Incident & Security Suite",
       "source": "./plugins/vps-incident-security-suite",
       "category": "Security & Privacy"
+    },
+    {
+      "name": "terraform-plan-auditor",
+      "displayName": "Terraform Plan Auditor",
+      "source": "./plugins/terraform-plan-auditor",
+      "category": "Security & Privacy"
     }
   ]
 }
