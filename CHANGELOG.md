@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- `kdd-typescript` (KDD TypeScript Checker): nuevo plugin, verifica 17 reglas duras del Google TypeScript Style Guide extraidas con Knowledge-Driven Development.
 - `terraform-plan-auditor` (Terraform Plan Auditor): nuevo plugin, audita planes de Terraform antes de aplicarlos sin ejecutar apply/destroy.
 - `vps-backup-suite`, `vps-container-security-suite`, `vps-network-exposure-suite`, `vps-observability-suite`, `vps-deployment-readiness-suite`, `vps-incident-security-suite`: version 0.1.0 -> 0.2.0 (estructura multi-skill instalada y verificada end-to-end tras la consolidación).
 - Tabla de migración para los 21 plugins `vps-*` consolidados en 6 plugins multi-skill: ver [`README.md#migración-de-plugins-vps-consolidados`](README.md#migración-de-plugins-vps-consolidados).

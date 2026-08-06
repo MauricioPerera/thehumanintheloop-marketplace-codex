@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD TypeScript Checker"
+  short_description: "Verifica var/const, exports, imports, comillas y nombres del Google TS Style Guide"
+  default_prompt: "Audita el estilo TypeScript de este archivo con kdd-typescript."

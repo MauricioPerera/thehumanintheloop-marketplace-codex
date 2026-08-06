@@ -342,6 +342,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/kdd-typescript/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/kdd-wcag/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
