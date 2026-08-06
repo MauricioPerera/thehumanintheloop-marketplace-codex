@@ -1,6 +1,6 @@
 {
   "name": "vps-container-security-suite",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Audita seguridad de contenedores Docker en un VPS: postura general, aislamiento de red, límites de recursos, procedencia de imágenes y CVE/SBOM, en modo lectura.",
   "author": {
     "name": "Mauricio Perera",

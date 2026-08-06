@@ -240,42 +240,42 @@ const plugins = [{
 
 }, {
 
-  name: 'vps-backup-suite', displayName: 'VPS Backup Suite', category: 'Developer Tools', icon: 'BKP', version: '0.1.0',
+  name: 'vps-backup-suite', displayName: 'VPS Backup Suite', category: 'Developer Tools', icon: 'BKP', version: '0.2.0',
   description: 'Planifica, monitorea y verifica backups de un VPS: jobs programados, planes de backup con restauración comprobable y verificación de integridad de restores, sin ejecutar cambios.',
   capabilities: ['Backup jobs', 'Backup planning', 'Restore verification'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/vps-backup-suite', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 
 }, {
 
-  name: 'vps-container-security-suite', displayName: 'VPS Container Security Suite', category: 'Security & Privacy', icon: 'CSE', version: '0.1.0',
+  name: 'vps-container-security-suite', displayName: 'VPS Container Security Suite', category: 'Security & Privacy', icon: 'CSE', version: '0.2.0',
   description: 'Audita seguridad de contenedores Docker en un VPS: postura general, aislamiento de red, límites de recursos, procedencia de imágenes y CVE/SBOM, en modo lectura.',
   capabilities: ['Container posture', 'Network isolation', 'Resource limits', 'Image provenance', 'CVE/SBOM'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/vps-container-security-suite', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 
 }, {
 
-  name: 'vps-network-exposure-suite', displayName: 'VPS Network Exposure Suite', category: 'Security & Privacy', icon: 'NET', version: '0.1.0',
+  name: 'vps-network-exposure-suite', displayName: 'VPS Network Exposure Suite', category: 'Security & Privacy', icon: 'NET', version: '0.2.0',
   description: 'Audita la superficie de red expuesta de un VPS: DNS y autenticación de correo (SPF, DKIM, DMARC), diagnóstico de conectividad, exposición de servicios y renovación de certificados TLS.',
   capabilities: ['DNS/email auth', 'Network diagnostics', 'Service exposure', 'TLS renewal'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/vps-network-exposure-suite', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 
 }, {
 
-  name: 'vps-observability-suite', displayName: 'VPS Observability Suite', category: 'Developer Tools', icon: 'OBS', version: '0.1.0',
+  name: 'vps-observability-suite', displayName: 'VPS Observability Suite', category: 'Developer Tools', icon: 'OBS', version: '0.2.0',
   description: 'Audita capacidad, métricas, logs y retención de un VPS: CPU, RAM, disco, sobredimensionamiento, healthchecks/alertas y crecimiento de logs, sin instalar agentes.',
   capabilities: ['Cost/capacity', 'Observability', 'Resource monitoring', 'Log retention'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/vps-observability-suite', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 
 }, {
 
-  name: 'vps-deployment-readiness-suite', displayName: 'VPS Deployment Readiness Suite', category: 'Developer Tools', icon: 'DEP', version: '0.1.0',
+  name: 'vps-deployment-readiness-suite', displayName: 'VPS Deployment Readiness Suite', category: 'Developer Tools', icon: 'DEP', version: '0.2.0',
   description: 'Audita preparación de despliegues en un VPS: drift entre configuración declarada y estado activo, preparación de Docker Compose y mapa de dependencias y blast radius.',
   capabilities: ['Configuration drift', 'Deployment readiness', 'Dependency topology'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/vps-deployment-readiness-suite', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 
 }, {
 
-  name: 'vps-incident-security-suite', displayName: 'VPS Incident & Security Suite', category: 'Security & Privacy', icon: 'INC', version: '0.1.0',
+  name: 'vps-incident-security-suite', displayName: 'VPS Incident & Security Suite', category: 'Security & Privacy', icon: 'INC', version: '0.2.0',
   description: 'Audita seguridad de un VPS (firewall, SSH, fail2ban, actualizaciones) e investiga incidentes correlacionando procesos, conexiones, Docker, disco y memoria, sin aplicar cambios.',
   capabilities: ['Security audit', 'Incident investigation'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/vps-incident-security-suite', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'

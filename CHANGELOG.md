@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- `vps-backup-suite`, `vps-container-security-suite`, `vps-network-exposure-suite`, `vps-observability-suite`, `vps-deployment-readiness-suite`, `vps-incident-security-suite`: version 0.1.0 -> 0.2.0 (estructura multi-skill instalada y verificada end-to-end tras la consolidación).
 - Tabla de migración para los 21 plugins `vps-*` consolidados en 6 plugins multi-skill: ver [`README.md#migración-de-plugins-vps-consolidados`](README.md#migración-de-plugins-vps-consolidados).
 - Consolidacion de 21 plugins `vps-*` de superficie unica en 6 plugins multi-skill (vps-ssh-manager queda standalone).
 - `vps-backup-suite` (VPS Backup Suite): consolida 3 plugins VPS anteriores en un plugin multi-skill (vps-backup-job-monitor, vps-backup-manager, vps-backup-restore-verifier).
