@@ -289,6 +289,11 @@ const plugins = [{
   description: 'Verifica 17 reglas duras del Google TypeScript Style Guide: var/const/let, exports, imports, campos privados, const enum, wrapper types, comillas, triple igual y nombres con guion bajo, extraidas y verificadas con Knowledge-Driven Development.',
   capabilities: ['var/const', 'Exports', 'Imports', 'Comparisons', 'Naming'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-typescript', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'k8s-manifest-auditor', displayName: 'K8s Manifest Auditor', category: 'Security & Privacy', icon: 'K8S', version: '0.1.0',
+  description: 'Audita manifiestos Kubernetes contra los Pod Security Standards oficiales (Baseline y Restricted): host namespaces, contenedores privilegiados, capabilities, hostPath, hostPort, privilege escalation, runAsNonRoot y seccomp, sin aplicar cambios al cluster.',
+  capabilities: ['Host namespaces', 'Privileged containers', 'Capabilities', 'hostPath/hostPort', 'Privilege escalation', 'runAsNonRoot', 'Seccomp'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/k8s-manifest-auditor', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

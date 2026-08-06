@@ -999,6 +999,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "k8s-manifest-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/k8s-manifest-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
     }
   ]
 }
