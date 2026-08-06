@@ -147,6 +147,56 @@ No publiques un plugin si la validación devuelve `[FAILED]` o si la ficha de ca
 
 Los workflows usan `actions/checkout@v6` y optan por Node.js 24. Si utilizas runners autoalojados, mantenlos en una versión compatible con ese runtime.
 
+## Migración de plugins GitHub consolidados
+
+El 6 de agosto de 2026 se consolidaron 43 plugins `github-*` de superficie única (uno por endpoint de la API de GitHub) en 6 plugins multi-skill agrupados por dominio de proceso. Si tenías instalado o referenciado alguno de estos nombres, ya no existe en el marketplace: instala el plugin nuevo de la columna derecha, que incluye la misma skill sin cambios.
+
+| Plugin anterior | Plugin nuevo |
+|---|---|
+| `github-action-permissions-manager` | `github-cicd-governance` (`GitHub CI/CD Governance`) |
+| `github-activity-manager` | `github-collab-activity` (`GitHub Collaboration & Activity`) |
+| `github-api-manager` | `github-org-lifecycle` (`GitHub Org & Lifecycle`) |
+| `github-archive-manager` | `github-org-lifecycle` (`GitHub Org & Lifecycle`) |
+| `github-audit-log-manager` | `github-collab-activity` (`GitHub Collaboration & Activity`) |
+| `github-branch-manager` | `github-branch-release-ops` (`GitHub Branch & Release Ops`) |
+| `github-checks-manager` | `github-cicd-governance` (`GitHub CI/CD Governance`) |
+| `github-code-scanning-manager` | `github-security-suite` (`GitHub Security Suite`) |
+| `github-codeowners-manager` | `github-repo-governance` (`GitHub Repository Governance`) |
+| `github-commit-signing-manager` | `github-branch-release-ops` (`GitHub Branch & Release Ops`) |
+| `github-contributor-manager` | `github-collab-activity` (`GitHub Collaboration & Activity`) |
+| `github-dependabot-manager` | `github-security-suite` (`GitHub Security Suite`) |
+| `github-dependency-review-manager` | `github-security-suite` (`GitHub Security Suite`) |
+| `github-deployment-manager` | `github-branch-release-ops` (`GitHub Branch & Release Ops`) |
+| `github-discussion-manager` | `github-collab-activity` (`GitHub Collaboration & Activity`) |
+| `github-environment-manager` | `github-cicd-governance` (`GitHub CI/CD Governance`) |
+| `github-fork-manager` | `github-org-lifecycle` (`GitHub Org & Lifecycle`) |
+| `github-funding-manager` | `github-repo-governance` (`GitHub Repository Governance`) |
+| `github-label-manager` | `github-repo-governance` (`GitHub Repository Governance`) |
+| `github-merge-conflict-manager` | `github-branch-release-ops` (`GitHub Branch & Release Ops`) |
+| `github-merge-queue-manager` | `github-cicd-governance` (`GitHub CI/CD Governance`) |
+| `github-migration-manager` | `github-org-lifecycle` (`GitHub Org & Lifecycle`) |
+| `github-milestone-manager` | `github-repo-governance` (`GitHub Repository Governance`) |
+| `github-notifications-manager` | `github-collab-activity` (`GitHub Collaboration & Activity`) |
+| `github-oidc-manager` | `github-cicd-governance` (`GitHub CI/CD Governance`) |
+| `github-organization-settings-manager` | `github-org-lifecycle` (`GitHub Org & Lifecycle`) |
+| `github-package-manager` | `github-branch-release-ops` (`GitHub Branch & Release Ops`) |
+| `github-pages-manager` | `github-repo-governance` (`GitHub Repository Governance`) |
+| `github-private-reporting-manager` | `github-security-suite` (`GitHub Security Suite`) |
+| `github-project-manager` | `github-org-lifecycle` (`GitHub Org & Lifecycle`) |
+| `github-repository-manager` | `github-repo-governance` (`GitHub Repository Governance`) |
+| `github-ruleset-manager` | `github-repo-governance` (`GitHub Repository Governance`) |
+| `github-runner-manager` | `github-cicd-governance` (`GitHub CI/CD Governance`) |
+| `github-secret-manager` | `github-security-suite` (`GitHub Security Suite`) |
+| `github-secret-scanning-manager` | `github-security-suite` (`GitHub Security Suite`) |
+| `github-security-advisory-manager` | `github-security-suite` (`GitHub Security Suite`) |
+| `github-security-manager` | `github-security-suite` (`GitHub Security Suite`) |
+| `github-team-manager` | `github-collab-activity` (`GitHub Collaboration & Activity`) |
+| `github-template-manager` | `github-repo-governance` (`GitHub Repository Governance`) |
+| `github-traffic-manager` | `github-collab-activity` (`GitHub Collaboration & Activity`) |
+| `github-variable-manager` | `github-cicd-governance` (`GitHub CI/CD Governance`) |
+| `github-webhook-manager` | `github-org-lifecycle` (`GitHub Org & Lifecycle`) |
+| `github-workflow-dispatch-manager` | `github-cicd-governance` (`GitHub CI/CD Governance`) |
+
 ## Instalación
 
 En Claude Code:

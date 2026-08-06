@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Tabla de migración para los 43 plugins `github-*` consolidados en 6 plugins multi-skill: ver [`README.md#migración-de-plugins-github-consolidados`](README.md#migración-de-plugins-github-consolidados).
 - Consolidacion de 43 plugins `github-*` de superficie unica en 6 plugins multi-skill (misma cobertura, menos entradas instalables).
 - `github-security-suite` (GitHub Security Suite): consolida 8 plugins GitHub anteriores en un plugin multi-skill (github-security-manager, github-code-scanning-manager, github-secret-scanning-manager, github-security-advisory-manager, github-dependency-review-manager, github-dependabot-manager, github-private-reporting-manager, github-secret-manager).
 - `github-cicd-governance` (GitHub CI/CD Governance): consolida 8 plugins GitHub anteriores en un plugin multi-skill (github-action-permissions-manager, github-checks-manager, github-environment-manager, github-merge-queue-manager, github-oidc-manager, github-runner-manager, github-variable-manager, github-workflow-dispatch-manager).
