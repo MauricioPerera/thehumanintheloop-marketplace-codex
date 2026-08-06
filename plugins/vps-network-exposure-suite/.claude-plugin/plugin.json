@@ -1,0 +1,20 @@
+{
+  "name": "vps-network-exposure-suite",
+  "displayName": "VPS Network Exposure Suite",
+  "version": "0.1.0",
+  "description": "Audita la superficie de red expuesta de un VPS: DNS y autenticación de correo (SPF, DKIM, DMARC), diagnóstico de conectividad, exposición de servicios y renovación de certificados TLS.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "vps",
+    "dns",
+    "email-auth",
+    "network",
+    "exposure",
+    "tls"
+  ]
+}

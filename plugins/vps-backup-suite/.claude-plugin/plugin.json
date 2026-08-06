@@ -1,0 +1,19 @@
+{
+  "name": "vps-backup-suite",
+  "displayName": "VPS Backup Suite",
+  "version": "0.1.0",
+  "description": "Planifica, monitorea y verifica backups de un VPS: jobs programados, planes de backup con restauración comprobable y verificación de integridad de restores, sin ejecutar cambios.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "vps",
+    "backup",
+    "restore",
+    "monitoring",
+    "ssh"
+  ]
+}

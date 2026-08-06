@@ -487,112 +487,37 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-backup-job-monitor/</loc>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-backup-suite/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-backup-manager/</loc>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-container-security-suite/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-backup-restore-verifier/</loc>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-deployment-readiness-suite/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-configuration-drift-auditor/</loc>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-incident-security-suite/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-container-security-auditor/</loc>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-network-exposure-suite/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-cost-capacity-auditor/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-dependency-topology-auditor/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-deployment-readiness-auditor/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-dns-email-auth-auditor/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-docker-network-isolation-auditor/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-docker-resource-limits-auditor/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-image-provenance-auditor/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-image-vulnerability-sbom-auditor/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-incident-responder/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-log-retention-auditor/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-network-diagnostics/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-observability-auditor/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-resource-monitor/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-security-auditor/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-service-exposure-auditor/</loc>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-observability-suite/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-ssh-manager/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/vps-tls-renewal-monitor/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

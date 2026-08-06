@@ -629,42 +629,6 @@
       "category": "Developer Tools"
     },
     {
-      "name": "vps-security-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-security-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-backup-manager",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-backup-manager"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-resource-monitor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-resource-monitor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
       "name": "tls-domain-manager",
       "source": {
         "source": "local",
@@ -675,18 +639,6 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-incident-responder",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-incident-responder"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
     },
     {
       "name": "firewall-policy-manager",
@@ -761,202 +713,10 @@
       "category": "Developer Tools"
     },
     {
-      "name": "vps-cost-capacity-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-cost-capacity-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-network-diagnostics",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-network-diagnostics"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-service-exposure-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-service-exposure-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-observability-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-observability-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-deployment-readiness-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-deployment-readiness-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-backup-restore-verifier",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-backup-restore-verifier"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-configuration-drift-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-configuration-drift-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-container-security-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-container-security-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-image-provenance-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-image-provenance-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-docker-network-isolation-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-docker-network-isolation-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-docker-resource-limits-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-docker-resource-limits-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-dependency-topology-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-dependency-topology-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-backup-job-monitor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-backup-job-monitor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-tls-renewal-monitor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-tls-renewal-monitor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-dns-email-auth-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-dns-email-auth-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
       "name": "supabase-policy-security-auditor",
       "source": {
         "source": "local",
         "path": "./plugins/supabase-policy-security-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-image-vulnerability-sbom-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-image-vulnerability-sbom-auditor"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -975,18 +735,6 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-log-retention-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/vps-log-retention-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
     },
     {
       "name": "supabase-pgcron-auditor",
@@ -1155,6 +903,78 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "vps-backup-suite",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-backup-suite"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-container-security-suite",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-container-security-suite"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-network-exposure-suite",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-network-exposure-suite"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-observability-suite",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-observability-suite"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-deployment-readiness-suite",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-deployment-readiness-suite"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-incident-security-suite",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vps-incident-security-suite"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
     }
   ]
 }

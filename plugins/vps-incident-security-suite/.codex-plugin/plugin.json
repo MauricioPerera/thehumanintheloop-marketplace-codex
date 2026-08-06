@@ -1,0 +1,31 @@
+{
+  "name": "vps-incident-security-suite",
+  "version": "0.1.0",
+  "description": "Audita seguridad de un VPS (firewall, SSH, fail2ban, actualizaciones) e investiga incidentes correlacionando procesos, conexiones, Docker, disco y memoria, sin aplicar cambios.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "vps",
+    "security",
+    "incident-response",
+    "firewall",
+    "ssh"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VPS Incident & Security Suite",
+    "shortDescription": "Audita seguridad e investiga incidentes en un VPS.",
+    "longDescription": "Audita firewall, puertos, SSH, usuarios, fail2ban y actualizaciones pendientes por SSH, e investiga incidentes correlacionando procesos, conexiones, Docker, disco, memoria y servicios, sin aplicar cambios ni reiniciar servicios; cualquier hardening o remediación se convierte en plan con impacto, rollback y confirmación.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": [
+      "Security audit",
+      "Incident investigation"
+    ],
+    "defaultPrompt": "Usa VPS Incident & Security Suite para auditar este VPS por SSH en modo lectura."
+  }
+}
