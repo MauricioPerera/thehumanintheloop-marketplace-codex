@@ -1,7 +1,7 @@
 {
   "name": "vps-incident-security-suite",
   "displayName": "VPS Incident & Security Suite",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Audita seguridad de un VPS (firewall, SSH, fail2ban, actualizaciones) e investiga incidentes correlacionando procesos, conexiones, Docker, disco y memoria, sin aplicar cambios.",
   "author": {
     "name": "Mauricio Perera",

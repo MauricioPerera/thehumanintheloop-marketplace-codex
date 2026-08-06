@@ -1,6 +1,6 @@
 {
   "name": "vps-observability-suite",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Audita capacidad, métricas, logs y retención de un VPS: CPU, RAM, disco, sobredimensionamiento, healthchecks/alertas y crecimiento de logs, sin instalar agentes.",
   "author": {
     "name": "Mauricio Perera",
