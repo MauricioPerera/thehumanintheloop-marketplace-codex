@@ -509,6 +509,12 @@
       "displayName": "K8s Manifest Auditor",
       "source": "./plugins/k8s-manifest-auditor",
       "category": "Security & Privacy"
+    },
+    {
+      "name": "kdd-dockerfile",
+      "displayName": "KDD Dockerfile Checker",
+      "source": "./plugins/kdd-dockerfile",
+      "category": "Developer Tools"
     }
   ]
 }

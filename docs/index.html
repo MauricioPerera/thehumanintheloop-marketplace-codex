@@ -49,7 +49,7 @@
   },
   "mainEntity": {
     "@type": "ItemList",
-    "numberOfItems": 84,
+    "numberOfItems": 85,
     "itemListElement": [
       {
         "@type": "ListItem",
@@ -1645,6 +1645,25 @@
             "url": "https://github.com/MauricioPerera"
           },
           "keywords": "kubernetes, k8s, pod-security-standards, manifest, security, container"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 85,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "KDD Dockerfile Checker",
+          "applicationCategory": "Developer Tools",
+          "operatingSystem": "Claude Code, Codex",
+          "softwareVersion": "0.1.0",
+          "description": "Verifica 11 reglas duras de Dockerfile best practices: FROM sin pin, apt-get sin combinar ni limpiar, CMD/ENTRYPOINT en shell form, USER root, sudo instalado, WORKDIR relativo, ADD en vez de COPY, pipe sin pipefail y .dockerignore ausente, extraidas y verificadas con Knowledge-Driven Development.",
+          "url": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-dockerfile",
+          "author": {
+            "@type": "Person",
+            "name": "Mauricio Perera",
+            "url": "https://github.com/MauricioPerera"
+          },
+          "keywords": "dockerfile, docker, best-practices, linting, kdd, validation"
         }
       }
     ]

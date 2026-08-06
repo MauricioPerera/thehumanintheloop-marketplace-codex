@@ -294,6 +294,11 @@ const plugins = [{
   description: 'Audita manifiestos Kubernetes contra los Pod Security Standards oficiales (Baseline y Restricted): host namespaces, contenedores privilegiados, capabilities, hostPath, hostPort, privilege escalation, runAsNonRoot y seccomp, sin aplicar cambios al cluster.',
   capabilities: ['Host namespaces', 'Privileged containers', 'Capabilities', 'hostPath/hostPort', 'Privilege escalation', 'runAsNonRoot', 'Seccomp'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/k8s-manifest-auditor', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'kdd-dockerfile', displayName: 'KDD Dockerfile Checker', category: 'Developer Tools', icon: 'DFC', version: '0.1.0',
+  description: 'Verifica 11 reglas duras de Dockerfile best practices: FROM sin pin, apt-get sin combinar ni limpiar, CMD/ENTRYPOINT en shell form, USER root, sudo instalado, WORKDIR relativo, ADD en vez de COPY, pipe sin pipefail y .dockerignore ausente, extraidas y verificadas con Knowledge-Driven Development.',
+  capabilities: ['FROM pin', 'apt-get', 'CMD/ENTRYPOINT', 'USER', 'WORKDIR', 'ADD/COPY', 'pipefail'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-dockerfile', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

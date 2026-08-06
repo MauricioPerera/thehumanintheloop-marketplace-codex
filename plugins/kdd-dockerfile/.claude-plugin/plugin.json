@@ -1,0 +1,10 @@
+{
+  "name": "kdd-dockerfile",
+  "displayName": "KDD Dockerfile Checker",
+  "version": "0.1.0",
+  "description": "Verifica 11 reglas duras de Dockerfile best practices: FROM sin pin, apt-get sin combinar ni limpiar, CMD/ENTRYPOINT en shell form, USER root, sudo instalado, WORKDIR relativo, ADD en vez de COPY, pipe sin pipefail y .dockerignore ausente, extraidas y verificadas con Knowledge-Driven Development.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["dockerfile", "docker", "best-practices", "linting", "kdd", "validation"]
+}
