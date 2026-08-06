@@ -1,0 +1,18 @@
+{
+  "name": "kdd-typescript",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para 17 reglas del Google TypeScript Style Guide, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD TypeScript Checker",
+    "shortDescription": "Verifica var/const, exports, imports, comillas y nombres del Google TS Style Guide",
+    "longDescription": "Corre 17 chequeos deterministas extraidos del Google TypeScript Style Guide (typescript_checks.py): prohibiciones duras sobre var, exports, imports, campos privados nativos, const enum, wrapper types, comparaciones, comillas y nombres con guion bajo. 17 de 28 reglas normativas identificadas caen en pila A (61%); el resto exige juicio real y queda documentado en knowledge.json.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Audita el estilo TypeScript de este archivo con kdd-typescript."
+  }
+}

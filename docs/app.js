@@ -284,6 +284,11 @@ const plugins = [{
   description: 'Audita el output de `terraform plan` antes de aplicarlo: cambios destructivos, recursos con estado, permisos amplios y exposición pública, sin ejecutar apply, destroy ni modificar el state.',
   capabilities: ['Plan review', 'Destructive change detection', 'IAM risk', 'Public exposure', 'Drift-safe'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/terraform-plan-auditor', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'kdd-typescript', displayName: 'KDD TypeScript Checker', category: 'Developer Tools', icon: 'TS', version: '0.1.0',
+  description: 'Verifica 17 reglas duras del Google TypeScript Style Guide: var/const/let, exports, imports, campos privados, const enum, wrapper types, comillas, triple igual y nombres con guion bajo, extraidas y verificadas con Knowledge-Driven Development.',
+  capabilities: ['var/const', 'Exports', 'Imports', 'Comparisons', 'Naming'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-typescript', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

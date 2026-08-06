@@ -2,7 +2,7 @@
 
 Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
-Catálogo actual: **82 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
+Catálogo actual: **83 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
 
 ## Plugins disponibles
 
@@ -71,6 +71,7 @@ Catálogo actual: **82 plugins y 19 Design System Analyses**, distribuido en dos
 - `Supabase Migration Drift Auditor` (`supabase-migration-drift-auditor`): audita migraciones aplicadas vs archivos en disco vs catálogos PostgreSQL para detectar drift de schema en modo lectura.
 - `Supabase pg_cron Auditor` (`supabase-pgcron-auditor`): audita jobs pg_cron de Supabase self-hosted en modo lectura listando cron.job y cron.job_run_details, detectando jobs fallidos, pausados, duplicados, frecuencias peligrosas y comandos que expongan secretos o muten fuera de alcance.
 - `Terraform Plan Auditor` (`terraform-plan-auditor`): audita el output de `terraform plan` antes de aplicarlo: cambios destructivos, recursos con estado, permisos amplios y exposición pública, sin ejecutar apply, destroy ni modificar el state.
+- `KDD TypeScript Checker` (`kdd-typescript`): verifica 17 reglas duras del Google TypeScript Style Guide: var/const/let, exports, imports, campos privados, const enum, wrapper types, comillas, triple igual y nombres con guion bajo, extraidas y verificadas con Knowledge-Driven Development.
 
 ## Categorías
 
@@ -79,7 +80,7 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Content & Editorial — 7 plugins
 - Design Systems — 2 plugins
 - Marketplace & Quality — 7 plugins
-- Developer Tools — 42 plugins
+- Developer Tools — 43 plugins
 - Accessibility & UX — 3 plugins
 - Security & Privacy — 17 plugins
 - Research & Evidence — 2 plugins

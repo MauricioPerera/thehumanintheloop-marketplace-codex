@@ -497,6 +497,12 @@
       "displayName": "Terraform Plan Auditor",
       "source": "./plugins/terraform-plan-auditor",
       "category": "Security & Privacy"
+    },
+    {
+      "name": "kdd-typescript",
+      "displayName": "KDD TypeScript Checker",
+      "source": "./plugins/kdd-typescript",
+      "category": "Developer Tools"
     }
   ]
 }
