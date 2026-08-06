@@ -1162,6 +1162,9 @@
     {"name":"supabase-pgcron-auditor","source":{"source":"local","path":"./plugins/supabase-pgcron-auditor"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
     {"name":"agent-tools-runtime-poc","source":{"source":"local","path":"./plugins/agent-tools-runtime-poc"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
     {"name":"plugin-authoring","source":{"source":"local","path":"./plugins/plugin-authoring"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Marketplace & Quality"},
-    {"name":"kdd-guide","source":{"source":"local","path":"./plugins/kdd-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"}
+    {"name":"kdd-guide","source":{"source":"local","path":"./plugins/kdd-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
+    {"name":"ai-prompt-workflow","source":{"source":"local","path":"./plugins/ai-prompt-workflow"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"AI & Prompt Engineering"},
+    {"name":"ux-accessibility-guide","source":{"source":"local","path":"./plugins/ux-accessibility-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Accessibility & UX"},
+    {"name":"research-methods-guide","source":{"source":"local","path":"./plugins/research-methods-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Research & Evidence"}
   ]
 }

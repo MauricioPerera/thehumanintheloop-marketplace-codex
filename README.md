@@ -2,12 +2,15 @@
 
 Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
-Catálogo actual: **129 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
+Catálogo actual: **132 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
 
 ## Plugins disponibles
 
 - `Auditor SEO/GEO 2026` (`linter-seo-geo-2026`): validador de contenido para buscadores y motores generativos.
 - `Marketplace Validator` (`marketplace-validator`): valida manifests y sincronización Claude Code/Codex.
+- `AI Prompt Workflow` (`ai-prompt-workflow`): diseña prompts evaluables y reutilizables.
+- `UX Accessibility Guide` (`ux-accessibility-guide`): audita UX y accesibilidad con evidencia.
+- `Research Methods Guide` (`research-methods-guide`): estructura investigaciones con fuentes y evidencia trazable.
 - `Plugin Authoring` (`plugin-authoring`): crea y valida plugins para este marketplace.
 - `KDD Guide` (`kdd-guide`): explica y aplica Knowledge-Driven Development con OKF y CCDD.
 - `Design System Auditor` (`design-system-auditor`): genera contratos `DESIGN.md`, tokens y validadores.
@@ -114,10 +117,10 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Design Systems — 1 plugin
 - Marketplace & Quality — 9 plugins
 - Developer Tools — 69 plugins
-- Accessibility & UX — 2 plugins
+- Accessibility & UX — 3 plugins
 - Security & Privacy — 39 plugins
-- Research & Evidence — 1 plugin
-- AI & Prompt Engineering — 1 plugin
+- Research & Evidence — 2 plugins
+- AI & Prompt Engineering — 2 plugins
 
 Además, la categoría Design Systems contiene **17 análisis publicados**; se listan y enlazan en la sección [Design System Analyses publicados](#design-system-analyses-publicados).
 

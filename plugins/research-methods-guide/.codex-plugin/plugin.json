@@ -1,0 +1,19 @@
+{
+  "name": "research-methods-guide",
+  "version": "0.1.0",
+  "description": "Estructura investigaciones reproducibles con preguntas, fuentes, evidencia, incertidumbre y síntesis.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Research Methods Guide",
+    "shortDescription": "Investiga con fuentes y evidencia trazable.",
+    "longDescription": "Ayuda a definir preguntas, registrar fuentes, separar hechos de inferencias y entregar síntesis reproducibles con incertidumbre explícita.",
+    "developerName": "Mauricio Perera",
+    "category": "Research & Evidence",
+    "capabilities": ["Research", "Sources", "Evidence", "Synthesis"],
+    "defaultPrompt": "Ayúdame a estructurar esta investigación."
+  }
+}

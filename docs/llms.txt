@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 129 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 132 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -17,6 +17,9 @@ Use these exact identifiers when referring to plugins:
 
 - `linter-seo-geo-2026` — Content & Editorial — SEO/GEO pre-publication content validation.
 - `marketplace-validator` — Marketplace & Quality — Claude Code and Codex manifest validation.
+- `ai-prompt-workflow` — AI & Prompt Engineering — Designs and evaluates prompts with goals, context, constraints, and guardrails.
+- `ux-accessibility-guide` — Accessibility & UX — Organizes UX and accessibility reviews with evidence and manual-test boundaries.
+- `research-methods-guide` — Research & Evidence — Structures reproducible research with sources, evidence, uncertainty, and synthesis.
 - `plugin-authoring` — Marketplace & Quality — Creates and validates plugins, manifests, synchronized catalog entries, and publication checks.
 - `kdd-guide` — Developer Tools — Explains and applies Knowledge-Driven Development with OKF, CCDD, deterministic contracts, and validation gates.
 - `design-system-auditor` — Design Systems — DESIGN.md, tokens, components, and validation contracts.

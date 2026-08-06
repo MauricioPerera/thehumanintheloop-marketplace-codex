@@ -154,6 +154,9 @@
 {"name":"supabase-pgcron-auditor","displayName":"Supabase pg_cron Auditor","source":"./plugins/supabase-pgcron-auditor","category":"Developer Tools"},
 {"name":"agent-tools-runtime-poc","displayName":"Agent Tools Runtime POC","source":"./plugins/agent-tools-runtime-poc","category":"Developer Tools"},
 {"name":"plugin-authoring","displayName":"Plugin Authoring","source":"./plugins/plugin-authoring","category":"Marketplace & Quality"},
-{"name":"kdd-guide","displayName":"KDD Guide","source":"./plugins/kdd-guide","category":"Developer Tools"}
+{"name":"kdd-guide","displayName":"KDD Guide","source":"./plugins/kdd-guide","category":"Developer Tools"},
+{"name":"ai-prompt-workflow","displayName":"AI Prompt Workflow","source":"./plugins/ai-prompt-workflow","category":"AI & Prompt Engineering"},
+{"name":"ux-accessibility-guide","displayName":"UX Accessibility Guide","source":"./plugins/ux-accessibility-guide","category":"Accessibility & UX"},
+{"name":"research-methods-guide","displayName":"Research Methods Guide","source":"./plugins/research-methods-guide","category":"Research & Evidence"}
 ]
 }
