@@ -157,6 +157,7 @@
 {"name":"kdd-guide","displayName":"KDD Guide","source":"./plugins/kdd-guide","category":"Developer Tools"},
 {"name":"ai-prompt-workflow","displayName":"AI Prompt Workflow","source":"./plugins/ai-prompt-workflow","category":"AI & Prompt Engineering"},
 {"name":"ux-accessibility-guide","displayName":"UX Accessibility Guide","source":"./plugins/ux-accessibility-guide","category":"Accessibility & UX"},
-{"name":"research-methods-guide","displayName":"Research Methods Guide","source":"./plugins/research-methods-guide","category":"Research & Evidence"}
+{"name":"research-methods-guide","displayName":"Research Methods Guide","source":"./plugins/research-methods-guide","category":"Research & Evidence"},
+{"name":"design-system-governance","displayName":"Design System Governance","source":"./plugins/design-system-governance","category":"Design Systems"}
 ]
 }

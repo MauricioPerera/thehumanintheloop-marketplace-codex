@@ -1165,6 +1165,7 @@
     {"name":"kdd-guide","source":{"source":"local","path":"./plugins/kdd-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"},
     {"name":"ai-prompt-workflow","source":{"source":"local","path":"./plugins/ai-prompt-workflow"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"AI & Prompt Engineering"},
     {"name":"ux-accessibility-guide","source":{"source":"local","path":"./plugins/ux-accessibility-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Accessibility & UX"},
-    {"name":"research-methods-guide","source":{"source":"local","path":"./plugins/research-methods-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Research & Evidence"}
+    {"name":"research-methods-guide","source":{"source":"local","path":"./plugins/research-methods-guide"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Research & Evidence"},
+    {"name":"design-system-governance","source":{"source":"local","path":"./plugins/design-system-governance"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Design Systems"}
   ]
 }

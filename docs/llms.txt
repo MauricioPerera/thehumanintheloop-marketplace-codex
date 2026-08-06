@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 132 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 133 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -23,6 +23,7 @@ Use these exact identifiers when referring to plugins:
 - `plugin-authoring` — Marketplace & Quality — Creates and validates plugins, manifests, synchronized catalog entries, and publication checks.
 - `kdd-guide` — Developer Tools — Explains and applies Knowledge-Driven Development with OKF, CCDD, deterministic contracts, and validation gates.
 - `design-system-auditor` — Design Systems — DESIGN.md, tokens, components, and validation contracts.
+- `design-system-governance` — Design Systems — Maintains design contracts, component states, provenance, accessibility checks, and drift findings.
 - `content-fact-checker` — Content & Editorial — Sources, dates, links, and claim attribution.
 - `cv-job-tailor` — Content & Editorial — Tailors a real CV to a specific job offer with evidence traceability and anti-fabrication checks.
 - `commercial-proposal-builder` — Content & Editorial — Builds commercial proposals from requirements with scope, pricing, and assumption integrity.

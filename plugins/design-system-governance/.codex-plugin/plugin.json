@@ -1,0 +1,22 @@
+{
+  "name": "design-system-governance",
+  "version": "0.1.0",
+  "description": "Mantiene y valida sistemas de diseño mediante contratos, tokens, componentes, procedencia y controles de drift.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["design-system", "governance", "tokens", "components", "drift", "accessibility"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Design System Governance",
+    "shortDescription": "Maintain design system contracts and detect visual drift.",
+    "longDescription": "Design System Governance turns observed design rules into maintainable contracts and reviewable change gates.",
+    "developerName": "Mauricio Perera",
+    "category": "Design Systems",
+    "capabilities": ["Governance", "Tokens", "Components", "Drift", "Accessibility"],
+    "defaultPrompt": "Help me govern this design system and detect drift."
+  }
+}
