@@ -1,8 +1,0 @@
-{
-  "name": "github-checks-manager",
-  "version": "0.1.0",
-  "displayName": "GitHub Checks Manager",
-  "description": "Analiza checks, annotations y resultados de CI con evidencia.",
-  "author": {"name": "Mauricio Perera"},
-  "skills": "./skills/"
-}

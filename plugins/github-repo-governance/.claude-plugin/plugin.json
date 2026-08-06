@@ -1,0 +1,23 @@
+{
+  "name": "github-repo-governance",
+  "displayName": "GitHub Repository Governance",
+  "version": "0.1.0",
+  "description": "Audita y prepara configuración de repositorios GitHub: settings, CODEOWNERS, templates, labels, milestones, funding, Pages y rulesets de protección.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "repository",
+    "codeowners",
+    "templates",
+    "labels",
+    "milestones",
+    "funding",
+    "pages",
+    "rulesets"
+  ]
+}

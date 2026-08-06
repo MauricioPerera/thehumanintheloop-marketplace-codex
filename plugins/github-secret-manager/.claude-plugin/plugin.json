@@ -1,8 +1,0 @@
-{
-  "name": "github-secret-manager",
-  "version": "0.1.0",
-  "displayName": "GitHub Secret Manager",
-  "description": "Audita secretos de GitHub sin exponer valores.",
-  "author": {"name": "Mauricio Perera"},
-  "skills": "./skills/"
-}

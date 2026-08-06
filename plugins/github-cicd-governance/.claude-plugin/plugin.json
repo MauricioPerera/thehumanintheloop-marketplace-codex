@@ -1,0 +1,25 @@
+{
+  "name": "github-cicd-governance",
+  "displayName": "GitHub CI/CD Governance",
+  "version": "0.1.0",
+  "description": "Audita la gobernanza de CI/CD en GitHub Actions: permisos, environments, checks, merge queue, runners, OIDC, variables y despliegues manuales.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "cicd",
+    "actions",
+    "permissions",
+    "environments",
+    "checks",
+    "merge-queue",
+    "runners",
+    "oidc",
+    "variables",
+    "workflow-dispatch"
+  ]
+}

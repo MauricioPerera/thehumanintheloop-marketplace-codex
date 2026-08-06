@@ -1,8 +1,0 @@
-{
-  "name": "github-ruleset-manager",
-  "version": "0.1.0",
-  "displayName": "GitHub Ruleset Manager",
-  "description": "Audita y prepara reglasets de GitHub para protección reproducible.",
-  "author": {"name": "Mauricio Perera"},
-  "skills": "./skills/"
-}

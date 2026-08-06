@@ -2,7 +2,7 @@
 
 Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
-Catálogo actual: **133 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
+Catálogo actual: **96 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
 
 ## Plugins disponibles
 
@@ -35,50 +35,13 @@ Catálogo actual: **133 plugins y 19 Design System Analyses**, distribuido en do
 - `GitHub PR Manager` (`github-pr-manager`): prepara y revisa Pull Requests con checklist y evidencia.
 - `GitHub Release Manager` (`github-release-manager`): prepara releases, tags y notas de versión con `gh` CLI.
 - `GitHub Actions Manager` (`github-actions-manager`): inspecciona ejecuciones, jobs y logs de CI.
-- `GitHub Project Manager` (`github-project-manager`): organiza Projects, tareas y campos con trazabilidad.
+- `GitHub Security Suite` (`github-security-suite`): audita seguridad de GitHub: code/secret scanning, advisories, dependencias, Dependabot, reportes privados y secretos, con planes de remediación.
+- `GitHub CI/CD Governance` (`github-cicd-governance`): audita la gobernanza de CI/CD en GitHub Actions: permisos, environments, checks, merge queue, runners, OIDC, variables y despliegues manuales.
+- `GitHub Repository Governance` (`github-repo-governance`): audita y prepara configuración de repositorios GitHub: settings, CODEOWNERS, templates, labels, milestones, funding, Pages y rulesets de protección.
+- `GitHub Collaboration & Activity` (`github-collab-activity`): resume actividad y colaboración en GitHub: Discussions, notificaciones, contribuidores, equipos, actividad temporal, tráfico y audit log administrativo.
+- `GitHub Branch & Release Ops` (`github-branch-release-ops`): opera el ciclo de vida de ramas y despliegues en GitHub: ramas, firma de commits, despliegues, conflictos de merge y paquetes.
+- `GitHub Org & Lifecycle` (`github-org-lifecycle`): audita configuración organizacional y ciclo de vida de repositorios en GitHub: settings de organización, archivado, migraciones, forks, webhooks, API y Projects.
 - `GitHub Code Search` (`github-code-search`): busca código, commits y referencias reproducibles.
-- `GitHub Security Manager` (`github-security-manager`): audita alertas de seguridad y propone remediaciones.
-- `GitHub Dependabot Manager` (`github-dependabot-manager`): revisa alertas y planes de actualización de dependencias.
-- `GitHub Notifications Manager` (`github-notifications-manager`): resume y prioriza notificaciones de GitHub.
-- `GitHub Discussion Manager` (`github-discussion-manager`): resume y prepara respuestas para Discussions.
-- `GitHub Label Manager` (`github-label-manager`): diseña taxonomías y planes de labels.
-- `GitHub Repository Manager` (`github-repository-manager`): inspecciona y configura repositorios con confirmación.
-- `GitHub Milestone Manager` (`github-milestone-manager`): planifica hitos con objetivos y Issues vinculados.
-- `GitHub Branch Manager` (`github-branch-manager`): inspecciona y prepara operaciones de ramas con seguridad.
-- `GitHub Template Manager` (`github-template-manager`): revisa templates de Issues y Pull Requests.
-- `GitHub API Manager` (`github-api-manager`): ejecuta consultas seguras y reproducibles a GitHub API.
-- `GitHub CODEOWNERS Manager` (`github-codeowners-manager`): valida ownership y cobertura de rutas.
-- `GitHub Contributor Manager` (`github-contributor-manager`): analiza actividad y propone reviewers con evidencia.
-- `GitHub Activity Manager` (`github-activity-manager`): resume actividad temporal del repositorio.
-- `GitHub Traffic Manager` (`github-traffic-manager`): analiza views, clones, referrers y rutas populares.
-- `GitHub Webhook Manager` (`github-webhook-manager`): audita y prepara webhooks con controles de seguridad.
-- `GitHub Environment Manager` (`github-environment-manager`): gestiona environments y gates de despliegue.
-- `GitHub Variable Manager` (`github-variable-manager`): audita variables sin exponer secretos.
-- `GitHub Package Manager` (`github-package-manager`): revisa paquetes, versiones y retención.
-- `GitHub Secret Manager` (`github-secret-manager`): audita secretos sin exponer valores y prepara rotaciones.
-- `GitHub Ruleset Manager` (`github-ruleset-manager`): diseña reglasets de protección para ramas y tags.
-- `GitHub Checks Manager` (`github-checks-manager`): analiza checks, annotations y resultados de CI.
-- `GitHub Audit Log Manager` (`github-audit-log-manager`): analiza actividad administrativa con datos redactados.
-- `GitHub Runner Manager` (`github-runner-manager`): audita runners, labels y aislamiento de Actions.
-- `GitHub Deployment Manager` (`github-deployment-manager`): controla despliegues con evidencia y rollback.
-- `GitHub Team Manager` (`github-team-manager`): audita equipos, membresías y permisos.
-- `GitHub Merge Queue Manager` (`github-merge-queue-manager`): analiza colas de integración y checks.
-- `GitHub Fork Manager` (`github-fork-manager`): audita forks y políticas de redes de código.
-- `GitHub Commit Signing Manager` (`github-commit-signing-manager`): audita firmas y verificación.
-- `GitHub Migration Manager` (`github-migration-manager`): planifica migraciones con rollback.
-- `GitHub Archive Manager` (`github-archive-manager`): gestiona el ciclo de vida de repositorios.
-- `GitHub Code Scanning Manager` (`github-code-scanning-manager`): audita alertas de Code Scanning.
-- `GitHub Secret Scanning Manager` (`github-secret-scanning-manager`): analiza alertas sin exponer secretos.
-- `GitHub Security Advisory Manager` (`github-security-advisory-manager`): gestiona advisories y divulgación.
-- `GitHub Dependency Review Manager` (`github-dependency-review-manager`): revisa dependencias nuevas en PRs.
-- `GitHub Private Reporting Manager` (`github-private-reporting-manager`): gestiona reportes privados de vulnerabilidades.
-- `GitHub Organization Settings Manager` (`github-organization-settings-manager`): audita políticas organizacionales.
-- `GitHub Pages Manager` (`github-pages-manager`): audita y prepara despliegues de Pages.
-- `GitHub Funding Manager` (`github-funding-manager`): gestiona financiación y sponsorship.
-- `GitHub Workflow Dispatch Manager` (`github-workflow-dispatch-manager`): prepara disparos manuales.
-- `GitHub OIDC Manager` (`github-oidc-manager`): audita confianza OIDC de Actions.
-- `GitHub Action Permissions Manager` (`github-action-permissions-manager`): audita permisos de workflows.
-- `GitHub Merge Conflict Manager` (`github-merge-conflict-manager`): diagnostica conflictos de PRs.
 - `Mercado Pago Payment Manager` (`mercadopago-payment-manager`): prepara enlaces de pago con validadores de seguridad.
 - `Supabase Self-hosted Observer` (`supabase-selfhosted-observer`): observa contenedores, healthchecks, versiones y recursos de Supabase por SSH.
 - `Supabase Database Manager` (`supabase-database-manager`): diagnostica PostgreSQL y clasifica consultas antes de mutar.
@@ -116,10 +79,10 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 
 - Content & Editorial — 7 plugins
 - Design Systems — 2 plugins
-- Marketplace & Quality — 9 plugins
-- Developer Tools — 69 plugins
+- Marketplace & Quality — 7 plugins
+- Developer Tools — 51 plugins
 - Accessibility & UX — 3 plugins
-- Security & Privacy — 39 plugins
+- Security & Privacy — 22 plugins
 - Research & Evidence — 2 plugins
 - AI & Prompt Engineering — 2 plugins
 

@@ -1,0 +1,22 @@
+{
+  "name": "github-security-suite",
+  "displayName": "GitHub Security Suite",
+  "version": "0.1.0",
+  "description": "Audita seguridad de GitHub: code/secret scanning, advisories, dependencias, Dependabot, reportes privados y secretos, con planes de remediación.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "security",
+    "code-scanning",
+    "secret-scanning",
+    "advisories",
+    "dependencies",
+    "dependabot",
+    "secrets"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "github-collab-activity",
+  "version": "0.1.0",
+  "description": "Resume actividad y colaboración en GitHub: Discussions, notificaciones, contribuidores, equipos, actividad temporal, tráfico y audit log administrativo.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "discussions",
+    "notifications",
+    "contributors",
+    "teams",
+    "activity",
+    "traffic",
+    "audit-log"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub Collaboration & Activity",
+    "shortDescription": "Resume actividad y colaboración en GitHub.",
+    "longDescription": "Gestiona y resume Discussions, hace digest y triage de notificaciones, analiza contribuciones y propone reviewers, audita equipos y permisos efectivos, reporta actividad temporal del repositorio, analiza tráfico (views, clones, referrers) y revisa actividad administrativa vía audit log, siempre con evidencia y límites explícitos.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Discussions",
+      "Notifications",
+      "Contributors",
+      "Teams",
+      "Activity",
+      "Traffic",
+      "Audit log"
+    ],
+    "defaultPrompt": "Usa GitHub Collaboration & Activity para auditar o preparar cambios en GitHub con gh CLI y confirmación."
+  }
+}

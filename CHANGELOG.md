@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- Consolidacion de 43 plugins `github-*` de superficie unica en 6 plugins multi-skill (misma cobertura, menos entradas instalables).
+- `github-security-suite` (GitHub Security Suite): consolida 8 plugins GitHub anteriores en un plugin multi-skill (github-security-manager, github-code-scanning-manager, github-secret-scanning-manager, github-security-advisory-manager, github-dependency-review-manager, github-dependabot-manager, github-private-reporting-manager, github-secret-manager).
+- `github-cicd-governance` (GitHub CI/CD Governance): consolida 8 plugins GitHub anteriores en un plugin multi-skill (github-action-permissions-manager, github-checks-manager, github-environment-manager, github-merge-queue-manager, github-oidc-manager, github-runner-manager, github-variable-manager, github-workflow-dispatch-manager).
+- `github-repo-governance` (GitHub Repository Governance): consolida 8 plugins GitHub anteriores en un plugin multi-skill (github-repository-manager, github-codeowners-manager, github-template-manager, github-label-manager, github-milestone-manager, github-funding-manager, github-pages-manager, github-ruleset-manager).
+- `github-collab-activity` (GitHub Collaboration & Activity): consolida 7 plugins GitHub anteriores en un plugin multi-skill (github-discussion-manager, github-notifications-manager, github-contributor-manager, github-team-manager, github-activity-manager, github-traffic-manager, github-audit-log-manager).
+- `github-branch-release-ops` (GitHub Branch & Release Ops): consolida 5 plugins GitHub anteriores en un plugin multi-skill (github-branch-manager, github-commit-signing-manager, github-deployment-manager, github-merge-conflict-manager, github-package-manager).
+- `github-org-lifecycle` (GitHub Org & Lifecycle): consolida 7 plugins GitHub anteriores en un plugin multi-skill (github-organization-settings-manager, github-archive-manager, github-migration-manager, github-fork-manager, github-webhook-manager, github-api-manager, github-project-manager).
+
 - Documentación de contribución para plugins y Design System Analyses.
 - Validación automática de metadata SEO, JSON-LD y sitemap para previews.
 - `cv-job-tailor`: adaptación de CVs a ofertas con trazabilidad y validadores anti-fabricación.
