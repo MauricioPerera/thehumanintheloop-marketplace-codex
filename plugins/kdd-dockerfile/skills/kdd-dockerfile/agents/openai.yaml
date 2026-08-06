@@ -1,0 +1,4 @@
+interface:
+  display_name: "KDD Dockerfile Checker"
+  short_description: "Verifica FROM, apt-get, CMD, USER y WORKDIR de un Dockerfile"
+  default_prompt: "Audita este Dockerfile con kdd-dockerfile."

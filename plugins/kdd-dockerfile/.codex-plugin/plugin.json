@@ -1,0 +1,18 @@
+{
+  "name": "kdd-dockerfile",
+  "version": "0.1.0",
+  "description": "Instrumento determinista para 11 reglas de Dockerfile best practices, generado con Knowledge-Driven Development (kdd-book).",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD Dockerfile Checker",
+    "shortDescription": "Verifica FROM, apt-get, CMD, USER y WORKDIR de un Dockerfile",
+    "longDescription": "Corre 11 chequeos deterministas extraidos de Dockerfile best practices (dockerfile_checks.py): FROM sin pin, apt-get sin combinar ni limpiar cache, CMD/ENTRYPOINT en shell form, USER root, sudo instalado, WORKDIR relativo, ADD en vez de COPY, pipe sin pipefail y .dockerignore ausente. 11 de 20 reglas normativas identificadas caen en pila A (55%); el resto exige juicio real y queda documentado en knowledge.json.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Audita este Dockerfile con kdd-dockerfile."
+  }
+}

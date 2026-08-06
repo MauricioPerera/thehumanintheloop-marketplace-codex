@@ -1,0 +1,27 @@
+{
+  "source": "https://docs.docker.com/build/building/best-practices/",
+  "method": "Knowledge-Driven Development (kdd-book)",
+  "note": "Pila A = medible sin ambiguedad por texto/regex, umbral claro. Pila B = requiere juicio real, sin umbral objetivo. Solo la pila A tiene checker en dockerfile_checks.py.",
+  "rules": [
+    {"id": "fromlatest", "pile": "A", "section": "Image maintenance & updates", "statement": "Pin the image version to a specific digest or a non-latest tag to keep builds reproducible."},
+    {"id": "aptcombine", "pile": "A", "section": "RUN", "statement": "Always combine RUN apt-get update with apt-get install in the same RUN statement."},
+    {"id": "aptcleanup", "pile": "A", "section": "RUN", "statement": "Clean the apt cache (rm -rf /var/lib/apt/lists/*) in the same RUN statement that installs packages."},
+    {"id": "execform", "pile": "A", "section": "CMD", "statement": "CMD should almost always be used in the exec form: CMD [\"executable\", \"param1\", \"param2\"]."},
+    {"id": "userroot", "pile": "A", "section": "USER", "statement": "Do not run the container as root when a non-root user can be used instead."},
+    {"id": "sudoinstall", "pile": "A", "section": "USER", "statement": "Avoid installing or using sudo due to unpredictable TTY and signal-forwarding behavior."},
+    {"id": "workdirabs", "pile": "A", "section": "WORKDIR", "statement": "Always use absolute paths for your WORKDIR."},
+    {"id": "cdinstead", "pile": "A", "section": "WORKDIR", "statement": "Use WORKDIR instead of proliferating instructions like RUN cd ... && do-something."},
+    {"id": "addvscopy", "pile": "A", "section": "ADD or COPY", "statement": "Use COPY for copying files; reserve ADD for remote URLs or local archives that need automatic extraction."},
+    {"id": "pipefail", "pile": "A", "section": "RUN", "statement": "Prepend set -o pipefail && to RUN statements that use a pipe, so an upstream failure fails the build."},
+    {"id": "dockerignore", "pile": "A", "section": "File management", "statement": "Use a .dockerignore file to exclude files not relevant to the build, even if they're in the same directory."},
+    {"id": "multistage", "pile": "B", "section": "Core architecture", "statement": "Split your Dockerfile into distinct stages so the final image only contains what's needed.", "why_not": "Requiere juzgar si un proyecto concreto se beneficia de separar build-time de runtime; muchos Dockerfiles legitimos de una sola etapa no violan nada verificable."},
+    {"id": "baseimagetrust", "pile": "B", "section": "Core architecture", "statement": "Choose a minimal, trusted base image (Docker Official Images, Verified Publisher, or Docker-Sponsored Open Source).", "why_not": "Determinar si una imagen base es 'confiable' o 'minima' requiere conocer el catalogo de publishers verificados y comparar tamanos, no es un patron de texto en el Dockerfile."},
+    {"id": "oneconcern", "pile": "B", "section": "Container design", "statement": "Each container should have only one concern; limiting to one process per container is a good rule of thumb.", "why_not": "Es una guia arquitectonica ('good rule of thumb', no absoluta) que exige entender que hace cada proceso lanzado, no algo que un regex sobre RUN/CMD pueda decidir."},
+    {"id": "rebuildregular", "pile": "B", "section": "Image maintenance", "statement": "Rebuild your images regularly with updated dependencies and build/test them in CI.", "why_not": "Es una practica operativa sobre el proceso de CI, no una propiedad que un Dockerfile puntual exprese en su texto."},
+    {"id": "userswitch", "pile": "B", "section": "USER", "statement": "Avoid switching USER back and forth frequently, since it adds layers.", "why_not": "Contar instrucciones USER no distingue un cambio necesario (build user -> runtime user) de uno descuidado; requiere leer el proposito de cada etapa."},
+    {"id": "labelmetadata", "pile": "B", "section": "LABEL", "statement": "Add labels to help organize images by project, record licensing, and automate builds.", "why_not": "No hay un conjunto fijo de labels exigidos; que labels agregar depende del proyecto y de convenciones externas al Dockerfile."},
+    {"id": "exposeport", "pile": "B", "section": "EXPOSE", "statement": "Use the common, traditional port for your application in EXPOSE.", "why_not": "Sin saber que aplicacion corre el contenedor no hay forma de decidir cual es su puerto 'tradicional'."},
+    {"id": "volumestate", "pile": "B", "section": "VOLUME", "statement": "Use VOLUME to expose database storage areas, configuration storage, or files created by the container.", "why_not": "Identificar que directorios son estado persistente del servicio requiere conocer la aplicacion, no es deducible del Dockerfile solo."},
+    {"id": "onbuildtag", "pile": "B", "section": "ONBUILD", "statement": "Images built with ONBUILD should get a separate tag; be careful with ADD/COPY inside ONBUILD.", "why_not": "Aplica solo a imagenes base para otros builds, un caso de uso minoritario que requiere contexto del proyecto para evaluar si corresponde."}
+  ]
+}

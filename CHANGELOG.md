@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- `kdd-dockerfile` (KDD Dockerfile Checker): nuevo plugin, verifica 11 reglas duras de Dockerfile best practices extraidas con Knowledge-Driven Development.
 - `k8s-manifest-auditor` (K8s Manifest Auditor): nuevo plugin, audita manifiestos Kubernetes contra los Pod Security Standards oficiales (Baseline + Restricted).
 - `kdd-typescript` (KDD TypeScript Checker): nuevo plugin, verifica 17 reglas duras del Google TypeScript Style Guide extraidas con Knowledge-Driven Development.
 - `terraform-plan-auditor` (Terraform Plan Auditor): nuevo plugin, audita planes de Terraform antes de aplicarlos sin ejecutar apply/destroy.
