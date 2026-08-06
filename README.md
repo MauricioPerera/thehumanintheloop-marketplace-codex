@@ -2,7 +2,7 @@
 
 Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
-Catálogo actual: **132 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
+Catálogo actual: **133 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
 
 ## Plugins disponibles
 
@@ -14,6 +14,7 @@ Catálogo actual: **132 plugins y 19 Design System Analyses**, distribuido en do
 - `Plugin Authoring` (`plugin-authoring`): crea y valida plugins para este marketplace.
 - `KDD Guide` (`kdd-guide`): explica y aplica Knowledge-Driven Development con OKF y CCDD.
 - `Design System Auditor` (`design-system-auditor`): genera contratos `DESIGN.md`, tokens y validadores.
+- `Design System Governance` (`design-system-governance`): mantiene contratos de diseño y detecta drift entre diseño, código y documentación.
 - `Content Fact Checker` (`content-fact-checker`): exige fuentes, fechas y evidencia para afirmaciones.
 - `Repo Quality Gate` (`repo-quality-gate`): revisa repositorios antes de commit, PR o release.
 - `Technical Docs Linter` (`technical-docs-linter`): valida documentación, ejemplos, comandos y enlaces.
@@ -114,7 +115,7 @@ Catálogo actual: **132 plugins y 19 Design System Analyses**, distribuido en do
 El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 
 - Content & Editorial — 7 plugins
-- Design Systems — 1 plugin
+- Design Systems — 2 plugins
 - Marketplace & Quality — 9 plugins
 - Developer Tools — 69 plugins
 - Accessibility & UX — 3 plugins
