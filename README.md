@@ -212,6 +212,12 @@ En Codex, registra el marketplace desde Plugins y busca `linter-seo-geo-2026`, o
 
 Para instalar otro plugin, reemplaza `linter-seo-geo-2026` por cualquiera de los nombres disponibles en la sección [Plugins disponibles](#plugins-disponibles). En la página, el botón **Pedir a Codex** prepara una conversación con el nombre exacto del plugin y **Claude** ofrece la instrucción equivalente para Claude Code.
 
+Si ya habías agregado este marketplace antes, `claude plugin install` puede fallar con `Plugin "..." not found in marketplace` para un plugin agregado recientemente, porque Claude Code cachea el marketplace localmente y no lo refresca solo. Actualiza el caché primero:
+
+```text
+claude plugin marketplace update thehumanintheloop-marketplace-claude
+```
+
 ## Design System Analyses publicados
 
 Los análisis visuales se publican como resultados reutilizables, no como plugins generadores. Cada análisis incluye el contrato `DESIGN.md`, tokens estructurados, reporte de validación y un preview HTML integrado en el catálogo. Actualmente están disponibles desde la sección de diseños de la [GitHub Page](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/).
