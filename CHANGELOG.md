@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+- Tabla de migración para los 21 plugins `vps-*` consolidados en 6 plugins multi-skill: ver [`README.md#migración-de-plugins-vps-consolidados`](README.md#migración-de-plugins-vps-consolidados).
+- Consolidacion de 21 plugins `vps-*` de superficie unica en 6 plugins multi-skill (vps-ssh-manager queda standalone).
+- `vps-backup-suite` (VPS Backup Suite): consolida 3 plugins VPS anteriores en un plugin multi-skill (vps-backup-job-monitor, vps-backup-manager, vps-backup-restore-verifier).
+- `vps-container-security-suite` (VPS Container Security Suite): consolida 5 plugins VPS anteriores en un plugin multi-skill (vps-container-security-auditor, vps-docker-network-isolation-auditor, vps-docker-resource-limits-auditor, vps-image-provenance-auditor, vps-image-vulnerability-sbom-auditor).
+- `vps-network-exposure-suite` (VPS Network Exposure Suite): consolida 4 plugins VPS anteriores en un plugin multi-skill (vps-dns-email-auth-auditor, vps-network-diagnostics, vps-service-exposure-auditor, vps-tls-renewal-monitor).
+- `vps-observability-suite` (VPS Observability Suite): consolida 4 plugins VPS anteriores en un plugin multi-skill (vps-cost-capacity-auditor, vps-observability-auditor, vps-resource-monitor, vps-log-retention-auditor).
+- `vps-deployment-readiness-suite` (VPS Deployment Readiness Suite): consolida 3 plugins VPS anteriores en un plugin multi-skill (vps-configuration-drift-auditor, vps-deployment-readiness-auditor, vps-dependency-topology-auditor).
+- `vps-incident-security-suite` (VPS Incident & Security Suite): consolida 2 plugins VPS anteriores en un plugin multi-skill (vps-incident-responder, vps-security-auditor).
+
 - `github-security-suite`, `github-cicd-governance`, `github-repo-governance`, `github-collab-activity`, `github-branch-release-ops`, `github-org-lifecycle`: version 0.1.0 -> 0.2.0 (validador de scripts restaurado y estructura multi-skill instalada y verificada end-to-end tras la consolidación).
 - Tabla de migración para los 43 plugins `github-*` consolidados en 6 plugins multi-skill: ver [`README.md#migración-de-plugins-github-consolidados`](README.md#migración-de-plugins-github-consolidados).
 - Consolidacion de 43 plugins `github-*` de superficie unica en 6 plugins multi-skill (misma cobertura, menos entradas instalables).

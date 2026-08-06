@@ -1,0 +1,32 @@
+{
+  "name": "vps-deployment-readiness-suite",
+  "version": "0.1.0",
+  "description": "Audita preparación de despliegues en un VPS: drift entre configuración declarada y estado activo, preparación de Docker Compose y mapa de dependencias y blast radius.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "vps",
+    "deployment",
+    "drift",
+    "docker-compose",
+    "dependencies"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VPS Deployment Readiness Suite",
+    "shortDescription": "Audita preparación de despliegues en un VPS.",
+    "longDescription": "Detecta diferencias entre configuración declarada y estado activo, valida la preparación de despliegues Docker Compose sin actualizar ni reiniciar servicios, y construye un mapa de dependencias y blast radius entre dominios, proxies, servicios Docker y bases de datos.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Configuration drift",
+      "Deployment readiness",
+      "Dependency topology"
+    ],
+    "defaultPrompt": "Usa VPS Deployment Readiness Suite para auditar este VPS por SSH en modo lectura."
+  }
+}

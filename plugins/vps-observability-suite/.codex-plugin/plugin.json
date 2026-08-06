@@ -1,0 +1,33 @@
+{
+  "name": "vps-observability-suite",
+  "version": "0.1.0",
+  "description": "Audita capacidad, métricas, logs y retención de un VPS: CPU, RAM, disco, sobredimensionamiento, healthchecks/alertas y crecimiento de logs, sin instalar agentes.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "vps",
+    "observability",
+    "capacity",
+    "monitoring",
+    "logs"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VPS Observability Suite",
+    "shortDescription": "Audita capacidad, métricas y logs de un VPS.",
+    "longDescription": "Analiza capacidad y sobredimensionamiento usando CPU, RAM, disco, tráfico y contenedores, audita métricas, logs, healthchecks y alertas, analiza CPU, memoria, disco, inodos, procesos y carga con umbrales y evidencia temporal, y audita retención y crecimiento de logs de journald y Docker, sin instalar agentes ni cambiar servicios.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Cost/capacity",
+      "Observability",
+      "Resource monitoring",
+      "Log retention"
+    ],
+    "defaultPrompt": "Usa VPS Observability Suite para auditar este VPS por SSH en modo lectura."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "vps-container-security-suite",
+  "version": "0.1.0",
+  "description": "Audita seguridad de contenedores Docker en un VPS: postura general, aislamiento de red, límites de recursos, procedencia de imágenes y CVE/SBOM, en modo lectura.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "vps",
+    "docker",
+    "container-security",
+    "network-isolation",
+    "sbom",
+    "cve"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VPS Container Security Suite",
+    "shortDescription": "Audita seguridad de contenedores Docker en un VPS.",
+    "longDescription": "Audita la postura de seguridad de contenedores Docker, la segmentación y exposición entre redes Docker, los límites y políticas de recursos por contenedor, la procedencia y coherencia de digests de imágenes desplegadas, y CVE/SBOM de imágenes presentes con trivy/grype/syft cuando están instalados, siempre en modo lectura sin reiniciar ni modificar servicios.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": [
+      "Container posture",
+      "Network isolation",
+      "Resource limits",
+      "Image provenance",
+      "CVE/SBOM"
+    ],
+    "defaultPrompt": "Usa VPS Container Security Suite para auditar este VPS por SSH en modo lectura."
+  }
+}

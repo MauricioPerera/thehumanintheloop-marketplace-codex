@@ -7,7 +7,7 @@
 This marketplace publishes reusable Claude Code and Codex plugins, shared skills, workflows, and deterministic validators. It is designed for human-reviewed AI-assisted work.
 
 Canonical categories: Content & Editorial; Design Systems; Marketplace & Quality; Developer Tools; Accessibility & UX; Security & Privacy; Research & Evidence; AI & Prompt Engineering.
-Current inventory: 96 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
+Current inventory: 81 plugins. The marketplace exposes Claude Code and Codex manifests from the same repository and shared plugin directories.
 
 ## Plugin catalog
 
@@ -15,6 +15,12 @@ Current inventory: 96 plugins. The marketplace exposes Claude Code and Codex man
 
 Use these exact identifiers when referring to plugins:
 
+- `vps-backup-suite` — Developer Tools — Planifica, monitorea y verifica backups de un VPS: jobs programados, planes de backup con restauración comprobable y verificación de integridad de restores, sin ejecutar cambios.
+- `vps-container-security-suite` — Security & Privacy — Audita seguridad de contenedores Docker en un VPS: postura general, aislamiento de red, límites de recursos, procedencia de imágenes y CVE/SBOM, en modo lectura.
+- `vps-network-exposure-suite` — Security & Privacy — Audita la superficie de red expuesta de un VPS: DNS y autenticación de correo (SPF, DKIM, DMARC), diagnóstico de conectividad, exposición de servicios y renovación de certificados TLS.
+- `vps-observability-suite` — Developer Tools — Audita capacidad, métricas, logs y retención de un VPS: CPU, RAM, disco, sobredimensionamiento, healthchecks/alertas y crecimiento de logs, sin instalar agentes.
+- `vps-deployment-readiness-suite` — Developer Tools — Audita preparación de despliegues en un VPS: drift entre configuración declarada y estado activo, preparación de Docker Compose y mapa de dependencias y blast radius.
+- `vps-incident-security-suite` — Security & Privacy — Audita seguridad de un VPS (firewall, SSH, fail2ban, actualizaciones) e investiga incidentes correlacionando procesos, conexiones, Docker, disco y memoria, sin aplicar cambios.
 - `github-security-suite` — Security & Privacy — Audita seguridad de GitHub: code/secret scanning, advisories, dependencias, Dependabot, reportes privados y secretos, con planes de remediación.
 - `github-cicd-governance` — Security & Privacy — Audita la gobernanza de CI/CD en GitHub Actions: permisos, environments, checks, merge queue, runners, OIDC, variables y despliegues manuales.
 - `github-repo-governance` — Developer Tools — Audita y prepara configuración de repositorios GitHub: settings, CODEOWNERS, templates, labels, milestones, funding, Pages y rulesets de protección.
@@ -79,36 +85,15 @@ Use these exact identifiers when referring to plugins:
 - `docker-image-manager` — Developer Tools — Audita imágenes, digests y espacio recuperable con guardas contra limpieza destructiva.
 - `docker-storage-auditor` — Security & Privacy — Audita volúmenes, redes, mounts y exposición Docker sin leer secretos.
 - `docker-log-diagnostics` — Developer Tools — Correlaciona logs acotados, eventos, reinicios y healthchecks para investigar incidentes.
-- `vps-security-auditor` — Security & Privacy — Audita firewall, puertos, SSH, usuarios y fail2ban sin aplicar cambios.
-- `vps-backup-manager` — Security & Privacy — Planifica backups y restauraciones verificables de datos y configuración del VPS.
-- `vps-resource-monitor` — Developer Tools — Mide CPU, RAM, disco, inodos, procesos y carga sin instalar agentes.
 - `tls-domain-manager` — Security & Privacy — Audita certificados, dominios, SNI, redirecciones y reverse proxies HTTPS.
-- `vps-incident-responder` — Developer Tools — Correlaciona sistema, red, Docker, disco y memoria para investigar incidentes.
 - `firewall-policy-manager` — Security & Privacy — Audita UFW, iptables y nftables y prepara cambios con rollback.
 - `system-update-planner` — Developer Tools — Planifica actualizaciones de paquetes y kernel con ventana y reinicio requerido.
 - `cron-automation-auditor` — Developer Tools — Audita cron y systemd timers con historial y fallos sin ejecutar tareas.
 - `secrets-exposure-auditor` — Security & Privacy — Detecta indicios de secretos en configuración y procesos sin mostrar valores.
 - `nginx-reverse-proxy-manager` — Developer Tools — Audita Nginx, hosts, upstreams, headers, TLS y rutas públicas.
 - `database-operations-manager` — Developer Tools — Diagnostica PostgreSQL, MySQL y Redis con consultas seguras y confirmación.
-- `vps-cost-capacity-auditor` — Developer Tools — Relaciona recursos, crecimiento y eficiencia sin inventar precios.
-- `vps-network-diagnostics` — Developer Tools — Diagnostica DNS, latencia, puertos, rutas y conectividad HTTP/TLS.
-- `vps-service-exposure-auditor` — Security & Privacy — Correlaciona listeners públicos, puertos Docker, firewall y reverse proxy sin aplicar cambios.
-- `vps-observability-auditor` — Developer Tools — Audita métricas, logs, healthchecks, retención y alertas sin instalar agentes.
-- `vps-deployment-readiness-auditor` — Developer Tools — Valida Compose, healthchecks, imágenes, dependencias y rollback antes de desplegar.
-- `vps-backup-restore-verifier` — Developer Tools — Verifica integridad, cobertura y recuperabilidad de backups sin tocar producción.
-- `vps-configuration-drift-auditor` — Developer Tools — Detecta diferencias entre configuración declarada y estado activo de Docker, systemd y Nginx.
-- `vps-container-security-auditor` — Security & Privacy — Audita privilegios, capabilities, mounts y aislamiento de contenedores Docker.
-- `vps-image-provenance-auditor` — Security & Privacy — Audita procedencia, digest, registry y coherencia de imágenes Docker.
-- `vps-docker-network-isolation-auditor` — Security & Privacy — Audita segmentación, redes compartidas y exposición entre contenedores.
-- `vps-docker-resource-limits-auditor` — Developer Tools — Audita CPU, memoria, PIDs, OOM y políticas de reinicio por contenedor.
-- `vps-dependency-topology-auditor` — Developer Tools — Mapea dependencias, puntos únicos de fallo y blast radius del VPS.
-- `vps-backup-job-monitor` — Developer Tools — Audita ejecución, frescura, fallos y cobertura de jobs programados de backup.
-- `vps-tls-renewal-monitor` — Security & Privacy — Audita Certbot, expiración, jobs y coherencia de certificados TLS.
-- `vps-dns-email-auth-auditor` — Security & Privacy — Audita DNS, DNSSEC, SPF, DKIM y DMARC sin cambiar registros.
 - `supabase-policy-security-auditor` — Security & Privacy — Audita RLS, Storage, Auth/JWT y Edge Functions/Realtime de Supabase self-hosted en modo lectura sin exponer secretos.
-- `vps-image-vulnerability-sbom-auditor` — Security & Privacy — Audita CVE y SBOM de imágenes Docker presentes en el VPS con trivy/grype/syft solo si están instalados, en modo lectura y sin descargar, transmitir ni modificar imágenes ni contenedores.
 - `supabase-migration-drift-auditor` — Security & Privacy — Audita migraciones aplicadas, archivos en disco y catálogos PostgreSQL de Supabase self-hosted para detectar drift de schema sin aplicar ni revertir migraciones y sin leer datos de usuario ni secretos.
-- `vps-log-retention-auditor` — Developer Tools — Audita retención y crecimiento de logs de un VPS (journald y logging de Docker) en modo lectura sin borrar, truncar, rotar, reiniciar servicios ni cambiar configuración.
 - `supabase-pgcron-auditor` — Developer Tools — Audita jobs pg_cron de Supabase self-hosted en modo lectura listando cron.job y cron.job_run_details, detectando jobs fallidos, pausados, duplicados, frecuencias peligrosas y comandos que expongan secretos o muten fuera de alcance.
 
 ### Auditor SEO/GEO 2026 (`linter-seo-geo-2026`)

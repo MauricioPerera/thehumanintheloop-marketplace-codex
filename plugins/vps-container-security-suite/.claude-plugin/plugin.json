@@ -1,0 +1,20 @@
+{
+  "name": "vps-container-security-suite",
+  "displayName": "VPS Container Security Suite",
+  "version": "0.1.0",
+  "description": "Audita seguridad de contenedores Docker en un VPS: postura general, aislamiento de red, límites de recursos, procedencia de imágenes y CVE/SBOM, en modo lectura.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "vps",
+    "docker",
+    "container-security",
+    "network-isolation",
+    "sbom",
+    "cve"
+  ]
+}

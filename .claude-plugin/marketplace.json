@@ -319,34 +319,10 @@
       "category": "Developer Tools"
     },
     {
-      "name": "vps-security-auditor",
-      "displayName": "VPS Security Auditor",
-      "source": "./plugins/vps-security-auditor",
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-backup-manager",
-      "displayName": "VPS Backup Manager",
-      "source": "./plugins/vps-backup-manager",
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-resource-monitor",
-      "displayName": "VPS Resource Monitor",
-      "source": "./plugins/vps-resource-monitor",
-      "category": "Developer Tools"
-    },
-    {
       "name": "tls-domain-manager",
       "displayName": "TLS Domain Manager",
       "source": "./plugins/tls-domain-manager",
       "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-incident-responder",
-      "displayName": "VPS Incident Responder",
-      "source": "./plugins/vps-incident-responder",
-      "category": "Developer Tools"
     },
     {
       "name": "firewall-policy-manager",
@@ -385,105 +361,9 @@
       "category": "Developer Tools"
     },
     {
-      "name": "vps-cost-capacity-auditor",
-      "displayName": "VPS Cost & Capacity Auditor",
-      "source": "./plugins/vps-cost-capacity-auditor",
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-network-diagnostics",
-      "displayName": "VPS Network Diagnostics",
-      "source": "./plugins/vps-network-diagnostics",
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-service-exposure-auditor",
-      "displayName": "VPS Service Exposure Auditor",
-      "source": "./plugins/vps-service-exposure-auditor",
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-observability-auditor",
-      "displayName": "VPS Observability Auditor",
-      "source": "./plugins/vps-observability-auditor",
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-deployment-readiness-auditor",
-      "displayName": "VPS Deployment Readiness Auditor",
-      "source": "./plugins/vps-deployment-readiness-auditor",
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-backup-restore-verifier",
-      "displayName": "VPS Backup Restore Verifier",
-      "source": "./plugins/vps-backup-restore-verifier",
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-configuration-drift-auditor",
-      "displayName": "VPS Configuration Drift Auditor",
-      "source": "./plugins/vps-configuration-drift-auditor",
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-container-security-auditor",
-      "displayName": "VPS Container Security Auditor",
-      "source": "./plugins/vps-container-security-auditor",
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-image-provenance-auditor",
-      "displayName": "VPS Image Provenance Auditor",
-      "source": "./plugins/vps-image-provenance-auditor",
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-docker-network-isolation-auditor",
-      "displayName": "VPS Docker Network Isolation Auditor",
-      "source": "./plugins/vps-docker-network-isolation-auditor",
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-docker-resource-limits-auditor",
-      "displayName": "VPS Docker Resource Limits Auditor",
-      "source": "./plugins/vps-docker-resource-limits-auditor",
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-dependency-topology-auditor",
-      "displayName": "VPS Dependency Topology Auditor",
-      "source": "./plugins/vps-dependency-topology-auditor",
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-backup-job-monitor",
-      "displayName": "VPS Backup Job Monitor",
-      "source": "./plugins/vps-backup-job-monitor",
-      "category": "Developer Tools"
-    },
-    {
-      "name": "vps-tls-renewal-monitor",
-      "displayName": "VPS TLS Renewal Monitor",
-      "source": "./plugins/vps-tls-renewal-monitor",
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-dns-email-auth-auditor",
-      "displayName": "VPS DNS & Email Auth Auditor",
-      "source": "./plugins/vps-dns-email-auth-auditor",
-      "category": "Security & Privacy"
-    },
-    {
       "name": "supabase-policy-security-auditor",
       "displayName": "Supabase Policy Security Auditor",
       "source": "./plugins/supabase-policy-security-auditor",
-      "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-image-vulnerability-sbom-auditor",
-      "displayName": "VPS Image Vulnerability & SBOM Auditor",
-      "source": "./plugins/vps-image-vulnerability-sbom-auditor",
       "category": "Security & Privacy"
     },
     {
@@ -491,12 +371,6 @@
       "displayName": "Supabase Migration Drift Auditor",
       "source": "./plugins/supabase-migration-drift-auditor",
       "category": "Security & Privacy"
-    },
-    {
-      "name": "vps-log-retention-auditor",
-      "displayName": "VPS Log Retention Auditor",
-      "source": "./plugins/vps-log-retention-auditor",
-      "category": "Developer Tools"
     },
     {
       "name": "supabase-pgcron-auditor",
@@ -581,6 +455,42 @@
       "displayName": "GitHub Org & Lifecycle",
       "source": "./plugins/github-org-lifecycle",
       "category": "Developer Tools"
+    },
+    {
+      "name": "vps-backup-suite",
+      "displayName": "VPS Backup Suite",
+      "source": "./plugins/vps-backup-suite",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-container-security-suite",
+      "displayName": "VPS Container Security Suite",
+      "source": "./plugins/vps-container-security-suite",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-network-exposure-suite",
+      "displayName": "VPS Network Exposure Suite",
+      "source": "./plugins/vps-network-exposure-suite",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "vps-observability-suite",
+      "displayName": "VPS Observability Suite",
+      "source": "./plugins/vps-observability-suite",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-deployment-readiness-suite",
+      "displayName": "VPS Deployment Readiness Suite",
+      "source": "./plugins/vps-deployment-readiness-suite",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "vps-incident-security-suite",
+      "displayName": "VPS Incident & Security Suite",
+      "source": "./plugins/vps-incident-security-suite",
+      "category": "Security & Privacy"
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
-Catálogo actual: **96 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
+Catálogo actual: **81 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
 
 ## Plugins disponibles
 
@@ -55,22 +55,20 @@ Catálogo actual: **96 plugins y 19 Design System Analyses**, distribuido en dos
 - `Docker Image Manager` (`docker-image-manager`): audita imágenes, digests y espacio recuperable antes de limpiar.
 - `Docker Storage Auditor` (`docker-storage-auditor`): audita volúmenes, redes, mounts y exposición sin leer secretos.
 - `Docker Log Diagnostics` (`docker-log-diagnostics`): correlaciona logs, eventos y healthchecks para investigar incidentes.
-- `VPS Security Auditor` (`vps-security-auditor`): audita firewall, puertos, SSH, usuarios y fail2ban sin cambios.
-- `VPS Backup Manager` (`vps-backup-manager`): planifica backups y restauraciones verificables de datos y configuración.
-- `VPS Resource Monitor` (`vps-resource-monitor`): mide CPU, memoria, disco, inodos y carga sin instalar agentes.
+- `VPS Backup Suite` (`vps-backup-suite`): planifica, monitorea y verifica backups de un VPS: jobs programados, planes de backup con restauración comprobable y verificación de integridad de restores, sin ejecutar cambios.
+- `VPS Container Security Suite` (`vps-container-security-suite`): audita seguridad de contenedores Docker en un VPS: postura general, aislamiento de red, límites de recursos, procedencia de imágenes y CVE/SBOM, en modo lectura.
+- `VPS Network Exposure Suite` (`vps-network-exposure-suite`): audita la superficie de red expuesta de un VPS: DNS y autenticación de correo (SPF, DKIM, DMARC), diagnóstico de conectividad, exposición de servicios y renovación de certificados TLS.
+- `VPS Observability Suite` (`vps-observability-suite`): audita capacidad, métricas, logs y retención de un VPS: CPU, RAM, disco, sobredimensionamiento, healthchecks/alertas y crecimiento de logs, sin instalar agentes.
+- `VPS Deployment Readiness Suite` (`vps-deployment-readiness-suite`): audita preparación de despliegues en un VPS: drift entre configuración declarada y estado activo, preparación de Docker Compose y mapa de dependencias y blast radius.
+- `VPS Incident & Security Suite` (`vps-incident-security-suite`): audita seguridad de un VPS (firewall, SSH, fail2ban, actualizaciones) e investiga incidentes correlacionando procesos, conexiones, Docker, disco y memoria, sin aplicar cambios.
 - `TLS Domain Manager` (`tls-domain-manager`): audita certificados, dominios, SNI y redirecciones HTTPS.
-- `VPS Incident Responder` (`vps-incident-responder`): correlaciona señales del sistema, red y Docker para incidentes.
 - `Firewall Policy Manager` (`firewall-policy-manager`): audita UFW, iptables y nftables sin modificar reglas.
 - `System Update Planner` (`system-update-planner`): prepara actualizaciones de paquetes y kernel con rollback.
 - `Cron Automation Auditor` (`cron-automation-auditor`): audita cron y systemd timers sin ejecutar tareas.
 - `Secrets Exposure Auditor` (`secrets-exposure-auditor`): detecta indicios de secretos sin revelar valores.
 - `Nginx Reverse Proxy Manager` (`nginx-reverse-proxy-manager`): audita hosts, upstreams, headers y rutas públicas.
 - `Database Operations Manager` (`database-operations-manager`): diagnostica PostgreSQL, MySQL y Redis con guardas.
-- `VPS Cost & Capacity Auditor` (`vps-cost-capacity-auditor`): relaciona recursos, crecimiento y eficiencia sin inventar precios.
-- `VPS Network Diagnostics` (`vps-network-diagnostics`): diagnostica DNS, latencia, puertos y conectividad.
-- `VPS Image Vulnerability & SBOM Auditor` (`vps-image-vulnerability-sbom-auditor`): audita CVE y SBOM de imágenes Docker locales con trivy/grype/syft en modo lectura.
 - `Supabase Migration Drift Auditor` (`supabase-migration-drift-auditor`): audita migraciones aplicadas vs archivos en disco vs catálogos PostgreSQL para detectar drift de schema en modo lectura.
-- `VPS Log Retention Auditor` (`vps-log-retention-auditor`): audita retención y crecimiento de logs de journald y Docker en modo lectura.
 - `Supabase pg_cron Auditor` (`supabase-pgcron-auditor`): audita jobs pg_cron de Supabase self-hosted en modo lectura listando cron.job y cron.job_run_details, detectando jobs fallidos, pausados, duplicados, frecuencias peligrosas y comandos que expongan secretos o muten fuera de alcance.
 
 ## Categorías
@@ -80,9 +78,9 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Content & Editorial — 7 plugins
 - Design Systems — 2 plugins
 - Marketplace & Quality — 7 plugins
-- Developer Tools — 51 plugins
+- Developer Tools — 42 plugins
 - Accessibility & UX — 3 plugins
-- Security & Privacy — 22 plugins
+- Security & Privacy — 16 plugins
 - Research & Evidence — 2 plugins
 - AI & Prompt Engineering — 2 plugins
 
@@ -196,6 +194,34 @@ El 6 de agosto de 2026 se consolidaron 43 plugins `github-*` de superficie únic
 | `github-variable-manager` | `github-cicd-governance` (`GitHub CI/CD Governance`) |
 | `github-webhook-manager` | `github-org-lifecycle` (`GitHub Org & Lifecycle`) |
 | `github-workflow-dispatch-manager` | `github-cicd-governance` (`GitHub CI/CD Governance`) |
+
+## Migración de plugins VPS consolidados
+
+El 6 de agosto de 2026 se consolidaron 21 plugins `vps-*` de superficie única en 6 plugins multi-skill agrupados por dominio de proceso (`vps-ssh-manager` queda standalone). Si tenías instalado o referenciado alguno de estos nombres, ya no existe en el marketplace: instala el plugin nuevo de la columna derecha, que incluye la misma skill sin cambios.
+
+| Plugin anterior | Plugin nuevo |
+|---|---|
+| `vps-backup-job-monitor` | `vps-backup-suite` (`VPS Backup Suite`) |
+| `vps-backup-manager` | `vps-backup-suite` (`VPS Backup Suite`) |
+| `vps-backup-restore-verifier` | `vps-backup-suite` (`VPS Backup Suite`) |
+| `vps-configuration-drift-auditor` | `vps-deployment-readiness-suite` (`VPS Deployment Readiness Suite`) |
+| `vps-container-security-auditor` | `vps-container-security-suite` (`VPS Container Security Suite`) |
+| `vps-cost-capacity-auditor` | `vps-observability-suite` (`VPS Observability Suite`) |
+| `vps-dependency-topology-auditor` | `vps-deployment-readiness-suite` (`VPS Deployment Readiness Suite`) |
+| `vps-deployment-readiness-auditor` | `vps-deployment-readiness-suite` (`VPS Deployment Readiness Suite`) |
+| `vps-dns-email-auth-auditor` | `vps-network-exposure-suite` (`VPS Network Exposure Suite`) |
+| `vps-docker-network-isolation-auditor` | `vps-container-security-suite` (`VPS Container Security Suite`) |
+| `vps-docker-resource-limits-auditor` | `vps-container-security-suite` (`VPS Container Security Suite`) |
+| `vps-image-provenance-auditor` | `vps-container-security-suite` (`VPS Container Security Suite`) |
+| `vps-image-vulnerability-sbom-auditor` | `vps-container-security-suite` (`VPS Container Security Suite`) |
+| `vps-incident-responder` | `vps-incident-security-suite` (`VPS Incident & Security Suite`) |
+| `vps-log-retention-auditor` | `vps-observability-suite` (`VPS Observability Suite`) |
+| `vps-network-diagnostics` | `vps-network-exposure-suite` (`VPS Network Exposure Suite`) |
+| `vps-observability-auditor` | `vps-observability-suite` (`VPS Observability Suite`) |
+| `vps-resource-monitor` | `vps-observability-suite` (`VPS Observability Suite`) |
+| `vps-security-auditor` | `vps-incident-security-suite` (`VPS Incident & Security Suite`) |
+| `vps-service-exposure-auditor` | `vps-network-exposure-suite` (`VPS Network Exposure Suite`) |
+| `vps-tls-renewal-monitor` | `vps-network-exposure-suite` (`VPS Network Exposure Suite`) |
 
 ## Instalación
 

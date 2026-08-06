@@ -1,0 +1,32 @@
+{
+  "name": "vps-backup-suite",
+  "version": "0.1.0",
+  "description": "Planifica, monitorea y verifica backups de un VPS: jobs programados, planes de backup con restauración comprobable y verificación de integridad de restores, sin ejecutar cambios.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": [
+    "vps",
+    "backup",
+    "restore",
+    "monitoring",
+    "ssh"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VPS Backup Suite",
+    "shortDescription": "Planifica, monitorea y verifica backups de un VPS.",
+    "longDescription": "Audita jobs programados de backup (frescura, fallos, cobertura), planifica y verifica backups de VPS, volúmenes Docker, PostgreSQL y configuraciones por SSH con restauración comprobable, y verifica integridad, antigüedad y recuperabilidad documentada de backups sin restaurar sobre producción.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Backup jobs",
+      "Backup planning",
+      "Restore verification"
+    ],
+    "defaultPrompt": "Usa VPS Backup Suite para auditar este VPS por SSH en modo lectura."
+  }
+}
