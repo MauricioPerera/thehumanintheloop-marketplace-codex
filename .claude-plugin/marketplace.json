@@ -503,6 +503,12 @@
       "displayName": "KDD TypeScript Checker",
       "source": "./plugins/kdd-typescript",
       "category": "Developer Tools"
+    },
+    {
+      "name": "k8s-manifest-auditor",
+      "displayName": "K8s Manifest Auditor",
+      "source": "./plugins/k8s-manifest-auditor",
+      "category": "Security & Privacy"
     }
   ]
 }

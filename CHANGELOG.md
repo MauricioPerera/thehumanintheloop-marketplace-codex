@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- `k8s-manifest-auditor` (K8s Manifest Auditor): nuevo plugin, audita manifiestos Kubernetes contra los Pod Security Standards oficiales (Baseline + Restricted).
 - `kdd-typescript` (KDD TypeScript Checker): nuevo plugin, verifica 17 reglas duras del Google TypeScript Style Guide extraidas con Knowledge-Driven Development.
 - `terraform-plan-auditor` (Terraform Plan Auditor): nuevo plugin, audita planes de Terraform antes de aplicarlos sin ejecutar apply/destroy.
 - `vps-backup-suite`, `vps-container-security-suite`, `vps-network-exposure-suite`, `vps-observability-suite`, `vps-deployment-readiness-suite`, `vps-incident-security-suite`: version 0.1.0 -> 0.2.0 (estructura multi-skill instalada y verificada end-to-end tras la consolidación).

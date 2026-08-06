@@ -1,0 +1,4 @@
+interface:
+  display_name: "K8s Manifest Auditor"
+  short_description: "Audita manifiestos Kubernetes contra Pod Security Standards."
+  default_prompt: "Audita este manifiesto de Kubernetes contra los Pod Security Standards sin aplicarlo."

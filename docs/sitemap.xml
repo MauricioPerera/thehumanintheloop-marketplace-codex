@@ -272,6 +272,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/k8s-manifest-auditor/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/plugins/kdd-agile-manifesto/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

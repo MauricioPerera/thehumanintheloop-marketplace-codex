@@ -1,0 +1,19 @@
+{
+  "name": "k8s-manifest-auditor",
+  "version": "0.1.0",
+  "description": "Audita manifiestos Kubernetes contra los Pod Security Standards oficiales (Baseline y Restricted): host namespaces, contenedores privilegiados, capabilities, hostPath, hostPort, privilege escalation, runAsNonRoot y seccomp, sin aplicar cambios al cluster.",
+  "author": {"name": "Mauricio Perera", "url": "https://github.com/MauricioPerera"},
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["kubernetes", "k8s", "pod-security-standards", "manifest", "security", "container"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "K8s Manifest Auditor",
+    "shortDescription": "Audita manifiestos Kubernetes contra Pod Security Standards.",
+    "longDescription": "Verifica 11 controles oficiales de los Kubernetes Pod Security Standards (Baseline: host namespaces, contenedores privilegiados, capabilities agregadas, hostPath, hostPort; Restricted: privilege escalation, runAsNonRoot, seccomp, capabilities drop ALL) sobre un manifiesto YAML puntual, sin ejecutar kubectl apply ni tocar el cluster.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": ["Host namespaces", "Privileged containers", "Capabilities", "hostPath/hostPort", "Privilege escalation", "runAsNonRoot", "Seccomp"],
+    "defaultPrompt": "Audita este manifiesto de Kubernetes contra los Pod Security Standards sin aplicarlo."
+  }
+}
