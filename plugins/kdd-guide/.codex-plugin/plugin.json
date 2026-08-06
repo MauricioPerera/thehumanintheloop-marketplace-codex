@@ -1,0 +1,22 @@
+{
+  "name": "kdd-guide",
+  "version": "0.1.0",
+  "description": "Explica cómo iniciar y operar proyectos con Knowledge-Driven Development usando OKF y CCDD.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/KDD",
+  "license": "MIT",
+  "keywords": ["KDD", "OKF", "CCDD", "contracts", "knowledge-base"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KDD Guide",
+    "shortDescription": "Aprende y aplica Knowledge-Driven Development.",
+    "longDescription": "Guía la adopción de KDD: estructura OKF, contratos CCDD, validadores deterministas, contexto presupuestado y gates de CI.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": ["OKF", "CCDD", "Contracts", "Validation", "CI"],
+    "defaultPrompt": "Explícame cómo aplicar KDD en este repositorio."
+  }
+}
