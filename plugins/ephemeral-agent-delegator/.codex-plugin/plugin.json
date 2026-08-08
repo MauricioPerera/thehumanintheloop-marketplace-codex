@@ -1,0 +1,18 @@
+{
+  "name": "ephemeral-agent-delegator",
+  "version": "0.1.0",
+  "description": "Delega tareas de implementación a agentes efímeros por terminal (Ollama o pool exec de poolside.ai): arma el comando de lanzamiento headless correcto, sin colgarse, y exige verificación independiente del resultado en vez de confiar en el autoreporte del agente.",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Ephemeral Agent Delegator",
+    "shortDescription": "Delega implementaciones a agentes efímeros por terminal (Ollama, pool) sin colgarse y verificando el resultado vos mismo.",
+    "longDescription": "Cubre la mecánica de lanzar agentes efímeros headless por dos backends: Ollama (`ollama launch claude`) y pool (`pool exec` de poolside.ai). Un script sin dependencias externas ni ejecución de subprocesos arma el comando exacto para cada backend (incluyendo flags obligatorias como `< /dev/null` y `--strict-mcp-config` para Ollama, o `--unsafe-auto-allow` para pool) — el agente orquestador es quien lo ejecuta con su propia tool de terminal en background, nunca el script. Documenta reglas anti-cuelgue, fallos transitorios y de cuota conocidos, y exige verificación independiente del resultado en vez de confiar en el autoreporte del agente efímero.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Ayudame a delegar esta tarea a un agente efímero por terminal (Ollama o pool), armando el comando de lanzamiento correcto y verificando el resultado vos mismo antes de darlo por bueno."
+  }
+}

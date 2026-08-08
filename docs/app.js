@@ -324,6 +324,11 @@ const plugins = [{
   description: 'Cliente genérico para el MCP oficial de n8n: descubre nodos, valida workflows/nodos antes de crearlos, construye y actualiza vía el n8n Workflow SDK (operaciones atómicas, no reemplazo completo), prueba con datos simulados, y consulta/restaura historial de versiones.',
   capabilities: ['n8n', 'MCP', 'SDK', 'Validation'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/n8n-workflow-builder', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'ephemeral-agent-delegator', displayName: 'Ephemeral Agent Delegator', category: 'Developer Tools', icon: 'EAD', version: '0.1.0',
+  description: 'Delega tareas de implementación a agentes efímeros por terminal (Ollama o pool exec de poolside.ai): arma el comando de lanzamiento headless correcto, sin colgarse, y exige verificación independiente del resultado en vez de confiar en el autoreporte del agente.',
+  capabilities: ['Ollama', 'pool', 'Delegation', 'Terminal'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/ephemeral-agent-delegator', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',
