@@ -521,6 +521,12 @@
       "displayName": "N8N Workflow Auditor",
       "source": "./plugins/n8n-workflow-auditor",
       "category": "Security & Privacy"
+    },
+    {
+      "name": "n8n-workflow-manager",
+      "displayName": "N8N Workflow Manager",
+      "source": "./plugins/n8n-workflow-manager",
+      "category": "Developer Tools"
     }
   ]
 }

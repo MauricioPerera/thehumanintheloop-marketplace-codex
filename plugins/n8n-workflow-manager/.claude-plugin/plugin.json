@@ -1,0 +1,13 @@
+{
+  "name": "n8n-workflow-manager",
+  "displayName": "N8N Workflow Manager",
+  "version": "0.1.0",
+  "description": "Gestiona el ciclo de vida de workflows de n8n vía REST API: crear, activar, desactivar, editar y borrar, con plan/diff obligatorio y confirmación explícita antes de cada mutación.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["n8n", "workflow", "automation", "crud", "manager"]
+}
