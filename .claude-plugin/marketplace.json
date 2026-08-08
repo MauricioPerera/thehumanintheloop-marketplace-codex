@@ -515,6 +515,12 @@
       "displayName": "KDD Dockerfile Checker",
       "source": "./plugins/kdd-dockerfile",
       "category": "Developer Tools"
+    },
+    {
+      "name": "n8n-workflow-auditor",
+      "displayName": "N8N Workflow Auditor",
+      "source": "./plugins/n8n-workflow-auditor",
+      "category": "Security & Privacy"
     }
   ]
 }

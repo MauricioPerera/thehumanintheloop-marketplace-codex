@@ -1023,6 +1023,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "n8n-workflow-auditor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/n8n-workflow-auditor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
     }
   ]
 }

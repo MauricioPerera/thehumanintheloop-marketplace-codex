@@ -1,0 +1,18 @@
+{
+  "name": "n8n-workflow-auditor",
+  "version": "0.1.0",
+  "description": "Audita workflows de n8n vía REST API en modo lectura: credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo, manejo de errores, reintentos y nodos huérfanos.",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "N8N Workflow Auditor",
+    "shortDescription": "Audita seguridad y robustez de workflows de n8n en modo lectura.",
+    "longDescription": "Conecta a la REST API de n8n con una API key aportada por el usuario y evalúa credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo (comandos, SSH, código), manejo de errores, reintentos en llamadas externas y nodos huérfanos o desconectados.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": [],
+    "defaultPrompt": "Audita mis workflows de n8n con el auditor de seguridad y robustez y genera el reporte técnico completo."
+  }
+}
