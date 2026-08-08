@@ -131,6 +131,41 @@ def cmd_update(args, api_key):
     print(f"\n[OK] Workflow actualizado: '{updated.get('name')}' (id: {updated.get('id')}).")
 
 
+def cmd_set_archived(args, api_key, target_archived):
+    action = "archivar" if target_archived else "desarchivar"
+    current = get_workflow(args.url, api_key, args.workflow_id)
+    if current.get("isArchived") == target_archived:
+        print(f"Sin cambios: '{current.get('name')}' ya esta {'archivado' if target_archived else 'sin archivar'}.")
+        return
+    print(f"PLAN: {action} '{current.get('name')}' (id: {args.workflow_id}). "
+          f"Estado actual: {'archivado' if current.get('isArchived') else 'sin archivar'}.")
+    if target_archived:
+        print("Nota: archivar es un soft-delete. El workflow deja de listarse activo pero se puede restaurar con 'unarchive'.")
+    if not args.apply:
+        print("Dry-run: no se aplico nada. Pasa --apply para ejecutar.")
+        return
+    path = f"/api/v1/workflows/{args.workflow_id}/{'archive' if target_archived else 'unarchive'}"
+    updated = _request(args.url, path, api_key, method="POST")
+    print(f"[OK] '{updated.get('name')}' ahora esta {'archivado' if updated.get('isArchived') else 'sin archivar'}.")
+
+
+def cmd_transfer(args, api_key):
+    current = get_workflow(args.url, api_key, args.workflow_id)
+    owner_entry = next((s for s in (current.get("shared") or []) if s.get("role") == "workflow:owner"), None)
+    current_project = owner_entry.get("projectId") if owner_entry else None
+    if current_project == args.destination_project_id:
+        print(f"Sin cambios: '{current.get('name')}' ya pertenece al proyecto {args.destination_project_id}.")
+        return
+    print(f"PLAN: transferir '{current.get('name')}' (id: {args.workflow_id}) "
+          f"del proyecto {current_project or '(desconocido)'} al proyecto {args.destination_project_id}.")
+    if not args.apply:
+        print("Dry-run: no se aplico nada. Pasa --apply para ejecutar.")
+        return
+    _request(args.url, f"/api/v1/workflows/{args.workflow_id}/transfer", api_key,
+              method="PUT", body={"destinationProjectId": args.destination_project_id})
+    print(f"[OK] '{current.get('name')}' transferido a {args.destination_project_id}.")
+
+
 def cmd_delete(args, api_key):
     current = get_workflow(args.url, api_key, args.workflow_id)
     real_name = current.get("name")
@@ -170,6 +205,16 @@ def build_parser():
     p_update.add_argument("--patch", required=True,
                            help="Archivo JSON con los campos a cambiar (reemplaza esos campos completos, sin merge profundo)")
 
+    p_archive = sub.add_parser("archive", parents=[common], help="Archivar un workflow (soft-delete, reversible con unarchive)")
+    p_archive.add_argument("--workflow-id", required=True)
+
+    p_unarchive = sub.add_parser("unarchive", parents=[common], help="Restaurar un workflow archivado")
+    p_unarchive.add_argument("--workflow-id", required=True)
+
+    p_transfer = sub.add_parser("transfer", parents=[common], help="Transferir un workflow a otro proyecto")
+    p_transfer.add_argument("--workflow-id", required=True)
+    p_transfer.add_argument("--destination-project-id", required=True)
+
     p_delete = sub.add_parser("delete", parents=[common], help="Borrar un workflow (irreversible)")
     p_delete.add_argument("--workflow-id", required=True)
     p_delete.add_argument("--confirm-name", required=True,
@@ -189,6 +234,9 @@ def main():
         "activate": lambda: cmd_set_active(args, api_key, True),
         "deactivate": lambda: cmd_set_active(args, api_key, False),
         "update": lambda: cmd_update(args, api_key),
+        "archive": lambda: cmd_set_archived(args, api_key, True),
+        "unarchive": lambda: cmd_set_archived(args, api_key, False),
+        "transfer": lambda: cmd_transfer(args, api_key),
         "delete": lambda: cmd_delete(args, api_key),
     }
     handlers[args.command]()

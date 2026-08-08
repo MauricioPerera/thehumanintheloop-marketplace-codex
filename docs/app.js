@@ -305,10 +305,20 @@ const plugins = [{
   capabilities: ['n8n', 'Workflows', 'Seguridad', 'Robustez', 'Export', 'Audit nativo', 'Ejecuciones', 'Credenciales'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/n8n-workflow-auditor', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }, {
-  name: 'n8n-workflow-manager', displayName: 'N8N Workflow Manager', category: 'Developer Tools', icon: 'N8N', version: '0.1.0',
-  description: 'Gestiona el ciclo de vida de workflows de n8n vía REST API: crear, activar, desactivar, editar (con diff obligatorio) y borrar (con confirmación por nombre exacto). Dry-run por defecto, nunca muta sin --apply explícito.',
+  name: 'n8n-workflow-manager', displayName: 'N8N Workflow Manager', category: 'Developer Tools', icon: 'N8N', version: '0.2.0',
+  description: 'Gestiona el ciclo de vida de workflows de n8n vía REST API: crear, activar, desactivar, archivar, transferir, editar (con diff obligatorio) y borrar (con confirmación por nombre exacto). Dry-run por defecto, nunca muta sin --apply explícito.',
   capabilities: ['n8n', 'Workflows', 'CRUD', 'Manager'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/n8n-workflow-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'n8n-credential-manager', displayName: 'N8N Credential Manager', category: 'Security & Privacy', icon: 'N8N', version: '0.1.0',
+  description: 'Gestiona credenciales de n8n vía REST API: crear, renombrar, rotar el secreto, borrar, probar y transferir. El valor del secreto se lee de un archivo local y nunca se imprime ni se registra.',
+  capabilities: ['n8n', 'Credentials', 'Secrets', 'Manager'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/n8n-credential-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'n8n-community-package-manager', displayName: 'N8N Community Package Manager', category: 'Security & Privacy', icon: 'N8N', version: '0.1.0',
+  description: 'Instala, actualiza y desinstala paquetes de nodos de comunidad en n8n vía REST API, con verificación contra la lista vetada de n8n activa por defecto y confirmación explícita antes de cada mutación.',
+  capabilities: ['n8n', 'Community Nodes', 'Supply Chain', 'Manager'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/n8n-community-package-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

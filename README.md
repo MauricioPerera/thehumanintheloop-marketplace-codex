@@ -2,7 +2,7 @@
 
 Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
-Catálogo actual: **87 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
+Catálogo actual: **89 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
 
 ## Plugins disponibles
 
@@ -75,7 +75,9 @@ Catálogo actual: **87 plugins y 19 Design System Analyses**, distribuido en dos
 - `K8s Manifest Auditor` (`k8s-manifest-auditor`): audita manifiestos Kubernetes contra los Pod Security Standards oficiales (Baseline y Restricted): host namespaces, contenedores privilegiados, capabilities, hostPath, hostPort, privilege escalation, runAsNonRoot y seccomp, sin aplicar cambios al cluster.
 - `KDD Dockerfile Checker` (`kdd-dockerfile`): verifica 11 reglas duras de Dockerfile best practices: FROM sin pin, apt-get sin combinar ni limpiar, CMD/ENTRYPOINT en shell form, USER root, sudo instalado, WORKDIR relativo, ADD en vez de COPY, pipe sin pipefail y .dockerignore ausente, extraidas y verificadas con Knowledge-Driven Development.
 - `N8N Workflow Auditor` (`n8n-workflow-auditor`): audita workflows de n8n vía REST API en modo lectura: credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo, manejo de errores, reintentos y nodos huérfanos. También inventaría workflows y credenciales, exporta workflows a disco, envuelve el audit nativo de n8n y analiza el historial real de ejecuciones.
-- `N8N Workflow Manager` (`n8n-workflow-manager`): gestiona el ciclo de vida de workflows de n8n vía REST API: crear, activar, desactivar, editar (con diff obligatorio) y borrar (con confirmación por nombre exacto). Dry-run por defecto, nunca muta sin `--apply` explícito.
+- `N8N Workflow Manager` (`n8n-workflow-manager`): gestiona el ciclo de vida de workflows de n8n vía REST API: crear, activar, desactivar, archivar, transferir, editar (con diff obligatorio) y borrar (con confirmación por nombre exacto). Dry-run por defecto, nunca muta sin `--apply` explícito.
+- `N8N Credential Manager` (`n8n-credential-manager`): gestiona credenciales de n8n vía REST API: crear, renombrar, rotar el secreto, borrar, probar y transferir. El valor del secreto se lee de un archivo local y nunca se imprime ni se registra.
+- `N8N Community Package Manager` (`n8n-community-package-manager`): instala, actualiza y desinstala paquetes de nodos de comunidad en n8n vía REST API, con verificación contra la lista vetada de n8n activa por defecto y confirmación explícita antes de cada mutación.
 
 ## Categorías
 
@@ -86,7 +88,7 @@ El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 - Marketplace & Quality — 7 plugins
 - Developer Tools — 45 plugins
 - Accessibility & UX — 3 plugins
-- Security & Privacy — 19 plugins
+- Security & Privacy — 21 plugins
 - Research & Evidence — 2 plugins
 - AI & Prompt Engineering — 2 plugins
 

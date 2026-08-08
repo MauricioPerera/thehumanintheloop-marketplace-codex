@@ -527,6 +527,18 @@
       "displayName": "N8N Workflow Manager",
       "source": "./plugins/n8n-workflow-manager",
       "category": "Developer Tools"
+    },
+    {
+      "name": "n8n-credential-manager",
+      "displayName": "N8N Credential Manager",
+      "source": "./plugins/n8n-credential-manager",
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "n8n-community-package-manager",
+      "displayName": "N8N Community Package Manager",
+      "source": "./plugins/n8n-community-package-manager",
+      "category": "Security & Privacy"
     }
   ]
 }

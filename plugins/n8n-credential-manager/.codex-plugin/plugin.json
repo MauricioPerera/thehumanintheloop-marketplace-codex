@@ -1,0 +1,18 @@
+{
+  "name": "n8n-credential-manager",
+  "version": "0.1.0",
+  "description": "Gestiona credenciales de n8n vía REST API: crear, renombrar, rotar el secreto, borrar, probar y transferir. El valor del secreto se lee de un archivo local y nunca se imprime ni se registra en ningún log.",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "N8N Credential Manager",
+    "shortDescription": "Crea, renombra, rota, borra, prueba y transfiere credenciales de n8n sin exponer secretos.",
+    "longDescription": "Conecta a la REST API de n8n con una API key aportada por el usuario para gestionar el ciclo de vida de credenciales. El valor del secreto (data) se lee siempre de un archivo local aportado por el usuario, nunca de un argumento de línea de comandos ni del chat, y jamás se imprime en el plan, el diff o la salida del script. Renombrar no toca el secreto. Rotar (cambiar el valor) y crear son las únicas operaciones que lo leen, y solo para reenviarlo a n8n. Todas las mutaciones son dry-run por defecto y requieren --apply explícito; borrar exige el nombre exacto de la credencial.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": [],
+    "defaultPrompt": "Ayudame a gestionar mis credenciales de n8n: crear, renombrar, rotar, borrar, probar o transferir, siempre mostrando el plan antes de aplicar y sin que veas los valores de los secretos."
+  }
+}

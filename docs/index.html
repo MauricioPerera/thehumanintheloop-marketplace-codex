@@ -49,7 +49,7 @@
   },
   "mainEntity": {
     "@type": "ItemList",
-    "numberOfItems": 87,
+    "numberOfItems": 89,
     "itemListElement": [
       {
         "@type": "ListItem",
@@ -1693,8 +1693,8 @@
           "name": "N8N Workflow Manager",
           "applicationCategory": "Developer Tools",
           "operatingSystem": "Claude Code, Codex",
-          "softwareVersion": "0.1.0",
-          "description": "Gestiona el ciclo de vida de workflows de n8n vía REST API: crear, activar, desactivar, editar (con diff obligatorio) y borrar (con confirmación por nombre exacto). Dry-run por defecto, nunca muta sin --apply explícito.",
+          "softwareVersion": "0.2.0",
+          "description": "Gestiona el ciclo de vida de workflows de n8n vía REST API: crear, activar, desactivar, archivar, transferir, editar (con diff obligatorio) y borrar (con confirmación por nombre exacto). Dry-run por defecto, nunca muta sin --apply explícito.",
           "url": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/n8n-workflow-manager",
           "author": {
             "@type": "Person",
@@ -1702,6 +1702,44 @@
             "url": "https://github.com/MauricioPerera"
           },
           "keywords": "n8n, workflow, automation, crud, manager"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 88,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "N8N Credential Manager",
+          "applicationCategory": "Security & Privacy",
+          "operatingSystem": "Claude Code, Codex",
+          "softwareVersion": "0.1.0",
+          "description": "Gestiona credenciales de n8n vía REST API: crear, renombrar, rotar el secreto, borrar, probar y transferir. El valor del secreto se lee de un archivo local y nunca se imprime ni se registra.",
+          "url": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/n8n-credential-manager",
+          "author": {
+            "@type": "Person",
+            "name": "Mauricio Perera",
+            "url": "https://github.com/MauricioPerera"
+          },
+          "keywords": "n8n, credentials, secrets, manager"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 89,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "N8N Community Package Manager",
+          "applicationCategory": "Security & Privacy",
+          "operatingSystem": "Claude Code, Codex",
+          "softwareVersion": "0.1.0",
+          "description": "Instala, actualiza y desinstala paquetes de nodos de comunidad en n8n vía REST API, con verificación contra la lista vetada de n8n activa por defecto y confirmación explícita antes de cada mutación.",
+          "url": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/n8n-community-package-manager",
+          "author": {
+            "@type": "Person",
+            "name": "Mauricio Perera",
+            "url": "https://github.com/MauricioPerera"
+          },
+          "keywords": "n8n, community-nodes, supply-chain, manager"
         }
       }
     ]
