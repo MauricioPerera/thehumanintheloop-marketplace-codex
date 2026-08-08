@@ -300,9 +300,9 @@ const plugins = [{
   capabilities: ['FROM pin', 'apt-get', 'CMD/ENTRYPOINT', 'USER', 'WORKDIR', 'ADD/COPY', 'pipefail'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kdd-dockerfile', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }, {
-  name: 'n8n-workflow-auditor', displayName: 'N8N Workflow Auditor', category: 'Security & Privacy', icon: 'N8N', version: '0.5.0',
-  description: 'Audita workflows de n8n vía REST API en modo lectura: credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo, manejo de errores, reintentos y nodos huérfanos. También inventaría, exporta workflows a disco, envuelve el audit nativo de n8n y analiza el historial real de ejecuciones.',
-  capabilities: ['n8n', 'Workflows', 'Seguridad', 'Robustez', 'Export', 'Audit nativo', 'Ejecuciones'],
+  name: 'n8n-workflow-auditor', displayName: 'N8N Workflow Auditor', category: 'Security & Privacy', icon: 'N8N', version: '0.6.0',
+  description: 'Audita workflows de n8n vía REST API en modo lectura: credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo, manejo de errores, reintentos y nodos huérfanos. También inventaría workflows y credenciales, exporta workflows a disco, envuelve el audit nativo de n8n y analiza el historial real de ejecuciones.',
+  capabilities: ['n8n', 'Workflows', 'Seguridad', 'Robustez', 'Export', 'Audit nativo', 'Ejecuciones', 'Credenciales'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/n8n-workflow-auditor', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{

@@ -43,7 +43,7 @@ SECRET_VALUE_PATTERN = re.compile(
     r"eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,})"
 )
 EXPRESSION_PREFIX = "={{"
-USER_AGENT = "n8n-workflow-auditor/0.5.0 (+https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex)"
+USER_AGENT = "n8n-workflow-auditor/0.6.0 (+https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex)"
 AUDIT_CATEGORIES = {"credentials", "database", "nodes", "filesystem", "instance"}
 
 
@@ -103,6 +103,48 @@ def list_workflows(base_url, api_key, only_active):
 
 def get_workflow(base_url, api_key, workflow_id):
     return http_get(base_url, f"/api/v1/workflows/{workflow_id}", api_key)
+
+
+def list_credentials(base_url, api_key):
+    credentials = []
+    cursor = None
+    while True:
+        path = "/api/v1/credentials?limit=250"
+        if cursor:
+            path += f"&cursor={cursor}"
+        data = http_get(base_url, path, api_key)
+        credentials.extend(data.get("data", []))
+        cursor = data.get("nextCursor")
+        if not cursor:
+            break
+    return credentials
+
+
+def summarize_credential(credential):
+    shared = credential.get("shared") or []
+    return {
+        "id": credential.get("id"),
+        "name": credential.get("name"),
+        "type": credential.get("type"),
+        "created_at": credential.get("createdAt"),
+        "updated_at": credential.get("updatedAt"),
+        "shared_with": [{"project": s.get("name"), "role": s.get("role")} for s in shared],
+    }
+
+
+def render_credentials_markdown(report):
+    lines = [f"# Credenciales n8n — {report['n8n_url']}", ""]
+    lines.append(f"Total: {report['total']}")
+    if report["by_type"]:
+        by_type = ", ".join(f"{t}: {n}" for t, n in sorted(report["by_type"].items(), key=lambda kv: -kv[1]))
+        lines.append(f"Por tipo: {by_type}")
+    lines.append("")
+    lines.append("| Nombre | ID | Tipo | Creada | Compartida con |")
+    lines.append("|---|---|---|---|---|")
+    for cred in report["credentials"]:
+        shared = "; ".join(f"{s['project']} ({s['role']})" for s in cred["shared_with"]) or "sin compartir"
+        lines.append(f"| {cred['name']} | `{cred['id']}` | {cred['type']} | {cred['created_at']} | {shared} |")
+    return "\n".join(lines)
 
 
 EXECUTION_STATUSES = {"canceled", "crashed", "error", "new", "running", "success", "unknown", "waiting"}
@@ -439,6 +481,7 @@ def main():
     parser.add_argument("--executions", action="store_true", help="Analiza el historial de ejecuciones (/executions) en vez de auditar definiciones de workflow")
     parser.add_argument("--status", help=f"Filtra ejecuciones por status (solo --executions). Validos: {', '.join(sorted(EXECUTION_STATUSES))}")
     parser.add_argument("--max-executions", type=int, default=500, dest="max_executions", help="Tope de ejecuciones a traer (solo --executions, default 500). Instancias activas pueden tener millones de ejecuciones historicas; esto evita un crawl completo.")
+    parser.add_argument("--credentials", action="store_true", help="Inventario de credenciales (metadata, nunca valores) via /credentials, en vez de auditar workflows")
     parser.add_argument("--json", dest="json_out", help="Ruta de salida JSON")
     parser.add_argument("--markdown", dest="md_out", help="Ruta de salida Markdown")
     args = parser.parse_args()
@@ -484,6 +527,26 @@ def main():
         if args.md_out:
             with open(args.md_out, "w", encoding="utf-8") as fh:
                 fh.write(render_executions_markdown(report))
+        print(json.dumps(report, indent=2, ensure_ascii=False))
+        return 0
+
+    if args.credentials:
+        credentials = list_credentials(args.url, api_key)
+        by_type = {}
+        for cred in credentials:
+            by_type[cred.get("type")] = by_type.get(cred.get("type"), 0) + 1
+        report = {
+            "n8n_url": args.url,
+            "total": len(credentials),
+            "by_type": by_type,
+            "credentials": [summarize_credential(c) for c in credentials],
+        }
+        if args.json_out:
+            with open(args.json_out, "w", encoding="utf-8") as fh:
+                json.dump(report, fh, indent=2, ensure_ascii=False)
+        if args.md_out:
+            with open(args.md_out, "w", encoding="utf-8") as fh:
+                fh.write(render_credentials_markdown(report))
         print(json.dumps(report, indent=2, ensure_ascii=False))
         return 0
 
