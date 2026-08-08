@@ -1,6 +1,6 @@
 ---
 name: n8n-workflow-auditor
-description: 'Audita workflows de n8n vía REST API en modo lectura: webhooks sin autenticación, credenciales hardcodeadas, nodos de alto riesgo, manejo de errores, reintentos en llamadas externas, nodos huérfanos y triggers inalcanzables. Úsala cuando el usuario pida auditar, revisar o validar la seguridad y robustez de sus workflows de n8n.'
+description: 'Audita workflows de n8n vía REST API en modo lectura: webhooks sin autenticación, credenciales hardcodeadas, nodos de alto riesgo, manejo de errores, reintentos en llamadas externas, nodos huérfanos y triggers inalcanzables. También genera inventario (cuántos workflows hay, cuántos activos/inactivos) con --summary. Úsala cuando el usuario pida auditar, revisar, inventariar o validar la seguridad y robustez de sus workflows de n8n.'
 ---
 
 # N8N Workflow Auditor
@@ -22,17 +22,24 @@ Nunca imprimas, repitas ni guardes el valor de la API key en el reporte.
 ## Flujo de auditoría
 
 1. Confirma URL, alcance (`--all` para incluir inactivos; por defecto solo audita workflows activos) y si es todo el tenant o un `--workflow-id` puntual.
-2. Ejecuta el validador:
+2. Si el usuario solo quiere inventario (cuántos workflows hay, cuántos activos, nombres, cantidad de nodos y triggers) sin correr las siete reglas, usa `--summary`: hace la misma paginación pero se salta la auditoría, ideal como primer vistazo en instancias grandes.
+
+   ```powershell
+   $env:N8N_API_KEY = "<api-key-del-usuario>"
+   python "scripts/audit_n8n_workflows.py" --url "https://n8n.midominio.com" --all --summary --json inventario.json
+   ```
+
+3. Para la auditoría completa:
 
    ```powershell
    $env:N8N_API_KEY = "<api-key-del-usuario>"
    python "scripts/audit_n8n_workflows.py" --url "https://n8n.midominio.com" --json reporte.json --markdown reporte.md
    ```
 
-   Agrega `--all` para incluir workflows inactivos o `--workflow-id <id>` para auditar uno solo.
-3. Revisa manualmente cada hallazgo `WARN` (nodos de alto riesgo): confirma si el comando/código ejecutado es necesario y si corre con el mínimo privilegio posible. El script no puede juzgar intención, solo presencia.
-4. Para cada workflow, presenta las siete reglas en orden con `[PASSED]`, `[FAILED]` o `[WARN]`, evidencia (nombres de nodo, nunca valores de parámetros completos) y justificación.
-5. Cierra con una tabla consolidada por workflow y un plan de acción priorizado: primero `FAILED` de seguridad (reglas 1, 2), después robustez (4, 5, 6, 7), luego `WARN` de revisión manual (regla 3).
+   Agrega `--all` para incluir workflows inactivos o `--workflow-id <id>` para auditar uno solo. El listado paginado (`GET /workflows`) ya trae `nodes`/`connections`/`settings` completos, así que el costo es O(páginas de 250), no O(workflows): una instancia con ~1000 workflows audita en pocos segundos.
+4. Revisa manualmente cada hallazgo `WARN` (nodos de alto riesgo): confirma si el comando/código ejecutado es necesario y si corre con el mínimo privilegio posible. El script no puede juzgar intención, solo presencia.
+5. Para cada workflow, presenta las siete reglas en orden con `[PASSED]`, `[FAILED]` o `[WARN]`, evidencia (nombres de nodo, nunca valores de parámetros completos) y justificación.
+6. Cierra con una tabla consolidada por workflow y un plan de acción priorizado: primero `FAILED` de seguridad (reglas 1, 2), después robustez (4, 5, 6, 7), luego `WARN` de revisión manual (regla 3). Si corriste `--summary`, cierra en cambio con el conteo total/activos/inactivos y sugiere una auditoría completa como siguiente paso.
 
 ## Reglas
 
