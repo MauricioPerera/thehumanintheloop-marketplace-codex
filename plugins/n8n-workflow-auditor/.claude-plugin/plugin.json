@@ -1,8 +1,8 @@
 {
   "name": "n8n-workflow-auditor",
   "displayName": "N8N Workflow Auditor",
-  "version": "0.2.0",
-  "description": "Audita workflows de n8n vía REST API en modo lectura: credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo, manejo de errores, reintentos y nodos huérfanos.",
+  "version": "0.3.0",
+  "description": "Audita workflows de n8n vía REST API en modo lectura: credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo, manejo de errores, reintentos y nodos huérfanos. También inventaría y exporta workflows a disco.",
   "author": {
     "name": "Mauricio Perera",
     "url": "https://github.com/MauricioPerera"
