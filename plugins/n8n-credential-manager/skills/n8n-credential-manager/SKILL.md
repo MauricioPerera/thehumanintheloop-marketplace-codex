@@ -79,7 +79,7 @@ n8n prueba la credencial ya guardada contra su servicio real. **Caveat verificad
 python "scripts/manage_n8n_credentials.py" transfer --url "https://n8n.midominio.com" --credential-id <id> --destination-project-id <id> --apply
 ```
 
-**Caveat verificado**: requiere una licencia de n8n con soporte multi-proyecto (`feat:projectRole:admin`). En instancias Community/single-project, `GET /projects` y `POST /projects` fallan con un error de licencia — no hay proyecto destino real al que transferir. El comando está implementado y verificado en formato de request y manejo de errores (404 correcto ante un proyecto inexistente), pero no se pudo verificar una transferencia exitosa real por esta limitación de licencia, no del script.
+**Caveat verificado**: requiere que la instancia tenga proyectos de equipo habilitados. Confirmado vía el MCP oficial de n8n (`search_projects` devuelve `teamProjectsEnabled: false` con un hint explícito cuando no lo están): no es un tema de permisos de tu API key, es un flag a nivel instancia. Con eso apagado, `GET /projects` y `POST /projects` fallan y solo existe el proyecto personal — no hay proyecto destino real al que transferir. El comando está implementado y verificado en formato de request y manejo de errores (404 correcto ante un proyecto inexistente), pero no se pudo verificar una transferencia exitosa real por esta limitación de configuración de la instancia, no del script. Si tenés acceso al MCP builder (`n8n-workflow-builder`), llamá `search_projects` primero para confirmar si hay más de un proyecto antes de intentarlo.
 
 ## Reporte
 
@@ -87,4 +87,4 @@ Después de cada operación, resumí qué se planeó, si se aplicó, y el result
 
 ## Recurso incluido
 
-`scripts/manage_n8n_credentials.py` es un cliente sin dependencias externas con 7 subcomandos. Verificado end-to-end contra una instancia n8n real (sandbox): create/rename/rotate/delete completos sobre una credencial descartable, incluyendo el gate de `--confirm-name`; `schema` y `test` verificados en su formato de request/respuesta; `transfer` verificado en formato y manejo de error, no en una transferencia exitosa (limitación de licencia de la instancia de prueba, documentada arriba).
+`scripts/manage_n8n_credentials.py` es un cliente sin dependencias externas con 7 subcomandos. Verificado end-to-end contra una instancia n8n real (sandbox): create/rename/rotate/delete completos sobre una credencial descartable, incluyendo el gate de `--confirm-name`; `schema` y `test` verificados en su formato de request/respuesta; `transfer` verificado en formato y manejo de error, no en una transferencia exitosa (`teamProjectsEnabled: false` en la instancia de prueba, confirmado vía MCP y documentado arriba).
