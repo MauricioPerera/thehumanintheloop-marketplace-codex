@@ -43,7 +43,7 @@ SECRET_VALUE_PATTERN = re.compile(
     r"eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,})"
 )
 EXPRESSION_PREFIX = "={{"
-USER_AGENT = "n8n-workflow-auditor/0.4.0 (+https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex)"
+USER_AGENT = "n8n-workflow-auditor/0.5.0 (+https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex)"
 AUDIT_CATEGORIES = {"credentials", "database", "nodes", "filesystem", "instance"}
 
 
@@ -103,6 +103,87 @@ def list_workflows(base_url, api_key, only_active):
 
 def get_workflow(base_url, api_key, workflow_id):
     return http_get(base_url, f"/api/v1/workflows/{workflow_id}", api_key)
+
+
+EXECUTION_STATUSES = {"canceled", "crashed", "error", "new", "running", "success", "unknown", "waiting"}
+ERROR_STATUSES = {"error", "crashed"}
+
+
+def list_executions(base_url, api_key, status=None, workflow_id=None, max_executions=500):
+    if status and status not in EXECUTION_STATUSES:
+        raise SystemExit(f"[FAILED] Status invalido: {status!r}. Validos: {sorted(EXECUTION_STATUSES)}")
+    executions = []
+    cursor = None
+    truncated = False
+    while True:
+        path = "/api/v1/executions?limit=250"
+        if status:
+            path += f"&status={status}"
+        if workflow_id:
+            path += f"&workflowId={workflow_id}"
+        if cursor:
+            path += f"&cursor={cursor}"
+        data = http_get(base_url, path, api_key)
+        executions.extend(data.get("data", []))
+        cursor = data.get("nextCursor")
+        if len(executions) >= max_executions:
+            executions = executions[:max_executions]
+            truncated = bool(cursor)
+            break
+        if not cursor:
+            break
+    return executions, truncated
+
+
+def summarize_executions(executions):
+    by_workflow = {}
+    for execution in executions:
+        workflow_id = execution.get("workflowId")
+        entry = by_workflow.setdefault(workflow_id, {
+            "workflow_id": workflow_id,
+            "total": 0,
+            "success": 0,
+            "error": 0,
+            "other": 0,
+            "last_status": None,
+            "last_started_at": None,
+            "last_error_at": None,
+        })
+        entry["total"] += 1
+        status = execution.get("status")
+        started_at = execution.get("startedAt")
+        if status == "success":
+            entry["success"] += 1
+        elif status in ERROR_STATUSES:
+            entry["error"] += 1
+            if started_at and (entry["last_error_at"] is None or started_at > entry["last_error_at"]):
+                entry["last_error_at"] = started_at
+        else:
+            entry["other"] += 1
+        if started_at and (entry["last_started_at"] is None or started_at > entry["last_started_at"]):
+            entry["last_started_at"] = started_at
+            entry["last_status"] = status
+    for entry in by_workflow.values():
+        entry["error_rate_pct"] = round(100 * entry["error"] / entry["total"], 1) if entry["total"] else 0.0
+    return sorted(by_workflow.values(), key=lambda e: e["error"], reverse=True)
+
+
+def render_executions_markdown(report):
+    lines = [f"# Ejecuciones n8n — {report['n8n_url']}", ""]
+    filters = report["filters"]
+    filter_desc = ", ".join(f"{k}={v}" for k, v in filters.items() if v) or "ninguno"
+    lines.append(f"Muestra: {report['sampled']} ejecuciones | filtros: {filter_desc}")
+    if report["truncated"]:
+        lines.append(f"**Truncado**: hay mas ejecuciones ademas de esta muestra de {report['sampled']}. Sube `--max-executions` para ampliar la ventana, o agrega `--status`/`--workflow-id` para acotar.")
+    lines.append("")
+    lines.append("| Workflow | ID | Total | OK | Error | Error % | Ultimo status | Ultimo error |")
+    lines.append("|---|---|---|---|---|---|---|---|")
+    for entry in report["by_workflow"]:
+        lines.append(
+            f"| {entry.get('workflow_name', '?')} | `{entry['workflow_id']}` | {entry['total']} | {entry['success']} | "
+            f"{entry['error']} | {entry['error_rate_pct']} | {entry['last_status']} | {entry['last_error_at'] or '-'} |"
+        )
+    return "\n".join(lines)
 
 
 def scan_params_for_secrets(params, path="parameters"):
@@ -355,6 +436,9 @@ def main():
     parser.add_argument("--native-audit", action="store_true", help="Pide el audit nativo de n8n (POST /audit) en vez de recorrer workflows")
     parser.add_argument("--audit-categories", dest="audit_categories", help=f"Categorias para --native-audit, separadas por coma. Validas: {', '.join(sorted(AUDIT_CATEGORIES))}")
     parser.add_argument("--days-abandoned", dest="days_abandoned", type=int, help="Dias sin ejecutar para considerar un workflow abandonado (solo --native-audit)")
+    parser.add_argument("--executions", action="store_true", help="Analiza el historial de ejecuciones (/executions) en vez de auditar definiciones de workflow")
+    parser.add_argument("--status", help=f"Filtra ejecuciones por status (solo --executions). Validos: {', '.join(sorted(EXECUTION_STATUSES))}")
+    parser.add_argument("--max-executions", type=int, default=500, dest="max_executions", help="Tope de ejecuciones a traer (solo --executions, default 500). Instancias activas pueden tener millones de ejecuciones historicas; esto evita un crawl completo.")
     parser.add_argument("--json", dest="json_out", help="Ruta de salida JSON")
     parser.add_argument("--markdown", dest="md_out", help="Ruta de salida Markdown")
     args = parser.parse_args()
@@ -373,6 +457,33 @@ def main():
         if args.md_out:
             with open(args.md_out, "w", encoding="utf-8") as fh:
                 fh.write(render_native_audit_markdown(args.url, native_audit))
+        print(json.dumps(report, indent=2, ensure_ascii=False))
+        return 0
+
+    if args.executions:
+        executions, truncated = list_executions(
+            args.url, api_key, status=args.status, workflow_id=args.workflow_id, max_executions=args.max_executions,
+        )
+        by_workflow = summarize_executions(executions)
+        if args.workflow_id:
+            name_map = {args.workflow_id: get_workflow(args.url, api_key, args.workflow_id).get("name")}
+        else:
+            name_map = {wf["id"]: wf.get("name") for wf in list_workflows(args.url, api_key, only_active=False)}
+        for entry in by_workflow:
+            entry["workflow_name"] = name_map.get(entry["workflow_id"], "(desconocido)")
+        report = {
+            "n8n_url": args.url,
+            "sampled": len(executions),
+            "truncated": truncated,
+            "filters": {"status": args.status, "workflow_id": args.workflow_id},
+            "by_workflow": by_workflow,
+        }
+        if args.json_out:
+            with open(args.json_out, "w", encoding="utf-8") as fh:
+                json.dump(report, fh, indent=2, ensure_ascii=False)
+        if args.md_out:
+            with open(args.md_out, "w", encoding="utf-8") as fh:
+                fh.write(render_executions_markdown(report))
         print(json.dumps(report, indent=2, ensure_ascii=False))
         return 0
 

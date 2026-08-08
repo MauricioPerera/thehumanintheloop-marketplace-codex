@@ -1,6 +1,6 @@
 ---
 name: n8n-workflow-auditor
-description: 'Audita workflows de n8n vía REST API en modo lectura: webhooks sin autenticación, credenciales hardcodeadas, nodos de alto riesgo, manejo de errores, reintentos en llamadas externas, nodos huérfanos y triggers inalcanzables. También genera inventario (cuántos workflows hay, cuántos activos/inactivos) con --summary, descarga cada workflow como JSON a una carpeta local con --export-dir, y envuelve el audit nativo de n8n (credenciales sin usar, nodos riesgosos, webhooks desprotegidos) con --native-audit. Úsala cuando el usuario pida auditar, revisar, inventariar, exportar/descargar o validar la seguridad y robustez de sus workflows de n8n.'
+description: 'Audita workflows de n8n vía REST API en modo lectura: webhooks sin autenticación, credenciales hardcodeadas, nodos de alto riesgo, manejo de errores, reintentos en llamadas externas, nodos huérfanos y triggers inalcanzables. También genera inventario (cuántos workflows hay, cuántos activos/inactivos) con --summary, descarga cada workflow como JSON a una carpeta local con --export-dir, envuelve el audit nativo de n8n con --native-audit, y analiza el historial real de ejecuciones (tasa de error, últimos fallos por workflow) con --executions. Úsala cuando el usuario pida auditar, revisar, inventariar, exportar/descargar, ver qué workflows están fallando o validar la seguridad y robustez de sus workflows de n8n.'
 ---
 
 # N8N Workflow Auditor
@@ -9,7 +9,7 @@ Actúa como auditor de seguridad y robustez de workflows de n8n, en modo estrict
 
 ## Alcance
 
-Cubre exclusivamente lo verificable vía la REST API pública de n8n (`/api/v1/workflows` y `/api/v1/audit`): definición de nodos, conexiones y settings de cada workflow, su descarga en crudo a disco, y el reporte de riesgo nativo que n8n ya calcula server-side. No audita infraestructura del servidor n8n (eso es `docker-vps-observer` o `vps-container-security-suite`), ni el contenido real de credenciales (la API de n8n nunca expone valores de credenciales, solo lo referenciado por nodo). No gestiona el CRUD de workflows (crear, editar, activar/desactivar, borrar): la única llamada no-`GET` que hace esta skill es `POST /api/v1/audit`, que es un generador de reporte de solo lectura (no crea, modifica ni borra nada) — nunca hace `PUT`/`PATCH`/`DELETE`, ni un `POST` que mute algo. Si el usuario pide mutar workflows, es un plugin distinto (manager, con confirmación explícita por acción), no esta skill.
+Cubre exclusivamente lo verificable vía la REST API pública de n8n (`/api/v1/workflows`, `/api/v1/audit`, `/api/v1/executions`): definición de nodos, conexiones y settings de cada workflow, su descarga en crudo a disco, el reporte de riesgo nativo que n8n ya calcula server-side, y el historial real de ejecuciones (no solo si hay `errorWorkflow` configurado, sino si el workflow efectivamente falla). No audita infraestructura del servidor n8n (eso es `docker-vps-observer` o `vps-container-security-suite`), ni el contenido real de credenciales (la API de n8n nunca expone valores de credenciales, solo lo referenciado por nodo). No gestiona el CRUD de workflows (crear, editar, activar/desactivar, borrar): la única llamada no-`GET` que hace esta skill es `POST /api/v1/audit`, que es un generador de reporte de solo lectura (no crea, modifica ni borra nada) — nunca hace `PUT`/`PATCH`/`DELETE`, ni un `POST` que mute algo. Si el usuario pide mutar workflows, es un plugin distinto (manager, con confirmación explícita por acción), no esta skill.
 
 ## Requisitos previos
 
@@ -46,9 +46,17 @@ Nunca imprimas, repitas ni guardes el valor de la API key en el reporte.
    ```
 
    Filtra con `--audit-categories credentials,nodes,instance,database,filesystem` (subset de las cinco) o `--days-abandoned N` para ajustar cuándo un workflow cuenta como abandonado. Este reporte es a nivel instancia, no por workflow: complementa las siete reglas (que son por workflow), no las reemplaza.
-6. Revisa manualmente cada hallazgo `WARN` (nodos de alto riesgo): confirma si el comando/código ejecutado es necesario y si corre con el mínimo privilegio posible. El script no puede juzgar intención, solo presencia.
-7. Para cada workflow, presenta las siete reglas en orden con `[PASSED]`, `[FAILED]` o `[WARN]`, evidencia (nombres de nodo, nunca valores de parámetros completos) y justificación.
-8. Cierra con una tabla consolidada por workflow y un plan de acción priorizado: primero `FAILED` de seguridad (reglas 1, 2), después robustez (4, 5, 6, 7), luego `WARN` de revisión manual (regla 3). Si corriste `--summary`, cierra en cambio con el conteo total/activos/inactivos y sugiere una auditoría completa como siguiente paso. Si corriste `--export-dir`, confirma cuántos archivos se escribieron y dónde. Si corriste `--native-audit`, presenta cada risk report (Credentials/Nodes/Instance/Database/Filesystem) con sus secciones, cantidad de hallazgos y recomendación, priorizando por cantidad de ubicaciones afectadas.
+6. Si el usuario quiere saber qué workflows están fallando de verdad (no solo si tienen `errorWorkflow` configurado, sino si realmente erroran), usa `--executions`: pagina `/api/v1/executions` y agrega por workflow total/OK/error/tasa de error/último status/último error.
+
+   ```powershell
+   $env:N8N_API_KEY = "<api-key-del-usuario>"
+   python "scripts/audit_n8n_workflows.py" --url "https://n8n.midominio.com" --executions --status error --json ejecuciones.json --markdown ejecuciones.md
+   ```
+
+   `/api/v1/executions` **no tiene filtro de fecha**, solo `status`, `workflowId` y paginación por cursor — y una instancia real puede tener millones de ejecuciones históricas. Por eso el script trae como máximo `--max-executions` (default 500, subible) y **nunca** hace un crawl completo por defecto; si corta antes de agotar el cursor, marca `truncated: true` y el markdown lo dice explícito — nunca lo omitas al reportar. Usa `--status error` para ver solo fallos recientes (el caso de uso más común) o `--workflow-id <id>` para ver el historial de uno solo.
+7. Revisa manualmente cada hallazgo `WARN` (nodos de alto riesgo): confirma si el comando/código ejecutado es necesario y si corre con el mínimo privilegio posible. El script no puede juzgar intención, solo presencia.
+8. Para cada workflow, presenta las siete reglas en orden con `[PASSED]`, `[FAILED]` o `[WARN]`, evidencia (nombres de nodo, nunca valores de parámetros completos) y justificación.
+9. Cierra con una tabla consolidada por workflow y un plan de acción priorizado: primero `FAILED` de seguridad (reglas 1, 2), después robustez (4, 5, 6, 7), luego `WARN` de revisión manual (regla 3). Si corriste `--summary`, cierra en cambio con el conteo total/activos/inactivos y sugiere una auditoría completa como siguiente paso. Si corriste `--export-dir`, confirma cuántos archivos se escribieron y dónde. Si corriste `--native-audit`, presenta cada risk report (Credentials/Nodes/Instance/Database/Filesystem) con sus secciones, cantidad de hallazgos y recomendación, priorizando por cantidad de ubicaciones afectadas. Si corriste `--executions`, ordena por tasa de error y aclara siempre si la muestra fue truncada.
 
 ## Reglas
 
@@ -74,4 +82,4 @@ Los archivos exportados con `--export-dir` contienen la definición completa del
 
 ## Recurso incluido
 
-`scripts/audit_n8n_workflows.py` es un cliente sin dependencias externas. Hace `GET` contra `/api/v1/workflows` y `/api/v1/workflows/{id}`, `POST /api/v1/audit` (generador de reporte de solo lectura, no muta nada), y escritura local de archivos cuando se usa `--export-dir`. No crea, modifica, activa, desactiva ni ejecuta workflows en n8n, y no expone valores de credenciales porque la API de n8n nunca los devuelve.
+`scripts/audit_n8n_workflows.py` es un cliente sin dependencias externas. Hace `GET` contra `/api/v1/workflows`, `/api/v1/workflows/{id}` y `/api/v1/executions`, `POST /api/v1/audit` (generador de reporte de solo lectura, no muta nada), y escritura local de archivos cuando se usa `--export-dir`. No crea, modifica, activa, desactiva ni ejecuta workflows en n8n, no borra ni reintenta ejecuciones, y no expone valores de credenciales porque la API de n8n nunca los devuelve.
