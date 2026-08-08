@@ -1,0 +1,18 @@
+{
+  "name": "n8n-community-package-manager",
+  "version": "0.1.0",
+  "description": "Instala, actualiza y desinstala paquetes de nodos de comunidad en n8n vía REST API, con verificación contra la lista vetada de n8n activa por defecto y confirmación explícita antes de cada mutación.",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "N8N Community Package Manager",
+    "shortDescription": "Instala, actualiza y desinstala paquetes de nodos de comunidad de n8n con confirmación explícita.",
+    "longDescription": "Conecta a la REST API de n8n con una API key aportada por el usuario para gestionar paquetes npm de nodos de comunidad. Instalar corre código de terceros dentro de la instancia y afecta a todos los workflows, no solo a un objeto aislado, por eso la verificación contra la lista de paquetes vetados de n8n está activa por defecto — desactivarla requiere --allow-unverified explícito. Todas las mutaciones son dry-run por defecto y requieren --apply; desinstalar exige repetir el nombre exacto del paquete.",
+    "developerName": "Mauricio Perera",
+    "category": "Security & Privacy",
+    "capabilities": [],
+    "defaultPrompt": "Ayudame a gestionar los paquetes de nodos de comunidad de mi instancia de n8n: instalar, actualizar o desinstalar, siempre mostrando el plan antes de aplicar."
+  }
+}

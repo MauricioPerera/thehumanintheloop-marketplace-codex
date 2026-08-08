@@ -1,6 +1,6 @@
 ---
 name: n8n-workflow-manager
-description: 'Gestiona el ciclo de vida de workflows de n8n vía REST API: crear, activar, desactivar, editar (con diff obligatorio) y borrar (con confirmación por nombre exacto). Todo en modo dry-run por defecto, sin mutar hasta que el usuario confirme el plan exacto. Úsala cuando el usuario pida crear, activar, desactivar, editar, actualizar o borrar un workflow de n8n.'
+description: 'Gestiona el ciclo de vida de workflows de n8n vía REST API: crear, activar, desactivar, archivar/desarchivar, transferir, editar (con diff obligatorio) y borrar (con confirmación por nombre exacto). Todo en modo dry-run por defecto, sin mutar hasta que el usuario confirme el plan exacto. Úsala cuando el usuario pida crear, activar, desactivar, archivar, transferir, editar, actualizar o borrar un workflow de n8n.'
 ---
 
 # N8N Workflow Manager
@@ -9,7 +9,7 @@ Administra workflows de n8n sin ejecutar ninguna mutación hasta que el usuario 
 
 ## Alcance
 
-Cubre `create`, `activate`, `deactivate`, `update` y `delete` sobre `/api/v1/workflows` de la REST API pública de n8n. No cubre `archive`/`unarchive`/`transfer` (quedan fuera de este plugin por ahora — mayor blast radius, se evaluarían aparte). Para auditar o inventariar sin mutar nada, usa `n8n-workflow-auditor`, no esta skill.
+Cubre `create`, `activate`, `deactivate`, `archive`, `unarchive`, `transfer`, `update` y `delete` sobre `/api/v1/workflows` de la REST API pública de n8n. Para auditar o inventariar sin mutar nada, usa `n8n-workflow-auditor`, no esta skill.
 
 ## Requisitos previos
 
@@ -48,6 +48,22 @@ python "scripts/manage_n8n_workflows.py" activate --url "https://n8n.midominio.c
 
 n8n exige al menos un trigger automático (webhook, cron/schedule, polling) para poder activar — un workflow que solo tiene un Manual Trigger no se puede activar vía API, y el error de n8n lo dice explícito. Es idempotente: si ya está en el estado pedido, el script lo dice y no llama a la API.
 
+### Archivar / desarchivar (`archive` / `unarchive`)
+
+```powershell
+python "scripts/manage_n8n_workflows.py" archive --url "https://n8n.midominio.com" --workflow-id <id> --apply
+```
+
+Soft-delete idempotente: archivar saca el workflow de la vista activa pero se puede restaurar con `unarchive`, a diferencia de `delete`. Mismo patrón que `activate`/`deactivate`: si ya está en el estado pedido, no llama a la API.
+
+### Transferir a otro proyecto (`transfer`)
+
+```powershell
+python "scripts/manage_n8n_workflows.py" transfer --url "https://n8n.midominio.com" --workflow-id <id> --destination-project-id <id> --apply
+```
+
+**Requiere una licencia de n8n con soporte multi-proyecto** (`feat:projectRole:admin`). En instancias Community/single-project esto no tiene a dónde transferir — ni siquiera se puede crear un segundo proyecto (`POST /projects` también queda bloqueado por la misma licencia). Si el usuario no sabe el `--destination-project-id`, no lo inventes: pedile que lo consiga desde la UI de n8n (Settings → Projects) o avisale que su plan puede no soportar esta operación.
+
 ### Editar (`update`)
 
 Escribí un archivo JSON con **solo los campos que cambian** (nunca el objeto completo). Campos editables: `name`, `description`, `nodes`, `connections`, `nodeGroups`, `settings`, `staticData`, `pinData`. Si el patch toca `nodes` o `connections`, tiene que traer el arreglo/objeto completo deseado, no un delta — el merge es a nivel de campo top-level, no dentro de `nodes`.
@@ -72,4 +88,4 @@ Después de cada operación, resumí: qué se planeó, si se aplicó o quedó en
 
 ## Recurso incluido
 
-`scripts/manage_n8n_workflows.py` es un cliente sin dependencias externas con 5 subcomandos (`create`, `activate`, `deactivate`, `update`, `delete`). Verificado end-to-end contra una instancia n8n real: create/activate/update/deactivate/delete completos, incluyendo dos comportamientos reales de la API que no estaban documentados igual en el OpenAPI — `PUT` rechaza cualquier campo fuera de un allowlist estricto (la respuesta de `GET` trae campos internos como `sourceWorkflowId`/`activeVersionId`/`versionCounter` que rompen el `PUT` si se reenvían tal cual) y rechaza `description: null` aunque el propio `GET` lo devuelva así. El script ya filtra ambos casos.
+`scripts/manage_n8n_workflows.py` es un cliente sin dependencias externas con 8 subcomandos (`create`, `activate`, `deactivate`, `archive`, `unarchive`, `transfer`, `update`, `delete`). Verificado end-to-end contra una instancia n8n real: create/activate/update/deactivate/archive/unarchive/delete completos, incluyendo dos comportamientos reales de la API que no estaban documentados igual en el OpenAPI — `PUT` rechaza cualquier campo fuera de un allowlist estricto (la respuesta de `GET` trae campos internos como `sourceWorkflowId`/`activeVersionId`/`versionCounter` que rompen el `PUT` si se reenvían tal cual) y rechaza `description: null` aunque el propio `GET` lo devuelva así. El script ya filtra ambos casos. `transfer` está verificado en formato de request y manejo de error (404 ante proyecto inexistente), no en una transferencia exitosa real: la instancia de prueba es Community/single-project y no admite crear un segundo proyecto para probarlo (limitación de licencia de n8n, no del script).

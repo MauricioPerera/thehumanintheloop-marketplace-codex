@@ -1047,6 +1047,30 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "n8n-credential-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/n8n-credential-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
+    },
+    {
+      "name": "n8n-community-package-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/n8n-community-package-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security & Privacy"
     }
   ]
 }

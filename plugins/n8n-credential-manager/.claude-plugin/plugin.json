@@ -1,0 +1,13 @@
+{
+  "name": "n8n-credential-manager",
+  "displayName": "N8N Credential Manager",
+  "version": "0.1.0",
+  "description": "Gestiona credenciales de n8n vía REST API: crear, renombrar, rotar el secreto, borrar, probar y transferir. El valor del secreto se lee de un archivo local y nunca se imprime ni se registra en ningún log.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["n8n", "credentials", "secrets", "manager"]
+}

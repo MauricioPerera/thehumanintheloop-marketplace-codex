@@ -1,0 +1,13 @@
+{
+  "name": "n8n-community-package-manager",
+  "displayName": "N8N Community Package Manager",
+  "version": "0.1.0",
+  "description": "Instala, actualiza y desinstala paquetes de nodos de comunidad en n8n vía REST API, con verificación contra la lista vetada de n8n activa por defecto y confirmación explícita antes de cada mutación.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["n8n", "community-nodes", "supply-chain", "manager"]
+}
