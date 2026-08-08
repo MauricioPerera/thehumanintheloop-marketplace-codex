@@ -43,24 +43,45 @@ SECRET_VALUE_PATTERN = re.compile(
     r"eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,})"
 )
 EXPRESSION_PREFIX = "={{"
+USER_AGENT = "n8n-workflow-auditor/0.4.0 (+https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex)"
+AUDIT_CATEGORIES = {"credentials", "database", "nodes", "filesystem", "instance"}
+
+
+def _request(base_url, path, api_key, method="GET", body=None, timeout=30):
+    data = json.dumps(body).encode("utf-8") if body is not None else None
+    headers = {
+        "X-N8N-API-KEY": api_key,
+        "Accept": "application/json",
+        "User-Agent": USER_AGENT,
+    }
+    if data is not None:
+        headers["Content-Type"] = "application/json"
+    req = urllib.request.Request(base_url.rstrip("/") + path, data=data, method=method, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")[:300]
+        raise SystemExit(f"[FAILED] HTTP {exc.code} en {method} {path}: {exc.reason} — {detail}")
+    except urllib.error.URLError as exc:
+        raise SystemExit(f"[FAILED] No se pudo conectar a {base_url}: {exc.reason}")
 
 
 def http_get(base_url, path, api_key):
-    req = urllib.request.Request(
-        base_url.rstrip("/") + path,
-        headers={
-            "X-N8N-API-KEY": api_key,
-            "Accept": "application/json",
-            "User-Agent": "n8n-workflow-auditor/0.1.0 (+https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex)",
-        },
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as exc:
-        raise SystemExit(f"[FAILED] HTTP {exc.code} en {path}: {exc.reason}")
-    except urllib.error.URLError as exc:
-        raise SystemExit(f"[FAILED] No se pudo conectar a {base_url}: {exc.reason}")
+    return _request(base_url, path, api_key, method="GET")
+
+
+def run_native_audit(base_url, api_key, categories=None, days_abandoned=None):
+    additional = {}
+    if categories:
+        unknown = set(categories) - AUDIT_CATEGORIES
+        if unknown:
+            raise SystemExit(f"[FAILED] Categorias de audit invalidas: {sorted(unknown)}. Validas: {sorted(AUDIT_CATEGORIES)}")
+        additional["categories"] = categories
+    if days_abandoned is not None:
+        additional["daysAbandonedWorkflow"] = days_abandoned
+    body = {"additionalOptions": additional} if additional else {}
+    return _request(base_url, "/api/v1/audit", api_key, method="POST", body=body, timeout=60)
 
 
 def list_workflows(base_url, api_key, only_active):
@@ -241,6 +262,37 @@ def build_summary(workflows):
     }
 
 
+def render_native_audit_markdown(n8n_url, native_audit):
+    lines = [f"# Auditoria nativa de n8n (POST /audit) — {n8n_url}", ""]
+    if not native_audit:
+        lines.append("Sin hallazgos: todas las categorias auditadas volvieron limpias.")
+        return "\n".join(lines)
+    for report_name, report in native_audit.items():
+        sections = report.get("sections", [])
+        lines.append(f"## {report_name}")
+        lines.append("")
+        if not sections:
+            lines.append("Sin hallazgos.")
+            lines.append("")
+            continue
+        for section in sections:
+            locations = section.get("location", [])
+            lines.append(f"### {section.get('title')} ({len(locations)} hallazgos)")
+            if section.get("description"):
+                lines.append(f"> {section['description']}")
+            if section.get("recommendation"):
+                lines.append(f"> Recomendacion: {section['recommendation']}")
+            lines.append("")
+            if locations:
+                keys = sorted({k for loc in locations for k in loc.keys()})
+                lines.append("| " + " | ".join(keys) + " |")
+                lines.append("|" + "---|" * len(keys))
+                for loc in locations:
+                    lines.append("| " + " | ".join(str(loc.get(k, "")) for k in keys) + " |")
+            lines.append("")
+    return "\n".join(lines)
+
+
 def render_markdown(report):
     lines = [f"# Auditoria n8n — {report['n8n_url']}", ""]
     summary = report["summary"]
@@ -300,6 +352,9 @@ def main():
     parser.add_argument("--all", action="store_true", help="Incluir workflows inactivos (por defecto solo activos)")
     parser.add_argument("--summary", action="store_true", help="Solo inventario (id, nombre, activo, nodos, triggers), sin correr las 7 reglas")
     parser.add_argument("--export-dir", dest="export_dir", help="Descarga cada workflow (JSON completo, tal cual la API) a esta carpeta local")
+    parser.add_argument("--native-audit", action="store_true", help="Pide el audit nativo de n8n (POST /audit) en vez de recorrer workflows")
+    parser.add_argument("--audit-categories", dest="audit_categories", help=f"Categorias para --native-audit, separadas por coma. Validas: {', '.join(sorted(AUDIT_CATEGORIES))}")
+    parser.add_argument("--days-abandoned", dest="days_abandoned", type=int, help="Dias sin ejecutar para considerar un workflow abandonado (solo --native-audit)")
     parser.add_argument("--json", dest="json_out", help="Ruta de salida JSON")
     parser.add_argument("--markdown", dest="md_out", help="Ruta de salida Markdown")
     args = parser.parse_args()
@@ -307,6 +362,19 @@ def main():
     api_key = args.api_key or os.environ.get("N8N_API_KEY")
     if not api_key:
         raise SystemExit("[FAILED] Falta API key: pasa --api-key o define N8N_API_KEY")
+
+    if args.native_audit:
+        categories = args.audit_categories.split(",") if args.audit_categories else None
+        native_audit = run_native_audit(args.url, api_key, categories=categories, days_abandoned=args.days_abandoned)
+        report = {"n8n_url": args.url, "native_audit": native_audit}
+        if args.json_out:
+            with open(args.json_out, "w", encoding="utf-8") as fh:
+                json.dump(report, fh, indent=2, ensure_ascii=False)
+        if args.md_out:
+            with open(args.md_out, "w", encoding="utf-8") as fh:
+                fh.write(render_native_audit_markdown(args.url, native_audit))
+        print(json.dumps(report, indent=2, ensure_ascii=False))
+        return 0
 
     if args.workflow_id:
         workflows = [get_workflow(args.url, api_key, args.workflow_id)]

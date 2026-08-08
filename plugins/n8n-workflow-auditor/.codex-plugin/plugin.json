@@ -1,7 +1,7 @@
 {
   "name": "n8n-workflow-auditor",
-  "version": "0.3.0",
-  "description": "Audita workflows de n8n vía REST API en modo lectura: credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo, manejo de errores, reintentos y nodos huérfanos. También inventaría y exporta workflows a disco.",
+  "version": "0.4.0",
+  "description": "Audita workflows de n8n vía REST API en modo lectura: credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo, manejo de errores, reintentos y nodos huérfanos. También inventaría, exporta workflows a disco y envuelve el audit nativo de n8n.",
   "author": {
     "name": "Mauricio Perera"
   },
@@ -9,7 +9,7 @@
   "interface": {
     "displayName": "N8N Workflow Auditor",
     "shortDescription": "Audita seguridad y robustez de workflows de n8n en modo lectura.",
-    "longDescription": "Conecta a la REST API de n8n con una API key aportada por el usuario y evalúa credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo (comandos, SSH, código), manejo de errores, reintentos en llamadas externas y nodos huérfanos o desconectados. Genera inventario (--summary) y exporta cada workflow como JSON a una carpeta local (--export-dir), siempre en modo lectura.",
+    "longDescription": "Conecta a la REST API de n8n con una API key aportada por el usuario y evalúa credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo (comandos, SSH, código), manejo de errores, reintentos en llamadas externas y nodos huérfanos o desconectados. Genera inventario (--summary), exporta cada workflow como JSON a una carpeta local (--export-dir), y envuelve el audit de seguridad nativo de n8n (--native-audit: credenciales sin usar, nodos riesgosos, webhooks desprotegidos). Siempre en modo lectura.",
     "developerName": "Mauricio Perera",
     "category": "Security & Privacy",
     "capabilities": [],
