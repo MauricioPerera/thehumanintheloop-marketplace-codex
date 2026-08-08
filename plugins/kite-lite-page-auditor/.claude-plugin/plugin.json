@@ -1,0 +1,13 @@
+{
+  "name": "kite-lite-page-auditor",
+  "displayName": "Kite-lite Page Auditor",
+  "version": "0.1.0",
+  "description": "Corre y consolida los 4 linters de pre-publicación de kite-lite (SEO, accesibilidad, preview social, WebMCP declarativo) contra una URL o archivo HTML, en un solo reporte con severidad agregada.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["kite-lite", "seo", "accessibility", "webmcp", "social-preview", "linter"]
+}

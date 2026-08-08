@@ -1,0 +1,18 @@
+{
+  "name": "kite-lite-page-auditor",
+  "version": "0.1.0",
+  "description": "Corre y consolida los 4 linters de pre-publicación de kite-lite (SEO, accesibilidad, preview social, WebMCP declarativo) contra una URL o archivo HTML, en un solo reporte con severidad agregada.",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Kite-lite Page Auditor",
+    "shortDescription": "Consolida los 4 linters de pre-publicación de kite-lite (SEO, a11y, social, WebMCP) en un reporte.",
+    "longDescription": "Envuelve los subcomandos seo-lint, a11y-lint, social-lint y webmcp-lint del binario kite-lite (Rust, instalable con `cargo install kite-lite`), corriendo los 4 contra la misma URL o archivo HTML y consolidando sus hallazgos (que vienen en dos formatos JSON distintos) en un solo reporte con severidad agregada (error/warning/info). Sale con código de error si cualquiera de los 4 linters reportó un hallazgo de severidad 'error'. Requiere el binario kite-lite disponible; no lo instala ni lo descarga.",
+    "developerName": "Mauricio Perera",
+    "category": "Content & Editorial",
+    "capabilities": [],
+    "defaultPrompt": "Auditá esta página con kite-lite: SEO, accesibilidad, preview social y WebMCP, en un solo reporte consolidado antes de publicarla."
+  }
+}

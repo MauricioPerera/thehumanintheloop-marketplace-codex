@@ -2,7 +2,7 @@
 
 Marketplace público de plugins, skills y Design System Analyses para Claude Code y Codex, creado por Mauricio Perera.
 
-Catálogo actual: **91 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
+Catálogo actual: **93 plugins y 19 Design System Analyses**, distribuido en dos manifests compatibles y una [GitHub Page navegable](https://mauricioperera.github.io/thehumanintheloop-marketplace-codex/). También puedes conocer el proyecto en el [canal The Human in the Loop](https://www.youtube.com/@Rckflr).
 
 ## Plugins disponibles
 
@@ -80,15 +80,17 @@ Catálogo actual: **91 plugins y 19 Design System Analyses**, distribuido en dos
 - `N8N Community Package Manager` (`n8n-community-package-manager`): instala, actualiza y desinstala paquetes de nodos de comunidad en n8n vía REST API, con verificación contra la lista vetada de n8n activa por defecto y confirmación explícita antes de cada mutación.
 - `N8N Workflow Builder` (`n8n-workflow-builder`): cliente genérico para el MCP oficial de n8n: descubre nodos, valida workflows/nodos antes de crearlos, construye y actualiza vía el n8n Workflow SDK (operaciones atómicas, no reemplazo completo), prueba con datos simulados, y consulta/restaura historial de versiones.
 - `Ephemeral Agent Delegator` (`ephemeral-agent-delegator`): delega tareas de implementación a agentes efímeros por terminal (Ollama o pool exec de poolside.ai): arma el comando de lanzamiento headless correcto, sin colgarse, y exige verificación independiente del resultado en vez de confiar en el autoreporte del agente.
+- `Kite-lite Page Auditor` (`kite-lite-page-auditor`): corre y consolida los 4 linters de pre-publicación de kite-lite (SEO, accesibilidad, preview social, WebMCP declarativo) contra una URL o archivo HTML, en un solo reporte con severidad agregada.
+- `Kite-lite Browser Tools` (`kite-lite-browser-tools`): registra kite-lite (motor web ligero orientado a agentes, sin JS vivo) como servidor MCP y enseña a usar bien sus 9 tools de navegación/fetch/screenshot: límites reales, sesión persistente, formularios solo GET, y detección declarativa de WebMCP.
 
 ## Categorías
 
 El catálogo usa una taxonomía común en Claude Code, Codex y la GitHub Page:
 
-- Content & Editorial — 7 plugins
+- Content & Editorial — 8 plugins
 - Design Systems — 2 plugins
 - Marketplace & Quality — 7 plugins
-- Developer Tools — 47 plugins
+- Developer Tools — 48 plugins
 - Accessibility & UX — 3 plugins
 - Security & Privacy — 21 plugins
 - Research & Evidence — 2 plugins
