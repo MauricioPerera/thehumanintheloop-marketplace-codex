@@ -329,6 +329,16 @@ const plugins = [{
   description: 'Delega tareas de implementación a agentes efímeros por terminal (Ollama o pool exec de poolside.ai): arma el comando de lanzamiento headless correcto, sin colgarse, y exige verificación independiente del resultado en vez de confiar en el autoreporte del agente.',
   capabilities: ['Ollama', 'pool', 'Delegation', 'Terminal'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/ephemeral-agent-delegator', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'kite-lite-page-auditor', displayName: 'Kite-lite Page Auditor', category: 'Content & Editorial', icon: 'KLA', version: '0.1.0',
+  description: 'Corre y consolida los 4 linters de pre-publicación de kite-lite (SEO, accesibilidad, preview social, WebMCP declarativo) contra una URL o archivo HTML, en un solo reporte con severidad agregada.',
+  capabilities: ['kite-lite', 'SEO', 'Accessibility', 'WebMCP'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kite-lite-page-auditor', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'kite-lite-browser-tools', displayName: 'Kite-lite Browser Tools', category: 'Developer Tools', icon: 'KLB', version: '0.1.0',
+  description: 'Registra kite-lite (motor web ligero orientado a agentes, sin JS vivo) como servidor MCP y enseña a usar bien sus 9 tools de navegación/fetch/screenshot: límites reales, sesión persistente, formularios solo GET, y detección declarativa de WebMCP.',
+  capabilities: ['kite-lite', 'MCP', 'Browser', 'Scraping'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/kite-lite-browser-tools', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

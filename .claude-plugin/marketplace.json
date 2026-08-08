@@ -551,6 +551,18 @@
       "displayName": "Ephemeral Agent Delegator",
       "source": "./plugins/ephemeral-agent-delegator",
       "category": "Developer Tools"
+    },
+    {
+      "name": "kite-lite-page-auditor",
+      "displayName": "Kite-lite Page Auditor",
+      "source": "./plugins/kite-lite-page-auditor",
+      "category": "Content & Editorial"
+    },
+    {
+      "name": "kite-lite-browser-tools",
+      "displayName": "Kite-lite Browser Tools",
+      "source": "./plugins/kite-lite-browser-tools",
+      "category": "Developer Tools"
     }
   ]
 }

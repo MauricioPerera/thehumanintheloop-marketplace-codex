@@ -1,0 +1,18 @@
+{
+  "name": "kite-lite-browser-tools",
+  "version": "0.1.0",
+  "description": "Registra kite-lite (motor web ligero orientado a agentes, sin JS vivo) como servidor MCP y enseña a usar bien sus 9 tools de navegación/fetch/screenshot: límites reales, sesión persistente, formularios solo GET, y detección declarativa de WebMCP.",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Kite-lite Browser Tools",
+    "shortDescription": "Registra kite-lite como MCP y enseña a usar bien sus 9 tools de navegación/fetch sin navegador real.",
+    "longDescription": "Bundlea .mcp.json para registrar kite-lite (motor web en Rust, sin DOM↔JS vivo por diseño, ~4-7 MiB de pico de memoria medido) como servidor MCP stdio (`kite-lite mcp`), auto-registrado por Claude Code al habilitar el plugin. Enseña los límites reales de sus 9 tools (fetch_page, browser_navigate/click/type/get_dom/screenshot, eval_js, render_screenshot, browser_call_tool): sesión de navegación persistente por proceso (no multi-tab), clicks sin ejecutar JS de la página, formularios solo GET, y detección declarativa de WebMCP (atributos toolname/tooldescription) expuesta como tools adicionales. Requiere el binario kite-lite instalado (`cargo install kite-lite`).",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Usá kite-lite para navegar/fetchear esta página sin un navegador real, respetando sus límites (sin JS vivo, formularios solo GET)."
+  }
+}

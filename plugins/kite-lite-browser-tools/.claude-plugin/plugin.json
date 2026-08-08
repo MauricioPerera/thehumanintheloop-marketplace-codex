@@ -1,0 +1,13 @@
+{
+  "name": "kite-lite-browser-tools",
+  "displayName": "Kite-lite Browser Tools",
+  "version": "0.1.0",
+  "description": "Registra kite-lite (motor web ligero orientado a agentes, sin JS vivo) como servidor MCP y enseña a usar bien sus 9 tools de navegación/fetch/screenshot: límites reales, sesión persistente, formularios solo GET, y detección declarativa de WebMCP.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["kite-lite", "mcp", "browser", "fetch", "webmcp", "scraping"]
+}
