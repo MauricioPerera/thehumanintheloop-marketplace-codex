@@ -1083,6 +1083,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "ephemeral-agent-delegator",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ephemeral-agent-delegator"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }

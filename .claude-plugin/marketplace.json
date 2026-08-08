@@ -545,6 +545,12 @@
       "displayName": "N8N Workflow Builder",
       "source": "./plugins/n8n-workflow-builder",
       "category": "Developer Tools"
+    },
+    {
+      "name": "ephemeral-agent-delegator",
+      "displayName": "Ephemeral Agent Delegator",
+      "source": "./plugins/ephemeral-agent-delegator",
+      "category": "Developer Tools"
     }
   ]
 }

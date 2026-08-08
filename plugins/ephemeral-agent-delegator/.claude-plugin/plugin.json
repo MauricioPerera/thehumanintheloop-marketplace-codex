@@ -1,0 +1,13 @@
+{
+  "name": "ephemeral-agent-delegator",
+  "displayName": "Ephemeral Agent Delegator",
+  "version": "0.1.0",
+  "description": "Delega tareas de implementación a agentes efímeros por terminal (Ollama o pool exec de poolside.ai): arma el comando de lanzamiento headless correcto, sin colgarse, y exige verificación independiente del resultado en vez de confiar en el autoreporte del agente.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["ollama", "pool", "poolside", "delegation", "ephemeral-agent", "terminal"]
+}
