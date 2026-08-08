@@ -231,10 +231,26 @@ def audit_workflow(workflow):
     }
 
 
+def build_summary(workflows):
+    active = sum(1 for wf in workflows if wf.get("active"))
+    return {
+        "total": len(workflows),
+        "active": active,
+        "inactive": len(workflows) - active,
+    }
+
+
 def render_markdown(report):
     lines = [f"# Auditoria n8n — {report['n8n_url']}", ""]
-    lines.append(f"Workflows auditados: {len(report['workflows'])}")
+    summary = report["summary"]
+    lines.append(f"Workflows totales: {summary['total']} | activos: {summary['active']} | inactivos: {summary['inactive']}")
     lines.append("")
+    if report.get("summary_only"):
+        lines.append("| Workflow | ID | Estado | Nodos | Triggers |")
+        lines.append("|---|---|---|---|---|")
+        for wf in report["workflows"]:
+            lines.append(f"| {wf['name']} | `{wf['id']}` | {'activo' if wf['active'] else 'inactivo'} | {wf['node_count']} | {', '.join(wf['trigger_types']) or 'ninguno'} |")
+        return "\n".join(lines)
     for wf in report["workflows"]:
         lines.append(f"## {wf['name']} (`{wf['id']}`) — {'activo' if wf['active'] else 'inactivo'}")
         lines.append("")
@@ -246,12 +262,24 @@ def render_markdown(report):
     return "\n".join(lines)
 
 
+def summarize_workflow(workflow):
+    nodes = workflow.get("nodes") or []
+    return {
+        "id": workflow.get("id"),
+        "name": workflow.get("name"),
+        "active": workflow.get("active", False),
+        "node_count": len(nodes),
+        "trigger_types": sorted({n.get("type") for n in nodes if n.get("type") in TRIGGER_TYPES and not n.get("disabled")}),
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--url", required=True, help="URL base de n8n, ej: https://n8n.midominio.com")
     parser.add_argument("--api-key", help="API key de n8n. Preferi la variable de entorno N8N_API_KEY.")
     parser.add_argument("--workflow-id", help="Auditar un unico workflow por id")
     parser.add_argument("--all", action="store_true", help="Incluir workflows inactivos (por defecto solo activos)")
+    parser.add_argument("--summary", action="store_true", help="Solo inventario (id, nombre, activo, nodos, triggers), sin correr las 7 reglas")
     parser.add_argument("--json", dest="json_out", help="Ruta de salida JSON")
     parser.add_argument("--markdown", dest="md_out", help="Ruta de salida Markdown")
     args = parser.parse_args()
@@ -263,12 +291,16 @@ def main():
     if args.workflow_id:
         workflows = [get_workflow(args.url, api_key, args.workflow_id)]
     else:
+        # La lista ya trae nodes/connections/settings completos: no hace falta
+        # un GET adicional por workflow. En instancias con cientos de workflows,
+        # ese N+1 es lo que antes causaba timeouts.
         workflows = list_workflows(args.url, api_key, only_active=not args.all)
-        workflows = [get_workflow(args.url, api_key, wf["id"]) for wf in workflows]
 
     report = {
         "n8n_url": args.url,
-        "workflows": [audit_workflow(wf) for wf in workflows],
+        "summary": build_summary(workflows),
+        "summary_only": args.summary,
+        "workflows": [summarize_workflow(wf) for wf in workflows] if args.summary else [audit_workflow(wf) for wf in workflows],
     }
 
     if args.json_out:
