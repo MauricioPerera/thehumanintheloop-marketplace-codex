@@ -47,7 +47,11 @@ EXPRESSION_PREFIX = "={{"
 def http_get(base_url, path, api_key):
     req = urllib.request.Request(
         base_url.rstrip("/") + path,
-        headers={"X-N8N-API-KEY": api_key, "Accept": "application/json"},
+        headers={
+            "X-N8N-API-KEY": api_key,
+            "Accept": "application/json",
+            "User-Agent": "n8n-workflow-auditor/0.1.0 (+https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex)",
+        },
     )
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
