@@ -304,6 +304,11 @@ const plugins = [{
   description: 'Audita workflows de n8n vía REST API en modo lectura: credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo, manejo de errores, reintentos y nodos huérfanos. También inventaría workflows y credenciales, exporta workflows a disco, envuelve el audit nativo de n8n y analiza el historial real de ejecuciones.',
   capabilities: ['n8n', 'Workflows', 'Seguridad', 'Robustez', 'Export', 'Audit nativo', 'Ejecuciones', 'Credenciales'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/n8n-workflow-auditor', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'n8n-workflow-manager', displayName: 'N8N Workflow Manager', category: 'Developer Tools', icon: 'N8N', version: '0.1.0',
+  description: 'Gestiona el ciclo de vida de workflows de n8n vía REST API: crear, activar, desactivar, editar (con diff obligatorio) y borrar (con confirmación por nombre exacto). Dry-run por defecto, nunca muta sin --apply explícito.',
+  capabilities: ['n8n', 'Workflows', 'CRUD', 'Manager'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/n8n-workflow-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

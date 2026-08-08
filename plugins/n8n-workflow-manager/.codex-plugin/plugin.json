@@ -1,0 +1,18 @@
+{
+  "name": "n8n-workflow-manager",
+  "version": "0.1.0",
+  "description": "Gestiona el ciclo de vida de workflows de n8n vía REST API: crear, activar, desactivar, editar y borrar, con plan/diff obligatorio y confirmación explícita antes de cada mutación.",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "N8N Workflow Manager",
+    "shortDescription": "Crea, activa, desactiva, edita y borra workflows de n8n con confirmación explícita.",
+    "longDescription": "Conecta a la REST API de n8n con una API key aportada por el usuario para crear, activar, desactivar, editar (con diff obligatorio antes de aplicar) y borrar (con confirmación por nombre exacto) workflows. Todas las mutaciones corren en modo dry-run por defecto: el script muestra el plan exacto y requiere --apply explícito para ejecutar. Nunca actualiza un workflow sin traer primero su estado completo, evitando pisar nodos o conexiones que no se querían tocar.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Ayudame a gestionar mis workflows de n8n: crear, activar, desactivar, editar o borrar, siempre mostrando el plan antes de aplicar cualquier cambio."
+  }
+}

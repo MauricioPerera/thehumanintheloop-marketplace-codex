@@ -1035,6 +1035,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Security & Privacy"
+    },
+    {
+      "name": "n8n-workflow-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/n8n-workflow-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }

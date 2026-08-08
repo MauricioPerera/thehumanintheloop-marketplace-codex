@@ -1,0 +1,75 @@
+---
+name: n8n-workflow-manager
+description: 'Gestiona el ciclo de vida de workflows de n8n vía REST API: crear, activar, desactivar, editar (con diff obligatorio) y borrar (con confirmación por nombre exacto). Todo en modo dry-run por defecto, sin mutar hasta que el usuario confirme el plan exacto. Úsala cuando el usuario pida crear, activar, desactivar, editar, actualizar o borrar un workflow de n8n.'
+---
+
+# N8N Workflow Manager
+
+Administra workflows de n8n sin ejecutar ninguna mutación hasta que el usuario confirme el plan exacto en el chat. Mismo principio que `docker-service-manager`: capturar estado previo, mostrar el plan/diff, confirmar, recién ahí mutar, verificar resultado.
+
+## Alcance
+
+Cubre `create`, `activate`, `deactivate`, `update` y `delete` sobre `/api/v1/workflows` de la REST API pública de n8n. No cubre `archive`/`unarchive`/`transfer` (quedan fuera de este plugin por ahora — mayor blast radius, se evaluarían aparte). Para auditar o inventariar sin mutar nada, usa `n8n-workflow-auditor`, no esta skill.
+
+## Requisitos previos
+
+Pide al usuario, antes de ejecutar nada:
+1. URL base de n8n.
+2. Una API key con permisos de escritura sobre workflows (`workflow:create`, `workflow:update`, `workflow:delete`, `workflow:activate`, `workflow:deactivate`). Instruye a pasarla por `N8N_API_KEY`, nunca pegada en el chat ni versionada.
+
+Nunca imprimas, repitas ni guardes el valor de la API key.
+
+## Mecanismo de seguridad (no es opcional, está en el script)
+
+- **Dry-run por defecto**: ningún subcomando muta nada salvo que se pase `--apply`. Sin `--apply`, el script solo imprime el plan (o el diff, en `update`) y termina.
+- **`update` nunca acepta un JSON parcial directo**: `PUT /workflows/{id}` en n8n es reemplazo completo, no parche — mandar un objeto incompleto puede borrar nodos/conexiones que no se querían tocar. El script siempre hace `GET` del estado actual, mergea el patch encima, y muestra el diff completo antes de aplicar.
+- **`delete` exige `--confirm-name`** con el nombre EXACTO del workflow, verificado contra el nombre real que devuelve la API (no lo que el usuario cree que es el nombre). Si no coincide, falla sin borrar nada.
+- Como agente, **nunca corras un comando con `--apply` sin que el usuario haya visto el plan/diff y dicho que sí explícitamente**, aunque el script ya tenga sus propias barreras. Doble capa: el script protege contra errores mecánicos, vos protegés contra hacer algo que el usuario no pidió.
+
+## Flujo por operación
+
+### Crear (`create`)
+
+El usuario (o vos, en su nombre) describe el workflow. Construís el JSON completo (`name`, `nodes`, `connections`, `settings` son obligatorios) y lo escribís a un archivo. Para armar `nodes`/`connections` válidos, lo más confiable es partir de un workflow real exportado con `n8n-workflow-auditor --export-dir` y adaptarlo, en vez de inventar la estructura de nodos desde cero.
+
+```powershell
+$env:N8N_API_KEY = "<api-key-del-usuario>"
+python "scripts/manage_n8n_workflows.py" create --url "https://n8n.midominio.com" --file nuevo-workflow.json
+python "scripts/manage_n8n_workflows.py" create --url "https://n8n.midominio.com" --file nuevo-workflow.json --apply
+```
+
+Solo estos campos son válidos en el archivo: `name`, `nodes`, `connections`, `settings`, `staticData`, `pinData`, `nodeGroups`, `projectId`. Cualquier otro (id, active, createdAt, etc.) se ignora — son de solo lectura.
+
+### Activar / desactivar (`activate` / `deactivate`)
+
+```powershell
+python "scripts/manage_n8n_workflows.py" activate --url "https://n8n.midominio.com" --workflow-id <id> --apply
+```
+
+n8n exige al menos un trigger automático (webhook, cron/schedule, polling) para poder activar — un workflow que solo tiene un Manual Trigger no se puede activar vía API, y el error de n8n lo dice explícito. Es idempotente: si ya está en el estado pedido, el script lo dice y no llama a la API.
+
+### Editar (`update`)
+
+Escribí un archivo JSON con **solo los campos que cambian** (nunca el objeto completo). Campos editables: `name`, `description`, `nodes`, `connections`, `nodeGroups`, `settings`, `staticData`, `pinData`. Si el patch toca `nodes` o `connections`, tiene que traer el arreglo/objeto completo deseado, no un delta — el merge es a nivel de campo top-level, no dentro de `nodes`.
+
+```powershell
+python "scripts/manage_n8n_workflows.py" update --url "https://n8n.midominio.com" --workflow-id <id> --patch cambio.json
+```
+
+Sin `--apply` muestra el diff completo (formato `unified_diff`) y para ahí. Mostrale ese diff al usuario tal cual antes de pedir confirmación — no lo resumas ni lo reinterpretes.
+
+### Borrar (`delete`)
+
+Irreversible. Conseguí el nombre exacto del workflow (vía `n8n-workflow-auditor --summary` si hace falta) y pasalo en `--confirm-name`.
+
+```powershell
+python "scripts/manage_n8n_workflows.py" delete --url "https://n8n.midominio.com" --workflow-id <id> --confirm-name "Nombre exacto" --apply
+```
+
+## Reporte
+
+Después de cada operación, resumí: qué se planeó, si se aplicó o quedó en dry-run, y el resultado (`[OK]` o el error tal cual lo devolvió n8n — nunca lo suavices ni inventes una causa distinta a la que dice el mensaje).
+
+## Recurso incluido
+
+`scripts/manage_n8n_workflows.py` es un cliente sin dependencias externas con 5 subcomandos (`create`, `activate`, `deactivate`, `update`, `delete`). Verificado end-to-end contra una instancia n8n real: create/activate/update/deactivate/delete completos, incluyendo dos comportamientos reales de la API que no estaban documentados igual en el OpenAPI — `PUT` rechaza cualquier campo fuera de un allowlist estricto (la respuesta de `GET` trae campos internos como `sourceWorkflowId`/`activeVersionId`/`versionCounter` que rompen el `PUT` si se reenvían tal cual) y rechaza `description: null` aunque el propio `GET` lo devuelva así. El script ya filtra ambos casos.
