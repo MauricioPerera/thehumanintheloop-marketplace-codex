@@ -74,7 +74,7 @@ Catálogo actual: **86 plugins y 19 Design System Analyses**, distribuido en dos
 - `KDD TypeScript Checker` (`kdd-typescript`): verifica 17 reglas duras del Google TypeScript Style Guide: var/const/let, exports, imports, campos privados, const enum, wrapper types, comillas, triple igual y nombres con guion bajo, extraidas y verificadas con Knowledge-Driven Development.
 - `K8s Manifest Auditor` (`k8s-manifest-auditor`): audita manifiestos Kubernetes contra los Pod Security Standards oficiales (Baseline y Restricted): host namespaces, contenedores privilegiados, capabilities, hostPath, hostPort, privilege escalation, runAsNonRoot y seccomp, sin aplicar cambios al cluster.
 - `KDD Dockerfile Checker` (`kdd-dockerfile`): verifica 11 reglas duras de Dockerfile best practices: FROM sin pin, apt-get sin combinar ni limpiar, CMD/ENTRYPOINT en shell form, USER root, sudo instalado, WORKDIR relativo, ADD en vez de COPY, pipe sin pipefail y .dockerignore ausente, extraidas y verificadas con Knowledge-Driven Development.
-- `N8N Workflow Auditor` (`n8n-workflow-auditor`): audita workflows de n8n vía REST API en modo lectura: credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo, manejo de errores, reintentos y nodos huérfanos. También inventaría y exporta workflows a disco.
+- `N8N Workflow Auditor` (`n8n-workflow-auditor`): audita workflows de n8n vía REST API en modo lectura: credenciales hardcodeadas, webhooks sin autenticación, nodos de alto riesgo, manejo de errores, reintentos y nodos huérfanos. También inventaría, exporta workflows a disco y envuelve el audit nativo de n8n.
 
 ## Categorías
 
