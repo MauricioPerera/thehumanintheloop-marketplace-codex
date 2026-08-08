@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- `n8n-workflow-auditor` (N8N Workflow Auditor): version 0.2.0 -> 0.3.0. Agrega `--export-dir` para descargar cada workflow (JSON completo tal cual la API) a una carpeta local, sin requests adicionales (reusa lo ya traido por `--summary`/auditoria). Sigue siendo estrictamente lectura: no hace `POST`/`PUT`/`PATCH`/`DELETE`. Verificado contra una instancia real (992 workflows exportados en ~9s).
 - `n8n-workflow-auditor` (N8N Workflow Auditor): version 0.1.0 -> 0.2.0. Elimina el GET redundante por workflow (la lista ya trae nodes/connections/settings completos), agrega `--summary` para inventario rápido (total/activos/inactivos sin correr las 7 reglas) y agrega `User-Agent` explícito para evitar bloqueos de WAF (Cloudflare Error 1010) en instancias reales. Verificado end-to-end contra una instancia n8n real con ~1000 workflows.
 - `n8n-workflow-auditor` (N8N Workflow Auditor): nuevo plugin, audita workflows de n8n vía REST API en modo lectura (webhooks sin autenticación, credenciales hardcodeadas, nodos de alto riesgo, manejo de errores, reintentos, nodos huérfanos, trigger alcanzable).
 - `kdd-dockerfile` (KDD Dockerfile Checker): nuevo plugin, verifica 11 reglas duras de Dockerfile best practices extraidas con Knowledge-Driven Development.

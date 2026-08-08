@@ -7,6 +7,7 @@ variable instead of --api-key to keep it out of shell history.
 """
 import argparse
 import json
+import os
 import re
 import sys
 import urllib.error
@@ -244,6 +245,8 @@ def render_markdown(report):
     lines = [f"# Auditoria n8n — {report['n8n_url']}", ""]
     summary = report["summary"]
     lines.append(f"Workflows totales: {summary['total']} | activos: {summary['active']} | inactivos: {summary['inactive']}")
+    if report.get("export"):
+        lines.append(f"Exportados a `{report['export']['dir']}`: {report['export']['files']} archivos.")
     lines.append("")
     if report.get("summary_only"):
         lines.append("| Workflow | ID | Estado | Nodos | Triggers |")
@@ -260,6 +263,22 @@ def render_markdown(report):
             lines.append(f"| {check['rule']} | [{check['status']}] | {check['detail']} |")
         lines.append("")
     return "\n".join(lines)
+
+
+def safe_filename(workflow_id, name):
+    slug = re.sub(r"[^A-Za-z0-9._-]+", "-", (name or "workflow")).strip("-") or "workflow"
+    return f"{slug}__{workflow_id}.json"
+
+
+def export_workflows(workflows, export_dir):
+    os.makedirs(export_dir, exist_ok=True)
+    written = []
+    for wf in workflows:
+        path = os.path.join(export_dir, safe_filename(wf.get("id"), wf.get("name")))
+        with open(path, "w", encoding="utf-8") as fh:
+            json.dump(wf, fh, indent=2, ensure_ascii=False)
+        written.append(path)
+    return written
 
 
 def summarize_workflow(workflow):
@@ -280,11 +299,12 @@ def main():
     parser.add_argument("--workflow-id", help="Auditar un unico workflow por id")
     parser.add_argument("--all", action="store_true", help="Incluir workflows inactivos (por defecto solo activos)")
     parser.add_argument("--summary", action="store_true", help="Solo inventario (id, nombre, activo, nodos, triggers), sin correr las 7 reglas")
+    parser.add_argument("--export-dir", dest="export_dir", help="Descarga cada workflow (JSON completo, tal cual la API) a esta carpeta local")
     parser.add_argument("--json", dest="json_out", help="Ruta de salida JSON")
     parser.add_argument("--markdown", dest="md_out", help="Ruta de salida Markdown")
     args = parser.parse_args()
 
-    api_key = args.api_key or __import__("os").environ.get("N8N_API_KEY")
+    api_key = args.api_key or os.environ.get("N8N_API_KEY")
     if not api_key:
         raise SystemExit("[FAILED] Falta API key: pasa --api-key o define N8N_API_KEY")
 
@@ -296,10 +316,13 @@ def main():
         # ese N+1 es lo que antes causaba timeouts.
         workflows = list_workflows(args.url, api_key, only_active=not args.all)
 
+    exported = export_workflows(workflows, args.export_dir) if args.export_dir else []
+
     report = {
         "n8n_url": args.url,
         "summary": build_summary(workflows),
         "summary_only": args.summary,
+        "export": {"dir": args.export_dir, "files": len(exported)} if args.export_dir else None,
         "workflows": [summarize_workflow(wf) for wf in workflows] if args.summary else [audit_workflow(wf) for wf in workflows],
     }
 
