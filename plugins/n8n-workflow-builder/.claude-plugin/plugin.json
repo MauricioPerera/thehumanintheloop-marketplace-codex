@@ -1,0 +1,13 @@
+{
+  "name": "n8n-workflow-builder",
+  "displayName": "N8N Workflow Builder",
+  "version": "0.1.0",
+  "description": "Cliente genérico para el MCP oficial de n8n: descubre nodos, valida workflows/nodos antes de crearlos, construye y actualiza vía el n8n Workflow SDK (operaciones atómicas, no reemplazo completo), prueba con datos simulados, y consulta/restaura historial de versiones.",
+  "author": {
+    "name": "Mauricio Perera",
+    "url": "https://github.com/MauricioPerera"
+  },
+  "repository": "https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex",
+  "license": "MIT",
+  "keywords": ["n8n", "mcp", "workflow", "sdk", "validation"]
+}

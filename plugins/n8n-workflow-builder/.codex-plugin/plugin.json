@@ -1,0 +1,18 @@
+{
+  "name": "n8n-workflow-builder",
+  "version": "0.1.0",
+  "description": "Cliente genérico para el MCP oficial de n8n: descubre nodos, valida workflows/nodos antes de crearlos, construye y actualiza vía el n8n Workflow SDK (operaciones atómicas, no reemplazo completo), prueba con datos simulados, y consulta/restaura historial de versiones.",
+  "author": {
+    "name": "Mauricio Perera"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "N8N Workflow Builder",
+    "shortDescription": "Construye y valida workflows de n8n vía su MCP oficial (SDK, validación, operaciones atómicas).",
+    "longDescription": "Cliente JSON-RPC genérico (sin dependencias externas) para el MCP oficial de n8n, distinto de la REST API pública: expone 33 tools para construir workflows con el n8n Workflow SDK (TypeScript/JavaScript), validar código y configuración de nodos antes de crear o actualizar nada, actualizar workflows existentes con operaciones atómicas (addNode, updateNodeParameters, setNodeSettings, etc. — no el reemplazo completo de la REST API), probar con datos simulados (pin data), y consultar o restaurar el historial de versiones. Las tools de solo lectura corren directo; las que mutan (crear, actualizar, publicar, archivar, ejecutar, tablas de datos) son dry-run por defecto y requieren --apply.",
+    "developerName": "Mauricio Perera",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Ayudame a construir o editar un workflow de n8n usando el MCP oficial: buscá los nodos correctos, validá antes de crear, y mostrame el plan antes de aplicar cualquier cambio."
+  }
+}
