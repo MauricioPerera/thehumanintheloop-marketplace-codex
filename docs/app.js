@@ -319,6 +319,11 @@ const plugins = [{
   description: 'Instala, actualiza y desinstala paquetes de nodos de comunidad en n8n vía REST API, con verificación contra la lista vetada de n8n activa por defecto y confirmación explícita antes de cada mutación.',
   capabilities: ['n8n', 'Community Nodes', 'Supply Chain', 'Manager'],
   url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/n8n-community-package-manager', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
+}, {
+  name: 'n8n-workflow-builder', displayName: 'N8N Workflow Builder', category: 'Developer Tools', icon: 'N8N', version: '0.1.0',
+  description: 'Cliente genérico para el MCP oficial de n8n: descubre nodos, valida workflows/nodos antes de crearlos, construye y actualiza vía el n8n Workflow SDK (operaciones atómicas, no reemplazo completo), prueba con datos simulados, y consulta/restaura historial de versiones.',
+  capabilities: ['n8n', 'MCP', 'SDK', 'Validation'],
+  url: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex/tree/main/plugins/n8n-workflow-builder', marketplace: 'https://github.com/MauricioPerera/thehumanintheloop-marketplace-codex', codexUrl: 'codex://new', claudeMarketplace: 'thehumanintheloop-marketplace-claude'
 }];
 const analyses = [{
   name: 'KDD — Knowledge-Driven Development', category: 'Design Systems', icon: 'DS', version: '1.0.0',

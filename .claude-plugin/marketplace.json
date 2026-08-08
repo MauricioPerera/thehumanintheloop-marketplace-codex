@@ -539,6 +539,12 @@
       "displayName": "N8N Community Package Manager",
       "source": "./plugins/n8n-community-package-manager",
       "category": "Security & Privacy"
+    },
+    {
+      "name": "n8n-workflow-builder",
+      "displayName": "N8N Workflow Builder",
+      "source": "./plugins/n8n-workflow-builder",
+      "category": "Developer Tools"
     }
   ]
 }
